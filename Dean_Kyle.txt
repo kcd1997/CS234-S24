@@ -1,1 +1,1 @@
-
+Assignment: Design menu structure and plane class. Worked on classes with team and designed overall structure and diagrams collaboratively.
