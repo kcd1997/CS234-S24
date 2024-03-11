@@ -1,1 +1,1 @@
-
+For Stage 2 of our Project, I worked on the airport and flight classes. I also discussed the interactions between each class an the overall structure of the project with team members.
