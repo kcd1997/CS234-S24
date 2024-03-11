@@ -1,1 +1,1 @@
-
+We  discussed the plan for structuring the UML idagram, keeping in mind the clarity and functionality of the system. During this process, I chose to work on creating the class representing both passengers and tickets.
