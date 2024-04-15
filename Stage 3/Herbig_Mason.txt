@@ -1,0 +1,1 @@
+For Stage 3 of our Project, I focused on writing the passenger, passengermenu, and reader files, and implementing these files into the report menu. I also wrote the User Guide for the program.
