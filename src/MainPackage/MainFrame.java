@@ -54,26 +54,26 @@ public class MainFrame extends javax.swing.JFrame {
         flightsButton = new javax.swing.JButton();
         buttonLabel_Flights = new javax.swing.JPanel();
         flightsLabel = new javax.swing.JLabel();
-        buttonSpace_Passengers8 = new javax.swing.JPanel();
-        buttonPanel_Passengers8 = new javax.swing.JPanel();
-        passengersButton8 = new javax.swing.JButton();
-        buttonLabel_Passengers8 = new javax.swing.JPanel();
-        passengersLabel8 = new javax.swing.JLabel();
-        buttonSpace_Passengers4 = new javax.swing.JPanel();
-        buttonPanel_Passengers4 = new javax.swing.JPanel();
-        passengersButton4 = new javax.swing.JButton();
-        buttonLabel_Passengers4 = new javax.swing.JPanel();
-        passengersLabel4 = new javax.swing.JLabel();
-        buttonSpace_Passengers10 = new javax.swing.JPanel();
-        buttonPanel_Passengers10 = new javax.swing.JPanel();
-        passengersButton10 = new javax.swing.JButton();
-        buttonLabel_Passengers10 = new javax.swing.JPanel();
-        passengersLabel10 = new javax.swing.JLabel();
-        buttonSpace_Passengers6 = new javax.swing.JPanel();
-        buttonPanel_Passengers6 = new javax.swing.JPanel();
-        passengersButton6 = new javax.swing.JButton();
-        buttonLabel_Passengers6 = new javax.swing.JPanel();
-        passengersLabel6 = new javax.swing.JLabel();
+        buttonSpace_Planes = new javax.swing.JPanel();
+        buttonPanel_Planes = new javax.swing.JPanel();
+        planesButton = new javax.swing.JButton();
+        buttonLabel_Planes = new javax.swing.JPanel();
+        planesLabel = new javax.swing.JLabel();
+        buttonSpace_Airports = new javax.swing.JPanel();
+        buttonPanel_Airports = new javax.swing.JPanel();
+        airportsButton = new javax.swing.JButton();
+        buttonLabel_Airports = new javax.swing.JPanel();
+        airportsLabel = new javax.swing.JLabel();
+        buttonSpace_Reports = new javax.swing.JPanel();
+        buttonPanel_Reports = new javax.swing.JPanel();
+        reportsButton = new javax.swing.JButton();
+        buttonLabel_Reports = new javax.swing.JPanel();
+        reportsLabel = new javax.swing.JLabel();
+        buttonSpace_LoadState = new javax.swing.JPanel();
+        buttonPanel_LoadState = new javax.swing.JPanel();
+        loadButton = new javax.swing.JButton();
+        buttonLabel_LoadState = new javax.swing.JPanel();
+        loadLabel = new javax.swing.JLabel();
         buttonSpace_Tickets1 = new javax.swing.JPanel();
         buttonPanel_Tickets1 = new javax.swing.JPanel();
         ticketsButton1 = new javax.swing.JButton();
@@ -84,37 +84,33 @@ public class MainFrame extends javax.swing.JFrame {
         passengersButton1 = new javax.swing.JButton();
         buttonLabel_Passengers1 = new javax.swing.JPanel();
         passengersLabel1 = new javax.swing.JLabel();
-        passenger2Label2 = new javax.swing.JLabel();
-        buttonSpace_Passengers7 = new javax.swing.JPanel();
-        buttonPanel_Passengers7 = new javax.swing.JPanel();
-        passengersButton7 = new javax.swing.JButton();
-        buttonLabel_Passengers7 = new javax.swing.JPanel();
-        passengersLabel7 = new javax.swing.JLabel();
-        passenger2Label5 = new javax.swing.JLabel();
-        buttonSpace_Passengers3 = new javax.swing.JPanel();
-        buttonPanel_Passengers3 = new javax.swing.JPanel();
-        passengersButton3 = new javax.swing.JButton();
-        buttonLabel_Passengers3 = new javax.swing.JPanel();
-        passengersLabel3 = new javax.swing.JLabel();
-        passenger2Label3 = new javax.swing.JLabel();
-        buttonSpace_Passengers9 = new javax.swing.JPanel();
-        buttonPanel_Passengers9 = new javax.swing.JPanel();
-        passengersButton9 = new javax.swing.JButton();
-        buttonLabel_Passengers9 = new javax.swing.JPanel();
-        passengersLabel9 = new javax.swing.JLabel();
-        passenger2Label6 = new javax.swing.JLabel();
-        buttonSpace_Passengers5 = new javax.swing.JPanel();
-        buttonPanel_Passengers5 = new javax.swing.JPanel();
-        passengersButton5 = new javax.swing.JButton();
-        buttonLabel_Passengers5 = new javax.swing.JPanel();
-        passengersLabel5 = new javax.swing.JLabel();
-        passenger2Label4 = new javax.swing.JLabel();
-        buttonSpace_Passengers11 = new javax.swing.JPanel();
-        buttonPanel_Passengers11 = new javax.swing.JPanel();
-        passengersButton11 = new javax.swing.JButton();
-        buttonLabel_Passengers11 = new javax.swing.JPanel();
-        passengersLabel11 = new javax.swing.JLabel();
-        passenger2Label7 = new javax.swing.JLabel();
+        passengersLabel2 = new javax.swing.JLabel();
+        buttonSpace_Flights1 = new javax.swing.JPanel();
+        buttonPanel_Flights1 = new javax.swing.JPanel();
+        flightsButton1 = new javax.swing.JButton();
+        buttonLabel_Flights1 = new javax.swing.JPanel();
+        flightsLabel1 = new javax.swing.JLabel();
+        buttonSpace_Planes1 = new javax.swing.JPanel();
+        buttonPanel_Planes1 = new javax.swing.JPanel();
+        planesButton1 = new javax.swing.JButton();
+        buttonLabel_Planes1 = new javax.swing.JPanel();
+        planesLabel1 = new javax.swing.JLabel();
+        buttonSpace_Airports1 = new javax.swing.JPanel();
+        buttonPanel_Airports1 = new javax.swing.JPanel();
+        airportsButton1 = new javax.swing.JButton();
+        buttonLabel_Airports1 = new javax.swing.JPanel();
+        airportsLabel1 = new javax.swing.JLabel();
+        airportsLabel2 = new javax.swing.JLabel();
+        buttonSpace_SysTime = new javax.swing.JPanel();
+        buttonPanel_SysTime = new javax.swing.JPanel();
+        systimeButton = new javax.swing.JButton();
+        buttonLabel_SysTime = new javax.swing.JPanel();
+        systimeLabel = new javax.swing.JLabel();
+        buttonSpace_SaveState = new javax.swing.JPanel();
+        buttonPanel_SaveState = new javax.swing.JPanel();
+        saveButton = new javax.swing.JButton();
+        buttonLabel_SaveState = new javax.swing.JPanel();
+        saveLabel = new javax.swing.JLabel();
         mainButtonLightLayer = new javax.swing.JPanel();
         buttonLightSpace_Save = new javax.swing.JPanel();
         buttonLightPanel__Save = new javax.swing.JPanel();
@@ -124,7 +120,7 @@ public class MainFrame extends javax.swing.JFrame {
         loadLight = new javax.swing.JLabel();
         buttonLightSpace_SysTime = new javax.swing.JPanel();
         buttonLightPanel__SysTime = new javax.swing.JPanel();
-        sysTimeLight = new javax.swing.JLabel();
+        systimeLight = new javax.swing.JLabel();
         buttonLightSpace_Reports = new javax.swing.JPanel();
         buttonLightPanel_Reports = new javax.swing.JPanel();
         reportsLight = new javax.swing.JLabel();
@@ -217,9 +213,9 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonPanel_TicketsLayout.setVerticalGroup(
             buttonPanel_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
+            .addGap(0, 123, Short.MAX_VALUE)
             .addGroup(buttonPanel_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(ticketsButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+                .addComponent(ticketsButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
         buttonSpace_Tickets.add(buttonPanel_Tickets);
@@ -303,7 +299,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_PassengersLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(passengersLabel)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGap(33, 33, 33)))
         );
         buttonLabel_PassengersLayout.setVerticalGroup(
             buttonLabel_PassengersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -382,257 +378,257 @@ public class MainFrame extends javax.swing.JFrame {
 
         mainButtonGrid.add(buttonSpace_Flights);
 
-        buttonSpace_Passengers8.setOpaque(false);
-        buttonSpace_Passengers8.setPreferredSize(new java.awt.Dimension(180, 45));
-        buttonSpace_Passengers8.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers8));
+        buttonSpace_Planes.setOpaque(false);
+        buttonSpace_Planes.setPreferredSize(new java.awt.Dimension(180, 45));
+        buttonSpace_Planes.setLayout(new javax.swing.OverlayLayout(buttonSpace_Planes));
 
-        buttonPanel_Passengers8.setOpaque(false);
+        buttonPanel_Planes.setOpaque(false);
 
-        passengersButton8.setBorderPainted(false);
-        passengersButton8.setContentAreaFilled(false);
-        passengersButton8.addActionListener(new java.awt.event.ActionListener() {
+        planesButton.setBorderPainted(false);
+        planesButton.setContentAreaFilled(false);
+        planesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton8ActionPerformed(evt);
+                planesButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers8Layout = new javax.swing.GroupLayout(buttonPanel_Passengers8);
-        buttonPanel_Passengers8.setLayout(buttonPanel_Passengers8Layout);
-        buttonPanel_Passengers8Layout.setHorizontalGroup(
-            buttonPanel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_PlanesLayout = new javax.swing.GroupLayout(buttonPanel_Planes);
+        buttonPanel_Planes.setLayout(buttonPanel_PlanesLayout);
+        buttonPanel_PlanesLayout.setHorizontalGroup(
+            buttonPanel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(planesButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers8Layout.setVerticalGroup(
-            buttonPanel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonPanel_PlanesLayout.setVerticalGroup(
+            buttonPanel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(planesButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers8.add(buttonPanel_Passengers8);
+        buttonSpace_Planes.add(buttonPanel_Planes);
 
-        buttonLabel_Passengers8.setOpaque(false);
+        buttonLabel_Planes.setOpaque(false);
 
-        passengersLabel8.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel8.setText("Passenger Menu");
+        planesLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planesLabel.setForeground(new java.awt.Color(255, 255, 255));
+        planesLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planesLabel.setText("Plane Menu");
 
-        javax.swing.GroupLayout buttonLabel_Passengers8Layout = new javax.swing.GroupLayout(buttonLabel_Passengers8);
-        buttonLabel_Passengers8.setLayout(buttonLabel_Passengers8Layout);
-        buttonLabel_Passengers8Layout.setHorizontalGroup(
-            buttonLabel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonLabel_PlanesLayout = new javax.swing.GroupLayout(buttonLabel_Planes);
+        buttonLabel_Planes.setLayout(buttonLabel_PlanesLayout);
+        buttonLabel_PlanesLayout.setHorizontalGroup(
+            buttonLabel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers8Layout.createSequentialGroup()
+            .addGroup(buttonLabel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_PlanesLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel8)
+                    .addComponent(planesLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        buttonLabel_Passengers8Layout.setVerticalGroup(
-            buttonLabel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonLabel_PlanesLayout.setVerticalGroup(
+            buttonLabel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers8Layout.createSequentialGroup()
+            .addGroup(buttonLabel_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_PlanesLayout.createSequentialGroup()
                     .addGap(43, 43, 43)
-                    .addComponent(passengersLabel8)
+                    .addComponent(planesLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        buttonSpace_Passengers8.add(buttonLabel_Passengers8);
+        buttonSpace_Planes.add(buttonLabel_Planes);
 
-        mainButtonGrid.add(buttonSpace_Passengers8);
+        mainButtonGrid.add(buttonSpace_Planes);
 
-        buttonSpace_Passengers4.setOpaque(false);
-        buttonSpace_Passengers4.setPreferredSize(new java.awt.Dimension(180, 45));
-        buttonSpace_Passengers4.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers4));
+        buttonSpace_Airports.setOpaque(false);
+        buttonSpace_Airports.setPreferredSize(new java.awt.Dimension(180, 45));
+        buttonSpace_Airports.setLayout(new javax.swing.OverlayLayout(buttonSpace_Airports));
 
-        buttonPanel_Passengers4.setOpaque(false);
+        buttonPanel_Airports.setOpaque(false);
 
-        passengersButton4.setBorderPainted(false);
-        passengersButton4.setContentAreaFilled(false);
-        passengersButton4.addActionListener(new java.awt.event.ActionListener() {
+        airportsButton.setBorderPainted(false);
+        airportsButton.setContentAreaFilled(false);
+        airportsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton4ActionPerformed(evt);
+                airportsButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers4Layout = new javax.swing.GroupLayout(buttonPanel_Passengers4);
-        buttonPanel_Passengers4.setLayout(buttonPanel_Passengers4Layout);
-        buttonPanel_Passengers4Layout.setHorizontalGroup(
-            buttonPanel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_AirportsLayout = new javax.swing.GroupLayout(buttonPanel_Airports);
+        buttonPanel_Airports.setLayout(buttonPanel_AirportsLayout);
+        buttonPanel_AirportsLayout.setHorizontalGroup(
+            buttonPanel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(airportsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers4Layout.setVerticalGroup(
-            buttonPanel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonPanel_AirportsLayout.setVerticalGroup(
+            buttonPanel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(airportsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers4.add(buttonPanel_Passengers4);
+        buttonSpace_Airports.add(buttonPanel_Airports);
 
-        buttonLabel_Passengers4.setOpaque(false);
+        buttonLabel_Airports.setOpaque(false);
 
-        passengersLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel4.setText("Passenger Menu");
+        airportsLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        airportsLabel.setForeground(new java.awt.Color(255, 255, 255));
+        airportsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        airportsLabel.setText("Airport Menu");
 
-        javax.swing.GroupLayout buttonLabel_Passengers4Layout = new javax.swing.GroupLayout(buttonLabel_Passengers4);
-        buttonLabel_Passengers4.setLayout(buttonLabel_Passengers4Layout);
-        buttonLabel_Passengers4Layout.setHorizontalGroup(
-            buttonLabel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonLabel_AirportsLayout = new javax.swing.GroupLayout(buttonLabel_Airports);
+        buttonLabel_Airports.setLayout(buttonLabel_AirportsLayout);
+        buttonLabel_AirportsLayout.setHorizontalGroup(
+            buttonLabel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers4Layout.createSequentialGroup()
+            .addGroup(buttonLabel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_AirportsLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel4)
+                    .addComponent(airportsLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        buttonLabel_Passengers4Layout.setVerticalGroup(
-            buttonLabel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonLabel_AirportsLayout.setVerticalGroup(
+            buttonLabel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers4Layout.createSequentialGroup()
+            .addGroup(buttonLabel_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_AirportsLayout.createSequentialGroup()
                     .addGap(43, 43, 43)
-                    .addComponent(passengersLabel4)
+                    .addComponent(airportsLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        buttonSpace_Passengers4.add(buttonLabel_Passengers4);
+        buttonSpace_Airports.add(buttonLabel_Airports);
 
-        mainButtonGrid.add(buttonSpace_Passengers4);
+        mainButtonGrid.add(buttonSpace_Airports);
 
-        buttonSpace_Passengers10.setOpaque(false);
-        buttonSpace_Passengers10.setPreferredSize(new java.awt.Dimension(180, 45));
-        buttonSpace_Passengers10.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers10));
+        buttonSpace_Reports.setOpaque(false);
+        buttonSpace_Reports.setPreferredSize(new java.awt.Dimension(180, 45));
+        buttonSpace_Reports.setLayout(new javax.swing.OverlayLayout(buttonSpace_Reports));
 
-        buttonPanel_Passengers10.setOpaque(false);
+        buttonPanel_Reports.setOpaque(false);
 
-        passengersButton10.setBorderPainted(false);
-        passengersButton10.setContentAreaFilled(false);
-        passengersButton10.addActionListener(new java.awt.event.ActionListener() {
+        reportsButton.setBorderPainted(false);
+        reportsButton.setContentAreaFilled(false);
+        reportsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton10ActionPerformed(evt);
+                reportsButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers10Layout = new javax.swing.GroupLayout(buttonPanel_Passengers10);
-        buttonPanel_Passengers10.setLayout(buttonPanel_Passengers10Layout);
-        buttonPanel_Passengers10Layout.setHorizontalGroup(
-            buttonPanel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_ReportsLayout = new javax.swing.GroupLayout(buttonPanel_Reports);
+        buttonPanel_Reports.setLayout(buttonPanel_ReportsLayout);
+        buttonPanel_ReportsLayout.setHorizontalGroup(
+            buttonPanel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(reportsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers10Layout.setVerticalGroup(
-            buttonPanel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonPanel_ReportsLayout.setVerticalGroup(
+            buttonPanel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(reportsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers10.add(buttonPanel_Passengers10);
+        buttonSpace_Reports.add(buttonPanel_Reports);
 
-        buttonLabel_Passengers10.setOpaque(false);
+        buttonLabel_Reports.setOpaque(false);
 
-        passengersLabel10.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel10.setText("Passenger Menu");
+        reportsLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        reportsLabel.setForeground(new java.awt.Color(255, 255, 255));
+        reportsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        reportsLabel.setText("Report Menu");
 
-        javax.swing.GroupLayout buttonLabel_Passengers10Layout = new javax.swing.GroupLayout(buttonLabel_Passengers10);
-        buttonLabel_Passengers10.setLayout(buttonLabel_Passengers10Layout);
-        buttonLabel_Passengers10Layout.setHorizontalGroup(
-            buttonLabel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonLabel_ReportsLayout = new javax.swing.GroupLayout(buttonLabel_Reports);
+        buttonLabel_Reports.setLayout(buttonLabel_ReportsLayout);
+        buttonLabel_ReportsLayout.setHorizontalGroup(
+            buttonLabel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers10Layout.createSequentialGroup()
+            .addGroup(buttonLabel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_ReportsLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel10)
+                    .addComponent(reportsLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        buttonLabel_Passengers10Layout.setVerticalGroup(
-            buttonLabel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonLabel_ReportsLayout.setVerticalGroup(
+            buttonLabel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers10Layout.createSequentialGroup()
+            .addGroup(buttonLabel_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_ReportsLayout.createSequentialGroup()
                     .addGap(43, 43, 43)
-                    .addComponent(passengersLabel10)
+                    .addComponent(reportsLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        buttonSpace_Passengers10.add(buttonLabel_Passengers10);
+        buttonSpace_Reports.add(buttonLabel_Reports);
 
-        mainButtonGrid.add(buttonSpace_Passengers10);
+        mainButtonGrid.add(buttonSpace_Reports);
 
-        buttonSpace_Passengers6.setOpaque(false);
-        buttonSpace_Passengers6.setPreferredSize(new java.awt.Dimension(180, 45));
-        buttonSpace_Passengers6.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers6));
+        buttonSpace_LoadState.setOpaque(false);
+        buttonSpace_LoadState.setPreferredSize(new java.awt.Dimension(180, 45));
+        buttonSpace_LoadState.setLayout(new javax.swing.OverlayLayout(buttonSpace_LoadState));
 
-        buttonPanel_Passengers6.setOpaque(false);
+        buttonPanel_LoadState.setOpaque(false);
 
-        passengersButton6.setBorderPainted(false);
-        passengersButton6.setContentAreaFilled(false);
-        passengersButton6.addActionListener(new java.awt.event.ActionListener() {
+        loadButton.setBorderPainted(false);
+        loadButton.setContentAreaFilled(false);
+        loadButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton6ActionPerformed(evt);
+                loadButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers6Layout = new javax.swing.GroupLayout(buttonPanel_Passengers6);
-        buttonPanel_Passengers6.setLayout(buttonPanel_Passengers6Layout);
-        buttonPanel_Passengers6Layout.setHorizontalGroup(
-            buttonPanel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_LoadStateLayout = new javax.swing.GroupLayout(buttonPanel_LoadState);
+        buttonPanel_LoadState.setLayout(buttonPanel_LoadStateLayout);
+        buttonPanel_LoadStateLayout.setHorizontalGroup(
+            buttonPanel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(loadButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers6Layout.setVerticalGroup(
-            buttonPanel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonPanel_LoadStateLayout.setVerticalGroup(
+            buttonPanel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(loadButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers6.add(buttonPanel_Passengers6);
+        buttonSpace_LoadState.add(buttonPanel_LoadState);
 
-        buttonLabel_Passengers6.setOpaque(false);
+        buttonLabel_LoadState.setOpaque(false);
 
-        passengersLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel6.setText("Passenger Menu");
+        loadLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadLabel.setText("Load State");
 
-        javax.swing.GroupLayout buttonLabel_Passengers6Layout = new javax.swing.GroupLayout(buttonLabel_Passengers6);
-        buttonLabel_Passengers6.setLayout(buttonLabel_Passengers6Layout);
-        buttonLabel_Passengers6Layout.setHorizontalGroup(
-            buttonLabel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonLabel_LoadStateLayout = new javax.swing.GroupLayout(buttonLabel_LoadState);
+        buttonLabel_LoadState.setLayout(buttonLabel_LoadStateLayout);
+        buttonLabel_LoadStateLayout.setHorizontalGroup(
+            buttonLabel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers6Layout.createSequentialGroup()
+            .addGroup(buttonLabel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_LoadStateLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel6)
+                    .addComponent(loadLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        buttonLabel_Passengers6Layout.setVerticalGroup(
-            buttonLabel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonLabel_LoadStateLayout.setVerticalGroup(
+            buttonLabel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers6Layout.createSequentialGroup()
+            .addGroup(buttonLabel_LoadStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_LoadStateLayout.createSequentialGroup()
                     .addGap(43, 43, 43)
-                    .addComponent(passengersLabel6)
+                    .addComponent(loadLabel)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        buttonSpace_Passengers6.add(buttonLabel_Passengers6);
+        buttonSpace_LoadState.add(buttonLabel_LoadState);
 
-        mainButtonGrid.add(buttonSpace_Passengers6);
+        mainButtonGrid.add(buttonSpace_LoadState);
 
         buttonSpace_Tickets1.setOpaque(false);
         buttonSpace_Tickets1.setPreferredSize(new java.awt.Dimension(238, 122));
@@ -720,9 +716,9 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonPanel_Passengers1Layout.setVerticalGroup(
             buttonPanel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
+            .addGap(0, 123, Short.MAX_VALUE)
             .addGroup(buttonPanel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+                .addComponent(passengersButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
         buttonSpace_Passengers1.add(buttonPanel_Passengers1);
@@ -739,11 +735,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        passenger2Label2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passenger2Label2.setForeground(new java.awt.Color(255, 255, 255));
-        passenger2Label2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passenger2Label2.setText("Manifest");
-        passenger2Label2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        passengersLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengersLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        passengersLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengersLabel2.setText("Manifest");
+        passengersLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout buttonLabel_Passengers1Layout = new javax.swing.GroupLayout(buttonLabel_Passengers1);
         buttonLabel_Passengers1.setLayout(buttonLabel_Passengers1Layout);
@@ -755,7 +751,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(buttonLabel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(passengersLabel1)
-                        .addComponent(passenger2Label2))
+                        .addComponent(passengersLabel2))
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         buttonLabel_Passengers1Layout.setVerticalGroup(
@@ -766,7 +762,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(passengersLabel1)
                     .addGap(2, 2, 2)
-                    .addComponent(passenger2Label2)
+                    .addComponent(passengersLabel2)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
@@ -774,390 +770,330 @@ public class MainFrame extends javax.swing.JFrame {
 
         mainButtonGrid.add(buttonSpace_Passengers1);
 
-        buttonSpace_Passengers7.setOpaque(false);
-        buttonSpace_Passengers7.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers7));
+        buttonSpace_Flights1.setOpaque(false);
+        buttonSpace_Flights1.setLayout(new javax.swing.OverlayLayout(buttonSpace_Flights1));
 
-        buttonPanel_Passengers7.setOpaque(false);
+        buttonPanel_Flights1.setOpaque(false);
 
-        passengersButton7.setBorderPainted(false);
-        passengersButton7.setContentAreaFilled(false);
-        passengersButton7.addActionListener(new java.awt.event.ActionListener() {
+        flightsButton1.setBorderPainted(false);
+        flightsButton1.setContentAreaFilled(false);
+        flightsButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton7ActionPerformed(evt);
+                flightsButton1ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers7Layout = new javax.swing.GroupLayout(buttonPanel_Passengers7);
-        buttonPanel_Passengers7.setLayout(buttonPanel_Passengers7Layout);
-        buttonPanel_Passengers7Layout.setHorizontalGroup(
-            buttonPanel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_Flights1Layout = new javax.swing.GroupLayout(buttonPanel_Flights1);
+        buttonPanel_Flights1.setLayout(buttonPanel_Flights1Layout);
+        buttonPanel_Flights1Layout.setHorizontalGroup(
+            buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 238, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(flightsButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers7Layout.setVerticalGroup(
-            buttonPanel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        buttonPanel_Flights1Layout.setVerticalGroup(
+            buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(flightsButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers7.add(buttonPanel_Passengers7);
+        buttonSpace_Flights1.add(buttonPanel_Flights1);
 
-        buttonLabel_Passengers7.setOpaque(false);
+        buttonLabel_Flights1.setOpaque(false);
 
-        passengersLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel7.setText("Passenger");
-        passengersLabel7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                passengersLabel7PropertyChange(evt);
-            }
-        });
+        flightsLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightsLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        flightsLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightsLabel1.setText("Flight Manifest");
 
-        passenger2Label5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passenger2Label5.setForeground(new java.awt.Color(255, 255, 255));
-        passenger2Label5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passenger2Label5.setText("Manifest");
-        passenger2Label5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout buttonLabel_Passengers7Layout = new javax.swing.GroupLayout(buttonLabel_Passengers7);
-        buttonLabel_Passengers7.setLayout(buttonLabel_Passengers7Layout);
-        buttonLabel_Passengers7Layout.setHorizontalGroup(
-            buttonLabel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(buttonLabel_Passengers7Layout.createSequentialGroup()
+        javax.swing.GroupLayout buttonLabel_Flights1Layout = new javax.swing.GroupLayout(buttonLabel_Flights1);
+        buttonLabel_Flights1.setLayout(buttonLabel_Flights1Layout);
+        buttonLabel_Flights1Layout.setHorizontalGroup(
+            buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 238, Short.MAX_VALUE)
+            .addGroup(buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(buttonLabel_Flights1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(buttonLabel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(passengersLabel7)
-                        .addComponent(passenger2Label5))
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(flightsLabel1)
+                    .addGap(40, 40, 40)))
         );
-        buttonLabel_Passengers7Layout.setVerticalGroup(
-            buttonLabel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers7Layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel7)
-                    .addGap(2, 2, 2)
-                    .addComponent(passenger2Label5)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        buttonLabel_Flights1Layout.setVerticalGroup(
+            buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Flights1Layout.createSequentialGroup()
+                    .addContainerGap(46, Short.MAX_VALUE)
+                    .addComponent(flightsLabel1)
+                    .addGap(48, 48, 48)))
         );
 
-        buttonSpace_Passengers7.add(buttonLabel_Passengers7);
+        buttonSpace_Flights1.add(buttonLabel_Flights1);
 
-        mainButtonGrid.add(buttonSpace_Passengers7);
+        mainButtonGrid.add(buttonSpace_Flights1);
 
-        buttonSpace_Passengers3.setOpaque(false);
-        buttonSpace_Passengers3.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers3));
+        buttonSpace_Planes1.setOpaque(false);
+        buttonSpace_Planes1.setLayout(new javax.swing.OverlayLayout(buttonSpace_Planes1));
 
-        buttonPanel_Passengers3.setOpaque(false);
+        buttonPanel_Planes1.setOpaque(false);
 
-        passengersButton3.setBorderPainted(false);
-        passengersButton3.setContentAreaFilled(false);
-        passengersButton3.addActionListener(new java.awt.event.ActionListener() {
+        planesButton1.setBorderPainted(false);
+        planesButton1.setContentAreaFilled(false);
+        planesButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton3ActionPerformed(evt);
+                planesButton1ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers3Layout = new javax.swing.GroupLayout(buttonPanel_Passengers3);
-        buttonPanel_Passengers3.setLayout(buttonPanel_Passengers3Layout);
-        buttonPanel_Passengers3Layout.setHorizontalGroup(
-            buttonPanel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_Planes1Layout = new javax.swing.GroupLayout(buttonPanel_Planes1);
+        buttonPanel_Planes1.setLayout(buttonPanel_Planes1Layout);
+        buttonPanel_Planes1Layout.setHorizontalGroup(
+            buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 238, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(planesButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers3Layout.setVerticalGroup(
-            buttonPanel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        buttonPanel_Planes1Layout.setVerticalGroup(
+            buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(planesButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers3.add(buttonPanel_Passengers3);
+        buttonSpace_Planes1.add(buttonPanel_Planes1);
 
-        buttonLabel_Passengers3.setOpaque(false);
+        buttonLabel_Planes1.setOpaque(false);
 
-        passengersLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel3.setText("Passenger");
-        passengersLabel3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                passengersLabel3PropertyChange(evt);
-            }
-        });
+        planesLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planesLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        planesLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planesLabel1.setText("Plane Manifest");
 
-        passenger2Label3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passenger2Label3.setForeground(new java.awt.Color(255, 255, 255));
-        passenger2Label3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passenger2Label3.setText("Manifest");
-        passenger2Label3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout buttonLabel_Passengers3Layout = new javax.swing.GroupLayout(buttonLabel_Passengers3);
-        buttonLabel_Passengers3.setLayout(buttonLabel_Passengers3Layout);
-        buttonLabel_Passengers3Layout.setHorizontalGroup(
-            buttonLabel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(buttonLabel_Passengers3Layout.createSequentialGroup()
+        javax.swing.GroupLayout buttonLabel_Planes1Layout = new javax.swing.GroupLayout(buttonLabel_Planes1);
+        buttonLabel_Planes1.setLayout(buttonLabel_Planes1Layout);
+        buttonLabel_Planes1Layout.setHorizontalGroup(
+            buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 238, Short.MAX_VALUE)
+            .addGroup(buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(buttonLabel_Planes1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(buttonLabel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(passengersLabel3)
-                        .addComponent(passenger2Label3))
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(planesLabel1)
+                    .addGap(40, 40, 40)))
         );
-        buttonLabel_Passengers3Layout.setVerticalGroup(
-            buttonLabel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers3Layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel3)
-                    .addGap(2, 2, 2)
-                    .addComponent(passenger2Label3)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        buttonLabel_Planes1Layout.setVerticalGroup(
+            buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Planes1Layout.createSequentialGroup()
+                    .addContainerGap(49, Short.MAX_VALUE)
+                    .addComponent(planesLabel1)
+                    .addGap(45, 45, 45)))
         );
 
-        buttonSpace_Passengers3.add(buttonLabel_Passengers3);
+        buttonSpace_Planes1.add(buttonLabel_Planes1);
 
-        mainButtonGrid.add(buttonSpace_Passengers3);
+        mainButtonGrid.add(buttonSpace_Planes1);
 
-        buttonSpace_Passengers9.setOpaque(false);
-        buttonSpace_Passengers9.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers9));
+        buttonSpace_Airports1.setOpaque(false);
+        buttonSpace_Airports1.setLayout(new javax.swing.OverlayLayout(buttonSpace_Airports1));
 
-        buttonPanel_Passengers9.setOpaque(false);
+        buttonPanel_Airports1.setOpaque(false);
 
-        passengersButton9.setBorderPainted(false);
-        passengersButton9.setContentAreaFilled(false);
-        passengersButton9.addActionListener(new java.awt.event.ActionListener() {
+        airportsButton1.setBorderPainted(false);
+        airportsButton1.setContentAreaFilled(false);
+        airportsButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton9ActionPerformed(evt);
+                airportsButton1ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers9Layout = new javax.swing.GroupLayout(buttonPanel_Passengers9);
-        buttonPanel_Passengers9.setLayout(buttonPanel_Passengers9Layout);
-        buttonPanel_Passengers9Layout.setHorizontalGroup(
-            buttonPanel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_Airports1Layout = new javax.swing.GroupLayout(buttonPanel_Airports1);
+        buttonPanel_Airports1.setLayout(buttonPanel_Airports1Layout);
+        buttonPanel_Airports1Layout.setHorizontalGroup(
+            buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 238, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(airportsButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers9Layout.setVerticalGroup(
-            buttonPanel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        buttonPanel_Airports1Layout.setVerticalGroup(
+            buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(airportsButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers9.add(buttonPanel_Passengers9);
+        buttonSpace_Airports1.add(buttonPanel_Airports1);
 
-        buttonLabel_Passengers9.setOpaque(false);
+        buttonLabel_Airports1.setOpaque(false);
 
-        passengersLabel9.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel9.setText("Passenger");
-        passengersLabel9.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+        airportsLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        airportsLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        airportsLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        airportsLabel1.setText("Airport");
+        airportsLabel1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                passengersLabel9PropertyChange(evt);
+                airportsLabel1PropertyChange(evt);
             }
         });
 
-        passenger2Label6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passenger2Label6.setForeground(new java.awt.Color(255, 255, 255));
-        passenger2Label6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passenger2Label6.setText("Manifest");
-        passenger2Label6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        airportsLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        airportsLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        airportsLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        airportsLabel2.setText("Manifest");
+        airportsLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        javax.swing.GroupLayout buttonLabel_Passengers9Layout = new javax.swing.GroupLayout(buttonLabel_Passengers9);
-        buttonLabel_Passengers9.setLayout(buttonLabel_Passengers9Layout);
-        buttonLabel_Passengers9Layout.setHorizontalGroup(
-            buttonLabel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonLabel_Airports1Layout = new javax.swing.GroupLayout(buttonLabel_Airports1);
+        buttonLabel_Airports1.setLayout(buttonLabel_Airports1Layout);
+        buttonLabel_Airports1Layout.setHorizontalGroup(
+            buttonLabel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(buttonLabel_Passengers9Layout.createSequentialGroup()
+            .addGroup(buttonLabel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(buttonLabel_Airports1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(buttonLabel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(passengersLabel9)
-                        .addComponent(passenger2Label6))
+                    .addGroup(buttonLabel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(airportsLabel1)
+                        .addComponent(airportsLabel2))
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        buttonLabel_Passengers9Layout.setVerticalGroup(
-            buttonLabel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        buttonLabel_Airports1Layout.setVerticalGroup(
+            buttonLabel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers9Layout.createSequentialGroup()
+            .addGroup(buttonLabel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Airports1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel9)
+                    .addComponent(airportsLabel1)
                     .addGap(2, 2, 2)
-                    .addComponent(passenger2Label6)
+                    .addComponent(airportsLabel2)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        buttonSpace_Passengers9.add(buttonLabel_Passengers9);
+        buttonSpace_Airports1.add(buttonLabel_Airports1);
 
-        mainButtonGrid.add(buttonSpace_Passengers9);
+        mainButtonGrid.add(buttonSpace_Airports1);
 
-        buttonSpace_Passengers5.setOpaque(false);
-        buttonSpace_Passengers5.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers5));
+        buttonSpace_SysTime.setOpaque(false);
+        buttonSpace_SysTime.setLayout(new javax.swing.OverlayLayout(buttonSpace_SysTime));
 
-        buttonPanel_Passengers5.setOpaque(false);
+        buttonPanel_SysTime.setOpaque(false);
 
-        passengersButton5.setBorderPainted(false);
-        passengersButton5.setContentAreaFilled(false);
-        passengersButton5.addActionListener(new java.awt.event.ActionListener() {
+        systimeButton.setBorderPainted(false);
+        systimeButton.setContentAreaFilled(false);
+        systimeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton5ActionPerformed(evt);
+                systimeButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers5Layout = new javax.swing.GroupLayout(buttonPanel_Passengers5);
-        buttonPanel_Passengers5.setLayout(buttonPanel_Passengers5Layout);
-        buttonPanel_Passengers5Layout.setHorizontalGroup(
-            buttonPanel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_SysTimeLayout = new javax.swing.GroupLayout(buttonPanel_SysTime);
+        buttonPanel_SysTime.setLayout(buttonPanel_SysTimeLayout);
+        buttonPanel_SysTimeLayout.setHorizontalGroup(
+            buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 238, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(systimeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers5Layout.setVerticalGroup(
-            buttonPanel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        buttonPanel_SysTimeLayout.setVerticalGroup(
+            buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(systimeButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers5.add(buttonPanel_Passengers5);
+        buttonSpace_SysTime.add(buttonPanel_SysTime);
 
-        buttonLabel_Passengers5.setOpaque(false);
+        buttonLabel_SysTime.setOpaque(false);
 
-        passengersLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel5.setText("Passenger");
-        passengersLabel5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                passengersLabel5PropertyChange(evt);
-            }
-        });
+        systimeLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeLabel.setText("System Time");
 
-        passenger2Label4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passenger2Label4.setForeground(new java.awt.Color(255, 255, 255));
-        passenger2Label4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passenger2Label4.setText("Manifest");
-        passenger2Label4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout buttonLabel_Passengers5Layout = new javax.swing.GroupLayout(buttonLabel_Passengers5);
-        buttonLabel_Passengers5.setLayout(buttonLabel_Passengers5Layout);
-        buttonLabel_Passengers5Layout.setHorizontalGroup(
-            buttonLabel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(buttonLabel_Passengers5Layout.createSequentialGroup()
+        javax.swing.GroupLayout buttonLabel_SysTimeLayout = new javax.swing.GroupLayout(buttonLabel_SysTime);
+        buttonLabel_SysTime.setLayout(buttonLabel_SysTimeLayout);
+        buttonLabel_SysTimeLayout.setHorizontalGroup(
+            buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 238, Short.MAX_VALUE)
+            .addGroup(buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(buttonLabel_SysTimeLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(buttonLabel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(passengersLabel5)
-                        .addComponent(passenger2Label4))
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(systimeLabel)
+                    .addGap(43, 43, 43)))
         );
-        buttonLabel_Passengers5Layout.setVerticalGroup(
-            buttonLabel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers5Layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel5)
-                    .addGap(2, 2, 2)
-                    .addComponent(passenger2Label4)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        buttonLabel_SysTimeLayout.setVerticalGroup(
+            buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_SysTimeLayout.createSequentialGroup()
+                    .addContainerGap(48, Short.MAX_VALUE)
+                    .addComponent(systimeLabel)
+                    .addGap(46, 46, 46)))
         );
 
-        buttonSpace_Passengers5.add(buttonLabel_Passengers5);
+        buttonSpace_SysTime.add(buttonLabel_SysTime);
 
-        mainButtonGrid.add(buttonSpace_Passengers5);
+        mainButtonGrid.add(buttonSpace_SysTime);
 
-        buttonSpace_Passengers11.setOpaque(false);
-        buttonSpace_Passengers11.setLayout(new javax.swing.OverlayLayout(buttonSpace_Passengers11));
+        buttonSpace_SaveState.setOpaque(false);
+        buttonSpace_SaveState.setLayout(new javax.swing.OverlayLayout(buttonSpace_SaveState));
 
-        buttonPanel_Passengers11.setOpaque(false);
+        buttonPanel_SaveState.setOpaque(false);
 
-        passengersButton11.setBorderPainted(false);
-        passengersButton11.setContentAreaFilled(false);
-        passengersButton11.addActionListener(new java.awt.event.ActionListener() {
+        saveButton.setBorderPainted(false);
+        saveButton.setContentAreaFilled(false);
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passengersButton11ActionPerformed(evt);
+                saveButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout buttonPanel_Passengers11Layout = new javax.swing.GroupLayout(buttonPanel_Passengers11);
-        buttonPanel_Passengers11.setLayout(buttonPanel_Passengers11Layout);
-        buttonPanel_Passengers11Layout.setHorizontalGroup(
-            buttonPanel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout buttonPanel_SaveStateLayout = new javax.swing.GroupLayout(buttonPanel_SaveState);
+        buttonPanel_SaveState.setLayout(buttonPanel_SaveStateLayout);
+        buttonPanel_SaveStateLayout.setHorizontalGroup(
+            buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 238, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(saveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        buttonPanel_Passengers11Layout.setVerticalGroup(
-            buttonPanel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(buttonPanel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        buttonPanel_SaveStateLayout.setVerticalGroup(
+            buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(saveButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
         );
 
-        buttonSpace_Passengers11.add(buttonPanel_Passengers11);
+        buttonSpace_SaveState.add(buttonPanel_SaveState);
 
-        buttonLabel_Passengers11.setOpaque(false);
+        buttonLabel_SaveState.setOpaque(false);
 
-        passengersLabel11.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passengersLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        passengersLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passengersLabel11.setText("Passenger");
-        passengersLabel11.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                passengersLabel11PropertyChange(evt);
-            }
-        });
+        saveLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveLabel.setText("Save State");
 
-        passenger2Label7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        passenger2Label7.setForeground(new java.awt.Color(255, 255, 255));
-        passenger2Label7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        passenger2Label7.setText("Manifest");
-        passenger2Label7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout buttonLabel_Passengers11Layout = new javax.swing.GroupLayout(buttonLabel_Passengers11);
-        buttonLabel_Passengers11.setLayout(buttonLabel_Passengers11Layout);
-        buttonLabel_Passengers11Layout.setHorizontalGroup(
-            buttonLabel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(buttonLabel_Passengers11Layout.createSequentialGroup()
+        javax.swing.GroupLayout buttonLabel_SaveStateLayout = new javax.swing.GroupLayout(buttonLabel_SaveState);
+        buttonLabel_SaveState.setLayout(buttonLabel_SaveStateLayout);
+        buttonLabel_SaveStateLayout.setHorizontalGroup(
+            buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 238, Short.MAX_VALUE)
+            .addGroup(buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(buttonLabel_SaveStateLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(buttonLabel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(passengersLabel11)
-                        .addComponent(passenger2Label7))
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(saveLabel)
+                    .addGap(60, 60, 60)))
         );
-        buttonLabel_Passengers11Layout.setVerticalGroup(
-            buttonLabel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(buttonLabel_Passengers11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Passengers11Layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(passengersLabel11)
-                    .addGap(2, 2, 2)
-                    .addComponent(passenger2Label7)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        buttonLabel_SaveStateLayout.setVerticalGroup(
+            buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 123, Short.MAX_VALUE)
+            .addGroup(buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_SaveStateLayout.createSequentialGroup()
+                    .addContainerGap(49, Short.MAX_VALUE)
+                    .addComponent(saveLabel)
+                    .addGap(45, 45, 45)))
         );
 
-        buttonSpace_Passengers11.add(buttonLabel_Passengers11);
+        buttonSpace_SaveState.add(buttonLabel_SaveState);
 
-        mainButtonGrid.add(buttonSpace_Passengers11);
+        mainButtonGrid.add(buttonSpace_SaveState);
 
         javax.swing.GroupLayout mainControlLayerLayout = new javax.swing.GroupLayout(mainControlLayer);
         mainControlLayer.setLayout(mainControlLayerLayout);
@@ -1171,9 +1107,9 @@ public class MainFrame extends javax.swing.JFrame {
         mainControlLayerLayout.setVerticalGroup(
             mainControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainControlLayerLayout.createSequentialGroup()
-                .addContainerGap(77, Short.MAX_VALUE)
+                .addContainerGap(76, Short.MAX_VALUE)
                 .addComponent(mainButtonGrid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(760, Short.MAX_VALUE))
+                .addContainerGap(759, Short.MAX_VALUE))
         );
 
         mainLayerPane.add(mainControlLayer);
@@ -1284,9 +1220,9 @@ public class MainFrame extends javax.swing.JFrame {
 
         buttonLightPanel__SysTime.setOpaque(false);
 
-        sysTimeLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sysTimeLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
-        sysTimeLight.setVisible(false);
+        systimeLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+        systimeLight.setVisible(false);
 
         javax.swing.GroupLayout buttonLightPanel__SysTimeLayout = new javax.swing.GroupLayout(buttonLightPanel__SysTime);
         buttonLightPanel__SysTime.setLayout(buttonLightPanel__SysTimeLayout);
@@ -1294,14 +1230,14 @@ public class MainFrame extends javax.swing.JFrame {
             buttonLightPanel__SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(buttonLightPanel__SysTimeLayout.createSequentialGroup()
                 .addGap(1006, 1006, 1006)
-                .addComponent(sysTimeLight)
+                .addComponent(systimeLight)
                 .addContainerGap(136, Short.MAX_VALUE))
         );
         buttonLightPanel__SysTimeLayout.setVerticalGroup(
             buttonLightPanel__SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(buttonLightPanel__SysTimeLayout.createSequentialGroup()
                 .addGap(194, 194, 194)
-                .addComponent(sysTimeLight)
+                .addComponent(systimeLight)
                 .addContainerGap(750, Short.MAX_VALUE))
         );
 
@@ -2368,68 +2304,412 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_passengersButton1ActionPerformed
 
     private void passengersLabel1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_passengersLabel1PropertyChange
-        passenger2Label2.setForeground(passengersLabel1.getForeground());
+        passengersLabel2.setForeground(passengersLabel1.getForeground());
     }//GEN-LAST:event_passengersLabel1PropertyChange
 
     private void flightsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightsButtonActionPerformed
-        // TODO add your handling code here:
+        if (flightsButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = flightsLabel;
+            currentActiveMainLight = flightsLight;
+            currentActiveMainLightButton = flightsButton;
+            currentActiveBackground = dataMenuBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (flightsButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
     }//GEN-LAST:event_flightsButtonActionPerformed
 
-    private void passengersButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton3ActionPerformed
+    private void planesButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planesButton1ActionPerformed
+        if (planesButton1.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = planesLabel1;
+            currentActiveMainLight = planesLight1;
+            currentActiveMainLightButton = planesButton1;
+            currentActiveBackground = manifestBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (planesButton1.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_planesButton1ActionPerformed
 
-    private void passengersLabel3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_passengersLabel3PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersLabel3PropertyChange
+    private void airportsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_airportsButtonActionPerformed
+         if (airportsButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = airportsLabel;
+            currentActiveMainLight = airportsLight;
+            currentActiveMainLightButton = airportsButton;
+            currentActiveBackground = dataMenuBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (airportsButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_airportsButtonActionPerformed
 
-    private void passengersButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton4ActionPerformed
+    private void systimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_systimeButtonActionPerformed
+        if (systimeButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = systimeLabel;
+            currentActiveMainLight = systimeLight;
+            currentActiveMainLightButton = systimeButton;
+            currentActiveBackground = systimeBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (systimeButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_systimeButtonActionPerformed
 
-    private void passengersButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton5ActionPerformed
+    private void loadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadButtonActionPerformed
+        if (loadButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = loadLabel;
+            currentActiveMainLight = loadLight;
+            currentActiveMainLightButton = loadButton;
+            currentActiveBackground = fileDataBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (loadButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_loadButtonActionPerformed
 
-    private void passengersLabel5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_passengersLabel5PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersLabel5PropertyChange
+    private void flightsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightsButton1ActionPerformed
+        if (flightsButton1.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = flightsLabel1;
+            currentActiveMainLight = flightsLight1;
+            currentActiveMainLightButton = flightsButton1;
+            currentActiveBackground = manifestBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (flightsButton1.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_flightsButton1ActionPerformed
 
-    private void passengersButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton6ActionPerformed
+    private void planesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planesButtonActionPerformed
+        if (planesButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = planesLabel;
+            currentActiveMainLight = planesLight;
+            currentActiveMainLightButton = planesButton;
+            currentActiveBackground = dataMenuBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (planesButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_planesButtonActionPerformed
 
-    private void passengersButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton7ActionPerformed
+    private void airportsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_airportsButton1ActionPerformed
+        if (airportsButton1.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = airportsLabel1;
+            currentActiveMainLight = airportsLight1;
+            currentActiveMainLightButton = airportsButton1;
+            currentActiveBackground = manifestBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (airportsButton1.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_airportsButton1ActionPerformed
 
-    private void passengersLabel7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_passengersLabel7PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersLabel7PropertyChange
+    private void airportsLabel1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_airportsLabel1PropertyChange
+        airportsLabel2.setForeground(airportsLabel1.getForeground());
+    }//GEN-LAST:event_airportsLabel1PropertyChange
 
-    private void passengersButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton8ActionPerformed
+    private void reportsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsButtonActionPerformed
+        if (reportsButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = reportsLabel;
+            currentActiveMainLight = reportsLight;
+            currentActiveMainLightButton = reportsButton;
+            currentActiveBackground = reportMenuBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (reportsButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_reportsButtonActionPerformed
 
-    private void passengersButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton9ActionPerformed
-
-    private void passengersLabel9PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_passengersLabel9PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersLabel9PropertyChange
-
-    private void passengersButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton10ActionPerformed
-
-    private void passengersButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersButton11ActionPerformed
-
-    private void passengersLabel11PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_passengersLabel11PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passengersLabel11PropertyChange
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
+         if (saveButton.getMultiClickThreshhold() == 0)
+        {
+            if (currentActiveMainLightLabel != null)
+            {
+                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLight.setVisible(false);
+                currentActiveMainLightButton.setMultiClickThreshhold(0);
+                currentActiveBackground.setVisible(false);
+            }
+            
+            currentActiveMainLightLabel = saveLabel;
+            currentActiveMainLight = saveLight;
+            currentActiveMainLightButton = saveButton;
+            currentActiveBackground = fileDataBackground;
+            
+            currentActiveMainLight.setVisible(true);
+            currentActiveMainLightLabel.setForeground(Color.black);
+            currentActiveMainLightButton.setMultiClickThreshhold(1);
+                        
+            currentActiveBackground.setVisible(true);
+            mainLayerPane.repaint();
+        }
+        
+        else if (saveButton.getMultiClickThreshhold() == 1)
+        {
+            currentActiveMainLight.setVisible(false);
+            currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightButton.setMultiClickThreshhold(0);
+            
+            currentActiveMainLight = null;
+            currentActiveMainLightLabel = null;
+            currentActiveMainLightButton = null;
+            
+            currentActiveBackground.setVisible(false);
+            currentActiveBackground = null;
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_saveButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2480,21 +2760,26 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel BackgroundSpace3;
     private javax.swing.JPanel BackgroundSpace4;
     private javax.swing.JPanel BackgroundSpace5;
+    private javax.swing.JButton airportsButton;
+    private javax.swing.JButton airportsButton1;
+    private javax.swing.JLabel airportsLabel;
+    private javax.swing.JLabel airportsLabel1;
+    private javax.swing.JLabel airportsLabel2;
     private javax.swing.JLabel airportsLight;
     private javax.swing.JLabel airportsLight1;
     private javax.swing.JPanel backgroundLayer;
+    private javax.swing.JPanel buttonLabel_Airports;
+    private javax.swing.JPanel buttonLabel_Airports1;
     private javax.swing.JPanel buttonLabel_Flights;
+    private javax.swing.JPanel buttonLabel_Flights1;
+    private javax.swing.JPanel buttonLabel_LoadState;
     private javax.swing.JPanel buttonLabel_Passengers;
     private javax.swing.JPanel buttonLabel_Passengers1;
-    private javax.swing.JPanel buttonLabel_Passengers10;
-    private javax.swing.JPanel buttonLabel_Passengers11;
-    private javax.swing.JPanel buttonLabel_Passengers3;
-    private javax.swing.JPanel buttonLabel_Passengers4;
-    private javax.swing.JPanel buttonLabel_Passengers5;
-    private javax.swing.JPanel buttonLabel_Passengers6;
-    private javax.swing.JPanel buttonLabel_Passengers7;
-    private javax.swing.JPanel buttonLabel_Passengers8;
-    private javax.swing.JPanel buttonLabel_Passengers9;
+    private javax.swing.JPanel buttonLabel_Planes;
+    private javax.swing.JPanel buttonLabel_Planes1;
+    private javax.swing.JPanel buttonLabel_Reports;
+    private javax.swing.JPanel buttonLabel_SaveState;
+    private javax.swing.JPanel buttonLabel_SysTime;
     private javax.swing.JPanel buttonLabel_Tickets;
     private javax.swing.JPanel buttonLabel_Tickets1;
     private javax.swing.JPanel buttonLightPanel_Airports;
@@ -2525,83 +2810,74 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel buttonLightSpace_SysTime;
     private javax.swing.JPanel buttonLightSpace_Tickets;
     private javax.swing.JPanel buttonLightSpace_Tickets1;
+    private javax.swing.JPanel buttonPanel_Airports;
+    private javax.swing.JPanel buttonPanel_Airports1;
     private javax.swing.JPanel buttonPanel_Flights;
+    private javax.swing.JPanel buttonPanel_Flights1;
+    private javax.swing.JPanel buttonPanel_LoadState;
     private javax.swing.JPanel buttonPanel_Passengers;
     private javax.swing.JPanel buttonPanel_Passengers1;
-    private javax.swing.JPanel buttonPanel_Passengers10;
-    private javax.swing.JPanel buttonPanel_Passengers11;
-    private javax.swing.JPanel buttonPanel_Passengers3;
-    private javax.swing.JPanel buttonPanel_Passengers4;
-    private javax.swing.JPanel buttonPanel_Passengers5;
-    private javax.swing.JPanel buttonPanel_Passengers6;
-    private javax.swing.JPanel buttonPanel_Passengers7;
-    private javax.swing.JPanel buttonPanel_Passengers8;
-    private javax.swing.JPanel buttonPanel_Passengers9;
+    private javax.swing.JPanel buttonPanel_Planes;
+    private javax.swing.JPanel buttonPanel_Planes1;
+    private javax.swing.JPanel buttonPanel_Reports;
+    private javax.swing.JPanel buttonPanel_SaveState;
+    private javax.swing.JPanel buttonPanel_SysTime;
     private javax.swing.JPanel buttonPanel_Tickets;
     private javax.swing.JPanel buttonPanel_Tickets1;
+    private javax.swing.JPanel buttonSpace_Airports;
+    private javax.swing.JPanel buttonSpace_Airports1;
     private javax.swing.JPanel buttonSpace_Flights;
+    private javax.swing.JPanel buttonSpace_Flights1;
+    private javax.swing.JPanel buttonSpace_LoadState;
     private javax.swing.JPanel buttonSpace_Passengers;
     private javax.swing.JPanel buttonSpace_Passengers1;
-    private javax.swing.JPanel buttonSpace_Passengers10;
-    private javax.swing.JPanel buttonSpace_Passengers11;
-    private javax.swing.JPanel buttonSpace_Passengers3;
-    private javax.swing.JPanel buttonSpace_Passengers4;
-    private javax.swing.JPanel buttonSpace_Passengers5;
-    private javax.swing.JPanel buttonSpace_Passengers6;
-    private javax.swing.JPanel buttonSpace_Passengers7;
-    private javax.swing.JPanel buttonSpace_Passengers8;
-    private javax.swing.JPanel buttonSpace_Passengers9;
+    private javax.swing.JPanel buttonSpace_Planes;
+    private javax.swing.JPanel buttonSpace_Planes1;
+    private javax.swing.JPanel buttonSpace_Reports;
+    private javax.swing.JPanel buttonSpace_SaveState;
+    private javax.swing.JPanel buttonSpace_SysTime;
     private javax.swing.JPanel buttonSpace_Tickets;
     private javax.swing.JPanel buttonSpace_Tickets1;
     private javax.swing.JLabel dataMenuBackground;
     private javax.swing.JLabel fileDataBackground;
     private javax.swing.JButton flightsButton;
+    private javax.swing.JButton flightsButton1;
     private javax.swing.JLabel flightsLabel;
+    private javax.swing.JLabel flightsLabel1;
     private javax.swing.JLabel flightsLight;
     private javax.swing.JLabel flightsLight1;
+    private javax.swing.JButton loadButton;
+    private javax.swing.JLabel loadLabel;
     private javax.swing.JLabel loadLight;
     private javax.swing.JPanel mainButtonGrid;
     private javax.swing.JPanel mainButtonLightLayer;
     private javax.swing.JPanel mainControlLayer;
     private javax.swing.JLayeredPane mainLayerPane;
     private javax.swing.JLabel manifestBackground;
-    private javax.swing.JLabel passenger2Label2;
-    private javax.swing.JLabel passenger2Label3;
-    private javax.swing.JLabel passenger2Label4;
-    private javax.swing.JLabel passenger2Label5;
-    private javax.swing.JLabel passenger2Label6;
-    private javax.swing.JLabel passenger2Label7;
     private javax.swing.JButton passengersButton;
     private javax.swing.JButton passengersButton1;
-    private javax.swing.JButton passengersButton10;
-    private javax.swing.JButton passengersButton11;
-    private javax.swing.JButton passengersButton3;
-    private javax.swing.JButton passengersButton4;
-    private javax.swing.JButton passengersButton5;
-    private javax.swing.JButton passengersButton6;
-    private javax.swing.JButton passengersButton7;
-    private javax.swing.JButton passengersButton8;
-    private javax.swing.JButton passengersButton9;
     private javax.swing.JLabel passengersLabel;
     private javax.swing.JLabel passengersLabel1;
-    private javax.swing.JLabel passengersLabel10;
-    private javax.swing.JLabel passengersLabel11;
-    private javax.swing.JLabel passengersLabel3;
-    private javax.swing.JLabel passengersLabel4;
-    private javax.swing.JLabel passengersLabel5;
-    private javax.swing.JLabel passengersLabel6;
-    private javax.swing.JLabel passengersLabel7;
-    private javax.swing.JLabel passengersLabel8;
-    private javax.swing.JLabel passengersLabel9;
+    private javax.swing.JLabel passengersLabel2;
     private javax.swing.JLabel passengersLight;
     private javax.swing.JLabel passengersLight1;
+    private javax.swing.JButton planesButton;
+    private javax.swing.JButton planesButton1;
+    private javax.swing.JLabel planesLabel;
+    private javax.swing.JLabel planesLabel1;
     private javax.swing.JLabel planesLight;
     private javax.swing.JLabel planesLight1;
     private javax.swing.JLabel reportMenuBackground;
+    private javax.swing.JButton reportsButton;
+    private javax.swing.JLabel reportsLabel;
     private javax.swing.JLabel reportsLight;
+    private javax.swing.JButton saveButton;
+    private javax.swing.JLabel saveLabel;
     private javax.swing.JLabel saveLight;
-    private javax.swing.JLabel sysTimeLight;
     private javax.swing.JLabel systimeBackground;
+    private javax.swing.JButton systimeButton;
+    private javax.swing.JLabel systimeLabel;
+    private javax.swing.JLabel systimeLight;
     private javax.swing.JButton ticketsButton;
     private javax.swing.JButton ticketsButton1;
     private javax.swing.JLabel ticketsLabel;
