@@ -4,7 +4,7 @@
  */
 package MainPackage;
 import java.awt.Color;
-import java.awt.Font;
+import java.util.ArrayList;
 
 /**
  * The MainFrame Class is the starting point for the graphical user interface
@@ -18,6 +18,10 @@ public class MainFrame extends javax.swing.JFrame {
     public javax.swing.JLabel currentActiveMainLight = null;
     public javax.swing.JButton currentActiveMainLightButton = null;
     public javax.swing.JLabel currentActiveBackground = null;
+    public javax.swing.JPanel currentControlPanel = null;
+    public javax.swing.JPanel currentLightPanel = null;
+    public TerminalData terminalData = new TerminalData(true, new ArrayList<Passenger>(), new ArrayList<Airport>(),
+            new ArrayList<Plane>(), new ArrayList<Flight>(), new ArrayList<Ticket>(), 0);
     
     /**
      * Creates new form MainFrame
@@ -36,7 +40,42 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        mainLayerSpace = new javax.swing.JPanel();
         mainLayerPane = new javax.swing.JLayeredPane();
+        reportControlLayer = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        reportLightLayer = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
         mainControlLayer = new javax.swing.JPanel();
         mainButtonGrid = new javax.swing.JPanel();
         buttonSpace_Tickets = new javax.swing.JPanel();
@@ -155,37 +194,343 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightPanel_Tickets = new javax.swing.JPanel();
         ticketsLight = new javax.swing.JLabel();
         backgroundLayer = new javax.swing.JPanel();
-        BackgroundSpace5 = new javax.swing.JPanel();
-        BackgroundPanel5 = new javax.swing.JPanel();
-        fileDataBackground = new javax.swing.JLabel();
-        BackgroundSpace4 = new javax.swing.JPanel();
-        BackgroundPanel4 = new javax.swing.JPanel();
-        systimeBackground = new javax.swing.JLabel();
-        BackgroundSpace3 = new javax.swing.JPanel();
-        BackgroundPanel3 = new javax.swing.JPanel();
+        BackgroundSpace_reports = new javax.swing.JPanel();
+        BackgroundPanel_reports = new javax.swing.JPanel();
         reportMenuBackground = new javax.swing.JLabel();
-        BackgroundSpace2 = new javax.swing.JPanel();
-        BackgroundPanel2 = new javax.swing.JPanel();
+        BackgroundSpace_systime = new javax.swing.JPanel();
+        BackgroundPanel_systime = new javax.swing.JPanel();
+        systimeBackground = new javax.swing.JLabel();
+        BackgroundSpace_fileData = new javax.swing.JPanel();
+        BackgroundPanel_fileData = new javax.swing.JPanel();
+        fileDataBackground = new javax.swing.JLabel();
+        BackgroundSpace_manifest = new javax.swing.JPanel();
+        BackgroundPanel_manifest = new javax.swing.JPanel();
         manifestBackground = new javax.swing.JLabel();
-        BackgroundSpace1 = new javax.swing.JPanel();
-        BackgroundPanel1 = new javax.swing.JPanel();
+        BackgroundSpace_data = new javax.swing.JPanel();
+        BackgroundPanel_data = new javax.swing.JPanel();
         dataMenuBackground = new javax.swing.JLabel();
         BackgroundSpace = new javax.swing.JPanel();
         BackgroundPanel = new javax.swing.JPanel();
         Background = new javax.swing.JLabel();
+        systimeControlLayer = new javax.swing.JPanel();
+        systimeControlLayerSpace = new javax.swing.JPanel();
+        systimeHeaderPanel1 = new javax.swing.JPanel();
+        systimeHeaderLabel1 = new javax.swing.JLabel();
+        systimeHeaderPanel = new javax.swing.JPanel();
+        systimeHeaderLabel = new javax.swing.JLabel();
+        systimeFieldLabelPanel = new javax.swing.JPanel();
+        systimeFieldLabel = new javax.swing.JLabel();
+        systimeChangeButtonSpace = new javax.swing.JPanel();
+        systimeChangeButtonLabelOverlay = new javax.swing.JPanel();
+        systimeChangeButtonLabelPanel = new javax.swing.JPanel();
+        systimeChangeButtonLabel = new javax.swing.JLabel();
+        systimeChangeButtonPanel = new javax.swing.JPanel();
+        systimeChangeButton = new javax.swing.JButton();
+        systimeTextEntryPanel = new javax.swing.JPanel();
+        systimeTextEntryField = new javax.swing.JTextField();
+        systimeLightLayer = new javax.swing.JPanel();
+        systimeLightSpace = new javax.swing.JPanel();
+        systimeFieldPanel = new javax.swing.JPanel();
+        systimeFieldLightSpace = new javax.swing.JPanel();
+        systimeFieldLightSubSpace = new javax.swing.JPanel();
+        systimeFieldLight = new javax.swing.JLabel();
+        systimeFieldDimmerSpace = new javax.swing.JPanel();
+        systimeFieldDimmerSubSpace = new javax.swing.JPanel();
+        systimeFieldDimmer = new javax.swing.JLabel();
+        systimeButtonLightSpace = new javax.swing.JPanel();
+        systimeButtonLight = new javax.swing.JLabel();
+        saveDataControlLayer = new javax.swing.JPanel();
+        saveDataControlLayerSpace = new javax.swing.JPanel();
+        saveDataFieldLabelPanel = new javax.swing.JPanel();
+        saveDataFieldLabel = new javax.swing.JLabel();
+        saveDataTextEntryPanel = new javax.swing.JPanel();
+        saveDataTextEntryField = new javax.swing.JTextField();
+        saveDataHeaderPanel = new javax.swing.JPanel();
+        saveDataHeaderLabel = new javax.swing.JLabel();
+        saveDataButtonSpace = new javax.swing.JPanel();
+        saveButtonLabelOverlay = new javax.swing.JPanel();
+        saveButtonLabelPanel = new javax.swing.JPanel();
+        saveButtonLabel = new javax.swing.JLabel();
+        saveDataButtonPanel = new javax.swing.JPanel();
+        saveDataButton = new javax.swing.JButton();
+        loadDataControlLayer = new javax.swing.JPanel();
+        loadDataControlLayerSpace = new javax.swing.JPanel();
+        loadDataFieldLabelPanel = new javax.swing.JPanel();
+        loadDataFieldLabel = new javax.swing.JLabel();
+        loadDataTextEntryPanel = new javax.swing.JPanel();
+        loadDataTextEntryField = new javax.swing.JTextField();
+        loadDataHeaderPanel = new javax.swing.JPanel();
+        loadDataHeaderLabel = new javax.swing.JLabel();
+        loadDataButtonSpace = new javax.swing.JPanel();
+        loadButtonLabelOverlay = new javax.swing.JPanel();
+        loadButtonLabelPanel = new javax.swing.JPanel();
+        loadButtonLabel = new javax.swing.JLabel();
+        loadDataButtonPanel = new javax.swing.JPanel();
+        loadDataButton = new javax.swing.JButton();
+        saveDataLightLayer = new javax.swing.JPanel();
+        saveDataButtonLightPanel = new javax.swing.JPanel();
+        saveDataButtonLight = new javax.swing.JLabel();
+        saveDataFieldLightPanel = new javax.swing.JPanel();
+        saveDataFieldLight = new javax.swing.JLabel();
+        saveDataFieldDimmer = new javax.swing.JLabel();
+        loadDataLightLayer = new javax.swing.JPanel();
+        loadDataButtonLightPanel = new javax.swing.JPanel();
+        loadDataButtonLight = new javax.swing.JLabel();
+        loadDataFieldLightPanel = new javax.swing.JPanel();
+        loadDataFieldLight = new javax.swing.JLabel();
+        loadDataFieldDimmer = new javax.swing.JLabel();
+        BlackBackgroundSpace = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
         setBounds(new java.awt.Rectangle(0, 0, 1920, 1080));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(java.awt.Color.black);
         setPreferredSize(new java.awt.Dimension(1920, 1080));
         setSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().setLayout(null);
+
+        mainLayerSpace.setBackground(new java.awt.Color(0, 0, 0));
+        mainLayerSpace.setForeground(new java.awt.Color(0, 0, 0));
+        mainLayerSpace.setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         mainLayerPane.setBackground(new java.awt.Color(0, 0, 0));
-        mainLayerPane.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.gray, java.awt.Color.darkGray, java.awt.Color.black), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5)));
         mainLayerPane.setOpaque(true);
+        mainLayerPane.setPreferredSize(new java.awt.Dimension(1934, 1080));
         mainLayerPane.setLayout(new javax.swing.OverlayLayout(mainLayerPane));
 
+        reportControlLayer.setOpaque(false);
+        reportControlLayer.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("jLabel1");
+        reportControlLayer.add(jLabel1);
+        jLabel1.setBounds(250, 490, 78, 29);
+
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("jLabel2");
+        reportControlLayer.add(jLabel2);
+        jLabel2.setBounds(690, 400, 78, 29);
+
+        jLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("jLabel3");
+        reportControlLayer.add(jLabel3);
+        jLabel3.setBounds(580, 460, 78, 29);
+
+        jLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("jLabel4");
+        reportControlLayer.add(jLabel4);
+        jLabel4.setBounds(580, 520, 78, 29);
+
+        jLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("jLabel5");
+        reportControlLayer.add(jLabel5);
+        jLabel5.setBounds(700, 600, 78, 29);
+
+        jLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("jLabel6");
+        reportControlLayer.add(jLabel6);
+        jLabel6.setBounds(140, 550, 78, 29);
+
+        jLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("jLabel7");
+        reportControlLayer.add(jLabel7);
+        jLabel7.setBounds(140, 610, 78, 29);
+
+        jLabel8.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("jLabel8");
+        reportControlLayer.add(jLabel8);
+        jLabel8.setBounds(150, 680, 78, 29);
+
+        jLabel9.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("jLabel9");
+        reportControlLayer.add(jLabel9);
+        jLabel9.setBounds(150, 730, 78, 29);
+
+        jLabel10.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("jLabel10");
+        reportControlLayer.add(jLabel10);
+        jLabel10.setBounds(700, 740, 92, 29);
+
+        jLabel11.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("jLabel11");
+        reportControlLayer.add(jLabel11);
+        jLabel11.setBounds(570, 810, 92, 29);
+
+        jLabel12.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("jLabel12");
+        reportControlLayer.add(jLabel12);
+        jLabel12.setBounds(250, 820, 92, 29);
+
+        jLabel13.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("jLabel13");
+        reportControlLayer.add(jLabel13);
+        jLabel13.setBounds(700, 900, 92, 29);
+
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField1.setText("jTextField1");
+        jTextField1.setToolTipText("");
+        jTextField1.setBorder(null);
+        reportControlLayer.add(jTextField1);
+        jTextField1.setBounds(290, 550, 65, 20);
+
+        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField2.setText("jTextField2");
+        jTextField2.setToolTipText("");
+        jTextField2.setBorder(null);
+        reportControlLayer.add(jTextField2);
+        jTextField2.setBounds(700, 460, 65, 20);
+
+        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField3.setText("jTextField3");
+        jTextField3.setToolTipText("");
+        jTextField3.setBorder(null);
+        reportControlLayer.add(jTextField3);
+        jTextField3.setBounds(700, 520, 65, 20);
+
+        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField4.setText("jTextField4");
+        jTextField4.setToolTipText("");
+        jTextField4.setBorder(null);
+        reportControlLayer.add(jTextField4);
+        jTextField4.setBounds(290, 610, 65, 20);
+
+        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setText("jTextField5");
+        jTextField5.setToolTipText("");
+        jTextField5.setBorder(null);
+        reportControlLayer.add(jTextField5);
+        jTextField5.setBounds(300, 670, 65, 20);
+
+        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField6.setText("jTextField6");
+        jTextField6.setToolTipText("");
+        jTextField6.setBorder(null);
+        reportControlLayer.add(jTextField6);
+        jTextField6.setBounds(300, 730, 65, 20);
+
+        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField7.setText("jTextField7");
+        jTextField7.setToolTipText("");
+        jTextField7.setBorder(null);
+        reportControlLayer.add(jTextField7);
+        jTextField7.setBounds(710, 810, 65, 20);
+
+        jScrollPane1.setBackground(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setForeground(new java.awt.Color(204, 204, 204));
+        jScrollPane1.setOpaque(false);
+
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(204, 204, 204));
+        jTextArea1.setRows(5);
+        jTextArea1.setText("---------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n----------------------------------------------------------------------");
+        jTextArea1.setBorder(null);
+        jTextArea1.setOpaque(false);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        reportControlLayer.add(jScrollPane1);
+        jScrollPane1.setBounds(936, 367, 864, 625);
+
+        mainLayerPane.add(reportControlLayer);
+
+        reportLightLayer.setOpaque(false);
+        reportLightLayer.setLayout(null);
+
+        jLabel14.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("jLabel13");
+        reportLightLayer.add(jLabel14);
+        jLabel14.setBounds(700, 900, 92, 29);
+
+        jLabel15.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("jLabel12");
+        reportLightLayer.add(jLabel15);
+        jLabel15.setBounds(250, 820, 92, 29);
+
+        jLabel16.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("jLabel5");
+        reportLightLayer.add(jLabel16);
+        jLabel16.setBounds(700, 600, 78, 29);
+
+        jLabel17.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("jLabel6");
+        reportLightLayer.add(jLabel17);
+        jLabel17.setBounds(140, 550, 78, 29);
+
+        jLabel18.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("jLabel7");
+        reportLightLayer.add(jLabel18);
+        jLabel18.setBounds(140, 610, 78, 29);
+
+        jLabel19.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("jLabel8");
+        reportLightLayer.add(jLabel19);
+        jLabel19.setBounds(150, 680, 78, 29);
+
+        jLabel20.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("jLabel9");
+        reportLightLayer.add(jLabel20);
+        jLabel20.setBounds(150, 730, 78, 29);
+
+        jLabel21.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("jLabel11");
+        reportLightLayer.add(jLabel21);
+        jLabel21.setBounds(570, 810, 92, 29);
+
+        jLabel22.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("jLabel3");
+        reportLightLayer.add(jLabel22);
+        jLabel22.setBounds(580, 460, 78, 29);
+
+        jLabel23.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("jLabel4");
+        reportLightLayer.add(jLabel23);
+        jLabel23.setBounds(580, 520, 78, 29);
+
+        mainLayerPane.add(reportLightLayer);
+
         mainControlLayer.setOpaque(false);
+        mainControlLayer.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        mainControlLayer.setRequestFocusEnabled(false);
 
         mainButtonGrid.setOpaque(false);
         mainButtonGrid.setLayout(new java.awt.GridLayout(2, 0));
@@ -207,15 +552,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_Tickets.setLayout(buttonPanel_TicketsLayout);
         buttonPanel_TicketsLayout.setHorizontalGroup(
             buttonPanel_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(ticketsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_TicketsLayout.setVerticalGroup(
             buttonPanel_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(ticketsButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(ticketsButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_Tickets.add(buttonPanel_Tickets);
@@ -675,7 +1020,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(buttonLabel_Tickets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Tickets1Layout.createSequentialGroup()
-                    .addContainerGap(35, Short.MAX_VALUE)
+                    .addContainerGap(34, Short.MAX_VALUE)
                     .addComponent(ticketsLabel1)
                     .addGap(39, 39, 39)))
         );
@@ -710,15 +1055,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_Passengers1.setLayout(buttonPanel_Passengers1Layout);
         buttonPanel_Passengers1Layout.setHorizontalGroup(
             buttonPanel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(passengersButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_Passengers1Layout.setVerticalGroup(
             buttonPanel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(passengersButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(passengersButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_Passengers1.add(buttonPanel_Passengers1);
@@ -787,15 +1132,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_Flights1.setLayout(buttonPanel_Flights1Layout);
         buttonPanel_Flights1Layout.setHorizontalGroup(
             buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(flightsButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_Flights1Layout.setVerticalGroup(
             buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(flightsButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(flightsButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_Flights1.add(buttonPanel_Flights1);
@@ -811,7 +1156,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLabel_Flights1.setLayout(buttonLabel_Flights1Layout);
         buttonLabel_Flights1Layout.setHorizontalGroup(
             buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLabel_Flights1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -820,10 +1165,10 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLabel_Flights1Layout.setVerticalGroup(
             buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonLabel_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Flights1Layout.createSequentialGroup()
-                    .addContainerGap(46, Short.MAX_VALUE)
+                    .addContainerGap(45, Short.MAX_VALUE)
                     .addComponent(flightsLabel1)
                     .addGap(48, 48, 48)))
         );
@@ -849,15 +1194,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_Planes1.setLayout(buttonPanel_Planes1Layout);
         buttonPanel_Planes1Layout.setHorizontalGroup(
             buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(planesButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_Planes1Layout.setVerticalGroup(
             buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(planesButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(planesButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_Planes1.add(buttonPanel_Planes1);
@@ -873,7 +1218,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLabel_Planes1.setLayout(buttonLabel_Planes1Layout);
         buttonLabel_Planes1Layout.setHorizontalGroup(
             buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLabel_Planes1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -882,10 +1227,10 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLabel_Planes1Layout.setVerticalGroup(
             buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonLabel_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_Planes1Layout.createSequentialGroup()
-                    .addContainerGap(49, Short.MAX_VALUE)
+                    .addContainerGap(48, Short.MAX_VALUE)
                     .addComponent(planesLabel1)
                     .addGap(45, 45, 45)))
         );
@@ -911,15 +1256,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_Airports1.setLayout(buttonPanel_Airports1Layout);
         buttonPanel_Airports1Layout.setHorizontalGroup(
             buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(airportsButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_Airports1Layout.setVerticalGroup(
             buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(airportsButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(airportsButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_Airports1.add(buttonPanel_Airports1);
@@ -988,15 +1333,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_SysTime.setLayout(buttonPanel_SysTimeLayout);
         buttonPanel_SysTimeLayout.setHorizontalGroup(
             buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(systimeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_SysTimeLayout.setVerticalGroup(
             buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(systimeButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(systimeButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_SysTime.add(buttonPanel_SysTime);
@@ -1012,7 +1357,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLabel_SysTime.setLayout(buttonLabel_SysTimeLayout);
         buttonLabel_SysTimeLayout.setHorizontalGroup(
             buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLabel_SysTimeLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1021,10 +1366,10 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLabel_SysTimeLayout.setVerticalGroup(
             buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonLabel_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_SysTimeLayout.createSequentialGroup()
-                    .addContainerGap(48, Short.MAX_VALUE)
+                    .addContainerGap(47, Short.MAX_VALUE)
                     .addComponent(systimeLabel)
                     .addGap(46, 46, 46)))
         );
@@ -1050,15 +1395,15 @@ public class MainFrame extends javax.swing.JFrame {
         buttonPanel_SaveState.setLayout(buttonPanel_SaveStateLayout);
         buttonPanel_SaveStateLayout.setHorizontalGroup(
             buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(saveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         buttonPanel_SaveStateLayout.setVerticalGroup(
             buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonPanel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(saveButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
+                .addComponent(saveButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
         );
 
         buttonSpace_SaveState.add(buttonPanel_SaveState);
@@ -1074,7 +1419,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLabel_SaveState.setLayout(buttonLabel_SaveStateLayout);
         buttonLabel_SaveStateLayout.setHorizontalGroup(
             buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 238, Short.MAX_VALUE)
+            .addGap(0, 237, Short.MAX_VALUE)
             .addGroup(buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLabel_SaveStateLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1083,10 +1428,10 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLabel_SaveStateLayout.setVerticalGroup(
             buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 123, Short.MAX_VALUE)
+            .addGap(0, 122, Short.MAX_VALUE)
             .addGroup(buttonLabel_SaveStateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, buttonLabel_SaveStateLayout.createSequentialGroup()
-                    .addContainerGap(49, Short.MAX_VALUE)
+                    .addContainerGap(48, Short.MAX_VALUE)
                     .addComponent(saveLabel)
                     .addGap(45, 45, 45)))
         );
@@ -1100,16 +1445,16 @@ public class MainFrame extends javax.swing.JFrame {
         mainControlLayerLayout.setHorizontalGroup(
             mainControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainControlLayerLayout.createSequentialGroup()
-                .addContainerGap(87, Short.MAX_VALUE)
-                .addComponent(mainButtonGrid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(168, Short.MAX_VALUE))
+                .addContainerGap(93, Short.MAX_VALUE)
+                .addComponent(mainButtonGrid, javax.swing.GroupLayout.PREFERRED_SIZE, 1664, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(177, Short.MAX_VALUE))
         );
         mainControlLayerLayout.setVerticalGroup(
             mainControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainControlLayerLayout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
+                .addContainerGap(75, Short.MAX_VALUE)
                 .addComponent(mainButtonGrid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(759, Short.MAX_VALUE))
+                .addContainerGap(764, Short.MAX_VALUE))
         );
 
         mainLayerPane.add(mainControlLayer);
@@ -1147,7 +1492,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Save.setLayout(buttonLightSpace_SaveLayout);
         buttonLightSpace_SaveLayout.setHorizontalGroup(
             buttonLightSpace_SaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_SaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_SaveLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1156,7 +1501,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_SaveLayout.setVerticalGroup(
             buttonLightSpace_SaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_SaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_SaveLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1196,7 +1541,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Load.setLayout(buttonLightSpace_LoadLayout);
         buttonLightSpace_LoadLayout.setHorizontalGroup(
             buttonLightSpace_LoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_LoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_LoadLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1205,7 +1550,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_LoadLayout.setVerticalGroup(
             buttonLightSpace_LoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_LoadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_LoadLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1245,7 +1590,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_SysTime.setLayout(buttonLightSpace_SysTimeLayout);
         buttonLightSpace_SysTimeLayout.setHorizontalGroup(
             buttonLightSpace_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_SysTimeLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1254,7 +1599,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_SysTimeLayout.setVerticalGroup(
             buttonLightSpace_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_SysTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_SysTimeLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1294,7 +1639,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Reports.setLayout(buttonLightSpace_ReportsLayout);
         buttonLightSpace_ReportsLayout.setHorizontalGroup(
             buttonLightSpace_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_ReportsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1303,7 +1648,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_ReportsLayout.setVerticalGroup(
             buttonLightSpace_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_ReportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_ReportsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1343,7 +1688,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Airports.setLayout(buttonLightSpace_AirportsLayout);
         buttonLightSpace_AirportsLayout.setHorizontalGroup(
             buttonLightSpace_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_AirportsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1352,7 +1697,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_AirportsLayout.setVerticalGroup(
             buttonLightSpace_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_AirportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_AirportsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1392,7 +1737,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Airports1.setLayout(buttonLightSpace_Airports1Layout);
         buttonLightSpace_Airports1Layout.setHorizontalGroup(
             buttonLightSpace_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Airports1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1401,7 +1746,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_Airports1Layout.setVerticalGroup(
             buttonLightSpace_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Airports1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Airports1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1441,7 +1786,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Planes1.setLayout(buttonLightSpace_Planes1Layout);
         buttonLightSpace_Planes1Layout.setHorizontalGroup(
             buttonLightSpace_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Planes1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1450,7 +1795,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_Planes1Layout.setVerticalGroup(
             buttonLightSpace_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Planes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Planes1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1490,7 +1835,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Planes.setLayout(buttonLightSpace_PlanesLayout);
         buttonLightSpace_PlanesLayout.setHorizontalGroup(
             buttonLightSpace_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_PlanesLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1499,7 +1844,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_PlanesLayout.setVerticalGroup(
             buttonLightSpace_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_PlanesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_PlanesLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1539,7 +1884,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Flights1.setLayout(buttonLightSpace_Flights1Layout);
         buttonLightSpace_Flights1Layout.setHorizontalGroup(
             buttonLightSpace_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Flights1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1548,7 +1893,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_Flights1Layout.setVerticalGroup(
             buttonLightSpace_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Flights1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Flights1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1588,7 +1933,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Flights.setLayout(buttonLightSpace_FlightsLayout);
         buttonLightSpace_FlightsLayout.setHorizontalGroup(
             buttonLightSpace_FlightsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_FlightsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_FlightsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1597,7 +1942,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_FlightsLayout.setVerticalGroup(
             buttonLightSpace_FlightsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_FlightsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_FlightsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1637,7 +1982,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Passengers.setLayout(buttonLightSpace_PassengersLayout);
         buttonLightSpace_PassengersLayout.setHorizontalGroup(
             buttonLightSpace_PassengersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_PassengersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_PassengersLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1646,7 +1991,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_PassengersLayout.setVerticalGroup(
             buttonLightSpace_PassengersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_PassengersLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_PassengersLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1686,7 +2031,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Passengers1.setLayout(buttonLightSpace_Passengers1Layout);
         buttonLightSpace_Passengers1Layout.setHorizontalGroup(
             buttonLightSpace_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Passengers1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1695,7 +2040,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_Passengers1Layout.setVerticalGroup(
             buttonLightSpace_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Passengers1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Passengers1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1735,7 +2080,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Tickets1.setLayout(buttonLightSpace_Tickets1Layout);
         buttonLightSpace_Tickets1Layout.setHorizontalGroup(
             buttonLightSpace_Tickets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Tickets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Tickets1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1744,7 +2089,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_Tickets1Layout.setVerticalGroup(
             buttonLightSpace_Tickets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_Tickets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_Tickets1Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1784,7 +2129,7 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightSpace_Tickets.setLayout(buttonLightSpace_TicketsLayout);
         buttonLightSpace_TicketsLayout.setHorizontalGroup(
             buttonLightSpace_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_TicketsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1793,7 +2138,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         buttonLightSpace_TicketsLayout.setVerticalGroup(
             buttonLightSpace_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(buttonLightSpace_TicketsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(buttonLightSpace_TicketsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -1808,270 +2153,270 @@ public class MainFrame extends javax.swing.JFrame {
         backgroundLayer.setOpaque(false);
         backgroundLayer.setLayout(new javax.swing.OverlayLayout(backgroundLayer));
 
-        BackgroundSpace5.setOpaque(false);
+        BackgroundSpace_reports.setOpaque(false);
 
-        BackgroundPanel5.setOpaque(false);
-
-        fileDataBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fileDataBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Load and Save Screen.png"))); // NOI18N
-        fileDataBackground.setOpaque(true);
-        fileDataBackground.setVisible(false);
-
-        javax.swing.GroupLayout BackgroundPanel5Layout = new javax.swing.GroupLayout(BackgroundPanel5);
-        BackgroundPanel5.setLayout(BackgroundPanel5Layout);
-        BackgroundPanel5Layout.setHorizontalGroup(
-            BackgroundPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel5Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(fileDataBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        BackgroundPanel5Layout.setVerticalGroup(
-            BackgroundPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel5Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(fileDataBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-
-        javax.swing.GroupLayout BackgroundSpace5Layout = new javax.swing.GroupLayout(BackgroundSpace5);
-        BackgroundSpace5.setLayout(BackgroundSpace5Layout);
-        BackgroundSpace5Layout.setHorizontalGroup(
-            BackgroundSpace5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace5Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        BackgroundSpace5Layout.setVerticalGroup(
-            BackgroundSpace5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace5Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        backgroundLayer.add(BackgroundSpace5);
-
-        BackgroundSpace4.setOpaque(false);
-
-        BackgroundPanel4.setOpaque(false);
-
-        systimeBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        systimeBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Systime Screen.png"))); // NOI18N
-        systimeBackground.setOpaque(true);
-        systimeBackground.setVisible(false);
-
-        javax.swing.GroupLayout BackgroundPanel4Layout = new javax.swing.GroupLayout(BackgroundPanel4);
-        BackgroundPanel4.setLayout(BackgroundPanel4Layout);
-        BackgroundPanel4Layout.setHorizontalGroup(
-            BackgroundPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel4Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(systimeBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        BackgroundPanel4Layout.setVerticalGroup(
-            BackgroundPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel4Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(systimeBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-
-        javax.swing.GroupLayout BackgroundSpace4Layout = new javax.swing.GroupLayout(BackgroundSpace4);
-        BackgroundSpace4.setLayout(BackgroundSpace4Layout);
-        BackgroundSpace4Layout.setHorizontalGroup(
-            BackgroundSpace4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace4Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        BackgroundSpace4Layout.setVerticalGroup(
-            BackgroundSpace4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace4Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        backgroundLayer.add(BackgroundSpace4);
-
-        BackgroundSpace3.setOpaque(false);
-
-        BackgroundPanel3.setOpaque(false);
+        BackgroundPanel_reports.setOpaque(false);
 
         reportMenuBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         reportMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ReportMenuScreen.png"))); // NOI18N
         reportMenuBackground.setOpaque(true);
         reportMenuBackground.setVisible(false);
 
-        javax.swing.GroupLayout BackgroundPanel3Layout = new javax.swing.GroupLayout(BackgroundPanel3);
-        BackgroundPanel3.setLayout(BackgroundPanel3Layout);
-        BackgroundPanel3Layout.setHorizontalGroup(
-            BackgroundPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout BackgroundPanel_reportsLayout = new javax.swing.GroupLayout(BackgroundPanel_reports);
+        BackgroundPanel_reports.setLayout(BackgroundPanel_reportsLayout);
+        BackgroundPanel_reportsLayout.setHorizontalGroup(
+            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel3Layout.createSequentialGroup()
+            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(reportMenuBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        BackgroundPanel3Layout.setVerticalGroup(
-            BackgroundPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        BackgroundPanel_reportsLayout.setVerticalGroup(
+            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel3Layout.createSequentialGroup()
+            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(reportMenuBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout BackgroundSpace3Layout = new javax.swing.GroupLayout(BackgroundSpace3);
-        BackgroundSpace3.setLayout(BackgroundSpace3Layout);
-        BackgroundSpace3Layout.setHorizontalGroup(
-            BackgroundSpace3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace3Layout.createSequentialGroup()
+        javax.swing.GroupLayout BackgroundSpace_reportsLayout = new javax.swing.GroupLayout(BackgroundSpace_reports);
+        BackgroundSpace_reports.setLayout(BackgroundSpace_reportsLayout);
+        BackgroundSpace_reportsLayout.setHorizontalGroup(
+            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        BackgroundSpace3Layout.setVerticalGroup(
-            BackgroundSpace3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace3Layout.createSequentialGroup()
+        BackgroundSpace_reportsLayout.setVerticalGroup(
+            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        backgroundLayer.add(BackgroundSpace3);
+        backgroundLayer.add(BackgroundSpace_reports);
 
-        BackgroundSpace2.setOpaque(false);
+        BackgroundSpace_systime.setOpaque(false);
 
-        BackgroundPanel2.setOpaque(false);
+        BackgroundPanel_systime.setOpaque(false);
+
+        systimeBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Systime Screen.png"))); // NOI18N
+        systimeBackground.setOpaque(true);
+        systimeBackground.setVisible(false);
+
+        javax.swing.GroupLayout BackgroundPanel_systimeLayout = new javax.swing.GroupLayout(BackgroundPanel_systime);
+        BackgroundPanel_systime.setLayout(BackgroundPanel_systimeLayout);
+        BackgroundPanel_systimeLayout.setHorizontalGroup(
+            BackgroundPanel_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1920, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_systimeLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(systimeBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        BackgroundPanel_systimeLayout.setVerticalGroup(
+            BackgroundPanel_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1080, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_systimeLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(systimeBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout BackgroundSpace_systimeLayout = new javax.swing.GroupLayout(BackgroundSpace_systime);
+        BackgroundSpace_systime.setLayout(BackgroundSpace_systimeLayout);
+        BackgroundSpace_systimeLayout.setHorizontalGroup(
+            BackgroundSpace_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_systimeLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_systime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        BackgroundSpace_systimeLayout.setVerticalGroup(
+            BackgroundSpace_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_systimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_systimeLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_systime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        backgroundLayer.add(BackgroundSpace_systime);
+
+        BackgroundSpace_fileData.setOpaque(false);
+
+        BackgroundPanel_fileData.setOpaque(false);
+
+        fileDataBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fileDataBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Load and Save Screen.png"))); // NOI18N
+        fileDataBackground.setOpaque(true);
+        fileDataBackground.setVisible(false);
+
+        javax.swing.GroupLayout BackgroundPanel_fileDataLayout = new javax.swing.GroupLayout(BackgroundPanel_fileData);
+        BackgroundPanel_fileData.setLayout(BackgroundPanel_fileDataLayout);
+        BackgroundPanel_fileDataLayout.setHorizontalGroup(
+            BackgroundPanel_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1920, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_fileDataLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(fileDataBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        BackgroundPanel_fileDataLayout.setVerticalGroup(
+            BackgroundPanel_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1080, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_fileDataLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(fileDataBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout BackgroundSpace_fileDataLayout = new javax.swing.GroupLayout(BackgroundSpace_fileData);
+        BackgroundSpace_fileData.setLayout(BackgroundSpace_fileDataLayout);
+        BackgroundSpace_fileDataLayout.setHorizontalGroup(
+            BackgroundSpace_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_fileDataLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_fileData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        BackgroundSpace_fileDataLayout.setVerticalGroup(
+            BackgroundSpace_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_fileDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_fileDataLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_fileData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        backgroundLayer.add(BackgroundSpace_fileData);
+
+        BackgroundSpace_manifest.setOpaque(false);
+
+        BackgroundPanel_manifest.setOpaque(false);
 
         manifestBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         manifestBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Manifests Screen.png"))); // NOI18N
         manifestBackground.setOpaque(true);
         manifestBackground.setVisible(false);
 
-        javax.swing.GroupLayout BackgroundPanel2Layout = new javax.swing.GroupLayout(BackgroundPanel2);
-        BackgroundPanel2.setLayout(BackgroundPanel2Layout);
-        BackgroundPanel2Layout.setHorizontalGroup(
-            BackgroundPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout BackgroundPanel_manifestLayout = new javax.swing.GroupLayout(BackgroundPanel_manifest);
+        BackgroundPanel_manifest.setLayout(BackgroundPanel_manifestLayout);
+        BackgroundPanel_manifestLayout.setHorizontalGroup(
+            BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel2Layout.createSequentialGroup()
+            .addGroup(BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_manifestLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(manifestBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        BackgroundPanel2Layout.setVerticalGroup(
-            BackgroundPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        BackgroundPanel_manifestLayout.setVerticalGroup(
+            BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel2Layout.createSequentialGroup()
+            .addGroup(BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_manifestLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(manifestBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout BackgroundSpace2Layout = new javax.swing.GroupLayout(BackgroundSpace2);
-        BackgroundSpace2.setLayout(BackgroundSpace2Layout);
-        BackgroundSpace2Layout.setHorizontalGroup(
-            BackgroundSpace2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace2Layout.createSequentialGroup()
+        javax.swing.GroupLayout BackgroundSpace_manifestLayout = new javax.swing.GroupLayout(BackgroundSpace_manifest);
+        BackgroundSpace_manifest.setLayout(BackgroundSpace_manifestLayout);
+        BackgroundSpace_manifestLayout.setHorizontalGroup(
+            BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_manifestLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_manifest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        BackgroundSpace2Layout.setVerticalGroup(
-            BackgroundSpace2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace2Layout.createSequentialGroup()
+        BackgroundSpace_manifestLayout.setVerticalGroup(
+            BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_manifestLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_manifest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        backgroundLayer.add(BackgroundSpace2);
+        backgroundLayer.add(BackgroundSpace_manifest);
 
-        BackgroundSpace1.setOpaque(false);
+        BackgroundSpace_data.setOpaque(false);
 
-        BackgroundPanel1.setOpaque(false);
+        BackgroundPanel_data.setOpaque(false);
 
         dataMenuBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         dataMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Data Menus Screen.png"))); // NOI18N
         dataMenuBackground.setOpaque(true);
         dataMenuBackground.setVisible(false);
 
-        javax.swing.GroupLayout BackgroundPanel1Layout = new javax.swing.GroupLayout(BackgroundPanel1);
-        BackgroundPanel1.setLayout(BackgroundPanel1Layout);
-        BackgroundPanel1Layout.setHorizontalGroup(
-            BackgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout BackgroundPanel_dataLayout = new javax.swing.GroupLayout(BackgroundPanel_data);
+        BackgroundPanel_data.setLayout(BackgroundPanel_dataLayout);
+        BackgroundPanel_dataLayout.setHorizontalGroup(
+            BackgroundPanel_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel1Layout.createSequentialGroup()
+            .addGroup(BackgroundPanel_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_dataLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(dataMenuBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        BackgroundPanel1Layout.setVerticalGroup(
-            BackgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        BackgroundPanel_dataLayout.setVerticalGroup(
+            BackgroundPanel_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel1Layout.createSequentialGroup()
+            .addGroup(BackgroundPanel_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_dataLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(dataMenuBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout BackgroundSpace1Layout = new javax.swing.GroupLayout(BackgroundSpace1);
-        BackgroundSpace1.setLayout(BackgroundSpace1Layout);
-        BackgroundSpace1Layout.setHorizontalGroup(
-            BackgroundSpace1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace1Layout.createSequentialGroup()
+        javax.swing.GroupLayout BackgroundSpace_dataLayout = new javax.swing.GroupLayout(BackgroundSpace_data);
+        BackgroundSpace_data.setLayout(BackgroundSpace_dataLayout);
+        BackgroundSpace_dataLayout.setHorizontalGroup(
+            BackgroundSpace_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_dataLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        BackgroundSpace1Layout.setVerticalGroup(
-            BackgroundSpace1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace1Layout.createSequentialGroup()
+        BackgroundSpace_dataLayout.setVerticalGroup(
+            BackgroundSpace_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_dataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_dataLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        backgroundLayer.add(BackgroundSpace1);
+        backgroundLayer.add(BackgroundSpace_data);
 
         BackgroundSpace.setOpaque(false);
 
@@ -2106,7 +2451,7 @@ public class MainFrame extends javax.swing.JFrame {
         BackgroundSpace.setLayout(BackgroundSpaceLayout);
         BackgroundSpaceLayout.setHorizontalGroup(
             BackgroundSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1921, Short.MAX_VALUE)
+            .addGap(0, 1934, Short.MAX_VALUE)
             .addGroup(BackgroundSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(BackgroundSpaceLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -2115,7 +2460,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
         BackgroundSpaceLayout.setVerticalGroup(
             BackgroundSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1081, Short.MAX_VALUE)
+            .addGap(0, 1083, Short.MAX_VALUE)
             .addGroup(BackgroundSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(BackgroundSpaceLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -2127,18 +2472,991 @@ public class MainFrame extends javax.swing.JFrame {
 
         mainLayerPane.add(backgroundLayer);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(mainLayerPane, javax.swing.GroupLayout.DEFAULT_SIZE, 1934, Short.MAX_VALUE)
+        systimeControlLayer.setOpaque(false);
+        systimeControlLayer.setVisible(false);
+
+        systimeControlLayerSpace.setOpaque(false);
+
+        systimeHeaderPanel1.setOpaque(false);
+
+        systimeHeaderLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeHeaderLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        systimeHeaderLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeHeaderLabel1.setText("0.0");
+
+        javax.swing.GroupLayout systimeHeaderPanel1Layout = new javax.swing.GroupLayout(systimeHeaderPanel1);
+        systimeHeaderPanel1.setLayout(systimeHeaderPanel1Layout);
+        systimeHeaderPanel1Layout.setHorizontalGroup(
+            systimeHeaderPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(systimeHeaderLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        systimeHeaderPanel1Layout.setVerticalGroup(
+            systimeHeaderPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeHeaderLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        systimeHeaderPanel.setOpaque(false);
+
+        systimeHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeHeaderLabel.setText("System Time");
+
+        javax.swing.GroupLayout systimeHeaderPanelLayout = new javax.swing.GroupLayout(systimeHeaderPanel);
+        systimeHeaderPanel.setLayout(systimeHeaderPanelLayout);
+        systimeHeaderPanelLayout.setHorizontalGroup(
+            systimeHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanelLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(systimeHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        systimeHeaderPanelLayout.setVerticalGroup(
+            systimeHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeHeaderLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        systimeFieldLabelPanel.setOpaque(false);
+
+        systimeFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeFieldLabel.setText("New Time");
+
+        javax.swing.GroupLayout systimeFieldLabelPanelLayout = new javax.swing.GroupLayout(systimeFieldLabelPanel);
+        systimeFieldLabelPanel.setLayout(systimeFieldLabelPanelLayout);
+        systimeFieldLabelPanelLayout.setHorizontalGroup(
+            systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 193, Short.MAX_VALUE)
+            .addGroup(systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(systimeFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(systimeFieldLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(33, Short.MAX_VALUE)))
+        );
+        systimeFieldLabelPanelLayout.setVerticalGroup(
+            systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 42, Short.MAX_VALUE)
+            .addGroup(systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(7, 7, 7)
+                    .addComponent(systimeFieldLabel)
+                    .addContainerGap()))
+        );
+
+        systimeChangeButtonSpace.setOpaque(false);
+        systimeChangeButtonSpace.setLayout(new javax.swing.OverlayLayout(systimeChangeButtonSpace));
+
+        systimeChangeButtonLabelOverlay.setOpaque(false);
+
+        systimeChangeButtonLabelPanel.setOpaque(false);
+
+        systimeChangeButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeChangeButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeChangeButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeChangeButtonLabel.setText("Update Time");
+
+        javax.swing.GroupLayout systimeChangeButtonLabelPanelLayout = new javax.swing.GroupLayout(systimeChangeButtonLabelPanel);
+        systimeChangeButtonLabelPanel.setLayout(systimeChangeButtonLabelPanelLayout);
+        systimeChangeButtonLabelPanelLayout.setHorizontalGroup(
+            systimeChangeButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        systimeChangeButtonLabelPanelLayout.setVerticalGroup(
+            systimeChangeButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout systimeChangeButtonLabelOverlayLayout = new javax.swing.GroupLayout(systimeChangeButtonLabelOverlay);
+        systimeChangeButtonLabelOverlay.setLayout(systimeChangeButtonLabelOverlayLayout);
+        systimeChangeButtonLabelOverlayLayout.setHorizontalGroup(
+            systimeChangeButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        systimeChangeButtonLabelOverlayLayout.setVerticalGroup(
+            systimeChangeButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        systimeChangeButtonSpace.add(systimeChangeButtonLabelOverlay);
+
+        systimeChangeButtonPanel.setOpaque(false);
+
+        systimeChangeButton.setBorder(null);
+        systimeChangeButton.setBorderPainted(false);
+        systimeChangeButton.setContentAreaFilled(false);
+        systimeChangeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                systimeChangeButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout systimeChangeButtonPanelLayout = new javax.swing.GroupLayout(systimeChangeButtonPanel);
+        systimeChangeButtonPanel.setLayout(systimeChangeButtonPanelLayout);
+        systimeChangeButtonPanelLayout.setHorizontalGroup(
+            systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 241, Short.MAX_VALUE)
+            .addGroup(systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(systimeChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        systimeChangeButtonPanelLayout.setVerticalGroup(
+            systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 124, Short.MAX_VALUE)
+            .addGroup(systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(systimeChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        systimeChangeButtonSpace.add(systimeChangeButtonPanel);
+
+        systimeTextEntryPanel.setOpaque(false);
+
+        systimeTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
+        systimeTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        systimeTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
+        systimeTextEntryField.setText("0.0");
+        systimeTextEntryField.setToolTipText("e.g. \"30.3\"");
+        systimeTextEntryField.setBorder(null);
+        systimeTextEntryField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                systimeTextEntryFieldKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                systimeTextEntryFieldKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                systimeTextEntryFieldKeyTyped(evt);
+            }
+        });
+
+        javax.swing.GroupLayout systimeTextEntryPanelLayout = new javax.swing.GroupLayout(systimeTextEntryPanel);
+        systimeTextEntryPanel.setLayout(systimeTextEntryPanelLayout);
+        systimeTextEntryPanelLayout.setHorizontalGroup(
+            systimeTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(systimeTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(353, 353, 353))
+        );
+        systimeTextEntryPanelLayout.setVerticalGroup(
+            systimeTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout systimeControlLayerSpaceLayout = new javax.swing.GroupLayout(systimeControlLayerSpace);
+        systimeControlLayerSpace.setLayout(systimeControlLayerSpaceLayout);
+        systimeControlLayerSpaceLayout.setHorizontalGroup(
+            systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                .addGap(206, 206, 206)
+                .addComponent(systimeChangeButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                        .addGap(129, 129, 129)
+                        .addComponent(systimeFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(systimeTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(systimeHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(157, 157, 157))
+            .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeControlLayerSpaceLayout.createSequentialGroup()
+                    .addGap(225, 225, 225)
+                    .addComponent(systimeHeaderPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(224, 224, 224)))
+        );
+        systimeControlLayerSpaceLayout.setVerticalGroup(
+            systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                .addGap(139, 139, 139)
+                .addComponent(systimeHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(93, 93, 93)
+                .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(systimeTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(systimeFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addComponent(systimeChangeButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeControlLayerSpaceLayout.createSequentialGroup()
+                    .addGap(189, 189, 189)
+                    .addComponent(systimeHeaderPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(243, 243, 243)))
+        );
+
+        javax.swing.GroupLayout systimeControlLayerLayout = new javax.swing.GroupLayout(systimeControlLayer);
+        systimeControlLayer.setLayout(systimeControlLayerLayout);
+        systimeControlLayerLayout.setHorizontalGroup(
+            systimeControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerLayout.createSequentialGroup()
+                .addGap(591, 591, 591)
+                .addComponent(systimeControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(653, 653, 653))
+        );
+        systimeControlLayerLayout.setVerticalGroup(
+            systimeControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerLayout.createSequentialGroup()
+                .addGap(361, 361, 361)
+                .addComponent(systimeControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(245, 245, 245))
+        );
+
+        mainLayerPane.add(systimeControlLayer);
+
+        systimeLightLayer.setOpaque(false);
+        systimeLightLayer.setPreferredSize(new java.awt.Dimension(1921, 1083));
+        systimeLightLayer.setVisible(false);
+
+        systimeLightSpace.setOpaque(false);
+        systimeLightSpace.setLayout(null);
+
+        systimeFieldPanel.setOpaque(false);
+        systimeFieldPanel.setLayout(new javax.swing.OverlayLayout(systimeFieldPanel));
+
+        systimeFieldLightSpace.setOpaque(false);
+        systimeFieldLightSpace.setVisible(false);
+
+        systimeFieldLightSubSpace.setOpaque(false);
+
+        systimeFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+
+        javax.swing.GroupLayout systimeFieldLightSubSpaceLayout = new javax.swing.GroupLayout(systimeFieldLightSubSpace);
+        systimeFieldLightSubSpace.setLayout(systimeFieldLightSubSpaceLayout);
+        systimeFieldLightSubSpaceLayout.setHorizontalGroup(
+            systimeFieldLightSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(systimeFieldLight)
+        );
+        systimeFieldLightSubSpaceLayout.setVerticalGroup(
+            systimeFieldLightSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(systimeFieldLight)
+        );
+
+        javax.swing.GroupLayout systimeFieldLightSpaceLayout = new javax.swing.GroupLayout(systimeFieldLightSpace);
+        systimeFieldLightSpace.setLayout(systimeFieldLightSpaceLayout);
+        systimeFieldLightSpaceLayout.setHorizontalGroup(
+            systimeFieldLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldLightSpaceLayout.createSequentialGroup()
+                .addComponent(systimeFieldLightSubSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainLayerPane)
+        systimeFieldLightSpaceLayout.setVerticalGroup(
+            systimeFieldLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldLightSpaceLayout.createSequentialGroup()
+                .addComponent(systimeFieldLightSubSpace, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
+
+        systimeFieldPanel.add(systimeFieldLightSpace);
+
+        systimeFieldDimmerSpace.setOpaque(false);
+        systimeFieldDimmerSpace.setVisible(false);
+
+        systimeFieldDimmerSubSpace.setOpaque(false);
+
+        systimeFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+
+        javax.swing.GroupLayout systimeFieldDimmerSubSpaceLayout = new javax.swing.GroupLayout(systimeFieldDimmerSubSpace);
+        systimeFieldDimmerSubSpace.setLayout(systimeFieldDimmerSubSpaceLayout);
+        systimeFieldDimmerSubSpaceLayout.setHorizontalGroup(
+            systimeFieldDimmerSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeFieldDimmerSubSpaceLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(systimeFieldDimmer))
+        );
+        systimeFieldDimmerSubSpaceLayout.setVerticalGroup(
+            systimeFieldDimmerSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldDimmerSubSpaceLayout.createSequentialGroup()
+                .addComponent(systimeFieldDimmer, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout systimeFieldDimmerSpaceLayout = new javax.swing.GroupLayout(systimeFieldDimmerSpace);
+        systimeFieldDimmerSpace.setLayout(systimeFieldDimmerSpaceLayout);
+        systimeFieldDimmerSpaceLayout.setHorizontalGroup(
+            systimeFieldDimmerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(systimeFieldDimmerSubSpace, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        systimeFieldDimmerSpaceLayout.setVerticalGroup(
+            systimeFieldDimmerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldDimmerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeFieldDimmerSubSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 45, Short.MAX_VALUE)
+                .addGap(9, 9, 9))
+        );
+
+        systimeFieldPanel.add(systimeFieldDimmerSpace);
+
+        systimeLightSpace.add(systimeFieldPanel);
+        systimeFieldPanel.setBounds(630, 300, 193, 60);
+
+        systimeButtonLightSpace.setOpaque(false);
+        systimeButtonLightSpace.setVisible(false);
+
+        systimeButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+
+        javax.swing.GroupLayout systimeButtonLightSpaceLayout = new javax.swing.GroupLayout(systimeButtonLightSpace);
+        systimeButtonLightSpace.setLayout(systimeButtonLightSpaceLayout);
+        systimeButtonLightSpaceLayout.setHorizontalGroup(
+            systimeButtonLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeButtonLightSpaceLayout.createSequentialGroup()
+                .addComponent(systimeButtonLight)
+                .addGap(0, 32, Short.MAX_VALUE))
+        );
+        systimeButtonLightSpaceLayout.setVerticalGroup(
+            systimeButtonLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeButtonLightSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeButtonLight)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        systimeLightSpace.add(systimeButtonLightSpace);
+        systimeButtonLightSpace.setBounds(709, 381, 270, 136);
+
+        javax.swing.GroupLayout systimeLightLayerLayout = new javax.swing.GroupLayout(systimeLightLayer);
+        systimeLightLayer.setLayout(systimeLightLayerLayout);
+        systimeLightLayerLayout.setHorizontalGroup(
+            systimeLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeLightLayerLayout.createSequentialGroup()
+                .addGap(96, 96, 96)
+                .addComponent(systimeLightSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 1150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(688, Short.MAX_VALUE))
+        );
+        systimeLightLayerLayout.setVerticalGroup(
+            systimeLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeLightLayerLayout.createSequentialGroup()
+                .addContainerGap(328, Short.MAX_VALUE)
+                .addComponent(systimeLightSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(105, 105, 105))
+        );
+
+        mainLayerPane.add(systimeLightLayer);
+
+        saveDataControlLayer.setOpaque(false);
+        saveDataControlLayer.setVisible(false);
+
+        saveDataControlLayerSpace.setOpaque(false);
+
+        saveDataFieldLabelPanel.setOpaque(false);
+
+        saveDataFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveDataFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveDataFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveDataFieldLabel.setText("File Location");
+
+        javax.swing.GroupLayout saveDataFieldLabelPanelLayout = new javax.swing.GroupLayout(saveDataFieldLabelPanel);
+        saveDataFieldLabelPanel.setLayout(saveDataFieldLabelPanelLayout);
+        saveDataFieldLabelPanelLayout.setHorizontalGroup(
+            saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 198, Short.MAX_VALUE)
+            .addGroup(saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(saveDataFieldLabel)
+                    .addContainerGap(32, Short.MAX_VALUE)))
+        );
+        saveDataFieldLabelPanelLayout.setVerticalGroup(
+            saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(7, 7, 7)
+                    .addComponent(saveDataFieldLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+
+        saveDataTextEntryPanel.setOpaque(false);
+
+        saveDataTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
+        saveDataTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        saveDataTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
+        saveDataTextEntryField.setText("Enter File Location");
+        saveDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
+        saveDataTextEntryField.setBorder(null);
+        saveDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                saveDataTextEntryFieldPropertyChange(evt);
+            }
+        });
+
+        javax.swing.GroupLayout saveDataTextEntryPanelLayout = new javax.swing.GroupLayout(saveDataTextEntryPanel);
+        saveDataTextEntryPanel.setLayout(saveDataTextEntryPanelLayout);
+        saveDataTextEntryPanelLayout.setHorizontalGroup(
+            saveDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(saveDataTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        saveDataTextEntryPanelLayout.setVerticalGroup(
+            saveDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveDataTextEntryField, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        saveDataHeaderPanel.setOpaque(false);
+
+        saveDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveDataHeaderLabel.setText("File System");
+
+        javax.swing.GroupLayout saveDataHeaderPanelLayout = new javax.swing.GroupLayout(saveDataHeaderPanel);
+        saveDataHeaderPanel.setLayout(saveDataHeaderPanelLayout);
+        saveDataHeaderPanelLayout.setHorizontalGroup(
+            saveDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataHeaderPanelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(saveDataHeaderLabel)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        saveDataHeaderPanelLayout.setVerticalGroup(
+            saveDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataHeaderPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveDataHeaderLabel)
+                .addContainerGap(7, Short.MAX_VALUE))
+        );
+
+        saveDataButtonSpace.setOpaque(false);
+        saveDataButtonSpace.setLayout(new javax.swing.OverlayLayout(saveDataButtonSpace));
+
+        saveButtonLabelOverlay.setOpaque(false);
+
+        saveButtonLabelPanel.setOpaque(false);
+
+        saveButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveButtonLabel.setText("Save File");
+        saveButtonLabel.setVisible(false);
+
+        javax.swing.GroupLayout saveButtonLabelPanelLayout = new javax.swing.GroupLayout(saveButtonLabelPanel);
+        saveButtonLabelPanel.setLayout(saveButtonLabelPanelLayout);
+        saveButtonLabelPanelLayout.setHorizontalGroup(
+            saveButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        saveButtonLabelPanelLayout.setVerticalGroup(
+            saveButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout saveButtonLabelOverlayLayout = new javax.swing.GroupLayout(saveButtonLabelOverlay);
+        saveButtonLabelOverlay.setLayout(saveButtonLabelOverlayLayout);
+        saveButtonLabelOverlayLayout.setHorizontalGroup(
+            saveButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        saveButtonLabelOverlayLayout.setVerticalGroup(
+            saveButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        saveDataButtonSpace.add(saveButtonLabelOverlay);
+
+        saveDataButtonPanel.setOpaque(false);
+
+        saveDataButton.setBorder(null);
+        saveDataButton.setBorderPainted(false);
+        saveDataButton.setContentAreaFilled(false);
+        saveDataButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveDataButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout saveDataButtonPanelLayout = new javax.swing.GroupLayout(saveDataButtonPanel);
+        saveDataButtonPanel.setLayout(saveDataButtonPanelLayout);
+        saveDataButtonPanelLayout.setHorizontalGroup(
+            saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 235, Short.MAX_VALUE)
+            .addGroup(saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(saveDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
+        );
+        saveDataButtonPanelLayout.setVerticalGroup(
+            saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 122, Short.MAX_VALUE)
+            .addGroup(saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(saveDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        );
+
+        saveDataButtonSpace.add(saveDataButtonPanel);
+
+        javax.swing.GroupLayout saveDataControlLayerSpaceLayout = new javax.swing.GroupLayout(saveDataControlLayerSpace);
+        saveDataControlLayerSpace.setLayout(saveDataControlLayerSpaceLayout);
+        saveDataControlLayerSpaceLayout.setHorizontalGroup(
+            saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addGap(262, 262, 262)
+                                .addComponent(saveDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addComponent(saveDataFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(saveDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addComponent(saveDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(275, 275, 275))))
+        );
+        saveDataControlLayerSpaceLayout.setVerticalGroup(
+            saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(saveDataFieldLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(saveDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addComponent(saveDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout saveDataControlLayerLayout = new javax.swing.GroupLayout(saveDataControlLayer);
+        saveDataControlLayer.setLayout(saveDataControlLayerLayout);
+        saveDataControlLayerLayout.setHorizontalGroup(
+            saveDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataControlLayerLayout.createSequentialGroup()
+                .addGap(527, 527, 527)
+                .addComponent(saveDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(625, 625, 625))
+        );
+        saveDataControlLayerLayout.setVerticalGroup(
+            saveDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataControlLayerLayout.createSequentialGroup()
+                .addGap(486, 486, 486)
+                .addComponent(saveDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(251, 251, 251))
+        );
+
+        mainLayerPane.add(saveDataControlLayer);
+
+        loadDataControlLayer.setOpaque(false);
+        loadDataControlLayer.setVisible(false);
+
+        loadDataControlLayerSpace.setOpaque(false);
+
+        loadDataFieldLabelPanel.setOpaque(false);
+
+        loadDataFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadDataFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadDataFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadDataFieldLabel.setText("File Location");
+
+        javax.swing.GroupLayout loadDataFieldLabelPanelLayout = new javax.swing.GroupLayout(loadDataFieldLabelPanel);
+        loadDataFieldLabelPanel.setLayout(loadDataFieldLabelPanelLayout);
+        loadDataFieldLabelPanelLayout.setHorizontalGroup(
+            loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 198, Short.MAX_VALUE)
+            .addGroup(loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(loadDataFieldLabel)
+                    .addContainerGap(32, Short.MAX_VALUE)))
+        );
+        loadDataFieldLabelPanelLayout.setVerticalGroup(
+            loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(7, 7, 7)
+                    .addComponent(loadDataFieldLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+
+        loadDataTextEntryPanel.setOpaque(false);
+
+        loadDataTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
+        loadDataTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        loadDataTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
+        loadDataTextEntryField.setText("Enter File Location");
+        loadDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
+        loadDataTextEntryField.setBorder(null);
+        loadDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                loadDataTextEntryFieldPropertyChange(evt);
+            }
+        });
+
+        javax.swing.GroupLayout loadDataTextEntryPanelLayout = new javax.swing.GroupLayout(loadDataTextEntryPanel);
+        loadDataTextEntryPanel.setLayout(loadDataTextEntryPanelLayout);
+        loadDataTextEntryPanelLayout.setHorizontalGroup(
+            loadDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(loadDataTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        loadDataTextEntryPanelLayout.setVerticalGroup(
+            loadDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadDataTextEntryField, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        loadDataHeaderPanel.setOpaque(false);
+
+        loadDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadDataHeaderLabel.setText("File System");
+
+        javax.swing.GroupLayout loadDataHeaderPanelLayout = new javax.swing.GroupLayout(loadDataHeaderPanel);
+        loadDataHeaderPanel.setLayout(loadDataHeaderPanelLayout);
+        loadDataHeaderPanelLayout.setHorizontalGroup(
+            loadDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataHeaderPanelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(loadDataHeaderLabel)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        loadDataHeaderPanelLayout.setVerticalGroup(
+            loadDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataHeaderPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadDataHeaderLabel)
+                .addContainerGap(7, Short.MAX_VALUE))
+        );
+
+        loadDataButtonSpace.setOpaque(false);
+        loadDataButtonSpace.setLayout(new javax.swing.OverlayLayout(loadDataButtonSpace));
+
+        loadButtonLabelOverlay.setOpaque(false);
+
+        loadButtonLabelPanel.setOpaque(false);
+
+        loadButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadButtonLabel.setText("Load File");
+        loadButtonLabel.setVisible(false);
+
+        javax.swing.GroupLayout loadButtonLabelPanelLayout = new javax.swing.GroupLayout(loadButtonLabelPanel);
+        loadButtonLabelPanel.setLayout(loadButtonLabelPanelLayout);
+        loadButtonLabelPanelLayout.setHorizontalGroup(
+            loadButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        loadButtonLabelPanelLayout.setVerticalGroup(
+            loadButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout loadButtonLabelOverlayLayout = new javax.swing.GroupLayout(loadButtonLabelOverlay);
+        loadButtonLabelOverlay.setLayout(loadButtonLabelOverlayLayout);
+        loadButtonLabelOverlayLayout.setHorizontalGroup(
+            loadButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        loadButtonLabelOverlayLayout.setVerticalGroup(
+            loadButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        loadDataButtonSpace.add(loadButtonLabelOverlay);
+
+        loadDataButtonPanel.setOpaque(false);
+
+        loadDataButton.setBorder(null);
+        loadDataButton.setBorderPainted(false);
+        loadDataButton.setContentAreaFilled(false);
+        loadDataButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loadDataButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout loadDataButtonPanelLayout = new javax.swing.GroupLayout(loadDataButtonPanel);
+        loadDataButtonPanel.setLayout(loadDataButtonPanelLayout);
+        loadDataButtonPanelLayout.setHorizontalGroup(
+            loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 235, Short.MAX_VALUE)
+            .addGroup(loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(loadDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
+        );
+        loadDataButtonPanelLayout.setVerticalGroup(
+            loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 122, Short.MAX_VALUE)
+            .addGroup(loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(loadDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        );
+
+        loadDataButtonSpace.add(loadDataButtonPanel);
+
+        javax.swing.GroupLayout loadDataControlLayerSpaceLayout = new javax.swing.GroupLayout(loadDataControlLayerSpace);
+        loadDataControlLayerSpace.setLayout(loadDataControlLayerSpaceLayout);
+        loadDataControlLayerSpaceLayout.setHorizontalGroup(
+            loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addGap(262, 262, 262)
+                                .addComponent(loadDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addComponent(loadDataFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(loadDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addComponent(loadDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(275, 275, 275))))
+        );
+        loadDataControlLayerSpaceLayout.setVerticalGroup(
+            loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(loadDataFieldLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(loadDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addComponent(loadDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout loadDataControlLayerLayout = new javax.swing.GroupLayout(loadDataControlLayer);
+        loadDataControlLayer.setLayout(loadDataControlLayerLayout);
+        loadDataControlLayerLayout.setHorizontalGroup(
+            loadDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataControlLayerLayout.createSequentialGroup()
+                .addGap(527, 527, 527)
+                .addComponent(loadDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(625, 625, 625))
+        );
+        loadDataControlLayerLayout.setVerticalGroup(
+            loadDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataControlLayerLayout.createSequentialGroup()
+                .addGap(486, 486, 486)
+                .addComponent(loadDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(251, 251, 251))
+        );
+
+        mainLayerPane.add(loadDataControlLayer);
+
+        saveDataLightLayer.setOpaque(false);
+
+        saveDataButtonLightPanel.setOpaque(false);
+
+        saveDataButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+        saveDataButtonLight.setVisible(false);
+
+        javax.swing.GroupLayout saveDataButtonLightPanelLayout = new javax.swing.GroupLayout(saveDataButtonLightPanel);
+        saveDataButtonLightPanel.setLayout(saveDataButtonLightPanelLayout);
+        saveDataButtonLightPanelLayout.setHorizontalGroup(
+            saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 240, Short.MAX_VALUE)
+            .addGroup(saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(saveDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        saveDataButtonLightPanelLayout.setVerticalGroup(
+            saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 124, Short.MAX_VALUE)
+            .addGroup(saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(saveDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        saveDataFieldLightPanel.setOpaque(false);
+        saveDataFieldLightPanel.setLayout(new javax.swing.OverlayLayout(saveDataFieldLightPanel));
+
+        saveDataFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        saveDataFieldLight.setVisible(false);
+        saveDataFieldLightPanel.add(saveDataFieldLight);
+
+        saveDataFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        saveDataFieldDimmer.setVisible(false);
+        saveDataFieldLightPanel.add(saveDataFieldDimmer);
+
+        javax.swing.GroupLayout saveDataLightLayerLayout = new javax.swing.GroupLayout(saveDataLightLayer);
+        saveDataLightLayer.setLayout(saveDataLightLayerLayout);
+        saveDataLightLayerLayout.setHorizontalGroup(
+            saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataLightLayerLayout.createSequentialGroup()
+                .addGroup(saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(saveDataLightLayerLayout.createSequentialGroup()
+                        .addGap(796, 796, 796)
+                        .addComponent(saveDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(saveDataLightLayerLayout.createSequentialGroup()
+                        .addGap(537, 537, 537)
+                        .addComponent(saveDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(885, 885, 885))
+        );
+        saveDataLightLayerLayout.setVerticalGroup(
+            saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataLightLayerLayout.createSequentialGroup()
+                .addGap(597, 597, 597)
+                .addComponent(saveDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(saveDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(253, 253, 253))
+        );
+
+        mainLayerPane.add(saveDataLightLayer);
+
+        loadDataLightLayer.setOpaque(false);
+
+        loadDataButtonLightPanel.setOpaque(false);
+
+        loadDataButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+        loadDataButtonLight.setVisible(false);
+
+        javax.swing.GroupLayout loadDataButtonLightPanelLayout = new javax.swing.GroupLayout(loadDataButtonLightPanel);
+        loadDataButtonLightPanel.setLayout(loadDataButtonLightPanelLayout);
+        loadDataButtonLightPanelLayout.setHorizontalGroup(
+            loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 240, Short.MAX_VALUE)
+            .addGroup(loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(loadDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        loadDataButtonLightPanelLayout.setVerticalGroup(
+            loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 124, Short.MAX_VALUE)
+            .addGroup(loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(loadDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        loadDataFieldLightPanel.setOpaque(false);
+        loadDataFieldLightPanel.setLayout(new javax.swing.OverlayLayout(loadDataFieldLightPanel));
+
+        loadDataFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        loadDataFieldLight.setVisible(false);
+        loadDataFieldLightPanel.add(loadDataFieldLight);
+
+        loadDataFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        loadDataFieldDimmer.setVisible(false);
+        loadDataFieldLightPanel.add(loadDataFieldDimmer);
+
+        javax.swing.GroupLayout loadDataLightLayerLayout = new javax.swing.GroupLayout(loadDataLightLayer);
+        loadDataLightLayer.setLayout(loadDataLightLayerLayout);
+        loadDataLightLayerLayout.setHorizontalGroup(
+            loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataLightLayerLayout.createSequentialGroup()
+                .addGroup(loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(loadDataLightLayerLayout.createSequentialGroup()
+                        .addGap(796, 796, 796)
+                        .addComponent(loadDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(loadDataLightLayerLayout.createSequentialGroup()
+                        .addGap(537, 537, 537)
+                        .addComponent(loadDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(885, 885, 885))
+        );
+        loadDataLightLayerLayout.setVerticalGroup(
+            loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataLightLayerLayout.createSequentialGroup()
+                .addGap(597, 597, 597)
+                .addComponent(loadDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(loadDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(253, 253, 253))
+        );
+
+        mainLayerPane.add(loadDataLightLayer);
+
+        javax.swing.GroupLayout mainLayerSpaceLayout = new javax.swing.GroupLayout(mainLayerSpace);
+        mainLayerSpace.setLayout(mainLayerSpaceLayout);
+        mainLayerSpaceLayout.setHorizontalGroup(
+            mainLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainLayerSpaceLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(mainLayerPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
+        mainLayerSpaceLayout.setVerticalGroup(
+            mainLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainLayerSpaceLayout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(mainLayerPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
+
+        getContentPane().add(mainLayerSpace);
+        mainLayerSpace.setBounds(38, 20, 1920, 1080);
+
+        BlackBackgroundSpace.setBackground(new java.awt.Color(0, 0, 0));
+        BlackBackgroundSpace.setForeground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout BlackBackgroundSpaceLayout = new javax.swing.GroupLayout(BlackBackgroundSpace);
+        BlackBackgroundSpace.setLayout(BlackBackgroundSpaceLayout);
+        BlackBackgroundSpaceLayout.setHorizontalGroup(
+            BlackBackgroundSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1920, Short.MAX_VALUE)
+        );
+        BlackBackgroundSpaceLayout.setVerticalGroup(
+            BlackBackgroundSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1200, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(BlackBackgroundSpace);
+        BlackBackgroundSpace.setBounds(0, 0, 1920, 1200);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -2148,7 +3466,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2171,6 +3490,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2188,7 +3508,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2211,6 +3532,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2228,7 +3550,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2251,6 +3574,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2268,7 +3592,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2291,6 +3616,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2312,7 +3638,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2335,6 +3662,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2352,7 +3680,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2375,6 +3704,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2392,7 +3722,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2415,6 +3746,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2432,29 +3764,50 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
+                
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = systimeLabel;
             currentActiveMainLight = systimeLight;
             currentActiveMainLightButton = systimeButton;
             currentActiveBackground = systimeBackground;
+            currentControlPanel = systimeControlLayer;
+            currentLightPanel = systimeLightLayer;
             
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (systimeButton.getMultiClickThreshhold() == 1)
         {
+            systimeTextEntryField.setText(Double.toString(terminalData.getSystemTime()));
+            systimeHeaderLabel1.setText(Double.toString(terminalData.getSystemTime()));
+
+            systimeFieldLightSpace.setVisible(false);
+            systimeFieldDimmerSpace.setVisible(false);
+            systimeFieldLabel.setForeground(Color.white);
+
+            systimeButtonLightSpace.setVisible(false);
+            systimeChangeButtonLabel.setForeground(Color.white);
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2463,6 +3816,13 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_systimeButtonActionPerformed
@@ -2472,29 +3832,44 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = loadLabel;
             currentActiveMainLight = loadLight;
             currentActiveMainLightButton = loadButton;
             currentActiveBackground = fileDataBackground;
+            currentControlPanel = loadDataControlLayer;
+            currentLightPanel = loadDataLightLayer;
             
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            saveButtonLabel.setVisible(false);
+            loadButtonLabel.setVisible(true);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (loadButton.getMultiClickThreshhold() == 1)
         {
+            loadDataTextEntryField.setText("Enter File Location");
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2503,6 +3878,13 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_loadButtonActionPerformed
@@ -2512,7 +3894,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2535,6 +3918,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2552,7 +3936,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2575,6 +3960,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2592,7 +3978,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2615,6 +4002,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2636,7 +4024,8 @@ public class MainFrame extends javax.swing.JFrame {
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
@@ -2659,6 +4048,7 @@ public class MainFrame extends javax.swing.JFrame {
         {
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2672,33 +4062,48 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_reportsButtonActionPerformed
 
     private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
-         if (saveButton.getMultiClickThreshhold() == 0)
+        if (saveButton.getMultiClickThreshhold() == 0)
         {
             if (currentActiveMainLightLabel != null)
             {
-                currentActiveMainLightLabel.setForeground(Color.white);
+                currentActiveMainLightLabel.setForeground(Color.green);
+                currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = saveLabel;
             currentActiveMainLight = saveLight;
             currentActiveMainLightButton = saveButton;
             currentActiveBackground = fileDataBackground;
+            currentControlPanel = saveDataControlLayer;
+            currentLightPanel = saveDataLightLayer;
             
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            saveButtonLabel.setVisible(true);
+            loadButtonLabel.setVisible(false);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (saveButton.getMultiClickThreshhold() == 1)
         {
+            saveDataTextEntryField.setText("Enter File Location");
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -2707,9 +4112,218 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void loadDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadDataButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_loadDataButtonActionPerformed
+
+    private void loadDataTextEntryFieldPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_loadDataTextEntryFieldPropertyChange
+
+    private void systimeChangeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_systimeChangeButtonActionPerformed
+        if (systimeButtonLightSpace.isVisible())
+        {
+            systimeButtonLightSpace.setVisible(false);
+            systimeFieldLightSpace.setVisible(false);
+            systimeFieldDimmerSpace.setVisible(false);
+            terminalData.setSystemTime(Double.parseDouble(systimeTextEntryField.getText()));
+            systimeTextEntryField.setText(Double.toString(terminalData.getSystemTime()));
+            systimeHeaderLabel1.setText(Double.toString(terminalData.getSystemTime()));
+        }
+    }//GEN-LAST:event_systimeChangeButtonActionPerformed
+
+    private void systimeTextEntryFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyTyped
+        boolean flag = false;
+        double time = -1;
+        
+        try
+        {
+            if (systimeTextEntryField.getText().contains("d") ||
+                    systimeTextEntryField.getText().contains("f"))
+            {
+                flag = true;
+            }
+            
+            time = Double.parseDouble(systimeTextEntryField.getText());
+            if (time < 0)
+            {
+                flag = true;
+            }
+        }
+        catch (Exception e)
+        {
+            flag = true;
+        }
+        
+        if (!flag)
+        {
+            if (time == terminalData.getSystemTime())
+            {
+                systimeFieldLightSpace.setVisible(false);
+                systimeFieldDimmerSpace.setVisible(false);
+                systimeFieldLabel.setForeground(Color.white);
+                
+                systimeButtonLightSpace.setVisible(false);
+                systimeChangeButtonLabel.setForeground(Color.white);
+            }
+            
+            else
+            {
+                systimeFieldLightSpace.setVisible(true);
+                systimeFieldLabel.setForeground(Color.black);
+                
+                systimeButtonLightSpace.setVisible(true);
+                systimeChangeButtonLabel.setForeground(Color.black);
+            }
+        }
+        
+        else
+        {
+            systimeFieldDimmerSpace.setVisible(true);
+            systimeFieldLightSpace.setVisible(false);
+            systimeFieldLabel.setForeground(Color.red);
+            
+            systimeButtonLightSpace.setVisible(false);
+            systimeChangeButtonLabel.setForeground(Color.white);
+        }
+        
+        systimeFieldPanel.repaint();
+    }//GEN-LAST:event_systimeTextEntryFieldKeyTyped
+
+    private void systimeTextEntryFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyPressed
+        boolean flag = false;
+        double time = -1;
+        
+        try
+        {
+            if (systimeTextEntryField.getText().contains("d") ||
+                    systimeTextEntryField.getText().contains("f"))
+            {
+                flag = true;
+            }
+            
+            time = Double.parseDouble(systimeTextEntryField.getText());
+            if (time < 0)
+            {
+                flag = true;
+            }
+        }
+        catch (Exception e)
+        {
+            flag = true;
+        }
+        
+        if (!flag)
+        {
+            if (time == terminalData.getSystemTime())
+            {
+                systimeFieldLightSpace.setVisible(false);
+                systimeFieldDimmerSpace.setVisible(false);
+                systimeFieldLabel.setForeground(Color.white);
+                
+                systimeButtonLightSpace.setVisible(false);
+                systimeChangeButtonLabel.setForeground(Color.white);
+            }
+            
+            else
+            {
+                systimeFieldLightSpace.setVisible(true);
+                systimeFieldLabel.setForeground(Color.black);
+                
+                systimeButtonLightSpace.setVisible(true);
+                systimeChangeButtonLabel.setForeground(Color.black);
+            }
+        }
+        
+        else
+        {
+            systimeFieldDimmerSpace.setVisible(true);
+            systimeFieldLightSpace.setVisible(false);
+            systimeFieldLabel.setForeground(Color.red);
+            
+            systimeButtonLightSpace.setVisible(false);
+            systimeChangeButtonLabel.setForeground(Color.white);
+        }
+        
+        systimeFieldPanel.repaint();
+    }//GEN-LAST:event_systimeTextEntryFieldKeyPressed
+
+    private void systimeTextEntryFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyReleased
+        boolean flag = false;
+        double time = -1;
+        
+        try
+        {
+            if (systimeTextEntryField.getText().contains("d") ||
+                    systimeTextEntryField.getText().contains("f"))
+            {
+                flag = true;
+            }
+            
+            time = Double.parseDouble(systimeTextEntryField.getText());
+            if (time < 0)
+            {
+                flag = true;
+            }
+        }
+        catch (Exception e)
+        {
+            flag = true;
+        }
+        
+        if (!flag)
+        {
+            if (time == terminalData.getSystemTime())
+            {
+                systimeFieldLightSpace.setVisible(false);
+                systimeFieldDimmerSpace.setVisible(false);
+                systimeFieldLabel.setForeground(Color.white);
+                
+                systimeButtonLightSpace.setVisible(false);
+                systimeChangeButtonLabel.setForeground(Color.white);
+            }
+            
+            else
+            {
+                systimeFieldLightSpace.setVisible(true);
+                systimeFieldLabel.setForeground(Color.black);
+                
+                systimeButtonLightSpace.setVisible(true);
+                systimeChangeButtonLabel.setForeground(Color.black);
+            }
+        }
+        
+        else
+        {
+            systimeFieldDimmerSpace.setVisible(true);
+            systimeFieldLightSpace.setVisible(false);
+            systimeFieldLabel.setForeground(Color.red);
+            
+            systimeButtonLightSpace.setVisible(false);
+            systimeChangeButtonLabel.setForeground(Color.white);
+        }
+        
+        systimeFieldPanel.repaint();
+    }//GEN-LAST:event_systimeTextEntryFieldKeyReleased
+
+    private void saveDataTextEntryFieldPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_saveDataTextEntryFieldPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_saveDataTextEntryFieldPropertyChange
+
+    private void saveDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveDataButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_saveDataButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2749,17 +4363,18 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Background;
     private javax.swing.JPanel BackgroundPanel;
-    private javax.swing.JPanel BackgroundPanel1;
-    private javax.swing.JPanel BackgroundPanel2;
-    private javax.swing.JPanel BackgroundPanel3;
-    private javax.swing.JPanel BackgroundPanel4;
-    private javax.swing.JPanel BackgroundPanel5;
+    private javax.swing.JPanel BackgroundPanel_data;
+    private javax.swing.JPanel BackgroundPanel_fileData;
+    private javax.swing.JPanel BackgroundPanel_manifest;
+    private javax.swing.JPanel BackgroundPanel_reports;
+    private javax.swing.JPanel BackgroundPanel_systime;
     private javax.swing.JPanel BackgroundSpace;
-    private javax.swing.JPanel BackgroundSpace1;
-    private javax.swing.JPanel BackgroundSpace2;
-    private javax.swing.JPanel BackgroundSpace3;
-    private javax.swing.JPanel BackgroundSpace4;
-    private javax.swing.JPanel BackgroundSpace5;
+    private javax.swing.JPanel BackgroundSpace_data;
+    private javax.swing.JPanel BackgroundSpace_fileData;
+    private javax.swing.JPanel BackgroundSpace_manifest;
+    private javax.swing.JPanel BackgroundSpace_reports;
+    private javax.swing.JPanel BackgroundSpace_systime;
+    private javax.swing.JPanel BlackBackgroundSpace;
     private javax.swing.JButton airportsButton;
     private javax.swing.JButton airportsButton1;
     private javax.swing.JLabel airportsLabel;
@@ -2846,13 +4461,66 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel flightsLabel1;
     private javax.swing.JLabel flightsLight;
     private javax.swing.JLabel flightsLight1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     private javax.swing.JButton loadButton;
+    private javax.swing.JLabel loadButtonLabel;
+    private javax.swing.JPanel loadButtonLabelOverlay;
+    private javax.swing.JPanel loadButtonLabelPanel;
+    private javax.swing.JButton loadDataButton;
+    private javax.swing.JLabel loadDataButtonLight;
+    private javax.swing.JPanel loadDataButtonLightPanel;
+    private javax.swing.JPanel loadDataButtonPanel;
+    private javax.swing.JPanel loadDataButtonSpace;
+    private javax.swing.JPanel loadDataControlLayer;
+    private javax.swing.JPanel loadDataControlLayerSpace;
+    private javax.swing.JLabel loadDataFieldDimmer;
+    private javax.swing.JLabel loadDataFieldLabel;
+    private javax.swing.JPanel loadDataFieldLabelPanel;
+    private javax.swing.JLabel loadDataFieldLight;
+    private javax.swing.JPanel loadDataFieldLightPanel;
+    private javax.swing.JLabel loadDataHeaderLabel;
+    private javax.swing.JPanel loadDataHeaderPanel;
+    private javax.swing.JPanel loadDataLightLayer;
+    private javax.swing.JTextField loadDataTextEntryField;
+    private javax.swing.JPanel loadDataTextEntryPanel;
     private javax.swing.JLabel loadLabel;
     private javax.swing.JLabel loadLight;
     private javax.swing.JPanel mainButtonGrid;
     private javax.swing.JPanel mainButtonLightLayer;
     private javax.swing.JPanel mainControlLayer;
     private javax.swing.JLayeredPane mainLayerPane;
+    private javax.swing.JPanel mainLayerSpace;
     private javax.swing.JLabel manifestBackground;
     private javax.swing.JButton passengersButton;
     private javax.swing.JButton passengersButton1;
@@ -2867,17 +4535,66 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel planesLabel1;
     private javax.swing.JLabel planesLight;
     private javax.swing.JLabel planesLight1;
+    private javax.swing.JPanel reportControlLayer;
+    private javax.swing.JPanel reportLightLayer;
     private javax.swing.JLabel reportMenuBackground;
     private javax.swing.JButton reportsButton;
     private javax.swing.JLabel reportsLabel;
     private javax.swing.JLabel reportsLight;
     private javax.swing.JButton saveButton;
+    private javax.swing.JLabel saveButtonLabel;
+    private javax.swing.JPanel saveButtonLabelOverlay;
+    private javax.swing.JPanel saveButtonLabelPanel;
+    private javax.swing.JButton saveDataButton;
+    private javax.swing.JLabel saveDataButtonLight;
+    private javax.swing.JPanel saveDataButtonLightPanel;
+    private javax.swing.JPanel saveDataButtonPanel;
+    private javax.swing.JPanel saveDataButtonSpace;
+    private javax.swing.JPanel saveDataControlLayer;
+    private javax.swing.JPanel saveDataControlLayerSpace;
+    private javax.swing.JLabel saveDataFieldDimmer;
+    private javax.swing.JLabel saveDataFieldLabel;
+    private javax.swing.JPanel saveDataFieldLabelPanel;
+    private javax.swing.JLabel saveDataFieldLight;
+    private javax.swing.JPanel saveDataFieldLightPanel;
+    private javax.swing.JLabel saveDataHeaderLabel;
+    private javax.swing.JPanel saveDataHeaderPanel;
+    private javax.swing.JPanel saveDataLightLayer;
+    private javax.swing.JTextField saveDataTextEntryField;
+    private javax.swing.JPanel saveDataTextEntryPanel;
     private javax.swing.JLabel saveLabel;
     private javax.swing.JLabel saveLight;
     private javax.swing.JLabel systimeBackground;
     private javax.swing.JButton systimeButton;
+    private javax.swing.JLabel systimeButtonLight;
+    private javax.swing.JPanel systimeButtonLightSpace;
+    private javax.swing.JButton systimeChangeButton;
+    private javax.swing.JLabel systimeChangeButtonLabel;
+    private javax.swing.JPanel systimeChangeButtonLabelOverlay;
+    private javax.swing.JPanel systimeChangeButtonLabelPanel;
+    private javax.swing.JPanel systimeChangeButtonPanel;
+    private javax.swing.JPanel systimeChangeButtonSpace;
+    private javax.swing.JPanel systimeControlLayer;
+    private javax.swing.JPanel systimeControlLayerSpace;
+    private javax.swing.JLabel systimeFieldDimmer;
+    private javax.swing.JPanel systimeFieldDimmerSpace;
+    private javax.swing.JPanel systimeFieldDimmerSubSpace;
+    private javax.swing.JLabel systimeFieldLabel;
+    private javax.swing.JPanel systimeFieldLabelPanel;
+    private javax.swing.JLabel systimeFieldLight;
+    private javax.swing.JPanel systimeFieldLightSpace;
+    private javax.swing.JPanel systimeFieldLightSubSpace;
+    private javax.swing.JPanel systimeFieldPanel;
+    private javax.swing.JLabel systimeHeaderLabel;
+    private javax.swing.JLabel systimeHeaderLabel1;
+    private javax.swing.JPanel systimeHeaderPanel;
+    private javax.swing.JPanel systimeHeaderPanel1;
     private javax.swing.JLabel systimeLabel;
     private javax.swing.JLabel systimeLight;
+    private javax.swing.JPanel systimeLightLayer;
+    private javax.swing.JPanel systimeLightSpace;
+    private javax.swing.JTextField systimeTextEntryField;
+    private javax.swing.JPanel systimeTextEntryPanel;
     private javax.swing.JButton ticketsButton;
     private javax.swing.JButton ticketsButton1;
     private javax.swing.JLabel ticketsLabel;
