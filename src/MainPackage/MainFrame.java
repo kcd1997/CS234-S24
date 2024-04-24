@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+
 package MainPackage;
+
 import java.awt.Color;
 import java.util.ArrayList;
 
@@ -561,7 +563,7 @@ public class MainFrame extends javax.swing.JFrame {
         systimeLightLayer.setVisible(false);
 
         systimeLightSpace.setOpaque(false);
-        systimeLightSpace.setLayout(null);
+        systimeLightSpace.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         systimeFieldPanel.setOpaque(false);
         systimeFieldPanel.setLayout(new javax.swing.OverlayLayout(systimeFieldPanel));
@@ -612,8 +614,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         systimeFieldPanel.add(systimeFieldDimmerSpace);
 
-        systimeLightSpace.add(systimeFieldPanel);
-        systimeFieldPanel.setBounds(630, 300, 199, 60);
+        systimeLightSpace.add(systimeFieldPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
 
         systimeButtonLightSpace.setOpaque(false);
         systimeButtonLightSpace.setVisible(false);
@@ -636,8 +637,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        systimeLightSpace.add(systimeButtonLightSpace);
-        systimeButtonLightSpace.setBounds(709, 381, 270, 136);
+        systimeLightSpace.add(systimeButtonLightSpace, new org.netbeans.lib.awtextra.AbsoluteConstraints(709, 381, -1, -1));
 
         javax.swing.GroupLayout systimeLightLayerLayout = new javax.swing.GroupLayout(systimeLightLayer);
         systimeLightLayer.setLayout(systimeLightLayerLayout);
@@ -1050,9 +1050,15 @@ public class MainFrame extends javax.swing.JFrame {
         saveDataTextEntryField.setText("Enter File Location");
         saveDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
         saveDataTextEntryField.setBorder(null);
-        saveDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                saveDataTextEntryFieldPropertyChange(evt);
+        saveDataTextEntryField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                saveDataTextEntryFieldKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                saveDataTextEntryFieldKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                saveDataTextEntryFieldKeyTyped(evt);
             }
         });
 
@@ -1333,9 +1339,15 @@ public class MainFrame extends javax.swing.JFrame {
         loadDataTextEntryField.setText("Enter File Location");
         loadDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
         loadDataTextEntryField.setBorder(null);
-        loadDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                loadDataTextEntryFieldPropertyChange(evt);
+        loadDataTextEntryField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                loadDataTextEntryFieldKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                loadDataTextEntryFieldKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                loadDataTextEntryFieldKeyTyped(evt);
             }
         });
 
@@ -3857,6 +3869,93 @@ public class MainFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_airportsButtonActionPerformed
 
+    private void systimeSystemUpdates()
+    {
+        double currentTime = terminalData.getSystemTime();
+        
+        /* Perform checks for all flights in the manifest */
+
+        for (Flight currentFlight : terminalData.getFlightManifest())
+        {
+            boolean inferior = false;
+
+            /* Check if the Flight's arrival time is superseded by another Flight's arrival time, to make sure it is the
+            most recent Flight to change the Plane's location via arrival. This check is only done if the Flight
+            has actually already arrived */
+
+            if (currentFlight.getArriveTime() <= currentTime)
+            {
+                for (Flight flight : terminalData.getFlightManifest())
+                {
+                    if ((flight.getArriveTime() > currentFlight.getArriveTime())
+                            && (flight.getArriveTime() <= currentTime)
+                            && (flight.getAssociatedPlaneCode().equals(currentFlight.getAssociatedPlaneCode())))
+                    {
+                        inferior = true;
+
+                        break;
+                    }
+
+                    if ((flight.getDepartTime() > currentFlight.getArriveTime())
+                            && (flight.getDepartTime() <= currentTime)
+                            && (flight.getAssociatedPlaneCode().equals(currentFlight.getAssociatedPlaneCode())))
+                    {
+                        inferior = true;
+
+                        break;
+                    }
+                }
+
+                /* If this is the most recent Flight to change the Plane's location, adjust the data accordingly */
+
+                if (!inferior)
+                {
+                    for (Plane currentPlane : terminalData.getPlaneManifest())
+                    {
+                        if (currentFlight.getAssociatedPlaneCode().equals(currentPlane.getPlaneID()))
+                        {
+                            currentPlane.setCurrentAssignmentType("Airport");
+                            currentPlane.setCurrentAssignmentCode(currentFlight.getDestinationPortCode());
+
+                            break;
+                        }
+                    }
+                }
+            }
+
+            /* If the Flight hasn't arrived, check if the Flight is the most recent Departure. If so, adjust data */
+
+            else if (currentFlight.getDepartTime() <= currentTime)
+            {
+                for (Flight flight : terminalData.getFlightManifest())
+                {
+                    if ((flight.getDepartTime() > currentFlight.getDepartTime())
+                            && (flight.getDepartTime() <= currentTime)
+                            && (flight.getAssociatedPlaneCode().equals(currentFlight.getAssociatedPlaneCode())))
+                    {
+                        inferior = true;
+
+                        break;
+                    }
+                }
+
+                if (!inferior)
+                {
+                    for (Plane currentPlane : terminalData.getPlaneManifest())
+                    {
+                        if (currentFlight.getAssociatedPlaneCode().equals(currentPlane.getPlaneID()))
+                        {
+                            currentPlane.setCurrentAssignmentType("Flight");
+                            currentPlane.setCurrentAssignmentCode(currentFlight.getFlightID());
+
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     private void systimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_systimeButtonActionPerformed
         if (systimeButton.getMultiClickThreshhold() == 0)
         {
@@ -4214,6 +4313,12 @@ public class MainFrame extends javax.swing.JFrame {
         else if (saveButton.getMultiClickThreshhold() == 1)
         {
             saveDataTextEntryField.setText("Enter File Location");
+            saveDataButtonLight.setVisible(false);
+            saveButtonLabel.setForeground(Color.white);
+            
+            saveDataFieldLight.setVisible(false);
+            saveDataFieldDimmer.setVisible(false);
+            saveDataFieldLabel.setForeground(Color.white);
             
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
@@ -4238,12 +4343,23 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_saveButtonActionPerformed
 
     private void loadDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadDataButtonActionPerformed
-        // TODO add your handling code here:
+        if (loadDataButtonLight.isVisible())
+        {
+            MainPackage.GUIFileDataFunctions fileDataFunctions = new MainPackage.GUIFileDataFunctions();
+            
+            String filePath = loadDataTextEntryField.getText();
+            
+            loadDataTextEntryField.setText(fileDataFunctions.load(filePath, terminalData));
+            loadDataButtonLight.setVisible(false);
+            loadButtonLabel.setForeground(Color.white);
+            
+            loadDataFieldLight.setVisible(false);
+            loadDataFieldDimmer.setVisible(false);
+            loadDataFieldLabel.setForeground(Color.white);
+            
+            systimeSystemUpdates();
+        }
     }//GEN-LAST:event_loadDataButtonActionPerformed
-
-    private void loadDataTextEntryFieldPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldPropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loadDataTextEntryFieldPropertyChange
 
     private void systimeChangeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_systimeChangeButtonActionPerformed
         if (systimeButtonLightSpace.isVisible())
@@ -4258,6 +4374,8 @@ public class MainFrame extends javax.swing.JFrame {
             terminalData.setSystemTime(Double.parseDouble(systimeTextEntryField.getText()));
             systimeTextEntryField.setText(Double.toString(terminalData.getSystemTime()));
             systimeHeaderLabel1.setText(Double.toString(terminalData.getSystemTime()));
+            
+            systimeSystemUpdates();
         }
     }//GEN-LAST:event_systimeChangeButtonActionPerformed
 
@@ -4333,12 +4451,21 @@ public class MainFrame extends javax.swing.JFrame {
         systimeTextChange();
     }//GEN-LAST:event_systimeTextEntryFieldKeyReleased
 
-    private void saveDataTextEntryFieldPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_saveDataTextEntryFieldPropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_saveDataTextEntryFieldPropertyChange
-
     private void saveDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveDataButtonActionPerformed
-        // TODO add your handling code here:
+        if (saveDataButtonLight.isVisible())
+        {
+            MainPackage.GUIFileDataFunctions fileDataFunctions = new MainPackage.GUIFileDataFunctions();
+            
+            String fileName = saveDataTextEntryField.getText();
+            
+            saveDataTextEntryField.setText(fileDataFunctions.save(fileName, terminalData));
+            saveDataButtonLight.setVisible(false);
+            saveButtonLabel.setForeground(Color.white);
+            
+            saveDataFieldLight.setVisible(false);
+            saveDataFieldDimmer.setVisible(false);
+            saveDataFieldLabel.setForeground(Color.white);
+        }
     }//GEN-LAST:event_saveDataButtonActionPerformed
 
     private void searchReportInputChange()
@@ -4480,15 +4607,15 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_searchReportSortSpinner1PropertyChange
 
     private void searchReportSortSpinner2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner2PropertyChange
-        // TODO add your handling code here:
+        searchReportInputChange();
     }//GEN-LAST:event_searchReportSortSpinner2PropertyChange
 
     private void searchReportSortSpinner3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner3PropertyChange
-        // TODO add your handling code here:
+        searchReportInputChange();
     }//GEN-LAST:event_searchReportSortSpinner3PropertyChange
 
     private void searchReportSortSpinner4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner4PropertyChange
-        // TODO add your handling code here:
+        searchReportInputChange();
     }//GEN-LAST:event_searchReportSortSpinner4PropertyChange
 
     private void searchReportDataTypeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_searchReportDataTypeSpinnerStateChanged
@@ -4603,6 +4730,122 @@ public class MainFrame extends javax.swing.JFrame {
             reportDisplayTextArea.repaint();
         }
     }//GEN-LAST:event_compSearchButtonActionPerformed
+
+    private void saveDataTextFieldChange()
+    {
+        String text = saveDataTextEntryField.getText();
+        
+        if (text.contains("\n") ||
+                text.contains("#") ||
+                text.contains("%") ||
+                text.contains("@") ||
+                text.contains("&") ||
+                text.contains("{") ||
+                text.contains("}") ||
+                text.contains("<") ||
+                text.contains(">") ||
+                text.contains("*") ||
+                text.contains("?") ||
+                text.contains("/") ||
+                text.contains("!") ||
+                text.contains("$") ||
+                text.contains("'") ||
+                text.contains("\"") ||
+                text.contains("+") ||
+                text.contains("`") ||
+                text.contains("|") ||
+                text.contains("=") ||
+                text.endsWith(".") ||
+                text.isBlank())
+        {
+            saveDataButtonLight.setVisible(false);
+            saveButtonLabel.setForeground(Color.white);
+            
+            saveDataFieldLight.setVisible(false);
+            saveDataFieldDimmer.setVisible(true);
+            saveDataFieldLabel.setForeground(Color.red);
+        }
+        
+        else
+        {
+            saveDataButtonLight.setVisible(true);
+            saveButtonLabel.setForeground(Color.black);
+            
+            saveDataFieldLight.setVisible(true);
+            saveDataFieldDimmer.setVisible(false);
+            saveDataFieldLabel.setForeground(Color.black);
+        }
+    }
+    
+    private void saveDataTextEntryFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saveDataTextEntryFieldKeyPressed
+        saveDataTextFieldChange();
+    }//GEN-LAST:event_saveDataTextEntryFieldKeyPressed
+
+    private void saveDataTextEntryFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saveDataTextEntryFieldKeyReleased
+        saveDataTextFieldChange();
+    }//GEN-LAST:event_saveDataTextEntryFieldKeyReleased
+
+    private void saveDataTextEntryFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saveDataTextEntryFieldKeyTyped
+        saveDataTextFieldChange();
+    }//GEN-LAST:event_saveDataTextEntryFieldKeyTyped
+
+    private void loadDataTextFieldChange()
+    {
+        String text = loadDataTextEntryField.getText();
+        
+        if (text.contains("\n") ||
+                text.contains("#") ||
+                text.contains("%") ||
+                text.contains("@") ||
+                text.contains("&") ||
+                text.contains("{") ||
+                text.contains("}") ||
+                text.contains("<") ||
+                text.contains(">") ||
+                text.contains("*") ||
+                text.contains("?") ||
+                text.contains("/") ||
+                text.contains("!") ||
+                text.contains("$") ||
+                text.contains("'") ||
+                text.contains("\"") ||
+                text.contains("+") ||
+                text.contains("`") ||
+                text.contains("|") ||
+                text.contains("=") ||
+                text.endsWith(".") ||
+                text.isBlank())
+        {
+            loadDataButtonLight.setVisible(false);
+            loadButtonLabel.setForeground(Color.white);
+            
+            loadDataFieldLight.setVisible(false);
+            loadDataFieldDimmer.setVisible(true);
+            loadDataFieldLabel.setForeground(Color.red);
+        }
+        
+        else
+        {
+            loadDataButtonLight.setVisible(true);
+            loadButtonLabel.setForeground(Color.black);
+            
+            loadDataFieldLight.setVisible(true);
+            loadDataFieldDimmer.setVisible(false);
+            loadDataFieldLabel.setForeground(Color.black);
+        }
+    }
+    
+    private void loadDataTextEntryFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldKeyPressed
+        loadDataTextFieldChange();
+    }//GEN-LAST:event_loadDataTextEntryFieldKeyPressed
+
+    private void loadDataTextEntryFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldKeyReleased
+        loadDataTextFieldChange();
+    }//GEN-LAST:event_loadDataTextEntryFieldKeyReleased
+
+    private void loadDataTextEntryFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldKeyTyped
+        loadDataTextFieldChange();
+    }//GEN-LAST:event_loadDataTextEntryFieldKeyTyped
 
     /**
      * @param args the command line arguments
