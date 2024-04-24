@@ -42,40 +42,111 @@ public class MainFrame extends javax.swing.JFrame {
 
         mainLayerSpace = new javax.swing.JPanel();
         mainLayerPane = new javax.swing.JLayeredPane();
+        systimeControlLayer = new javax.swing.JPanel();
+        systimeControlLayerSpace = new javax.swing.JPanel();
+        systimeHeaderPanel1 = new javax.swing.JPanel();
+        systimeHeaderLabel1 = new javax.swing.JLabel();
+        systimeHeaderPanel = new javax.swing.JPanel();
+        systimeHeaderLabel = new javax.swing.JLabel();
+        systimeFieldLabelPanel = new javax.swing.JPanel();
+        systimeFieldLabel = new javax.swing.JLabel();
+        systimeChangeButtonSpace = new javax.swing.JPanel();
+        systimeChangeButtonLabelOverlay = new javax.swing.JPanel();
+        systimeChangeButtonLabelPanel = new javax.swing.JPanel();
+        systimeChangeButtonLabel = new javax.swing.JLabel();
+        systimeChangeButtonPanel = new javax.swing.JPanel();
+        systimeChangeButton = new javax.swing.JButton();
+        systimeTextEntryPanel = new javax.swing.JPanel();
+        systimeTextEntryField = new javax.swing.JTextField();
+        systimeLightLayer = new javax.swing.JPanel();
+        systimeLightSpace = new javax.swing.JPanel();
+        systimeFieldPanel = new javax.swing.JPanel();
+        systimeFieldLightSpace = new javax.swing.JPanel();
+        systimeFieldLight = new javax.swing.JLabel();
+        systimeFieldDimmerSpace = new javax.swing.JPanel();
+        systimeFieldDimmer = new javax.swing.JLabel();
+        systimeButtonLightSpace = new javax.swing.JPanel();
+        systimeButtonLight = new javax.swing.JLabel();
         reportControlLayer = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        searchReportButton = new javax.swing.JButton();
+        compReportButton = new javax.swing.JButton();
+        compSearchButton = new javax.swing.JButton();
+        reportHeader1 = new javax.swing.JLabel();
+        reportHeader2 = new javax.swing.JLabel();
+        reportHeader3 = new javax.swing.JLabel();
+        compReportDataTypeLabel = new javax.swing.JLabel();
+        compReportIDCodeLabel = new javax.swing.JLabel();
+        compReportButtonLabel = new javax.swing.JLabel();
+        compReportDataTypeSpinner = new javax.swing.JSpinner();
+        searchReportDataTypeLabel = new javax.swing.JLabel();
+        searchReportSortLabel = new javax.swing.JLabel();
+        searchReportSizeLabel = new javax.swing.JLabel();
+        searchReportQueryLabel = new javax.swing.JLabel();
+        searchReportButtonLabel = new javax.swing.JLabel();
+        searchReportQueryTextInput = new javax.swing.JTextField();
+        searchReportDataTypeSpinner = new javax.swing.JSpinner();
+        searchReportSortSpinner = new javax.swing.JSpinner();
+        searchReportSortSpinner1 = new javax.swing.JSpinner();
+        searchReportSortSpinner2 = new javax.swing.JSpinner();
+        searchReportSortSpinner3 = new javax.swing.JSpinner();
+        searchReportSortSpinner4 = new javax.swing.JSpinner();
+        searchReportSizeSpinner = new javax.swing.JSpinner();
+        compSearchQueryLabel = new javax.swing.JLabel();
+        compSearchButtonLabel = new javax.swing.JLabel();
+        compReportIDTextInput = new javax.swing.JTextField();
+        compSearchQueryTextInput = new javax.swing.JTextField();
+        reportDisplayPane = new javax.swing.JScrollPane();
+        reportDisplayTextArea = new javax.swing.JTextArea();
         reportLightLayer = new javax.swing.JPanel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        compSearchQueryFieldLight = new javax.swing.JLabel();
+        compSearchQueryFieldDimmer = new javax.swing.JLabel();
+        compReportIDCodeFieldLight = new javax.swing.JLabel();
+        compReportIDCodeFieldDimmer = new javax.swing.JLabel();
+        searchReportQueryFieldLight = new javax.swing.JLabel();
+        searchReportQueryFieldDimmer = new javax.swing.JLabel();
+        compSearchButtonLight = new javax.swing.JLabel();
+        searchReportButtonLight = new javax.swing.JLabel();
+        compReportButtonLight = new javax.swing.JLabel();
+        saveDataControlLayer = new javax.swing.JPanel();
+        saveDataControlLayerSpace = new javax.swing.JPanel();
+        saveDataFieldLabelPanel = new javax.swing.JPanel();
+        saveDataFieldLabel = new javax.swing.JLabel();
+        saveDataTextEntryPanel = new javax.swing.JPanel();
+        saveDataTextEntryField = new javax.swing.JTextField();
+        saveDataHeaderPanel = new javax.swing.JPanel();
+        saveDataHeaderLabel = new javax.swing.JLabel();
+        saveDataButtonSpace = new javax.swing.JPanel();
+        saveButtonLabelOverlay = new javax.swing.JPanel();
+        saveButtonLabelPanel = new javax.swing.JPanel();
+        saveButtonLabel = new javax.swing.JLabel();
+        saveDataButtonPanel = new javax.swing.JPanel();
+        saveDataButton = new javax.swing.JButton();
+        saveDataLightLayer = new javax.swing.JPanel();
+        saveDataButtonLightPanel = new javax.swing.JPanel();
+        saveDataButtonLight = new javax.swing.JLabel();
+        saveDataFieldLightPanel = new javax.swing.JPanel();
+        saveDataFieldLight = new javax.swing.JLabel();
+        saveDataFieldDimmer = new javax.swing.JLabel();
+        loadDataControlLayer = new javax.swing.JPanel();
+        loadDataControlLayerSpace = new javax.swing.JPanel();
+        loadDataFieldLabelPanel = new javax.swing.JPanel();
+        loadDataFieldLabel = new javax.swing.JLabel();
+        loadDataTextEntryPanel = new javax.swing.JPanel();
+        loadDataTextEntryField = new javax.swing.JTextField();
+        loadDataHeaderPanel = new javax.swing.JPanel();
+        loadDataHeaderLabel = new javax.swing.JLabel();
+        loadDataButtonSpace = new javax.swing.JPanel();
+        loadButtonLabelOverlay = new javax.swing.JPanel();
+        loadButtonLabelPanel = new javax.swing.JPanel();
+        loadButtonLabel = new javax.swing.JLabel();
+        loadDataButtonPanel = new javax.swing.JPanel();
+        loadDataButton = new javax.swing.JButton();
+        loadDataLightLayer = new javax.swing.JPanel();
+        loadDataButtonLightPanel = new javax.swing.JPanel();
+        loadDataButtonLight = new javax.swing.JLabel();
+        loadDataFieldLightPanel = new javax.swing.JPanel();
+        loadDataFieldLight = new javax.swing.JLabel();
+        loadDataFieldDimmer = new javax.swing.JLabel();
         mainControlLayer = new javax.swing.JPanel();
         mainButtonGrid = new javax.swing.JPanel();
         buttonSpace_Tickets = new javax.swing.JPanel();
@@ -194,12 +265,12 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightPanel_Tickets = new javax.swing.JPanel();
         ticketsLight = new javax.swing.JLabel();
         backgroundLayer = new javax.swing.JPanel();
-        BackgroundSpace_reports = new javax.swing.JPanel();
-        BackgroundPanel_reports = new javax.swing.JPanel();
-        reportMenuBackground = new javax.swing.JLabel();
         BackgroundSpace_systime = new javax.swing.JPanel();
         BackgroundPanel_systime = new javax.swing.JPanel();
         systimeBackground = new javax.swing.JLabel();
+        BackgroundSpace_reports = new javax.swing.JPanel();
+        BackgroundPanel_reports = new javax.swing.JPanel();
+        reportMenuBackground = new javax.swing.JLabel();
         BackgroundSpace_fileData = new javax.swing.JPanel();
         BackgroundPanel_fileData = new javax.swing.JPanel();
         fileDataBackground = new javax.swing.JLabel();
@@ -212,73 +283,6 @@ public class MainFrame extends javax.swing.JFrame {
         BackgroundSpace = new javax.swing.JPanel();
         BackgroundPanel = new javax.swing.JPanel();
         Background = new javax.swing.JLabel();
-        systimeControlLayer = new javax.swing.JPanel();
-        systimeControlLayerSpace = new javax.swing.JPanel();
-        systimeHeaderPanel1 = new javax.swing.JPanel();
-        systimeHeaderLabel1 = new javax.swing.JLabel();
-        systimeHeaderPanel = new javax.swing.JPanel();
-        systimeHeaderLabel = new javax.swing.JLabel();
-        systimeFieldLabelPanel = new javax.swing.JPanel();
-        systimeFieldLabel = new javax.swing.JLabel();
-        systimeChangeButtonSpace = new javax.swing.JPanel();
-        systimeChangeButtonLabelOverlay = new javax.swing.JPanel();
-        systimeChangeButtonLabelPanel = new javax.swing.JPanel();
-        systimeChangeButtonLabel = new javax.swing.JLabel();
-        systimeChangeButtonPanel = new javax.swing.JPanel();
-        systimeChangeButton = new javax.swing.JButton();
-        systimeTextEntryPanel = new javax.swing.JPanel();
-        systimeTextEntryField = new javax.swing.JTextField();
-        systimeLightLayer = new javax.swing.JPanel();
-        systimeLightSpace = new javax.swing.JPanel();
-        systimeFieldPanel = new javax.swing.JPanel();
-        systimeFieldLightSpace = new javax.swing.JPanel();
-        systimeFieldLightSubSpace = new javax.swing.JPanel();
-        systimeFieldLight = new javax.swing.JLabel();
-        systimeFieldDimmerSpace = new javax.swing.JPanel();
-        systimeFieldDimmerSubSpace = new javax.swing.JPanel();
-        systimeFieldDimmer = new javax.swing.JLabel();
-        systimeButtonLightSpace = new javax.swing.JPanel();
-        systimeButtonLight = new javax.swing.JLabel();
-        saveDataControlLayer = new javax.swing.JPanel();
-        saveDataControlLayerSpace = new javax.swing.JPanel();
-        saveDataFieldLabelPanel = new javax.swing.JPanel();
-        saveDataFieldLabel = new javax.swing.JLabel();
-        saveDataTextEntryPanel = new javax.swing.JPanel();
-        saveDataTextEntryField = new javax.swing.JTextField();
-        saveDataHeaderPanel = new javax.swing.JPanel();
-        saveDataHeaderLabel = new javax.swing.JLabel();
-        saveDataButtonSpace = new javax.swing.JPanel();
-        saveButtonLabelOverlay = new javax.swing.JPanel();
-        saveButtonLabelPanel = new javax.swing.JPanel();
-        saveButtonLabel = new javax.swing.JLabel();
-        saveDataButtonPanel = new javax.swing.JPanel();
-        saveDataButton = new javax.swing.JButton();
-        loadDataControlLayer = new javax.swing.JPanel();
-        loadDataControlLayerSpace = new javax.swing.JPanel();
-        loadDataFieldLabelPanel = new javax.swing.JPanel();
-        loadDataFieldLabel = new javax.swing.JLabel();
-        loadDataTextEntryPanel = new javax.swing.JPanel();
-        loadDataTextEntryField = new javax.swing.JTextField();
-        loadDataHeaderPanel = new javax.swing.JPanel();
-        loadDataHeaderLabel = new javax.swing.JLabel();
-        loadDataButtonSpace = new javax.swing.JPanel();
-        loadButtonLabelOverlay = new javax.swing.JPanel();
-        loadButtonLabelPanel = new javax.swing.JPanel();
-        loadButtonLabel = new javax.swing.JLabel();
-        loadDataButtonPanel = new javax.swing.JPanel();
-        loadDataButton = new javax.swing.JButton();
-        saveDataLightLayer = new javax.swing.JPanel();
-        saveDataButtonLightPanel = new javax.swing.JPanel();
-        saveDataButtonLight = new javax.swing.JLabel();
-        saveDataFieldLightPanel = new javax.swing.JPanel();
-        saveDataFieldLight = new javax.swing.JLabel();
-        saveDataFieldDimmer = new javax.swing.JLabel();
-        loadDataLightLayer = new javax.swing.JPanel();
-        loadDataButtonLightPanel = new javax.swing.JPanel();
-        loadDataButtonLight = new javax.swing.JLabel();
-        loadDataFieldLightPanel = new javax.swing.JPanel();
-        loadDataFieldLight = new javax.swing.JLabel();
-        loadDataFieldDimmer = new javax.swing.JLabel();
         BlackBackgroundSpace = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -286,7 +290,6 @@ public class MainFrame extends javax.swing.JFrame {
         setBounds(new java.awt.Rectangle(0, 0, 1920, 1080));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(java.awt.Color.black);
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
         setSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(null);
 
@@ -299,234 +302,1278 @@ public class MainFrame extends javax.swing.JFrame {
         mainLayerPane.setPreferredSize(new java.awt.Dimension(1934, 1080));
         mainLayerPane.setLayout(new javax.swing.OverlayLayout(mainLayerPane));
 
+        systimeControlLayer.setOpaque(false);
+        systimeControlLayer.setVisible(false);
+
+        systimeControlLayerSpace.setOpaque(false);
+
+        systimeHeaderPanel1.setOpaque(false);
+
+        systimeHeaderLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeHeaderLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        systimeHeaderLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeHeaderLabel1.setText("0.0");
+
+        javax.swing.GroupLayout systimeHeaderPanel1Layout = new javax.swing.GroupLayout(systimeHeaderPanel1);
+        systimeHeaderPanel1.setLayout(systimeHeaderPanel1Layout);
+        systimeHeaderPanel1Layout.setHorizontalGroup(
+            systimeHeaderPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(systimeHeaderLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        systimeHeaderPanel1Layout.setVerticalGroup(
+            systimeHeaderPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeHeaderLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        systimeHeaderPanel.setOpaque(false);
+
+        systimeHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeHeaderLabel.setText("System Time");
+
+        javax.swing.GroupLayout systimeHeaderPanelLayout = new javax.swing.GroupLayout(systimeHeaderPanel);
+        systimeHeaderPanel.setLayout(systimeHeaderPanelLayout);
+        systimeHeaderPanelLayout.setHorizontalGroup(
+            systimeHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanelLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(systimeHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        systimeHeaderPanelLayout.setVerticalGroup(
+            systimeHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeHeaderPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeHeaderLabel)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        systimeFieldLabelPanel.setOpaque(false);
+
+        systimeFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeFieldLabel.setText("New Time");
+
+        javax.swing.GroupLayout systimeFieldLabelPanelLayout = new javax.swing.GroupLayout(systimeFieldLabelPanel);
+        systimeFieldLabelPanel.setLayout(systimeFieldLabelPanelLayout);
+        systimeFieldLabelPanelLayout.setHorizontalGroup(
+            systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 193, Short.MAX_VALUE)
+            .addGroup(systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(systimeFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(systimeFieldLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(33, Short.MAX_VALUE)))
+        );
+        systimeFieldLabelPanelLayout.setVerticalGroup(
+            systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 42, Short.MAX_VALUE)
+            .addGroup(systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(7, 7, 7)
+                    .addComponent(systimeFieldLabel)
+                    .addContainerGap()))
+        );
+
+        systimeChangeButtonSpace.setOpaque(false);
+        systimeChangeButtonSpace.setLayout(new javax.swing.OverlayLayout(systimeChangeButtonSpace));
+
+        systimeChangeButtonLabelOverlay.setOpaque(false);
+
+        systimeChangeButtonLabelPanel.setOpaque(false);
+
+        systimeChangeButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        systimeChangeButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        systimeChangeButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        systimeChangeButtonLabel.setText("Update Time");
+
+        javax.swing.GroupLayout systimeChangeButtonLabelPanelLayout = new javax.swing.GroupLayout(systimeChangeButtonLabelPanel);
+        systimeChangeButtonLabelPanel.setLayout(systimeChangeButtonLabelPanelLayout);
+        systimeChangeButtonLabelPanelLayout.setHorizontalGroup(
+            systimeChangeButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        systimeChangeButtonLabelPanelLayout.setVerticalGroup(
+            systimeChangeButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout systimeChangeButtonLabelOverlayLayout = new javax.swing.GroupLayout(systimeChangeButtonLabelOverlay);
+        systimeChangeButtonLabelOverlay.setLayout(systimeChangeButtonLabelOverlayLayout);
+        systimeChangeButtonLabelOverlayLayout.setHorizontalGroup(
+            systimeChangeButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        systimeChangeButtonLabelOverlayLayout.setVerticalGroup(
+            systimeChangeButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeChangeButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeChangeButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        systimeChangeButtonSpace.add(systimeChangeButtonLabelOverlay);
+
+        systimeChangeButtonPanel.setOpaque(false);
+
+        systimeChangeButton.setBorder(null);
+        systimeChangeButton.setBorderPainted(false);
+        systimeChangeButton.setContentAreaFilled(false);
+        systimeChangeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                systimeChangeButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout systimeChangeButtonPanelLayout = new javax.swing.GroupLayout(systimeChangeButtonPanel);
+        systimeChangeButtonPanel.setLayout(systimeChangeButtonPanelLayout);
+        systimeChangeButtonPanelLayout.setHorizontalGroup(
+            systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 241, Short.MAX_VALUE)
+            .addGroup(systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(systimeChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        systimeChangeButtonPanelLayout.setVerticalGroup(
+            systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 124, Short.MAX_VALUE)
+            .addGroup(systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(systimeChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        systimeChangeButtonSpace.add(systimeChangeButtonPanel);
+
+        systimeTextEntryPanel.setOpaque(false);
+
+        systimeTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
+        systimeTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        systimeTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
+        systimeTextEntryField.setText("0.0");
+        systimeTextEntryField.setToolTipText("e.g. \"30.3\"");
+        systimeTextEntryField.setBorder(null);
+        systimeTextEntryField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                systimeTextEntryFieldKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                systimeTextEntryFieldKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                systimeTextEntryFieldKeyTyped(evt);
+            }
+        });
+
+        javax.swing.GroupLayout systimeTextEntryPanelLayout = new javax.swing.GroupLayout(systimeTextEntryPanel);
+        systimeTextEntryPanel.setLayout(systimeTextEntryPanelLayout);
+        systimeTextEntryPanelLayout.setHorizontalGroup(
+            systimeTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(systimeTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(353, 353, 353))
+        );
+        systimeTextEntryPanelLayout.setVerticalGroup(
+            systimeTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout systimeControlLayerSpaceLayout = new javax.swing.GroupLayout(systimeControlLayerSpace);
+        systimeControlLayerSpace.setLayout(systimeControlLayerSpaceLayout);
+        systimeControlLayerSpaceLayout.setHorizontalGroup(
+            systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                        .addGap(206, 206, 206)
+                        .addComponent(systimeChangeButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                        .addGap(129, 129, 129)
+                        .addComponent(systimeFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(systimeTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(systimeHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(157, 157, 157))
+            .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeControlLayerSpaceLayout.createSequentialGroup()
+                    .addGap(225, 225, 225)
+                    .addComponent(systimeHeaderPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(224, 224, 224)))
+        );
+        systimeControlLayerSpaceLayout.setVerticalGroup(
+            systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
+                .addGap(139, 139, 139)
+                .addComponent(systimeHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(93, 93, 93)
+                .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(systimeTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(systimeFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addComponent(systimeChangeButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeControlLayerSpaceLayout.createSequentialGroup()
+                    .addGap(189, 189, 189)
+                    .addComponent(systimeHeaderPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(243, 243, 243)))
+        );
+
+        javax.swing.GroupLayout systimeControlLayerLayout = new javax.swing.GroupLayout(systimeControlLayer);
+        systimeControlLayer.setLayout(systimeControlLayerLayout);
+        systimeControlLayerLayout.setHorizontalGroup(
+            systimeControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerLayout.createSequentialGroup()
+                .addGap(591, 591, 591)
+                .addComponent(systimeControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(653, 653, 653))
+        );
+        systimeControlLayerLayout.setVerticalGroup(
+            systimeControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeControlLayerLayout.createSequentialGroup()
+                .addGap(361, 361, 361)
+                .addComponent(systimeControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(245, 245, 245))
+        );
+
+        mainLayerPane.add(systimeControlLayer);
+
+        systimeLightLayer.setOpaque(false);
+        systimeLightLayer.setPreferredSize(new java.awt.Dimension(1921, 1083));
+        systimeLightLayer.setVisible(false);
+
+        systimeLightSpace.setOpaque(false);
+        systimeLightSpace.setLayout(null);
+
+        systimeFieldPanel.setOpaque(false);
+        systimeFieldPanel.setLayout(new javax.swing.OverlayLayout(systimeFieldPanel));
+
+        systimeFieldLightSpace.setOpaque(false);
+        systimeFieldLightSpace.setVisible(false);
+
+        systimeFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+
+        javax.swing.GroupLayout systimeFieldLightSpaceLayout = new javax.swing.GroupLayout(systimeFieldLightSpace);
+        systimeFieldLightSpace.setLayout(systimeFieldLightSpaceLayout);
+        systimeFieldLightSpaceLayout.setHorizontalGroup(
+            systimeFieldLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldLightSpaceLayout.createSequentialGroup()
+                .addComponent(systimeFieldLight, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        systimeFieldLightSpaceLayout.setVerticalGroup(
+            systimeFieldLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldLightSpaceLayout.createSequentialGroup()
+                .addGap(3, 3, 3)
+                .addComponent(systimeFieldLight, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        systimeFieldPanel.add(systimeFieldLightSpace);
+
+        systimeFieldDimmerSpace.setOpaque(false);
+        systimeFieldDimmerSpace.setVisible(false);
+
+        systimeFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+
+        javax.swing.GroupLayout systimeFieldDimmerSpaceLayout = new javax.swing.GroupLayout(systimeFieldDimmerSpace);
+        systimeFieldDimmerSpace.setLayout(systimeFieldDimmerSpaceLayout);
+        systimeFieldDimmerSpaceLayout.setHorizontalGroup(
+            systimeFieldDimmerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldDimmerSpaceLayout.createSequentialGroup()
+                .addComponent(systimeFieldDimmer)
+                .addContainerGap())
+        );
+        systimeFieldDimmerSpaceLayout.setVerticalGroup(
+            systimeFieldDimmerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeFieldDimmerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeFieldDimmer, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
+
+        systimeFieldPanel.add(systimeFieldDimmerSpace);
+
+        systimeLightSpace.add(systimeFieldPanel);
+        systimeFieldPanel.setBounds(630, 300, 199, 60);
+
+        systimeButtonLightSpace.setOpaque(false);
+        systimeButtonLightSpace.setVisible(false);
+
+        systimeButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+
+        javax.swing.GroupLayout systimeButtonLightSpaceLayout = new javax.swing.GroupLayout(systimeButtonLightSpace);
+        systimeButtonLightSpace.setLayout(systimeButtonLightSpaceLayout);
+        systimeButtonLightSpaceLayout.setHorizontalGroup(
+            systimeButtonLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeButtonLightSpaceLayout.createSequentialGroup()
+                .addComponent(systimeButtonLight)
+                .addGap(0, 32, Short.MAX_VALUE))
+        );
+        systimeButtonLightSpaceLayout.setVerticalGroup(
+            systimeButtonLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeButtonLightSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(systimeButtonLight)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        systimeLightSpace.add(systimeButtonLightSpace);
+        systimeButtonLightSpace.setBounds(709, 381, 270, 136);
+
+        javax.swing.GroupLayout systimeLightLayerLayout = new javax.swing.GroupLayout(systimeLightLayer);
+        systimeLightLayer.setLayout(systimeLightLayerLayout);
+        systimeLightLayerLayout.setHorizontalGroup(
+            systimeLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(systimeLightLayerLayout.createSequentialGroup()
+                .addGap(96, 96, 96)
+                .addComponent(systimeLightSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 1150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(688, Short.MAX_VALUE))
+        );
+        systimeLightLayerLayout.setVerticalGroup(
+            systimeLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeLightLayerLayout.createSequentialGroup()
+                .addContainerGap(327, Short.MAX_VALUE)
+                .addComponent(systimeLightSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106))
+        );
+
+        mainLayerPane.add(systimeLightLayer);
+
         reportControlLayer.setOpaque(false);
+        reportControlLayer.setVisible(false);
         reportControlLayer.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("jLabel1");
-        reportControlLayer.add(jLabel1);
-        jLabel1.setBounds(250, 490, 78, 29);
+        searchReportButton.setBorderPainted(false);
+        searchReportButton.setContentAreaFilled(false);
+        searchReportButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchReportButtonActionPerformed(evt);
+            }
+        });
+        reportControlLayer.add(searchReportButton);
+        searchReportButton.setBounds(168, 784, 200, 100);
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("jLabel2");
-        reportControlLayer.add(jLabel2);
-        jLabel2.setBounds(690, 400, 78, 29);
+        compReportButton.setBorderPainted(false);
+        compReportButton.setContentAreaFilled(false);
+        compReportButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compReportButtonActionPerformed(evt);
+            }
+        });
+        reportControlLayer.add(compReportButton);
+        compReportButton.setBounds(615, 560, 200, 100);
 
-        jLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("jLabel3");
-        reportControlLayer.add(jLabel3);
-        jLabel3.setBounds(580, 460, 78, 29);
+        compSearchButton.setBorderPainted(false);
+        compSearchButton.setContentAreaFilled(false);
+        compSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compSearchButtonActionPerformed(evt);
+            }
+        });
+        reportControlLayer.add(compSearchButton);
+        compSearchButton.setBounds(615, 864, 200, 100);
 
-        jLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("jLabel4");
-        reportControlLayer.add(jLabel4);
-        jLabel4.setBounds(580, 520, 78, 29);
+        reportHeader1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        reportHeader1.setForeground(new java.awt.Color(255, 255, 255));
+        reportHeader1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        reportHeader1.setText("Search Reports");
+        reportControlLayer.add(reportHeader1);
+        reportHeader1.setBounds(168, 480, 200, 29);
 
-        jLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("jLabel5");
-        reportControlLayer.add(jLabel5);
-        jLabel5.setBounds(700, 600, 78, 29);
+        reportHeader2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        reportHeader2.setForeground(new java.awt.Color(255, 255, 255));
+        reportHeader2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        reportHeader2.setText("Comprehensive Reports");
+        reportHeader2.setToolTipText("");
+        reportControlLayer.add(reportHeader2);
+        reportHeader2.setBounds(538, 387, 350, 40);
 
-        jLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("jLabel6");
-        reportControlLayer.add(jLabel6);
-        jLabel6.setBounds(140, 550, 78, 29);
+        reportHeader3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        reportHeader3.setForeground(new java.awt.Color(255, 255, 255));
+        reportHeader3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        reportHeader3.setText("Comprehensive Search");
+        reportHeader3.setToolTipText("");
+        reportControlLayer.add(reportHeader3);
+        reportHeader3.setBounds(542, 729, 340, 40);
 
-        jLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("jLabel7");
-        reportControlLayer.add(jLabel7);
-        jLabel7.setBounds(140, 610, 78, 29);
+        compReportDataTypeLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compReportDataTypeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        compReportDataTypeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compReportDataTypeLabel.setText("Data Type");
+        compReportDataTypeLabel.setToolTipText("");
+        reportControlLayer.add(compReportDataTypeLabel);
+        compReportDataTypeLabel.setBounds(520, 447, 150, 40);
 
-        jLabel8.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("jLabel8");
-        reportControlLayer.add(jLabel8);
-        jLabel8.setBounds(150, 680, 78, 29);
+        compReportIDCodeLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compReportIDCodeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        compReportIDCodeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compReportIDCodeLabel.setText("ID Code");
+        reportControlLayer.add(compReportIDCodeLabel);
+        compReportIDCodeLabel.setBounds(518, 498, 150, 50);
 
-        jLabel9.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("jLabel9");
-        reportControlLayer.add(jLabel9);
-        jLabel9.setBounds(150, 730, 78, 29);
+        compReportButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compReportButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        compReportButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compReportButtonLabel.setText("Generate");
+        reportControlLayer.add(compReportButtonLabel);
+        compReportButtonLabel.setBounds(616, 557, 200, 100);
 
-        jLabel10.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("jLabel10");
-        reportControlLayer.add(jLabel10);
-        jLabel10.setBounds(700, 740, 92, 29);
+        compReportDataTypeSpinner.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        compReportDataTypeSpinner.setModel(new javax.swing.SpinnerListModel(new String[] {"Ticket", "Passenger", "Flight", "Plane", "Airport"}));
+        reportControlLayer.add(compReportDataTypeSpinner);
+        compReportDataTypeSpinner.setBounds(687, 448, 221, 38);
 
-        jLabel11.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("jLabel11");
-        reportControlLayer.add(jLabel11);
-        jLabel11.setBounds(570, 810, 92, 29);
+        searchReportDataTypeLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportDataTypeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        searchReportDataTypeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportDataTypeLabel.setText("Data Type");
+        reportControlLayer.add(searchReportDataTypeLabel);
+        searchReportDataTypeLabel.setBounds(70, 539, 190, 40);
 
-        jLabel12.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("jLabel12");
-        reportControlLayer.add(jLabel12);
-        jLabel12.setBounds(250, 820, 92, 29);
+        searchReportSortLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportSortLabel.setForeground(new java.awt.Color(255, 255, 255));
+        searchReportSortLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportSortLabel.setText("Sort By");
+        reportControlLayer.add(searchReportSortLabel);
+        searchReportSortLabel.setBounds(70, 600, 190, 40);
 
-        jLabel13.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("jLabel13");
-        reportControlLayer.add(jLabel13);
-        jLabel13.setBounds(700, 900, 92, 29);
+        searchReportSizeLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportSizeLabel.setForeground(new java.awt.Color(255, 255, 255));
+        searchReportSizeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportSizeLabel.setText("Report Size");
+        reportControlLayer.add(searchReportSizeLabel);
+        searchReportSizeLabel.setBounds(69, 661, 200, 40);
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField1.setText("jTextField1");
-        jTextField1.setToolTipText("");
-        jTextField1.setBorder(null);
-        reportControlLayer.add(jTextField1);
-        jTextField1.setBounds(290, 550, 65, 20);
+        searchReportQueryLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportQueryLabel.setForeground(new java.awt.Color(0, 0, 0));
+        searchReportQueryLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportQueryLabel.setText("Search Query");
+        reportControlLayer.add(searchReportQueryLabel);
+        searchReportQueryLabel.setBounds(71, 720, 190, 40);
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField2.setText("jTextField2");
-        jTextField2.setToolTipText("");
-        jTextField2.setBorder(null);
-        reportControlLayer.add(jTextField2);
-        jTextField2.setBounds(700, 460, 65, 20);
+        searchReportButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportButtonLabel.setForeground(new java.awt.Color(0, 0, 0));
+        searchReportButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportButtonLabel.setText("Generate");
+        searchReportButtonLabel.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        reportControlLayer.add(searchReportButtonLabel);
+        searchReportButtonLabel.setBounds(183, 787, 170, 90);
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setText("jTextField3");
-        jTextField3.setToolTipText("");
-        jTextField3.setBorder(null);
-        reportControlLayer.add(jTextField3);
-        jTextField3.setBounds(700, 520, 65, 20);
+        searchReportQueryTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        searchReportQueryTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportQueryTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        searchReportQueryTextInput.setToolTipText("");
+        searchReportQueryTextInput.setBorder(null);
+        searchReportQueryTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                searchReportQueryTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchReportQueryTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                searchReportQueryTextInputKeyTyped(evt);
+            }
+        });
+        reportControlLayer.add(searchReportQueryTextInput);
+        searchReportQueryTextInput.setBounds(278, 726, 183, 32);
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setText("jTextField4");
-        jTextField4.setToolTipText("");
-        jTextField4.setBorder(null);
-        reportControlLayer.add(jTextField4);
-        jTextField4.setBounds(290, 610, 65, 20);
+        searchReportDataTypeSpinner.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportDataTypeSpinner.setModel(new javax.swing.SpinnerListModel(new String[] {"Ticket", "Passenger", "Flight", "Plane", "Airport"}));
+        searchReportDataTypeSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                searchReportDataTypeSpinnerStateChanged(evt);
+            }
+        });
+        reportControlLayer.add(searchReportDataTypeSpinner);
+        searchReportDataTypeSpinner.setBounds(275, 540, 189, 39);
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField5.setText("jTextField5");
-        jTextField5.setToolTipText("");
-        jTextField5.setBorder(null);
-        reportControlLayer.add(jTextField5);
-        jTextField5.setBounds(300, 670, 65, 20);
+        searchReportSortSpinner.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportSortSpinner.setModel(new javax.swing.SpinnerListModel(new String[] {"Passenger", "Flight", "Plane", "Airport"}));
+        reportControlLayer.add(searchReportSortSpinner);
+        searchReportSortSpinner.setBounds(275, 602, 189, 39);
 
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField6.setText("jTextField6");
-        jTextField6.setToolTipText("");
-        jTextField6.setBorder(null);
-        reportControlLayer.add(jTextField6);
-        jTextField6.setBounds(300, 730, 65, 20);
+        searchReportSortSpinner1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportSortSpinner1.setModel(new javax.swing.SpinnerListModel(new String[] {"Ticket", "Flight", "Plane", "Airport"}));
+        searchReportSortSpinner1.setVisible(false);
+        searchReportSortSpinner1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                searchReportSortSpinner1PropertyChange(evt);
+            }
+        });
+        reportControlLayer.add(searchReportSortSpinner1);
+        searchReportSortSpinner1.setBounds(275, 602, 189, 39);
 
-        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setText("jTextField7");
-        jTextField7.setToolTipText("");
-        jTextField7.setBorder(null);
-        reportControlLayer.add(jTextField7);
-        jTextField7.setBounds(710, 810, 65, 20);
+        searchReportSortSpinner2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportSortSpinner2.setModel(new javax.swing.SpinnerListModel(new String[] {"Ticket", "Passenger", "Plane", "Airport"}));
+        searchReportSortSpinner2.setVisible(false);
+        searchReportSortSpinner2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                searchReportSortSpinner2PropertyChange(evt);
+            }
+        });
+        reportControlLayer.add(searchReportSortSpinner2);
+        searchReportSortSpinner2.setBounds(275, 602, 189, 39);
 
-        jScrollPane1.setBackground(new java.awt.Color(0, 0, 0));
-        jScrollPane1.setBorder(null);
-        jScrollPane1.setForeground(new java.awt.Color(204, 204, 204));
-        jScrollPane1.setOpaque(false);
+        searchReportSortSpinner3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportSortSpinner3.setModel(new javax.swing.SpinnerListModel(new String[] {"Flight", "Airport"}));
+        searchReportSortSpinner3.setVisible(false);
+        searchReportSortSpinner3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                searchReportSortSpinner3PropertyChange(evt);
+            }
+        });
+        reportControlLayer.add(searchReportSortSpinner3);
+        searchReportSortSpinner3.setBounds(275, 602, 189, 39);
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(204, 204, 204));
-        jTextArea1.setRows(5);
-        jTextArea1.setText("---------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------------------------------\n---------------------------------------------------\n----------------------------------------------------------\n-----------------------------------------------------------\n-------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------------------------\n--------------------------------------------------\n---------------------------------------------------------------\n-------------------------------------------------------------------------\n----------------------------------------------------------------------");
-        jTextArea1.setBorder(null);
-        jTextArea1.setOpaque(false);
-        jScrollPane1.setViewportView(jTextArea1);
+        searchReportSortSpinner4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportSortSpinner4.setModel(new javax.swing.SpinnerListModel(new String[] {"Plane"}));
+        searchReportSortSpinner4.setVisible(false);
+        searchReportSortSpinner4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                searchReportSortSpinner4PropertyChange(evt);
+            }
+        });
+        reportControlLayer.add(searchReportSortSpinner4);
+        searchReportSortSpinner4.setBounds(275, 602, 189, 39);
 
-        reportControlLayer.add(jScrollPane1);
-        jScrollPane1.setBounds(936, 367, 864, 625);
+        searchReportSizeSpinner.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        searchReportSizeSpinner.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
+        reportControlLayer.add(searchReportSizeSpinner);
+        searchReportSizeSpinner.setBounds(275, 663, 189, 39);
+
+        compSearchQueryLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compSearchQueryLabel.setForeground(new java.awt.Color(0, 0, 0));
+        compSearchQueryLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compSearchQueryLabel.setText("Search Query");
+        reportControlLayer.add(compSearchQueryLabel);
+        compSearchQueryLabel.setBounds(519, 798, 150, 40);
+
+        compSearchButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compSearchButtonLabel.setForeground(new java.awt.Color(0, 0, 0));
+        compSearchButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compSearchButtonLabel.setText("Generate");
+        reportControlLayer.add(compSearchButtonLabel);
+        compSearchButtonLabel.setBounds(629, 867, 170, 90);
+
+        compReportIDTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        compReportIDTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        compReportIDTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        compReportIDTextInput.setToolTipText("");
+        compReportIDTextInput.setBorder(null);
+        compReportIDTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                compReportIDTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                compReportIDTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                compReportIDTextInputKeyTyped(evt);
+            }
+        });
+        reportControlLayer.add(compReportIDTextInput);
+        compReportIDTextInput.setBounds(689, 507, 218, 32);
+
+        compSearchQueryTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        compSearchQueryTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        compSearchQueryTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        compSearchQueryTextInput.setToolTipText("");
+        compSearchQueryTextInput.setBorder(null);
+        compSearchQueryTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                compSearchQueryTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                compSearchQueryTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                compSearchQueryTextInputKeyTyped(evt);
+            }
+        });
+        reportControlLayer.add(compSearchQueryTextInput);
+        compSearchQueryTextInput.setBounds(689, 803, 218, 32);
+
+        reportDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        reportDisplayPane.setBorder(null);
+        reportDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        reportDisplayPane.setOpaque(false);
+
+        reportDisplayTextArea.setEditable(false);
+        reportDisplayTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        reportDisplayTextArea.setColumns(20);
+        reportDisplayTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        reportDisplayTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        reportDisplayTextArea.setLineWrap(true);
+        reportDisplayTextArea.setRows(5);
+        reportDisplayTextArea.setWrapStyleWord(true);
+        reportDisplayTextArea.setBorder(null);
+        reportDisplayTextArea.setOpaque(false);
+        reportDisplayPane.setViewportView(reportDisplayTextArea);
+
+        reportControlLayer.add(reportDisplayPane);
+        reportDisplayPane.setBounds(936, 367, 864, 625);
 
         mainLayerPane.add(reportControlLayer);
 
         reportLightLayer.setOpaque(false);
+        reportLightLayer.setVisible(false);
         reportLightLayer.setLayout(null);
 
-        jLabel14.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("jLabel13");
-        reportLightLayer.add(jLabel14);
-        jLabel14.setBounds(700, 900, 92, 29);
+        compSearchQueryFieldLight.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compSearchQueryFieldLight.setForeground(new java.awt.Color(255, 255, 255));
+        compSearchQueryFieldLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compSearchQueryFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Small Lit Display Field.png"))); // NOI18N
+        reportLightLayer.add(compSearchQueryFieldLight);
+        compSearchQueryFieldLight.setBounds(488, 788, 210, 60);
 
-        jLabel15.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("jLabel12");
-        reportLightLayer.add(jLabel15);
-        jLabel15.setBounds(250, 820, 92, 29);
+        compSearchQueryFieldDimmer.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compSearchQueryFieldDimmer.setForeground(new java.awt.Color(255, 255, 255));
+        compSearchQueryFieldDimmer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compSearchQueryFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Small Dark Display Field.png"))); // NOI18N
+        compSearchQueryFieldDimmer.setVisible(false);
+        reportLightLayer.add(compSearchQueryFieldDimmer);
+        compSearchQueryFieldDimmer.setBounds(488, 788, 210, 60);
 
-        jLabel16.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("jLabel5");
-        reportLightLayer.add(jLabel16);
-        jLabel16.setBounds(700, 600, 78, 29);
+        compReportIDCodeFieldLight.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compReportIDCodeFieldLight.setForeground(new java.awt.Color(255, 255, 255));
+        compReportIDCodeFieldLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compReportIDCodeFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Small Lit Display Field.png"))); // NOI18N
+        compReportIDCodeFieldLight.setVisible(false);
+        reportLightLayer.add(compReportIDCodeFieldLight);
+        compReportIDCodeFieldLight.setBounds(490, 493, 210, 60);
 
-        jLabel17.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("jLabel6");
-        reportLightLayer.add(jLabel17);
-        jLabel17.setBounds(140, 550, 78, 29);
+        compReportIDCodeFieldDimmer.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compReportIDCodeFieldDimmer.setForeground(new java.awt.Color(255, 255, 255));
+        compReportIDCodeFieldDimmer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compReportIDCodeFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Small Dark Display Field.png"))); // NOI18N
+        compReportIDCodeFieldDimmer.setVisible(false);
+        reportLightLayer.add(compReportIDCodeFieldDimmer);
+        compReportIDCodeFieldDimmer.setBounds(490, 493, 210, 60);
 
-        jLabel18.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("jLabel7");
-        reportLightLayer.add(jLabel18);
-        jLabel18.setBounds(140, 610, 78, 29);
+        searchReportQueryFieldLight.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportQueryFieldLight.setForeground(new java.awt.Color(255, 255, 255));
+        searchReportQueryFieldLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportQueryFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        reportLightLayer.add(searchReportQueryFieldLight);
+        searchReportQueryFieldLight.setBounds(60, 712, 210, 60);
 
-        jLabel19.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("jLabel8");
-        reportLightLayer.add(jLabel19);
-        jLabel19.setBounds(150, 680, 78, 29);
+        searchReportQueryFieldDimmer.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportQueryFieldDimmer.setForeground(new java.awt.Color(255, 255, 255));
+        searchReportQueryFieldDimmer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportQueryFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        searchReportQueryFieldDimmer.setVisible(false);
+        reportLightLayer.add(searchReportQueryFieldDimmer);
+        searchReportQueryFieldDimmer.setBounds(60, 712, 210, 60);
 
-        jLabel20.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("jLabel9");
-        reportLightLayer.add(jLabel20);
-        jLabel20.setBounds(150, 730, 78, 29);
+        compSearchButtonLight.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compSearchButtonLight.setForeground(new java.awt.Color(255, 255, 255));
+        compSearchButtonLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compSearchButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        reportLightLayer.add(compSearchButtonLight);
+        compSearchButtonLight.setBounds(609, 866, 210, 100);
 
-        jLabel21.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("jLabel11");
-        reportLightLayer.add(jLabel21);
-        jLabel21.setBounds(570, 810, 92, 29);
+        searchReportButtonLight.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        searchReportButtonLight.setForeground(new java.awt.Color(255, 255, 255));
+        searchReportButtonLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        searchReportButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        reportLightLayer.add(searchReportButtonLight);
+        searchReportButtonLight.setBounds(163, 785, 210, 100);
 
-        jLabel22.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("jLabel3");
-        reportLightLayer.add(jLabel22);
-        jLabel22.setBounds(580, 460, 78, 29);
-
-        jLabel23.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("jLabel4");
-        reportLightLayer.add(jLabel23);
-        jLabel23.setBounds(580, 520, 78, 29);
+        compReportButtonLight.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        compReportButtonLight.setForeground(new java.awt.Color(255, 255, 255));
+        compReportButtonLight.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        compReportButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        compReportButtonLight.setVisible(false);
+        reportLightLayer.add(compReportButtonLight);
+        compReportButtonLight.setBounds(610, 560, 210, 100);
 
         mainLayerPane.add(reportLightLayer);
+
+        saveDataControlLayer.setOpaque(false);
+        saveDataControlLayer.setVisible(false);
+
+        saveDataControlLayerSpace.setOpaque(false);
+
+        saveDataFieldLabelPanel.setOpaque(false);
+
+        saveDataFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveDataFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveDataFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveDataFieldLabel.setText("File Location");
+
+        javax.swing.GroupLayout saveDataFieldLabelPanelLayout = new javax.swing.GroupLayout(saveDataFieldLabelPanel);
+        saveDataFieldLabelPanel.setLayout(saveDataFieldLabelPanelLayout);
+        saveDataFieldLabelPanelLayout.setHorizontalGroup(
+            saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 198, Short.MAX_VALUE)
+            .addGroup(saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(saveDataFieldLabel)
+                    .addContainerGap(32, Short.MAX_VALUE)))
+        );
+        saveDataFieldLabelPanelLayout.setVerticalGroup(
+            saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(7, 7, 7)
+                    .addComponent(saveDataFieldLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+
+        saveDataTextEntryPanel.setOpaque(false);
+
+        saveDataTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
+        saveDataTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        saveDataTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
+        saveDataTextEntryField.setText("Enter File Location");
+        saveDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
+        saveDataTextEntryField.setBorder(null);
+        saveDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                saveDataTextEntryFieldPropertyChange(evt);
+            }
+        });
+
+        javax.swing.GroupLayout saveDataTextEntryPanelLayout = new javax.swing.GroupLayout(saveDataTextEntryPanel);
+        saveDataTextEntryPanel.setLayout(saveDataTextEntryPanelLayout);
+        saveDataTextEntryPanelLayout.setHorizontalGroup(
+            saveDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(saveDataTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        saveDataTextEntryPanelLayout.setVerticalGroup(
+            saveDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveDataTextEntryField, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        saveDataHeaderPanel.setOpaque(false);
+
+        saveDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveDataHeaderLabel.setText("File System");
+
+        javax.swing.GroupLayout saveDataHeaderPanelLayout = new javax.swing.GroupLayout(saveDataHeaderPanel);
+        saveDataHeaderPanel.setLayout(saveDataHeaderPanelLayout);
+        saveDataHeaderPanelLayout.setHorizontalGroup(
+            saveDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataHeaderPanelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(saveDataHeaderLabel)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        saveDataHeaderPanelLayout.setVerticalGroup(
+            saveDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataHeaderPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveDataHeaderLabel)
+                .addContainerGap(7, Short.MAX_VALUE))
+        );
+
+        saveDataButtonSpace.setOpaque(false);
+        saveDataButtonSpace.setLayout(new javax.swing.OverlayLayout(saveDataButtonSpace));
+
+        saveButtonLabelOverlay.setOpaque(false);
+
+        saveButtonLabelPanel.setOpaque(false);
+
+        saveButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        saveButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        saveButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        saveButtonLabel.setText("Save File");
+        saveButtonLabel.setVisible(false);
+
+        javax.swing.GroupLayout saveButtonLabelPanelLayout = new javax.swing.GroupLayout(saveButtonLabelPanel);
+        saveButtonLabelPanel.setLayout(saveButtonLabelPanelLayout);
+        saveButtonLabelPanelLayout.setHorizontalGroup(
+            saveButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        saveButtonLabelPanelLayout.setVerticalGroup(
+            saveButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout saveButtonLabelOverlayLayout = new javax.swing.GroupLayout(saveButtonLabelOverlay);
+        saveButtonLabelOverlay.setLayout(saveButtonLabelOverlayLayout);
+        saveButtonLabelOverlayLayout.setHorizontalGroup(
+            saveButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        saveButtonLabelOverlayLayout.setVerticalGroup(
+            saveButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        saveDataButtonSpace.add(saveButtonLabelOverlay);
+
+        saveDataButtonPanel.setOpaque(false);
+
+        saveDataButton.setBorder(null);
+        saveDataButton.setBorderPainted(false);
+        saveDataButton.setContentAreaFilled(false);
+        saveDataButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveDataButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout saveDataButtonPanelLayout = new javax.swing.GroupLayout(saveDataButtonPanel);
+        saveDataButtonPanel.setLayout(saveDataButtonPanelLayout);
+        saveDataButtonPanelLayout.setHorizontalGroup(
+            saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 235, Short.MAX_VALUE)
+            .addGroup(saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(saveDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
+        );
+        saveDataButtonPanelLayout.setVerticalGroup(
+            saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 122, Short.MAX_VALUE)
+            .addGroup(saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(saveDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        );
+
+        saveDataButtonSpace.add(saveDataButtonPanel);
+
+        javax.swing.GroupLayout saveDataControlLayerSpaceLayout = new javax.swing.GroupLayout(saveDataControlLayerSpace);
+        saveDataControlLayerSpace.setLayout(saveDataControlLayerSpaceLayout);
+        saveDataControlLayerSpaceLayout.setHorizontalGroup(
+            saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addGap(262, 262, 262)
+                                .addComponent(saveDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addComponent(saveDataFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(saveDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addComponent(saveDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(275, 275, 275))))
+        );
+        saveDataControlLayerSpaceLayout.setVerticalGroup(
+            saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(saveDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(saveDataFieldLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(saveDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addComponent(saveDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout saveDataControlLayerLayout = new javax.swing.GroupLayout(saveDataControlLayer);
+        saveDataControlLayer.setLayout(saveDataControlLayerLayout);
+        saveDataControlLayerLayout.setHorizontalGroup(
+            saveDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataControlLayerLayout.createSequentialGroup()
+                .addGap(527, 527, 527)
+                .addComponent(saveDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(625, 625, 625))
+        );
+        saveDataControlLayerLayout.setVerticalGroup(
+            saveDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataControlLayerLayout.createSequentialGroup()
+                .addGap(486, 486, 486)
+                .addComponent(saveDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(251, 251, 251))
+        );
+
+        mainLayerPane.add(saveDataControlLayer);
+
+        saveDataLightLayer.setOpaque(false);
+
+        saveDataButtonLightPanel.setOpaque(false);
+
+        saveDataButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+        saveDataButtonLight.setVisible(false);
+
+        javax.swing.GroupLayout saveDataButtonLightPanelLayout = new javax.swing.GroupLayout(saveDataButtonLightPanel);
+        saveDataButtonLightPanel.setLayout(saveDataButtonLightPanelLayout);
+        saveDataButtonLightPanelLayout.setHorizontalGroup(
+            saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 240, Short.MAX_VALUE)
+            .addGroup(saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(saveDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        saveDataButtonLightPanelLayout.setVerticalGroup(
+            saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 124, Short.MAX_VALUE)
+            .addGroup(saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(saveDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(saveDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        saveDataFieldLightPanel.setOpaque(false);
+        saveDataFieldLightPanel.setLayout(new javax.swing.OverlayLayout(saveDataFieldLightPanel));
+
+        saveDataFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        saveDataFieldLight.setVisible(false);
+        saveDataFieldLightPanel.add(saveDataFieldLight);
+
+        saveDataFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        saveDataFieldDimmer.setVisible(false);
+        saveDataFieldLightPanel.add(saveDataFieldDimmer);
+
+        javax.swing.GroupLayout saveDataLightLayerLayout = new javax.swing.GroupLayout(saveDataLightLayer);
+        saveDataLightLayer.setLayout(saveDataLightLayerLayout);
+        saveDataLightLayerLayout.setHorizontalGroup(
+            saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(saveDataLightLayerLayout.createSequentialGroup()
+                .addGroup(saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(saveDataLightLayerLayout.createSequentialGroup()
+                        .addGap(796, 796, 796)
+                        .addComponent(saveDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(saveDataLightLayerLayout.createSequentialGroup()
+                        .addGap(537, 537, 537)
+                        .addComponent(saveDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(885, 885, 885))
+        );
+        saveDataLightLayerLayout.setVerticalGroup(
+            saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataLightLayerLayout.createSequentialGroup()
+                .addGap(597, 597, 597)
+                .addComponent(saveDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(saveDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(253, 253, 253))
+        );
+
+        mainLayerPane.add(saveDataLightLayer);
+
+        loadDataControlLayer.setOpaque(false);
+        loadDataControlLayer.setVisible(false);
+
+        loadDataControlLayerSpace.setOpaque(false);
+
+        loadDataFieldLabelPanel.setOpaque(false);
+
+        loadDataFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadDataFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadDataFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadDataFieldLabel.setText("File Location");
+
+        javax.swing.GroupLayout loadDataFieldLabelPanelLayout = new javax.swing.GroupLayout(loadDataFieldLabelPanel);
+        loadDataFieldLabelPanel.setLayout(loadDataFieldLabelPanelLayout);
+        loadDataFieldLabelPanelLayout.setHorizontalGroup(
+            loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 198, Short.MAX_VALUE)
+            .addGroup(loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(loadDataFieldLabel)
+                    .addContainerGap(32, Short.MAX_VALUE)))
+        );
+        loadDataFieldLabelPanelLayout.setVerticalGroup(
+            loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataFieldLabelPanelLayout.createSequentialGroup()
+                    .addGap(7, 7, 7)
+                    .addComponent(loadDataFieldLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+
+        loadDataTextEntryPanel.setOpaque(false);
+
+        loadDataTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
+        loadDataTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        loadDataTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
+        loadDataTextEntryField.setText("Enter File Location");
+        loadDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
+        loadDataTextEntryField.setBorder(null);
+        loadDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                loadDataTextEntryFieldPropertyChange(evt);
+            }
+        });
+
+        javax.swing.GroupLayout loadDataTextEntryPanelLayout = new javax.swing.GroupLayout(loadDataTextEntryPanel);
+        loadDataTextEntryPanel.setLayout(loadDataTextEntryPanelLayout);
+        loadDataTextEntryPanelLayout.setHorizontalGroup(
+            loadDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(loadDataTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        loadDataTextEntryPanelLayout.setVerticalGroup(
+            loadDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataTextEntryPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadDataTextEntryField, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        loadDataHeaderPanel.setOpaque(false);
+
+        loadDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadDataHeaderLabel.setText("File System");
+
+        javax.swing.GroupLayout loadDataHeaderPanelLayout = new javax.swing.GroupLayout(loadDataHeaderPanel);
+        loadDataHeaderPanel.setLayout(loadDataHeaderPanelLayout);
+        loadDataHeaderPanelLayout.setHorizontalGroup(
+            loadDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataHeaderPanelLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(loadDataHeaderLabel)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        loadDataHeaderPanelLayout.setVerticalGroup(
+            loadDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataHeaderPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadDataHeaderLabel)
+                .addContainerGap(7, Short.MAX_VALUE))
+        );
+
+        loadDataButtonSpace.setOpaque(false);
+        loadDataButtonSpace.setLayout(new javax.swing.OverlayLayout(loadDataButtonSpace));
+
+        loadButtonLabelOverlay.setOpaque(false);
+
+        loadButtonLabelPanel.setOpaque(false);
+
+        loadButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        loadButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loadButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loadButtonLabel.setText("Load File");
+        loadButtonLabel.setVisible(false);
+
+        javax.swing.GroupLayout loadButtonLabelPanelLayout = new javax.swing.GroupLayout(loadButtonLabelPanel);
+        loadButtonLabelPanel.setLayout(loadButtonLabelPanelLayout);
+        loadButtonLabelPanelLayout.setHorizontalGroup(
+            loadButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        loadButtonLabelPanelLayout.setVerticalGroup(
+            loadButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout loadButtonLabelOverlayLayout = new javax.swing.GroupLayout(loadButtonLabelOverlay);
+        loadButtonLabelOverlay.setLayout(loadButtonLabelOverlayLayout);
+        loadButtonLabelOverlayLayout.setHorizontalGroup(
+            loadButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        loadButtonLabelOverlayLayout.setVerticalGroup(
+            loadButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadButtonLabelOverlayLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        loadDataButtonSpace.add(loadButtonLabelOverlay);
+
+        loadDataButtonPanel.setOpaque(false);
+
+        loadDataButton.setBorder(null);
+        loadDataButton.setBorderPainted(false);
+        loadDataButton.setContentAreaFilled(false);
+        loadDataButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loadDataButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout loadDataButtonPanelLayout = new javax.swing.GroupLayout(loadDataButtonPanel);
+        loadDataButtonPanel.setLayout(loadDataButtonPanelLayout);
+        loadDataButtonPanelLayout.setHorizontalGroup(
+            loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 235, Short.MAX_VALUE)
+            .addGroup(loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(loadDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
+        );
+        loadDataButtonPanelLayout.setVerticalGroup(
+            loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 122, Short.MAX_VALUE)
+            .addGroup(loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(loadDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+        );
+
+        loadDataButtonSpace.add(loadDataButtonPanel);
+
+        javax.swing.GroupLayout loadDataControlLayerSpaceLayout = new javax.swing.GroupLayout(loadDataControlLayerSpace);
+        loadDataControlLayerSpace.setLayout(loadDataControlLayerSpaceLayout);
+        loadDataControlLayerSpaceLayout.setHorizontalGroup(
+            loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addGap(262, 262, 262)
+                                .addComponent(loadDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                                .addComponent(loadDataFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(loadDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataControlLayerSpaceLayout.createSequentialGroup()
+                        .addComponent(loadDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(275, 275, 275))))
+        );
+        loadDataControlLayerSpaceLayout.setVerticalGroup(
+            loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(loadDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62)
+                .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(loadDataFieldLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(loadDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addComponent(loadDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout loadDataControlLayerLayout = new javax.swing.GroupLayout(loadDataControlLayer);
+        loadDataControlLayer.setLayout(loadDataControlLayerLayout);
+        loadDataControlLayerLayout.setHorizontalGroup(
+            loadDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataControlLayerLayout.createSequentialGroup()
+                .addGap(527, 527, 527)
+                .addComponent(loadDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(625, 625, 625))
+        );
+        loadDataControlLayerLayout.setVerticalGroup(
+            loadDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataControlLayerLayout.createSequentialGroup()
+                .addGap(486, 486, 486)
+                .addComponent(loadDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(251, 251, 251))
+        );
+
+        mainLayerPane.add(loadDataControlLayer);
+
+        loadDataLightLayer.setOpaque(false);
+
+        loadDataButtonLightPanel.setOpaque(false);
+
+        loadDataButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
+        loadDataButtonLight.setVisible(false);
+
+        javax.swing.GroupLayout loadDataButtonLightPanelLayout = new javax.swing.GroupLayout(loadDataButtonLightPanel);
+        loadDataButtonLightPanel.setLayout(loadDataButtonLightPanelLayout);
+        loadDataButtonLightPanelLayout.setHorizontalGroup(
+            loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 240, Short.MAX_VALUE)
+            .addGroup(loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(loadDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        loadDataButtonLightPanelLayout.setVerticalGroup(
+            loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 124, Short.MAX_VALUE)
+            .addGroup(loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loadDataButtonLightPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(loadDataButtonLight)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        loadDataFieldLightPanel.setOpaque(false);
+        loadDataFieldLightPanel.setLayout(new javax.swing.OverlayLayout(loadDataFieldLightPanel));
+
+        loadDataFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        loadDataFieldLight.setVisible(false);
+        loadDataFieldLightPanel.add(loadDataFieldLight);
+
+        loadDataFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        loadDataFieldDimmer.setVisible(false);
+        loadDataFieldLightPanel.add(loadDataFieldDimmer);
+
+        javax.swing.GroupLayout loadDataLightLayerLayout = new javax.swing.GroupLayout(loadDataLightLayer);
+        loadDataLightLayer.setLayout(loadDataLightLayerLayout);
+        loadDataLightLayerLayout.setHorizontalGroup(
+            loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loadDataLightLayerLayout.createSequentialGroup()
+                .addGroup(loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(loadDataLightLayerLayout.createSequentialGroup()
+                        .addGap(796, 796, 796)
+                        .addComponent(loadDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(loadDataLightLayerLayout.createSequentialGroup()
+                        .addGap(537, 537, 537)
+                        .addComponent(loadDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(885, 885, 885))
+        );
+        loadDataLightLayerLayout.setVerticalGroup(
+            loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataLightLayerLayout.createSequentialGroup()
+                .addGap(597, 597, 597)
+                .addComponent(loadDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(loadDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(253, 253, 253))
+        );
+
+        mainLayerPane.add(loadDataLightLayer);
 
         mainControlLayer.setOpaque(false);
         mainControlLayer.setPreferredSize(new java.awt.Dimension(1920, 1080));
@@ -1452,9 +2499,9 @@ public class MainFrame extends javax.swing.JFrame {
         mainControlLayerLayout.setVerticalGroup(
             mainControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainControlLayerLayout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
+                .addContainerGap(78, Short.MAX_VALUE)
                 .addComponent(mainButtonGrid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(764, Short.MAX_VALUE))
+                .addContainerGap(761, Short.MAX_VALUE))
         );
 
         mainLayerPane.add(mainControlLayer);
@@ -2153,59 +3200,6 @@ public class MainFrame extends javax.swing.JFrame {
         backgroundLayer.setOpaque(false);
         backgroundLayer.setLayout(new javax.swing.OverlayLayout(backgroundLayer));
 
-        BackgroundSpace_reports.setOpaque(false);
-
-        BackgroundPanel_reports.setOpaque(false);
-
-        reportMenuBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        reportMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ReportMenuScreen.png"))); // NOI18N
-        reportMenuBackground.setOpaque(true);
-        reportMenuBackground.setVisible(false);
-
-        javax.swing.GroupLayout BackgroundPanel_reportsLayout = new javax.swing.GroupLayout(BackgroundPanel_reports);
-        BackgroundPanel_reports.setLayout(BackgroundPanel_reportsLayout);
-        BackgroundPanel_reportsLayout.setHorizontalGroup(
-            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(reportMenuBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        BackgroundPanel_reportsLayout.setVerticalGroup(
-            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(reportMenuBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-
-        javax.swing.GroupLayout BackgroundSpace_reportsLayout = new javax.swing.GroupLayout(BackgroundSpace_reports);
-        BackgroundSpace_reports.setLayout(BackgroundSpace_reportsLayout);
-        BackgroundSpace_reportsLayout.setHorizontalGroup(
-            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1934, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        BackgroundSpace_reportsLayout.setVerticalGroup(
-            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1083, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        backgroundLayer.add(BackgroundSpace_reports);
-
         BackgroundSpace_systime.setOpaque(false);
 
         BackgroundPanel_systime.setOpaque(false);
@@ -2258,6 +3252,59 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         backgroundLayer.add(BackgroundSpace_systime);
+
+        BackgroundSpace_reports.setOpaque(false);
+
+        BackgroundPanel_reports.setOpaque(false);
+
+        reportMenuBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        reportMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ReportMenuScreen.png"))); // NOI18N
+        reportMenuBackground.setOpaque(true);
+        reportMenuBackground.setVisible(false);
+
+        javax.swing.GroupLayout BackgroundPanel_reportsLayout = new javax.swing.GroupLayout(BackgroundPanel_reports);
+        BackgroundPanel_reports.setLayout(BackgroundPanel_reportsLayout);
+        BackgroundPanel_reportsLayout.setHorizontalGroup(
+            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1920, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(reportMenuBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        BackgroundPanel_reportsLayout.setVerticalGroup(
+            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1080, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(reportMenuBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout BackgroundSpace_reportsLayout = new javax.swing.GroupLayout(BackgroundSpace_reports);
+        BackgroundSpace_reports.setLayout(BackgroundSpace_reportsLayout);
+        BackgroundSpace_reportsLayout.setHorizontalGroup(
+            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        BackgroundSpace_reportsLayout.setVerticalGroup(
+            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        backgroundLayer.add(BackgroundSpace_reports);
 
         BackgroundSpace_fileData.setOpaque(false);
 
@@ -2471,955 +3518,6 @@ public class MainFrame extends javax.swing.JFrame {
         backgroundLayer.add(BackgroundSpace);
 
         mainLayerPane.add(backgroundLayer);
-
-        systimeControlLayer.setOpaque(false);
-        systimeControlLayer.setVisible(false);
-
-        systimeControlLayerSpace.setOpaque(false);
-
-        systimeHeaderPanel1.setOpaque(false);
-
-        systimeHeaderLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        systimeHeaderLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        systimeHeaderLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        systimeHeaderLabel1.setText("0.0");
-
-        javax.swing.GroupLayout systimeHeaderPanel1Layout = new javax.swing.GroupLayout(systimeHeaderPanel1);
-        systimeHeaderPanel1.setLayout(systimeHeaderPanel1Layout);
-        systimeHeaderPanel1Layout.setHorizontalGroup(
-            systimeHeaderPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeHeaderPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(systimeHeaderLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-        systimeHeaderPanel1Layout.setVerticalGroup(
-            systimeHeaderPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeHeaderPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeHeaderLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        systimeHeaderPanel.setOpaque(false);
-
-        systimeHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        systimeHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
-        systimeHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        systimeHeaderLabel.setText("System Time");
-
-        javax.swing.GroupLayout systimeHeaderPanelLayout = new javax.swing.GroupLayout(systimeHeaderPanel);
-        systimeHeaderPanel.setLayout(systimeHeaderPanelLayout);
-        systimeHeaderPanelLayout.setHorizontalGroup(
-            systimeHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeHeaderPanelLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(systimeHeaderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-        systimeHeaderPanelLayout.setVerticalGroup(
-            systimeHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeHeaderPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeHeaderLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        systimeFieldLabelPanel.setOpaque(false);
-
-        systimeFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        systimeFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
-        systimeFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        systimeFieldLabel.setText("New Time");
-
-        javax.swing.GroupLayout systimeFieldLabelPanelLayout = new javax.swing.GroupLayout(systimeFieldLabelPanel);
-        systimeFieldLabelPanel.setLayout(systimeFieldLabelPanelLayout);
-        systimeFieldLabelPanelLayout.setHorizontalGroup(
-            systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 193, Short.MAX_VALUE)
-            .addGroup(systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(systimeFieldLabelPanelLayout.createSequentialGroup()
-                    .addGap(31, 31, 31)
-                    .addComponent(systimeFieldLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(33, Short.MAX_VALUE)))
-        );
-        systimeFieldLabelPanelLayout.setVerticalGroup(
-            systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 42, Short.MAX_VALUE)
-            .addGroup(systimeFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeFieldLabelPanelLayout.createSequentialGroup()
-                    .addGap(7, 7, 7)
-                    .addComponent(systimeFieldLabel)
-                    .addContainerGap()))
-        );
-
-        systimeChangeButtonSpace.setOpaque(false);
-        systimeChangeButtonSpace.setLayout(new javax.swing.OverlayLayout(systimeChangeButtonSpace));
-
-        systimeChangeButtonLabelOverlay.setOpaque(false);
-
-        systimeChangeButtonLabelPanel.setOpaque(false);
-
-        systimeChangeButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        systimeChangeButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
-        systimeChangeButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        systimeChangeButtonLabel.setText("Update Time");
-
-        javax.swing.GroupLayout systimeChangeButtonLabelPanelLayout = new javax.swing.GroupLayout(systimeChangeButtonLabelPanel);
-        systimeChangeButtonLabelPanel.setLayout(systimeChangeButtonLabelPanelLayout);
-        systimeChangeButtonLabelPanelLayout.setHorizontalGroup(
-            systimeChangeButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeChangeButtonLabelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeChangeButtonLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        systimeChangeButtonLabelPanelLayout.setVerticalGroup(
-            systimeChangeButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeChangeButtonLabelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeChangeButtonLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout systimeChangeButtonLabelOverlayLayout = new javax.swing.GroupLayout(systimeChangeButtonLabelOverlay);
-        systimeChangeButtonLabelOverlay.setLayout(systimeChangeButtonLabelOverlayLayout);
-        systimeChangeButtonLabelOverlayLayout.setHorizontalGroup(
-            systimeChangeButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeChangeButtonLabelOverlayLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeChangeButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        systimeChangeButtonLabelOverlayLayout.setVerticalGroup(
-            systimeChangeButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeChangeButtonLabelOverlayLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeChangeButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        systimeChangeButtonSpace.add(systimeChangeButtonLabelOverlay);
-
-        systimeChangeButtonPanel.setOpaque(false);
-
-        systimeChangeButton.setBorder(null);
-        systimeChangeButton.setBorderPainted(false);
-        systimeChangeButton.setContentAreaFilled(false);
-        systimeChangeButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                systimeChangeButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout systimeChangeButtonPanelLayout = new javax.swing.GroupLayout(systimeChangeButtonPanel);
-        systimeChangeButtonPanel.setLayout(systimeChangeButtonPanelLayout);
-        systimeChangeButtonPanelLayout.setHorizontalGroup(
-            systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 241, Short.MAX_VALUE)
-            .addGroup(systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(systimeChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        systimeChangeButtonPanelLayout.setVerticalGroup(
-            systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 124, Short.MAX_VALUE)
-            .addGroup(systimeChangeButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(systimeChangeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        systimeChangeButtonSpace.add(systimeChangeButtonPanel);
-
-        systimeTextEntryPanel.setOpaque(false);
-
-        systimeTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
-        systimeTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        systimeTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
-        systimeTextEntryField.setText("0.0");
-        systimeTextEntryField.setToolTipText("e.g. \"30.3\"");
-        systimeTextEntryField.setBorder(null);
-        systimeTextEntryField.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                systimeTextEntryFieldKeyPressed(evt);
-            }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                systimeTextEntryFieldKeyReleased(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                systimeTextEntryFieldKeyTyped(evt);
-            }
-        });
-
-        javax.swing.GroupLayout systimeTextEntryPanelLayout = new javax.swing.GroupLayout(systimeTextEntryPanel);
-        systimeTextEntryPanel.setLayout(systimeTextEntryPanelLayout);
-        systimeTextEntryPanelLayout.setHorizontalGroup(
-            systimeTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeTextEntryPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(systimeTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(353, 353, 353))
-        );
-        systimeTextEntryPanelLayout.setVerticalGroup(
-            systimeTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeTextEntryPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout systimeControlLayerSpaceLayout = new javax.swing.GroupLayout(systimeControlLayerSpace);
-        systimeControlLayerSpace.setLayout(systimeControlLayerSpaceLayout);
-        systimeControlLayerSpaceLayout.setHorizontalGroup(
-            systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
-                .addGap(206, 206, 206)
-                .addComponent(systimeChangeButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
-                .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(systimeFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(systimeTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
-                        .addGap(225, 225, 225)
-                        .addComponent(systimeHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(157, 157, 157))
-            .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeControlLayerSpaceLayout.createSequentialGroup()
-                    .addGap(225, 225, 225)
-                    .addComponent(systimeHeaderPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(224, 224, 224)))
-        );
-        systimeControlLayerSpaceLayout.setVerticalGroup(
-            systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeControlLayerSpaceLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
-                .addComponent(systimeHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(93, 93, 93)
-                .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(systimeTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(systimeFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(37, 37, 37)
-                .addComponent(systimeChangeButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(systimeControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeControlLayerSpaceLayout.createSequentialGroup()
-                    .addGap(189, 189, 189)
-                    .addComponent(systimeHeaderPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(243, 243, 243)))
-        );
-
-        javax.swing.GroupLayout systimeControlLayerLayout = new javax.swing.GroupLayout(systimeControlLayer);
-        systimeControlLayer.setLayout(systimeControlLayerLayout);
-        systimeControlLayerLayout.setHorizontalGroup(
-            systimeControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeControlLayerLayout.createSequentialGroup()
-                .addGap(591, 591, 591)
-                .addComponent(systimeControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(653, 653, 653))
-        );
-        systimeControlLayerLayout.setVerticalGroup(
-            systimeControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeControlLayerLayout.createSequentialGroup()
-                .addGap(361, 361, 361)
-                .addComponent(systimeControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(245, 245, 245))
-        );
-
-        mainLayerPane.add(systimeControlLayer);
-
-        systimeLightLayer.setOpaque(false);
-        systimeLightLayer.setPreferredSize(new java.awt.Dimension(1921, 1083));
-        systimeLightLayer.setVisible(false);
-
-        systimeLightSpace.setOpaque(false);
-        systimeLightSpace.setLayout(null);
-
-        systimeFieldPanel.setOpaque(false);
-        systimeFieldPanel.setLayout(new javax.swing.OverlayLayout(systimeFieldPanel));
-
-        systimeFieldLightSpace.setOpaque(false);
-        systimeFieldLightSpace.setVisible(false);
-
-        systimeFieldLightSubSpace.setOpaque(false);
-
-        systimeFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
-
-        javax.swing.GroupLayout systimeFieldLightSubSpaceLayout = new javax.swing.GroupLayout(systimeFieldLightSubSpace);
-        systimeFieldLightSubSpace.setLayout(systimeFieldLightSubSpaceLayout);
-        systimeFieldLightSubSpaceLayout.setHorizontalGroup(
-            systimeFieldLightSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(systimeFieldLight)
-        );
-        systimeFieldLightSubSpaceLayout.setVerticalGroup(
-            systimeFieldLightSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(systimeFieldLight)
-        );
-
-        javax.swing.GroupLayout systimeFieldLightSpaceLayout = new javax.swing.GroupLayout(systimeFieldLightSpace);
-        systimeFieldLightSpace.setLayout(systimeFieldLightSpaceLayout);
-        systimeFieldLightSpaceLayout.setHorizontalGroup(
-            systimeFieldLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeFieldLightSpaceLayout.createSequentialGroup()
-                .addComponent(systimeFieldLightSubSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        systimeFieldLightSpaceLayout.setVerticalGroup(
-            systimeFieldLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeFieldLightSpaceLayout.createSequentialGroup()
-                .addComponent(systimeFieldLightSubSpace, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        systimeFieldPanel.add(systimeFieldLightSpace);
-
-        systimeFieldDimmerSpace.setOpaque(false);
-        systimeFieldDimmerSpace.setVisible(false);
-
-        systimeFieldDimmerSubSpace.setOpaque(false);
-
-        systimeFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
-
-        javax.swing.GroupLayout systimeFieldDimmerSubSpaceLayout = new javax.swing.GroupLayout(systimeFieldDimmerSubSpace);
-        systimeFieldDimmerSubSpace.setLayout(systimeFieldDimmerSubSpaceLayout);
-        systimeFieldDimmerSubSpaceLayout.setHorizontalGroup(
-            systimeFieldDimmerSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeFieldDimmerSubSpaceLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(systimeFieldDimmer))
-        );
-        systimeFieldDimmerSubSpaceLayout.setVerticalGroup(
-            systimeFieldDimmerSubSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeFieldDimmerSubSpaceLayout.createSequentialGroup()
-                .addComponent(systimeFieldDimmer, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout systimeFieldDimmerSpaceLayout = new javax.swing.GroupLayout(systimeFieldDimmerSpace);
-        systimeFieldDimmerSpace.setLayout(systimeFieldDimmerSpaceLayout);
-        systimeFieldDimmerSpaceLayout.setHorizontalGroup(
-            systimeFieldDimmerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(systimeFieldDimmerSubSpace, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        systimeFieldDimmerSpaceLayout.setVerticalGroup(
-            systimeFieldDimmerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeFieldDimmerSpaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeFieldDimmerSubSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 45, Short.MAX_VALUE)
-                .addGap(9, 9, 9))
-        );
-
-        systimeFieldPanel.add(systimeFieldDimmerSpace);
-
-        systimeLightSpace.add(systimeFieldPanel);
-        systimeFieldPanel.setBounds(630, 300, 193, 60);
-
-        systimeButtonLightSpace.setOpaque(false);
-        systimeButtonLightSpace.setVisible(false);
-
-        systimeButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
-
-        javax.swing.GroupLayout systimeButtonLightSpaceLayout = new javax.swing.GroupLayout(systimeButtonLightSpace);
-        systimeButtonLightSpace.setLayout(systimeButtonLightSpaceLayout);
-        systimeButtonLightSpaceLayout.setHorizontalGroup(
-            systimeButtonLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeButtonLightSpaceLayout.createSequentialGroup()
-                .addComponent(systimeButtonLight)
-                .addGap(0, 32, Short.MAX_VALUE))
-        );
-        systimeButtonLightSpaceLayout.setVerticalGroup(
-            systimeButtonLightSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeButtonLightSpaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(systimeButtonLight)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        systimeLightSpace.add(systimeButtonLightSpace);
-        systimeButtonLightSpace.setBounds(709, 381, 270, 136);
-
-        javax.swing.GroupLayout systimeLightLayerLayout = new javax.swing.GroupLayout(systimeLightLayer);
-        systimeLightLayer.setLayout(systimeLightLayerLayout);
-        systimeLightLayerLayout.setHorizontalGroup(
-            systimeLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(systimeLightLayerLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(systimeLightSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 1150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(688, Short.MAX_VALUE))
-        );
-        systimeLightLayerLayout.setVerticalGroup(
-            systimeLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, systimeLightLayerLayout.createSequentialGroup()
-                .addContainerGap(328, Short.MAX_VALUE)
-                .addComponent(systimeLightSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
-        );
-
-        mainLayerPane.add(systimeLightLayer);
-
-        saveDataControlLayer.setOpaque(false);
-        saveDataControlLayer.setVisible(false);
-
-        saveDataControlLayerSpace.setOpaque(false);
-
-        saveDataFieldLabelPanel.setOpaque(false);
-
-        saveDataFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        saveDataFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
-        saveDataFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        saveDataFieldLabel.setText("File Location");
-
-        javax.swing.GroupLayout saveDataFieldLabelPanelLayout = new javax.swing.GroupLayout(saveDataFieldLabelPanel);
-        saveDataFieldLabelPanel.setLayout(saveDataFieldLabelPanelLayout);
-        saveDataFieldLabelPanelLayout.setHorizontalGroup(
-            saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 198, Short.MAX_VALUE)
-            .addGroup(saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(saveDataFieldLabelPanelLayout.createSequentialGroup()
-                    .addGap(31, 31, 31)
-                    .addComponent(saveDataFieldLabel)
-                    .addContainerGap(32, Short.MAX_VALUE)))
-        );
-        saveDataFieldLabelPanelLayout.setVerticalGroup(
-            saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(saveDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(saveDataFieldLabelPanelLayout.createSequentialGroup()
-                    .addGap(7, 7, 7)
-                    .addComponent(saveDataFieldLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
-
-        saveDataTextEntryPanel.setOpaque(false);
-
-        saveDataTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
-        saveDataTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        saveDataTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
-        saveDataTextEntryField.setText("Enter File Location");
-        saveDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
-        saveDataTextEntryField.setBorder(null);
-        saveDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                saveDataTextEntryFieldPropertyChange(evt);
-            }
-        });
-
-        javax.swing.GroupLayout saveDataTextEntryPanelLayout = new javax.swing.GroupLayout(saveDataTextEntryPanel);
-        saveDataTextEntryPanel.setLayout(saveDataTextEntryPanelLayout);
-        saveDataTextEntryPanelLayout.setHorizontalGroup(
-            saveDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataTextEntryPanelLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(saveDataTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        saveDataTextEntryPanelLayout.setVerticalGroup(
-            saveDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataTextEntryPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveDataTextEntryField, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        saveDataHeaderPanel.setOpaque(false);
-
-        saveDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        saveDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
-        saveDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        saveDataHeaderLabel.setText("File System");
-
-        javax.swing.GroupLayout saveDataHeaderPanelLayout = new javax.swing.GroupLayout(saveDataHeaderPanel);
-        saveDataHeaderPanel.setLayout(saveDataHeaderPanelLayout);
-        saveDataHeaderPanelLayout.setHorizontalGroup(
-            saveDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataHeaderPanelLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(saveDataHeaderLabel)
-                .addContainerGap(42, Short.MAX_VALUE))
-        );
-        saveDataHeaderPanelLayout.setVerticalGroup(
-            saveDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataHeaderPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveDataHeaderLabel)
-                .addContainerGap(7, Short.MAX_VALUE))
-        );
-
-        saveDataButtonSpace.setOpaque(false);
-        saveDataButtonSpace.setLayout(new javax.swing.OverlayLayout(saveDataButtonSpace));
-
-        saveButtonLabelOverlay.setOpaque(false);
-
-        saveButtonLabelPanel.setOpaque(false);
-
-        saveButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        saveButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
-        saveButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        saveButtonLabel.setText("Save File");
-        saveButtonLabel.setVisible(false);
-
-        javax.swing.GroupLayout saveButtonLabelPanelLayout = new javax.swing.GroupLayout(saveButtonLabelPanel);
-        saveButtonLabelPanel.setLayout(saveButtonLabelPanelLayout);
-        saveButtonLabelPanelLayout.setHorizontalGroup(
-            saveButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveButtonLabelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        saveButtonLabelPanelLayout.setVerticalGroup(
-            saveButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveButtonLabelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout saveButtonLabelOverlayLayout = new javax.swing.GroupLayout(saveButtonLabelOverlay);
-        saveButtonLabelOverlay.setLayout(saveButtonLabelOverlayLayout);
-        saveButtonLabelOverlayLayout.setHorizontalGroup(
-            saveButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveButtonLabelOverlayLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        saveButtonLabelOverlayLayout.setVerticalGroup(
-            saveButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveButtonLabelOverlayLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        saveDataButtonSpace.add(saveButtonLabelOverlay);
-
-        saveDataButtonPanel.setOpaque(false);
-
-        saveDataButton.setBorder(null);
-        saveDataButton.setBorderPainted(false);
-        saveDataButton.setContentAreaFilled(false);
-        saveDataButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveDataButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout saveDataButtonPanelLayout = new javax.swing.GroupLayout(saveDataButtonPanel);
-        saveDataButtonPanel.setLayout(saveDataButtonPanelLayout);
-        saveDataButtonPanelLayout.setHorizontalGroup(
-            saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 235, Short.MAX_VALUE)
-            .addGroup(saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(saveDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
-        );
-        saveDataButtonPanelLayout.setVerticalGroup(
-            saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(saveDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(saveDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
-        );
-
-        saveDataButtonSpace.add(saveDataButtonPanel);
-
-        javax.swing.GroupLayout saveDataControlLayerSpaceLayout = new javax.swing.GroupLayout(saveDataControlLayerSpace);
-        saveDataControlLayerSpace.setLayout(saveDataControlLayerSpaceLayout);
-        saveDataControlLayerSpaceLayout.setHorizontalGroup(
-            saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
-                        .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
-                                .addGap(262, 262, 262)
-                                .addComponent(saveDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
-                                .addComponent(saveDataFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
-                                .addComponent(saveDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataControlLayerSpaceLayout.createSequentialGroup()
-                        .addComponent(saveDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(275, 275, 275))))
-        );
-        saveDataControlLayerSpaceLayout.setVerticalGroup(
-            saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataControlLayerSpaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(saveDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
-                .addGroup(saveDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(saveDataFieldLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(saveDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(65, 65, 65)
-                .addComponent(saveDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout saveDataControlLayerLayout = new javax.swing.GroupLayout(saveDataControlLayer);
-        saveDataControlLayer.setLayout(saveDataControlLayerLayout);
-        saveDataControlLayerLayout.setHorizontalGroup(
-            saveDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataControlLayerLayout.createSequentialGroup()
-                .addGap(527, 527, 527)
-                .addComponent(saveDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(625, 625, 625))
-        );
-        saveDataControlLayerLayout.setVerticalGroup(
-            saveDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataControlLayerLayout.createSequentialGroup()
-                .addGap(486, 486, 486)
-                .addComponent(saveDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(251, 251, 251))
-        );
-
-        mainLayerPane.add(saveDataControlLayer);
-
-        loadDataControlLayer.setOpaque(false);
-        loadDataControlLayer.setVisible(false);
-
-        loadDataControlLayerSpace.setOpaque(false);
-
-        loadDataFieldLabelPanel.setOpaque(false);
-
-        loadDataFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        loadDataFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
-        loadDataFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        loadDataFieldLabel.setText("File Location");
-
-        javax.swing.GroupLayout loadDataFieldLabelPanelLayout = new javax.swing.GroupLayout(loadDataFieldLabelPanel);
-        loadDataFieldLabelPanel.setLayout(loadDataFieldLabelPanelLayout);
-        loadDataFieldLabelPanelLayout.setHorizontalGroup(
-            loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 198, Short.MAX_VALUE)
-            .addGroup(loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(loadDataFieldLabelPanelLayout.createSequentialGroup()
-                    .addGap(31, 31, 31)
-                    .addComponent(loadDataFieldLabel)
-                    .addContainerGap(32, Short.MAX_VALUE)))
-        );
-        loadDataFieldLabelPanelLayout.setVerticalGroup(
-            loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(loadDataFieldLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(loadDataFieldLabelPanelLayout.createSequentialGroup()
-                    .addGap(7, 7, 7)
-                    .addComponent(loadDataFieldLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
-
-        loadDataTextEntryPanel.setOpaque(false);
-
-        loadDataTextEntryField.setBackground(new java.awt.Color(255, 255, 255));
-        loadDataTextEntryField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        loadDataTextEntryField.setForeground(new java.awt.Color(0, 0, 0));
-        loadDataTextEntryField.setText("Enter File Location");
-        loadDataTextEntryField.setToolTipText("e.g. \"C:\\User\\Folder\\File.extension\"");
-        loadDataTextEntryField.setBorder(null);
-        loadDataTextEntryField.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                loadDataTextEntryFieldPropertyChange(evt);
-            }
-        });
-
-        javax.swing.GroupLayout loadDataTextEntryPanelLayout = new javax.swing.GroupLayout(loadDataTextEntryPanel);
-        loadDataTextEntryPanel.setLayout(loadDataTextEntryPanelLayout);
-        loadDataTextEntryPanelLayout.setHorizontalGroup(
-            loadDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataTextEntryPanelLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(loadDataTextEntryField, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        loadDataTextEntryPanelLayout.setVerticalGroup(
-            loadDataTextEntryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataTextEntryPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadDataTextEntryField, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        loadDataHeaderPanel.setOpaque(false);
-
-        loadDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        loadDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
-        loadDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        loadDataHeaderLabel.setText("File System");
-
-        javax.swing.GroupLayout loadDataHeaderPanelLayout = new javax.swing.GroupLayout(loadDataHeaderPanel);
-        loadDataHeaderPanel.setLayout(loadDataHeaderPanelLayout);
-        loadDataHeaderPanelLayout.setHorizontalGroup(
-            loadDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataHeaderPanelLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(loadDataHeaderLabel)
-                .addContainerGap(42, Short.MAX_VALUE))
-        );
-        loadDataHeaderPanelLayout.setVerticalGroup(
-            loadDataHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataHeaderPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadDataHeaderLabel)
-                .addContainerGap(7, Short.MAX_VALUE))
-        );
-
-        loadDataButtonSpace.setOpaque(false);
-        loadDataButtonSpace.setLayout(new javax.swing.OverlayLayout(loadDataButtonSpace));
-
-        loadButtonLabelOverlay.setOpaque(false);
-
-        loadButtonLabelPanel.setOpaque(false);
-
-        loadButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
-        loadButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
-        loadButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        loadButtonLabel.setText("Load File");
-        loadButtonLabel.setVisible(false);
-
-        javax.swing.GroupLayout loadButtonLabelPanelLayout = new javax.swing.GroupLayout(loadButtonLabelPanel);
-        loadButtonLabelPanel.setLayout(loadButtonLabelPanelLayout);
-        loadButtonLabelPanelLayout.setHorizontalGroup(
-            loadButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadButtonLabelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        loadButtonLabelPanelLayout.setVerticalGroup(
-            loadButtonLabelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadButtonLabelPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadButtonLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout loadButtonLabelOverlayLayout = new javax.swing.GroupLayout(loadButtonLabelOverlay);
-        loadButtonLabelOverlay.setLayout(loadButtonLabelOverlayLayout);
-        loadButtonLabelOverlayLayout.setHorizontalGroup(
-            loadButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadButtonLabelOverlayLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        loadButtonLabelOverlayLayout.setVerticalGroup(
-            loadButtonLabelOverlayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadButtonLabelOverlayLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadButtonLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        loadDataButtonSpace.add(loadButtonLabelOverlay);
-
-        loadDataButtonPanel.setOpaque(false);
-
-        loadDataButton.setBorder(null);
-        loadDataButton.setBorderPainted(false);
-        loadDataButton.setContentAreaFilled(false);
-        loadDataButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loadDataButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout loadDataButtonPanelLayout = new javax.swing.GroupLayout(loadDataButtonPanel);
-        loadDataButtonPanel.setLayout(loadDataButtonPanelLayout);
-        loadDataButtonPanelLayout.setHorizontalGroup(
-            loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 235, Short.MAX_VALUE)
-            .addGroup(loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(loadDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
-        );
-        loadDataButtonPanelLayout.setVerticalGroup(
-            loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
-            .addGroup(loadDataButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(loadDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
-        );
-
-        loadDataButtonSpace.add(loadDataButtonPanel);
-
-        javax.swing.GroupLayout loadDataControlLayerSpaceLayout = new javax.swing.GroupLayout(loadDataControlLayerSpace);
-        loadDataControlLayerSpace.setLayout(loadDataControlLayerSpaceLayout);
-        loadDataControlLayerSpaceLayout.setHorizontalGroup(
-            loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
-                        .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
-                                .addGap(262, 262, 262)
-                                .addComponent(loadDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
-                                .addComponent(loadDataFieldLabelPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12)
-                                .addComponent(loadDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataControlLayerSpaceLayout.createSequentialGroup()
-                        .addComponent(loadDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(275, 275, 275))))
-        );
-        loadDataControlLayerSpaceLayout.setVerticalGroup(
-            loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataControlLayerSpaceLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loadDataHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
-                .addGroup(loadDataControlLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(loadDataFieldLabelPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(loadDataTextEntryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(65, 65, 65)
-                .addComponent(loadDataButtonSpace, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout loadDataControlLayerLayout = new javax.swing.GroupLayout(loadDataControlLayer);
-        loadDataControlLayer.setLayout(loadDataControlLayerLayout);
-        loadDataControlLayerLayout.setHorizontalGroup(
-            loadDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataControlLayerLayout.createSequentialGroup()
-                .addGap(527, 527, 527)
-                .addComponent(loadDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(625, 625, 625))
-        );
-        loadDataControlLayerLayout.setVerticalGroup(
-            loadDataControlLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataControlLayerLayout.createSequentialGroup()
-                .addGap(486, 486, 486)
-                .addComponent(loadDataControlLayerSpace, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(251, 251, 251))
-        );
-
-        mainLayerPane.add(loadDataControlLayer);
-
-        saveDataLightLayer.setOpaque(false);
-
-        saveDataButtonLightPanel.setOpaque(false);
-
-        saveDataButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
-        saveDataButtonLight.setVisible(false);
-
-        javax.swing.GroupLayout saveDataButtonLightPanelLayout = new javax.swing.GroupLayout(saveDataButtonLightPanel);
-        saveDataButtonLightPanel.setLayout(saveDataButtonLightPanelLayout);
-        saveDataButtonLightPanelLayout.setHorizontalGroup(
-            saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 240, Short.MAX_VALUE)
-            .addGroup(saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(saveDataButtonLightPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(saveDataButtonLight)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        saveDataButtonLightPanelLayout.setVerticalGroup(
-            saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 124, Short.MAX_VALUE)
-            .addGroup(saveDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(saveDataButtonLightPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(saveDataButtonLight)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        saveDataFieldLightPanel.setOpaque(false);
-        saveDataFieldLightPanel.setLayout(new javax.swing.OverlayLayout(saveDataFieldLightPanel));
-
-        saveDataFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
-        saveDataFieldLight.setVisible(false);
-        saveDataFieldLightPanel.add(saveDataFieldLight);
-
-        saveDataFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
-        saveDataFieldDimmer.setVisible(false);
-        saveDataFieldLightPanel.add(saveDataFieldDimmer);
-
-        javax.swing.GroupLayout saveDataLightLayerLayout = new javax.swing.GroupLayout(saveDataLightLayer);
-        saveDataLightLayer.setLayout(saveDataLightLayerLayout);
-        saveDataLightLayerLayout.setHorizontalGroup(
-            saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(saveDataLightLayerLayout.createSequentialGroup()
-                .addGroup(saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(saveDataLightLayerLayout.createSequentialGroup()
-                        .addGap(796, 796, 796)
-                        .addComponent(saveDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(saveDataLightLayerLayout.createSequentialGroup()
-                        .addGap(537, 537, 537)
-                        .addComponent(saveDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(885, 885, 885))
-        );
-        saveDataLightLayerLayout.setVerticalGroup(
-            saveDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, saveDataLightLayerLayout.createSequentialGroup()
-                .addGap(597, 597, 597)
-                .addComponent(saveDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
-                .addComponent(saveDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(253, 253, 253))
-        );
-
-        mainLayerPane.add(saveDataLightLayer);
-
-        loadDataLightLayer.setOpaque(false);
-
-        loadDataButtonLightPanel.setOpaque(false);
-
-        loadDataButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button.png"))); // NOI18N
-        loadDataButtonLight.setVisible(false);
-
-        javax.swing.GroupLayout loadDataButtonLightPanelLayout = new javax.swing.GroupLayout(loadDataButtonLightPanel);
-        loadDataButtonLightPanel.setLayout(loadDataButtonLightPanelLayout);
-        loadDataButtonLightPanelLayout.setHorizontalGroup(
-            loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 240, Short.MAX_VALUE)
-            .addGroup(loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(loadDataButtonLightPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(loadDataButtonLight)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        loadDataButtonLightPanelLayout.setVerticalGroup(
-            loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 124, Short.MAX_VALUE)
-            .addGroup(loadDataButtonLightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(loadDataButtonLightPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(loadDataButtonLight)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        loadDataFieldLightPanel.setOpaque(false);
-        loadDataFieldLightPanel.setLayout(new javax.swing.OverlayLayout(loadDataFieldLightPanel));
-
-        loadDataFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
-        loadDataFieldLight.setVisible(false);
-        loadDataFieldLightPanel.add(loadDataFieldLight);
-
-        loadDataFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
-        loadDataFieldDimmer.setVisible(false);
-        loadDataFieldLightPanel.add(loadDataFieldDimmer);
-
-        javax.swing.GroupLayout loadDataLightLayerLayout = new javax.swing.GroupLayout(loadDataLightLayer);
-        loadDataLightLayer.setLayout(loadDataLightLayerLayout);
-        loadDataLightLayerLayout.setHorizontalGroup(
-            loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loadDataLightLayerLayout.createSequentialGroup()
-                .addGroup(loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loadDataLightLayerLayout.createSequentialGroup()
-                        .addGap(796, 796, 796)
-                        .addComponent(loadDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(loadDataLightLayerLayout.createSequentialGroup()
-                        .addGap(537, 537, 537)
-                        .addComponent(loadDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(885, 885, 885))
-        );
-        loadDataLightLayerLayout.setVerticalGroup(
-            loadDataLightLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loadDataLightLayerLayout.createSequentialGroup()
-                .addGap(597, 597, 597)
-                .addComponent(loadDataFieldLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
-                .addComponent(loadDataButtonLightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(253, 253, 253))
-        );
-
-        mainLayerPane.add(loadDataLightLayer);
 
         javax.swing.GroupLayout mainLayerSpaceLayout = new javax.swing.GroupLayout(mainLayerSpace);
         mainLayerSpace.setLayout(mainLayerSpaceLayout);
@@ -4028,6 +4126,10 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLightLabel.setToolTipText("Tab Currently Open");
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
+                
                 currentActiveBackground.setVisible(false);
             }
             
@@ -4035,6 +4137,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = reportsLight;
             currentActiveMainLightButton = reportsButton;
             currentActiveBackground = reportMenuBackground;
+            
+            currentControlPanel = reportControlLayer;
+            currentLightPanel = reportLightLayer;
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
             
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
@@ -4054,6 +4162,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = null;
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
@@ -4135,15 +4249,20 @@ public class MainFrame extends javax.swing.JFrame {
         if (systimeButtonLightSpace.isVisible())
         {
             systimeButtonLightSpace.setVisible(false);
+            systimeChangeButtonLabel.setForeground(Color.white);
+            
             systimeFieldLightSpace.setVisible(false);
             systimeFieldDimmerSpace.setVisible(false);
+            systimeFieldLabel.setForeground(Color.white);
+            
             terminalData.setSystemTime(Double.parseDouble(systimeTextEntryField.getText()));
             systimeTextEntryField.setText(Double.toString(terminalData.getSystemTime()));
             systimeHeaderLabel1.setText(Double.toString(terminalData.getSystemTime()));
         }
     }//GEN-LAST:event_systimeChangeButtonActionPerformed
 
-    private void systimeTextEntryFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyTyped
+    private void systimeTextChange()
+    {
         boolean flag = false;
         double time = -1;
         
@@ -4156,6 +4275,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
             
             time = Double.parseDouble(systimeTextEntryField.getText());
+            
             if (time < 0)
             {
                 flag = true;
@@ -4198,123 +4318,19 @@ public class MainFrame extends javax.swing.JFrame {
             systimeChangeButtonLabel.setForeground(Color.white);
         }
         
-        systimeFieldPanel.repaint();
+        systimeLightLayer.repaint();
+    }
+    
+    private void systimeTextEntryFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyTyped
+        systimeTextChange();
     }//GEN-LAST:event_systimeTextEntryFieldKeyTyped
 
     private void systimeTextEntryFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyPressed
-        boolean flag = false;
-        double time = -1;
-        
-        try
-        {
-            if (systimeTextEntryField.getText().contains("d") ||
-                    systimeTextEntryField.getText().contains("f"))
-            {
-                flag = true;
-            }
-            
-            time = Double.parseDouble(systimeTextEntryField.getText());
-            if (time < 0)
-            {
-                flag = true;
-            }
-        }
-        catch (Exception e)
-        {
-            flag = true;
-        }
-        
-        if (!flag)
-        {
-            if (time == terminalData.getSystemTime())
-            {
-                systimeFieldLightSpace.setVisible(false);
-                systimeFieldDimmerSpace.setVisible(false);
-                systimeFieldLabel.setForeground(Color.white);
-                
-                systimeButtonLightSpace.setVisible(false);
-                systimeChangeButtonLabel.setForeground(Color.white);
-            }
-            
-            else
-            {
-                systimeFieldLightSpace.setVisible(true);
-                systimeFieldLabel.setForeground(Color.black);
-                
-                systimeButtonLightSpace.setVisible(true);
-                systimeChangeButtonLabel.setForeground(Color.black);
-            }
-        }
-        
-        else
-        {
-            systimeFieldDimmerSpace.setVisible(true);
-            systimeFieldLightSpace.setVisible(false);
-            systimeFieldLabel.setForeground(Color.red);
-            
-            systimeButtonLightSpace.setVisible(false);
-            systimeChangeButtonLabel.setForeground(Color.white);
-        }
-        
-        systimeFieldPanel.repaint();
+        systimeTextChange();
     }//GEN-LAST:event_systimeTextEntryFieldKeyPressed
 
     private void systimeTextEntryFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_systimeTextEntryFieldKeyReleased
-        boolean flag = false;
-        double time = -1;
-        
-        try
-        {
-            if (systimeTextEntryField.getText().contains("d") ||
-                    systimeTextEntryField.getText().contains("f"))
-            {
-                flag = true;
-            }
-            
-            time = Double.parseDouble(systimeTextEntryField.getText());
-            if (time < 0)
-            {
-                flag = true;
-            }
-        }
-        catch (Exception e)
-        {
-            flag = true;
-        }
-        
-        if (!flag)
-        {
-            if (time == terminalData.getSystemTime())
-            {
-                systimeFieldLightSpace.setVisible(false);
-                systimeFieldDimmerSpace.setVisible(false);
-                systimeFieldLabel.setForeground(Color.white);
-                
-                systimeButtonLightSpace.setVisible(false);
-                systimeChangeButtonLabel.setForeground(Color.white);
-            }
-            
-            else
-            {
-                systimeFieldLightSpace.setVisible(true);
-                systimeFieldLabel.setForeground(Color.black);
-                
-                systimeButtonLightSpace.setVisible(true);
-                systimeChangeButtonLabel.setForeground(Color.black);
-            }
-        }
-        
-        else
-        {
-            systimeFieldDimmerSpace.setVisible(true);
-            systimeFieldLightSpace.setVisible(false);
-            systimeFieldLabel.setForeground(Color.red);
-            
-            systimeButtonLightSpace.setVisible(false);
-            systimeChangeButtonLabel.setForeground(Color.white);
-        }
-        
-        systimeFieldPanel.repaint();
+        systimeTextChange();
     }//GEN-LAST:event_systimeTextEntryFieldKeyReleased
 
     private void saveDataTextEntryFieldPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_saveDataTextEntryFieldPropertyChange
@@ -4324,6 +4340,269 @@ public class MainFrame extends javax.swing.JFrame {
     private void saveDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveDataButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_saveDataButtonActionPerformed
+
+    private void searchReportInputChange()
+    {
+        if (searchReportQueryTextInput.getText().contains("%") ||
+                searchReportQueryTextInput.getText().contains("\\") ||
+                searchReportQueryTextInput.getText().contains("|"))
+        {
+            searchReportQueryFieldLight.setVisible(false);
+            searchReportQueryFieldDimmer.setVisible(true);
+            
+            searchReportQueryLabel.setForeground(Color.red);
+            
+            searchReportButtonLight.setVisible(false);
+            searchReportButtonLabel.setForeground(Color.white);
+        }
+        
+        else
+        {
+            searchReportQueryFieldLight.setVisible(true);
+            searchReportQueryFieldDimmer.setVisible(false);
+            
+            searchReportQueryLabel.setForeground(Color.black);
+
+            searchReportButtonLight.setVisible(true);
+            searchReportButtonLabel.setForeground(Color.black);
+        }
+        
+        reportLightLayer.repaint();
+    }
+    
+    private void searchReportQueryTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchReportQueryTextInputKeyPressed
+        searchReportInputChange();
+    }//GEN-LAST:event_searchReportQueryTextInputKeyPressed
+
+    private void searchReportQueryTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchReportQueryTextInputKeyReleased
+        searchReportInputChange();
+    }//GEN-LAST:event_searchReportQueryTextInputKeyReleased
+
+    private void searchReportQueryTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchReportQueryTextInputKeyTyped
+        searchReportInputChange();
+    }//GEN-LAST:event_searchReportQueryTextInputKeyTyped
+
+    private void compSearchInputChange()
+    {
+        if (compSearchQueryTextInput.getText().contains("%") ||
+            compSearchQueryTextInput.getText().contains("\\") ||
+            compSearchQueryTextInput.getText().contains("|"))
+        {
+            compSearchQueryFieldLight.setVisible(false);
+            compSearchQueryFieldDimmer.setVisible(true);
+            
+            compSearchQueryLabel.setForeground(Color.red);
+            
+            compSearchButtonLight.setVisible(false);
+            compSearchButtonLabel.setForeground(Color.white);
+        }
+        
+        else
+        {
+            compSearchQueryFieldLight.setVisible(true);
+            compSearchQueryFieldDimmer.setVisible(false);
+            
+            compSearchQueryLabel.setForeground(Color.black);
+            
+            compSearchButtonLight.setVisible(true);
+            compSearchButtonLabel.setForeground(Color.black);
+        }
+        
+        reportLightLayer.repaint();
+    }
+    
+    private void compSearchQueryTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_compSearchQueryTextInputKeyPressed
+        compSearchInputChange();
+    }//GEN-LAST:event_compSearchQueryTextInputKeyPressed
+
+    private void compSearchQueryTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_compSearchQueryTextInputKeyReleased
+        compSearchInputChange();
+    }//GEN-LAST:event_compSearchQueryTextInputKeyReleased
+
+    private void compSearchQueryTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_compSearchQueryTextInputKeyTyped
+        compSearchInputChange();
+    }//GEN-LAST:event_compSearchQueryTextInputKeyTyped
+
+    private void compReportInputChange()
+    {
+        if (compReportIDTextInput.getText().contains("%") ||
+                compReportIDTextInput.getText().contains("\\") ||
+                compReportIDTextInput.getText().contains("|"))
+        {
+            compReportIDCodeFieldLight.setVisible(false);
+            compReportIDCodeFieldDimmer.setVisible(true);
+            
+            compReportIDCodeLabel.setForeground(Color.red);
+            
+            compReportButtonLight.setVisible(false);
+            compReportButtonLabel.setForeground(Color.white);
+        }
+        
+        else if (compReportIDTextInput.getText().isEmpty())
+        {
+            compReportIDCodeFieldLight.setVisible(false);
+            compReportIDCodeFieldDimmer.setVisible(false);
+            
+            compReportIDCodeLabel.setForeground(Color.white);
+            
+            compReportButtonLight.setVisible(false);
+            compReportButtonLabel.setForeground(Color.white);
+        }
+        
+        else
+        {
+            compReportIDCodeFieldLight.setVisible(true);
+            compReportIDCodeFieldDimmer.setVisible(false);
+
+            compReportIDCodeLabel.setForeground(Color.black);
+
+            compReportButtonLight.setVisible(true);
+            compReportButtonLabel.setForeground(Color.black);
+        }
+     
+        reportLightLayer.repaint();
+    }
+    
+    private void compReportIDTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_compReportIDTextInputKeyPressed
+        compReportInputChange();
+    }//GEN-LAST:event_compReportIDTextInputKeyPressed
+
+    private void compReportIDTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_compReportIDTextInputKeyReleased
+        compReportInputChange();
+    }//GEN-LAST:event_compReportIDTextInputKeyReleased
+
+    private void compReportIDTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_compReportIDTextInputKeyTyped
+        compReportInputChange();
+    }//GEN-LAST:event_compReportIDTextInputKeyTyped
+
+    private void searchReportSortSpinner1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner1PropertyChange
+        searchReportInputChange();
+    }//GEN-LAST:event_searchReportSortSpinner1PropertyChange
+
+    private void searchReportSortSpinner2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner2PropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchReportSortSpinner2PropertyChange
+
+    private void searchReportSortSpinner3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner3PropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchReportSortSpinner3PropertyChange
+
+    private void searchReportSortSpinner4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_searchReportSortSpinner4PropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchReportSortSpinner4PropertyChange
+
+    private void searchReportDataTypeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_searchReportDataTypeSpinnerStateChanged
+        searchReportSortSpinner.setVisible(false);
+        searchReportSortSpinner1.setVisible(false);
+        searchReportSortSpinner2.setVisible(false);
+        searchReportSortSpinner3.setVisible(false);
+        searchReportSortSpinner4.setVisible(false);
+
+        switch (searchReportDataTypeSpinner.getValue().toString())
+        {          
+            case "Ticket":
+                
+                searchReportSortSpinner.setVisible(true);
+
+                break;
+                
+            case "Passenger":
+
+                searchReportSortSpinner1.setVisible(true);
+                
+                break;
+                
+            case "Flight":
+
+                searchReportSortSpinner2.setVisible(true);
+                
+                break;
+                
+            case "Plane":
+
+                searchReportSortSpinner3.setVisible(true);
+                
+                break;
+                
+            case "Airport":
+                
+                searchReportSortSpinner4.setVisible(true);
+                
+                break;
+        }
+        
+        searchReportInputChange();
+    }//GEN-LAST:event_searchReportDataTypeSpinnerStateChanged
+
+    private void searchReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchReportButtonActionPerformed
+        if (searchReportButtonLight.isVisible())
+        {
+            MainPackage.GUIReportFunctions reportFunction = new GUIReportFunctions();
+            
+            String reportSort = "";
+            
+            if (searchReportSortSpinner.isVisible())
+            {
+                reportSort = searchReportSortSpinner.getValue().toString();
+            }
+            
+            else if (searchReportSortSpinner1.isVisible())
+            {
+                reportSort = searchReportSortSpinner1.getValue().toString();
+            }
+           
+            else if (searchReportSortSpinner2.isVisible())
+            {
+                reportSort = searchReportSortSpinner2.getValue().toString();
+            }
+           
+            else if (searchReportSortSpinner3.isVisible())
+            {
+                reportSort = searchReportSortSpinner3.getValue().toString();
+            }
+            
+            else if (searchReportSortSpinner4.isVisible())
+            {
+                reportSort = searchReportSortSpinner4.getValue().toString();
+            }
+            
+            String report = reportFunction.generate(reportSort,
+                    searchReportDataTypeSpinner.getValue().toString(),
+                    Integer.parseInt(searchReportSizeSpinner.getValue().toString()),
+                    searchReportQueryTextInput.getText(),
+                    terminalData);
+            
+            reportDisplayTextArea.setText(report);
+            reportDisplayTextArea.repaint();
+        }
+    }//GEN-LAST:event_searchReportButtonActionPerformed
+
+    private void compReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compReportButtonActionPerformed
+        if (compReportButtonLight.isVisible())
+        {
+            MainPackage.GUIReportFunctions reportFunction = new GUIReportFunctions();
+            
+            String report = reportFunction.compReport(compReportDataTypeSpinner.getValue().toString(),
+                    compReportIDTextInput.getText(),
+                    terminalData);
+            
+            reportDisplayTextArea.setText(report);
+            reportDisplayTextArea.repaint();
+        }
+    }//GEN-LAST:event_compReportButtonActionPerformed
+
+    private void compSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compSearchButtonActionPerformed
+        if (compSearchButtonLight.isVisible())
+        {
+            MainPackage.GUIReportFunctions reportFunction = new GUIReportFunctions();
+            
+            String report = reportFunction.compSearch(compSearchQueryTextInput.getText(),
+                    terminalData);
+            
+            reportDisplayTextArea.setText(report);
+            reportDisplayTextArea.repaint();
+        }
+    }//GEN-LAST:event_compSearchButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4453,6 +4732,22 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel buttonSpace_SysTime;
     private javax.swing.JPanel buttonSpace_Tickets;
     private javax.swing.JPanel buttonSpace_Tickets1;
+    private javax.swing.JButton compReportButton;
+    private javax.swing.JLabel compReportButtonLabel;
+    private javax.swing.JLabel compReportButtonLight;
+    private javax.swing.JLabel compReportDataTypeLabel;
+    private javax.swing.JSpinner compReportDataTypeSpinner;
+    private javax.swing.JLabel compReportIDCodeFieldDimmer;
+    private javax.swing.JLabel compReportIDCodeFieldLight;
+    private javax.swing.JLabel compReportIDCodeLabel;
+    private javax.swing.JTextField compReportIDTextInput;
+    private javax.swing.JButton compSearchButton;
+    private javax.swing.JLabel compSearchButtonLabel;
+    private javax.swing.JLabel compSearchButtonLight;
+    private javax.swing.JLabel compSearchQueryFieldDimmer;
+    private javax.swing.JLabel compSearchQueryFieldLight;
+    private javax.swing.JLabel compSearchQueryLabel;
+    private javax.swing.JTextField compSearchQueryTextInput;
     private javax.swing.JLabel dataMenuBackground;
     private javax.swing.JLabel fileDataBackground;
     private javax.swing.JButton flightsButton;
@@ -4461,38 +4756,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel flightsLabel1;
     private javax.swing.JLabel flightsLight;
     private javax.swing.JLabel flightsLight1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JButton loadButton;
     private javax.swing.JLabel loadButtonLabel;
     private javax.swing.JPanel loadButtonLabelOverlay;
@@ -4536,6 +4799,11 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel planesLight;
     private javax.swing.JLabel planesLight1;
     private javax.swing.JPanel reportControlLayer;
+    private javax.swing.JScrollPane reportDisplayPane;
+    private javax.swing.JTextArea reportDisplayTextArea;
+    private javax.swing.JLabel reportHeader1;
+    private javax.swing.JLabel reportHeader2;
+    private javax.swing.JLabel reportHeader3;
     private javax.swing.JPanel reportLightLayer;
     private javax.swing.JLabel reportMenuBackground;
     private javax.swing.JButton reportsButton;
@@ -4564,6 +4832,23 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel saveDataTextEntryPanel;
     private javax.swing.JLabel saveLabel;
     private javax.swing.JLabel saveLight;
+    private javax.swing.JButton searchReportButton;
+    private javax.swing.JLabel searchReportButtonLabel;
+    private javax.swing.JLabel searchReportButtonLight;
+    private javax.swing.JLabel searchReportDataTypeLabel;
+    private javax.swing.JSpinner searchReportDataTypeSpinner;
+    private javax.swing.JLabel searchReportQueryFieldDimmer;
+    private javax.swing.JLabel searchReportQueryFieldLight;
+    private javax.swing.JLabel searchReportQueryLabel;
+    private javax.swing.JTextField searchReportQueryTextInput;
+    private javax.swing.JLabel searchReportSizeLabel;
+    private javax.swing.JSpinner searchReportSizeSpinner;
+    private javax.swing.JLabel searchReportSortLabel;
+    private javax.swing.JSpinner searchReportSortSpinner;
+    private javax.swing.JSpinner searchReportSortSpinner1;
+    private javax.swing.JSpinner searchReportSortSpinner2;
+    private javax.swing.JSpinner searchReportSortSpinner3;
+    private javax.swing.JSpinner searchReportSortSpinner4;
     private javax.swing.JLabel systimeBackground;
     private javax.swing.JButton systimeButton;
     private javax.swing.JLabel systimeButtonLight;
@@ -4578,12 +4863,10 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel systimeControlLayerSpace;
     private javax.swing.JLabel systimeFieldDimmer;
     private javax.swing.JPanel systimeFieldDimmerSpace;
-    private javax.swing.JPanel systimeFieldDimmerSubSpace;
     private javax.swing.JLabel systimeFieldLabel;
     private javax.swing.JPanel systimeFieldLabelPanel;
     private javax.swing.JLabel systimeFieldLight;
     private javax.swing.JPanel systimeFieldLightSpace;
-    private javax.swing.JPanel systimeFieldLightSubSpace;
     private javax.swing.JPanel systimeFieldPanel;
     private javax.swing.JLabel systimeHeaderLabel;
     private javax.swing.JLabel systimeHeaderLabel1;
