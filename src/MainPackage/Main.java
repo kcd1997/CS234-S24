@@ -22,6 +22,7 @@ public class Main
     public static void main(String[] args)
     {
 
+        /*
         System.out.println("TERMINAL TICKETING SOFTWARE\nBy Kyle Dean, Mason Herbig, and Lwesso Mukeni\n");
         String mainMenuPrint = "Main Menu: ";
         String mainMenuAltPrint = "Option #";
@@ -40,5 +41,9 @@ public class Main
 
         MainMenu mainMenu = new MainMenu(mainMenuOptionsList,mainMenuPrint,mainMenuAltPrint);
         mainMenu.runMenu();
+        */
+        
+        MainPackage.MainFrame mainFrame = new MainFrame();
+        mainFrame.main(null);
     }
 }
