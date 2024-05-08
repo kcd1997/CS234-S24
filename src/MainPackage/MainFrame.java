@@ -44,6 +44,286 @@ public class MainFrame extends javax.swing.JFrame {
 
         mainLayerSpace = new javax.swing.JPanel();
         mainLayerPane = new javax.swing.JLayeredPane();
+        airportManifestDisplayLayer = new javax.swing.JPanel();
+        airportManifestDataDisplayPane = new javax.swing.JScrollPane();
+        airportManifestDataTextArea = new javax.swing.JTextArea();
+        planeManifestDisplayLayer = new javax.swing.JPanel();
+        planeManifestDataDisplayPane = new javax.swing.JScrollPane();
+        planeManifestDataTextArea = new javax.swing.JTextArea();
+        flightManifestDisplayLayer = new javax.swing.JPanel();
+        flightManifestDataDisplayPane = new javax.swing.JScrollPane();
+        flightManifestDataTextArea = new javax.swing.JTextArea();
+        passengerManifestDisplayLayer = new javax.swing.JPanel();
+        passengerManifestDataDisplayPane = new javax.swing.JScrollPane();
+        passengerManifestDataTextArea = new javax.swing.JTextArea();
+        ticketManifestDisplayLayer = new javax.swing.JPanel();
+        ticketManifestDataDisplayPane = new javax.swing.JScrollPane();
+        ticketManifestDataTextArea = new javax.swing.JTextArea();
+        manifestDummyLayer = new javax.swing.JPanel();
+        airportsControlLayer = new javax.swing.JPanel();
+        portViewTextInput = new javax.swing.JTextField();
+        portSearchTextInput = new javax.swing.JTextField();
+        portEditTextInput = new javax.swing.JTextField();
+        portEditTextInput1 = new javax.swing.JTextField();
+        portEditTextInput2 = new javax.swing.JTextField();
+        portEditTextInput3 = new javax.swing.JTextField();
+        portEditTextInput4 = new javax.swing.JTextField();
+        portEditTextInput5 = new javax.swing.JTextField();
+        portEditTextInput6 = new javax.swing.JTextField();
+        portEditTextInput7 = new javax.swing.JTextField();
+        portAddTextInput = new javax.swing.JTextField();
+        portAddTextInput1 = new javax.swing.JTextField();
+        portAddTextInput2 = new javax.swing.JTextField();
+        portAddTextInput3 = new javax.swing.JTextField();
+        portAddTextInput4 = new javax.swing.JTextField();
+        portAddTextInput5 = new javax.swing.JTextField();
+        portAddTextInput6 = new javax.swing.JTextField();
+        portAddTextInput7 = new javax.swing.JTextField();
+        portDataDisplayPane = new javax.swing.JScrollPane();
+        portDataTextArea = new javax.swing.JTextArea();
+        portSearchButton = new javax.swing.JButton();
+        portEditButton = new javax.swing.JButton();
+        portDeleteButton = new javax.swing.JButton();
+        portAddButton = new javax.swing.JButton();
+        portAddFieldLabel = new javax.swing.JLabel();
+        portAddFieldLabel1 = new javax.swing.JLabel();
+        portAddFieldLabel2 = new javax.swing.JLabel();
+        portAddFieldLabel3 = new javax.swing.JLabel();
+        portAddFieldLabel4 = new javax.swing.JLabel();
+        portAddFieldLabel5 = new javax.swing.JLabel();
+        portAddFieldLabel6 = new javax.swing.JLabel();
+        portAddFieldLabel7 = new javax.swing.JLabel();
+        portSearchFieldLabel = new javax.swing.JLabel();
+        portSearchFieldLabel1 = new javax.swing.JLabel();
+        portEditFieldLabel = new javax.swing.JLabel();
+        portEditFieldLabel1 = new javax.swing.JLabel();
+        portEditFieldLabel2 = new javax.swing.JLabel();
+        portEditFieldLabel3 = new javax.swing.JLabel();
+        portEditFieldLabel4 = new javax.swing.JLabel();
+        portEditFieldLabel5 = new javax.swing.JLabel();
+        portEditFieldLabel6 = new javax.swing.JLabel();
+        portEditFieldLabel7 = new javax.swing.JLabel();
+        planesControlLayer = new javax.swing.JPanel();
+        planeViewTextInput = new javax.swing.JTextField();
+        planeSearchTextInput = new javax.swing.JTextField();
+        planeEditTextInput = new javax.swing.JTextField();
+        planeEditTextInput1 = new javax.swing.JTextField();
+        planeEditTextInput2 = new javax.swing.JTextField();
+        planeEditTextInput3 = new javax.swing.JTextField();
+        planeEditTextInput4 = new javax.swing.JTextField();
+        planeEditTextInput5 = new javax.swing.JTextField();
+        planeEditTextInput6 = new javax.swing.JTextField();
+        planeEditTextInput7 = new javax.swing.JTextField();
+        planeAddTextInput = new javax.swing.JTextField();
+        planeAddTextInput1 = new javax.swing.JTextField();
+        planeAddTextInput2 = new javax.swing.JTextField();
+        planeAddTextInput3 = new javax.swing.JTextField();
+        planeAddTextInput4 = new javax.swing.JTextField();
+        planeAddTextInput5 = new javax.swing.JTextField();
+        planeAddTextInput6 = new javax.swing.JTextField();
+        planeAddTextInput7 = new javax.swing.JTextField();
+        planeDataDisplayPane = new javax.swing.JScrollPane();
+        planeDataTextArea = new javax.swing.JTextArea();
+        planeSearchButton = new javax.swing.JButton();
+        planeEditButton = new javax.swing.JButton();
+        planeDeleteButton = new javax.swing.JButton();
+        planeAddButton = new javax.swing.JButton();
+        planeAddFieldLabel = new javax.swing.JLabel();
+        planeAddFieldLabel1 = new javax.swing.JLabel();
+        planeAddFieldLabel2 = new javax.swing.JLabel();
+        planeAddFieldLabel3 = new javax.swing.JLabel();
+        planeAddFieldLabel4 = new javax.swing.JLabel();
+        planeAddFieldLabel5 = new javax.swing.JLabel();
+        planeAddFieldLabel6 = new javax.swing.JLabel();
+        planeAddFieldLabel7 = new javax.swing.JLabel();
+        planeSearchFieldLabel = new javax.swing.JLabel();
+        planeSearchFieldLabel1 = new javax.swing.JLabel();
+        planeEditFieldLabel = new javax.swing.JLabel();
+        planeEditFieldLabel1 = new javax.swing.JLabel();
+        planeEditFieldLabel2 = new javax.swing.JLabel();
+        planeEditFieldLabel3 = new javax.swing.JLabel();
+        planeEditFieldLabel4 = new javax.swing.JLabel();
+        planeEditFieldLabel5 = new javax.swing.JLabel();
+        planeEditFieldLabel6 = new javax.swing.JLabel();
+        planeEditFieldLabel7 = new javax.swing.JLabel();
+        flightsControlLayer = new javax.swing.JPanel();
+        flightViewTextInput = new javax.swing.JTextField();
+        flightSearchTextInput = new javax.swing.JTextField();
+        flightEditTextInput = new javax.swing.JTextField();
+        flightEditTextInput1 = new javax.swing.JTextField();
+        flightEditTextInput2 = new javax.swing.JTextField();
+        flightEditTextInput3 = new javax.swing.JTextField();
+        flightEditTextInput4 = new javax.swing.JTextField();
+        flightEditTextInput5 = new javax.swing.JTextField();
+        flightEditTextInput6 = new javax.swing.JTextField();
+        flightEditTextInput7 = new javax.swing.JTextField();
+        flightAddTextInput = new javax.swing.JTextField();
+        flightAddTextInput1 = new javax.swing.JTextField();
+        flightAddTextInput2 = new javax.swing.JTextField();
+        flightAddTextInput3 = new javax.swing.JTextField();
+        flightAddTextInput4 = new javax.swing.JTextField();
+        flightAddTextInput5 = new javax.swing.JTextField();
+        flightAddTextInput6 = new javax.swing.JTextField();
+        flightAddTextInput7 = new javax.swing.JTextField();
+        flightDataDisplayPane = new javax.swing.JScrollPane();
+        flightDataTextArea = new javax.swing.JTextArea();
+        flightSearchButton = new javax.swing.JButton();
+        flightEditButton = new javax.swing.JButton();
+        flightDeleteButton = new javax.swing.JButton();
+        flightAddButton = new javax.swing.JButton();
+        flightAddFieldLabel = new javax.swing.JLabel();
+        flightAddFieldLabel1 = new javax.swing.JLabel();
+        flightAddFieldLabel2 = new javax.swing.JLabel();
+        flightAddFieldLabel3 = new javax.swing.JLabel();
+        flightAddFieldLabel4 = new javax.swing.JLabel();
+        flightAddFieldLabel5 = new javax.swing.JLabel();
+        flightAddFieldLabel6 = new javax.swing.JLabel();
+        flightAddFieldLabel7 = new javax.swing.JLabel();
+        flightSearchFieldLabel = new javax.swing.JLabel();
+        flightSearchFieldLabel1 = new javax.swing.JLabel();
+        flightEditFieldLabel = new javax.swing.JLabel();
+        flightEditFieldLabel1 = new javax.swing.JLabel();
+        flightEditFieldLabel2 = new javax.swing.JLabel();
+        flightEditFieldLabel3 = new javax.swing.JLabel();
+        flightEditFieldLabel4 = new javax.swing.JLabel();
+        flightEditFieldLabel5 = new javax.swing.JLabel();
+        flightEditFieldLabel6 = new javax.swing.JLabel();
+        flightEditFieldLabel7 = new javax.swing.JLabel();
+        passengerControlLayer = new javax.swing.JPanel();
+        passengerViewTextInput = new javax.swing.JTextField();
+        passengerSearchTextInput = new javax.swing.JTextField();
+        passengerEditTextInput = new javax.swing.JTextField();
+        passengerEditTextInput1 = new javax.swing.JTextField();
+        passengerEditTextInput2 = new javax.swing.JTextField();
+        passengerEditTextInput3 = new javax.swing.JTextField();
+        passengerEditTextInput4 = new javax.swing.JTextField();
+        passengerEditTextInput5 = new javax.swing.JTextField();
+        passengerEditTextInput6 = new javax.swing.JTextField();
+        passengerEditTextInput7 = new javax.swing.JTextField();
+        passengerAddTextInput = new javax.swing.JTextField();
+        passengerAddTextInput1 = new javax.swing.JTextField();
+        passengerAddTextInput2 = new javax.swing.JTextField();
+        passengerAddTextInput3 = new javax.swing.JTextField();
+        passengerAddTextInput4 = new javax.swing.JTextField();
+        passengerAddTextInput5 = new javax.swing.JTextField();
+        passengerAddTextInput6 = new javax.swing.JTextField();
+        passengerAddTextInput7 = new javax.swing.JTextField();
+        passengerDataDisplayPane = new javax.swing.JScrollPane();
+        passengerDataTextArea = new javax.swing.JTextArea();
+        passengerSearchButton = new javax.swing.JButton();
+        passengerEditButton = new javax.swing.JButton();
+        passengerDeleteButton = new javax.swing.JButton();
+        passengerAddButton = new javax.swing.JButton();
+        passengerAddFieldLabel = new javax.swing.JLabel();
+        passengerAddFieldLabel1 = new javax.swing.JLabel();
+        passengerAddFieldLabel2 = new javax.swing.JLabel();
+        passengerAddFieldLabel3 = new javax.swing.JLabel();
+        passengerAddFieldLabel4 = new javax.swing.JLabel();
+        passengerAddFieldLabel5 = new javax.swing.JLabel();
+        passengerAddFieldLabel6 = new javax.swing.JLabel();
+        passengerAddFieldLabel7 = new javax.swing.JLabel();
+        passengerSearchFieldLabel = new javax.swing.JLabel();
+        passengerSearchFieldLabel1 = new javax.swing.JLabel();
+        passengerEditFieldLabel = new javax.swing.JLabel();
+        passengerEditFieldLabel1 = new javax.swing.JLabel();
+        passengerEditFieldLabel2 = new javax.swing.JLabel();
+        passengerEditFieldLabel3 = new javax.swing.JLabel();
+        passengerEditFieldLabel4 = new javax.swing.JLabel();
+        passengerEditFieldLabel5 = new javax.swing.JLabel();
+        passengerEditFieldLabel6 = new javax.swing.JLabel();
+        passengerEditFieldLabel7 = new javax.swing.JLabel();
+        ticketControlLayer = new javax.swing.JPanel();
+        ticketViewTextInput = new javax.swing.JTextField();
+        ticketSearchTextInput = new javax.swing.JTextField();
+        ticketEditTextInput = new javax.swing.JTextField();
+        ticketEditTextInput1 = new javax.swing.JTextField();
+        ticketEditTextInput2 = new javax.swing.JTextField();
+        ticketEditTextInput3 = new javax.swing.JTextField();
+        ticketEditTextInput4 = new javax.swing.JTextField();
+        ticketEditTextInput5 = new javax.swing.JTextField();
+        ticketEditTextInput6 = new javax.swing.JTextField();
+        ticketEditTextInput7 = new javax.swing.JTextField();
+        ticketAddTextInput = new javax.swing.JTextField();
+        ticketAddTextInput1 = new javax.swing.JTextField();
+        ticketAddTextInput2 = new javax.swing.JTextField();
+        ticketAddTextInput3 = new javax.swing.JTextField();
+        ticketAddTextInput4 = new javax.swing.JTextField();
+        ticketAddTextInput5 = new javax.swing.JTextField();
+        ticketAddTextInput6 = new javax.swing.JTextField();
+        ticketAddTextInput7 = new javax.swing.JTextField();
+        ticketDataDisplayPane = new javax.swing.JScrollPane();
+        ticketDataTextArea = new javax.swing.JTextArea();
+        ticketSearchButton = new javax.swing.JButton();
+        ticketEditButton = new javax.swing.JButton();
+        ticketDeleteButton = new javax.swing.JButton();
+        ticketAddButton = new javax.swing.JButton();
+        ticketAddFieldLabel = new javax.swing.JLabel();
+        ticketAddFieldLabel1 = new javax.swing.JLabel();
+        ticketAddFieldLabel2 = new javax.swing.JLabel();
+        ticketAddFieldLabel3 = new javax.swing.JLabel();
+        ticketAddFieldLabel4 = new javax.swing.JLabel();
+        ticketAddFieldLabel5 = new javax.swing.JLabel();
+        ticketAddFieldLabel6 = new javax.swing.JLabel();
+        ticketAddFieldLabel7 = new javax.swing.JLabel();
+        ticketSearchFieldLabel = new javax.swing.JLabel();
+        ticketSearchFieldLabel1 = new javax.swing.JLabel();
+        ticketEditFieldLabel = new javax.swing.JLabel();
+        ticketEditFieldLabel1 = new javax.swing.JLabel();
+        ticketEditFieldLabel2 = new javax.swing.JLabel();
+        ticketEditFieldLabel3 = new javax.swing.JLabel();
+        ticketEditFieldLabel4 = new javax.swing.JLabel();
+        ticketEditFieldLabel5 = new javax.swing.JLabel();
+        ticketEditFieldLabel6 = new javax.swing.JLabel();
+        ticketEditFieldLabel7 = new javax.swing.JLabel();
+        dataLightLayer = new javax.swing.JPanel();
+        dataSearchButtonLabel = new javax.swing.JLabel();
+        dataEditButtonLabel = new javax.swing.JLabel();
+        dataDeleteButtonLabel = new javax.swing.JLabel();
+        dataAddHeaderLabel = new javax.swing.JLabel();
+        dataSearchHeaderLabel = new javax.swing.JLabel();
+        dataEditHeaderLabel = new javax.swing.JLabel();
+        currentDataHeaderLabel = new javax.swing.JLabel();
+        dataAddButtonLabel = new javax.swing.JLabel();
+        dataSearchFieldDimmer = new javax.swing.JLabel();
+        dataSearchFieldDimmer1 = new javax.swing.JLabel();
+        dataAddFieldDimmer = new javax.swing.JLabel();
+        dataAddFieldDimmer1 = new javax.swing.JLabel();
+        dataAddFieldDimmer2 = new javax.swing.JLabel();
+        dataAddFieldDimmer3 = new javax.swing.JLabel();
+        dataAddFieldDimmer4 = new javax.swing.JLabel();
+        dataAddFieldDimmer5 = new javax.swing.JLabel();
+        dataAddFieldDimmer6 = new javax.swing.JLabel();
+        dataAddFieldDimmer7 = new javax.swing.JLabel();
+        dataEditFieldDimmer = new javax.swing.JLabel();
+        dataEditFieldDimmer1 = new javax.swing.JLabel();
+        dataEditFieldDimmer2 = new javax.swing.JLabel();
+        dataEditFieldDimmer3 = new javax.swing.JLabel();
+        dataEditFieldDimmer4 = new javax.swing.JLabel();
+        dataEditFieldDimmer5 = new javax.swing.JLabel();
+        dataEditFieldDimmer6 = new javax.swing.JLabel();
+        dataEditFieldDimmer7 = new javax.swing.JLabel();
+        dataAddFieldLight = new javax.swing.JLabel();
+        dataAddFieldLight1 = new javax.swing.JLabel();
+        dataAddFieldLight2 = new javax.swing.JLabel();
+        dataAddFieldLight3 = new javax.swing.JLabel();
+        dataAddFieldLight4 = new javax.swing.JLabel();
+        dataAddFieldLight5 = new javax.swing.JLabel();
+        dataAddFieldLight6 = new javax.swing.JLabel();
+        dataAddFieldLight7 = new javax.swing.JLabel();
+        dataEditFieldLight = new javax.swing.JLabel();
+        dataEditFieldLight1 = new javax.swing.JLabel();
+        dataEditFieldLight2 = new javax.swing.JLabel();
+        dataEditFieldLight3 = new javax.swing.JLabel();
+        dataEditFieldLight4 = new javax.swing.JLabel();
+        dataEditFieldLight5 = new javax.swing.JLabel();
+        dataEditFieldLight6 = new javax.swing.JLabel();
+        dataEditFieldLight7 = new javax.swing.JLabel();
+        dataSearchFieldLight = new javax.swing.JLabel();
+        dataSearchFieldLight1 = new javax.swing.JLabel();
+        dataAddButtonLight = new javax.swing.JLabel();
+        dataSearchButtonLight = new javax.swing.JLabel();
+        dataEditButtonLight = new javax.swing.JLabel();
+        dataDeleteButtonLight = new javax.swing.JLabel();
         systimeControlLayer = new javax.swing.JPanel();
         systimeControlLayerSpace = new javax.swing.JPanel();
         systimeHeaderPanel1 = new javax.swing.JPanel();
@@ -267,21 +547,21 @@ public class MainFrame extends javax.swing.JFrame {
         buttonLightPanel_Tickets = new javax.swing.JPanel();
         ticketsLight = new javax.swing.JLabel();
         backgroundLayer = new javax.swing.JPanel();
-        BackgroundSpace_reports = new javax.swing.JPanel();
-        BackgroundPanel_reports = new javax.swing.JPanel();
-        reportMenuBackground = new javax.swing.JLabel();
+        BackgroundSpace_manifest = new javax.swing.JPanel();
+        BackgroundPanel_manifest = new javax.swing.JPanel();
+        manifestBackground = new javax.swing.JLabel();
         BackgroundSpace_data = new javax.swing.JPanel();
         BackgroundPanel_data = new javax.swing.JPanel();
         dataMenuBackground = new javax.swing.JLabel();
+        BackgroundSpace_reports = new javax.swing.JPanel();
+        BackgroundPanel_reports = new javax.swing.JPanel();
+        reportMenuBackground = new javax.swing.JLabel();
         BackgroundSpace_systime = new javax.swing.JPanel();
         BackgroundPanel_systime = new javax.swing.JPanel();
         systimeBackground = new javax.swing.JLabel();
         BackgroundSpace_fileData = new javax.swing.JPanel();
         BackgroundPanel_fileData = new javax.swing.JPanel();
         fileDataBackground = new javax.swing.JLabel();
-        BackgroundSpace_manifest = new javax.swing.JPanel();
-        BackgroundPanel_manifest = new javax.swing.JPanel();
-        manifestBackground = new javax.swing.JLabel();
         BackgroundSpace = new javax.swing.JPanel();
         BackgroundPanel = new javax.swing.JPanel();
         Background = new javax.swing.JLabel();
@@ -303,6 +583,3171 @@ public class MainFrame extends javax.swing.JFrame {
         mainLayerPane.setOpaque(true);
         mainLayerPane.setPreferredSize(new java.awt.Dimension(1934, 1080));
         mainLayerPane.setLayout(new javax.swing.OverlayLayout(mainLayerPane));
+
+        airportManifestDisplayLayer.setOpaque(false);
+        airportManifestDisplayLayer.setVisible(false);
+        airportManifestDisplayLayer.setLayout(null);
+
+        airportManifestDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        airportManifestDataDisplayPane.setBorder(null);
+        airportManifestDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        airportManifestDataDisplayPane.setOpaque(false);
+
+        airportManifestDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        airportManifestDataTextArea.setColumns(20);
+        airportManifestDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        airportManifestDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        airportManifestDataTextArea.setLineWrap(true);
+        airportManifestDataTextArea.setRows(5);
+        airportManifestDataTextArea.setWrapStyleWord(true);
+        airportManifestDataTextArea.setBorder(null);
+        airportManifestDataTextArea.setOpaque(false);
+        airportManifestDataDisplayPane.setViewportView(airportManifestDataTextArea);
+
+        airportManifestDisplayLayer.add(airportManifestDataDisplayPane);
+        airportManifestDataDisplayPane.setBounds(50, 370, 1750, 620);
+
+        mainLayerPane.add(airportManifestDisplayLayer);
+
+        planeManifestDisplayLayer.setOpaque(false);
+        planeManifestDisplayLayer.setVisible(false);
+        planeManifestDisplayLayer.setLayout(null);
+
+        planeManifestDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        planeManifestDataDisplayPane.setBorder(null);
+        planeManifestDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        planeManifestDataDisplayPane.setOpaque(false);
+
+        planeManifestDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        planeManifestDataTextArea.setColumns(20);
+        planeManifestDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        planeManifestDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        planeManifestDataTextArea.setLineWrap(true);
+        planeManifestDataTextArea.setRows(5);
+        planeManifestDataTextArea.setWrapStyleWord(true);
+        planeManifestDataTextArea.setBorder(null);
+        planeManifestDataTextArea.setOpaque(false);
+        planeManifestDataDisplayPane.setViewportView(planeManifestDataTextArea);
+
+        planeManifestDisplayLayer.add(planeManifestDataDisplayPane);
+        planeManifestDataDisplayPane.setBounds(50, 370, 1750, 620);
+
+        mainLayerPane.add(planeManifestDisplayLayer);
+
+        flightManifestDisplayLayer.setOpaque(false);
+        flightManifestDisplayLayer.setVisible(false);
+        flightManifestDisplayLayer.setLayout(null);
+
+        flightManifestDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        flightManifestDataDisplayPane.setBorder(null);
+        flightManifestDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        flightManifestDataDisplayPane.setOpaque(false);
+
+        flightManifestDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        flightManifestDataTextArea.setColumns(20);
+        flightManifestDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        flightManifestDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        flightManifestDataTextArea.setLineWrap(true);
+        flightManifestDataTextArea.setRows(5);
+        flightManifestDataTextArea.setWrapStyleWord(true);
+        flightManifestDataTextArea.setBorder(null);
+        flightManifestDataTextArea.setOpaque(false);
+        flightManifestDataDisplayPane.setViewportView(flightManifestDataTextArea);
+
+        flightManifestDisplayLayer.add(flightManifestDataDisplayPane);
+        flightManifestDataDisplayPane.setBounds(50, 370, 1750, 620);
+
+        mainLayerPane.add(flightManifestDisplayLayer);
+
+        passengerManifestDisplayLayer.setOpaque(false);
+        passengerManifestDisplayLayer.setVisible(false);
+        passengerManifestDisplayLayer.setLayout(null);
+
+        passengerManifestDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        passengerManifestDataDisplayPane.setBorder(null);
+        passengerManifestDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        passengerManifestDataDisplayPane.setOpaque(false);
+
+        passengerManifestDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        passengerManifestDataTextArea.setColumns(20);
+        passengerManifestDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        passengerManifestDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        passengerManifestDataTextArea.setLineWrap(true);
+        passengerManifestDataTextArea.setRows(5);
+        passengerManifestDataTextArea.setWrapStyleWord(true);
+        passengerManifestDataTextArea.setBorder(null);
+        passengerManifestDataTextArea.setOpaque(false);
+        passengerManifestDataDisplayPane.setViewportView(passengerManifestDataTextArea);
+
+        passengerManifestDisplayLayer.add(passengerManifestDataDisplayPane);
+        passengerManifestDataDisplayPane.setBounds(50, 370, 1750, 620);
+
+        mainLayerPane.add(passengerManifestDisplayLayer);
+
+        ticketManifestDisplayLayer.setOpaque(false);
+        ticketManifestDisplayLayer.setVisible(false);
+        ticketManifestDisplayLayer.setLayout(null);
+
+        ticketManifestDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        ticketManifestDataDisplayPane.setBorder(null);
+        ticketManifestDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        ticketManifestDataDisplayPane.setOpaque(false);
+
+        ticketManifestDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        ticketManifestDataTextArea.setColumns(20);
+        ticketManifestDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        ticketManifestDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        ticketManifestDataTextArea.setLineWrap(true);
+        ticketManifestDataTextArea.setRows(5);
+        ticketManifestDataTextArea.setWrapStyleWord(true);
+        ticketManifestDataTextArea.setBorder(null);
+        ticketManifestDataTextArea.setOpaque(false);
+        ticketManifestDataDisplayPane.setViewportView(ticketManifestDataTextArea);
+
+        ticketManifestDisplayLayer.add(ticketManifestDataDisplayPane);
+        ticketManifestDataDisplayPane.setBounds(50, 370, 1750, 620);
+
+        mainLayerPane.add(ticketManifestDisplayLayer);
+
+        manifestDummyLayer.setOpaque(false);
+        manifestDummyLayer.setVisible(false);
+        manifestDummyLayer.setLayout(null);
+        mainLayerPane.add(manifestDummyLayer);
+
+        airportsControlLayer.setOpaque(false);
+        airportsControlLayer.setVisible(false);
+        airportsControlLayer.setLayout(null);
+
+        portViewTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        portViewTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portViewTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        portViewTextInput.setToolTipText("");
+        portViewTextInput.setBorder(null);
+        portViewTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portViewTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portViewTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portViewTextInputKeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portViewTextInput);
+        portViewTextInput.setBounds(908, 444, 238, 37);
+
+        portSearchTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        portSearchTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portSearchTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        portSearchTextInput.setToolTipText("");
+        portSearchTextInput.setBorder(null);
+        portSearchTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portSearchTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portSearchTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portSearchTextInputKeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portSearchTextInput);
+        portSearchTextInput.setBounds(908, 500, 238, 37);
+
+        portEditTextInput.setEditable(false);
+        portEditTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput.setToolTipText("");
+        portEditTextInput.setBorder(null);
+        portEditTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInputKeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput);
+        portEditTextInput.setBounds(1528, 439, 238, 37);
+
+        portEditTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput1.setToolTipText("");
+        portEditTextInput1.setBorder(null);
+        portEditTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput1KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput1);
+        portEditTextInput1.setBounds(1528, 494, 238, 37);
+
+        portEditTextInput2.setEditable(false);
+        portEditTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput2.setToolTipText("");
+        portEditTextInput2.setBorder(null);
+        portEditTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput2KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput2);
+        portEditTextInput2.setBounds(1528, 549, 238, 37);
+
+        portEditTextInput3.setEditable(false);
+        portEditTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput3.setToolTipText("");
+        portEditTextInput3.setBorder(null);
+        portEditTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput3KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput3);
+        portEditTextInput3.setBounds(1528, 604, 238, 37);
+
+        portEditTextInput4.setEditable(false);
+        portEditTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput4.setToolTipText("");
+        portEditTextInput4.setBorder(null);
+        portEditTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput4KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput4);
+        portEditTextInput4.setBounds(1528, 659, 238, 37);
+
+        portEditTextInput5.setEditable(false);
+        portEditTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput5.setToolTipText("");
+        portEditTextInput5.setBorder(null);
+        portEditTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput5KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput5);
+        portEditTextInput5.setBounds(1528, 714, 238, 37);
+
+        portEditTextInput6.setEditable(false);
+        portEditTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput6.setToolTipText("");
+        portEditTextInput6.setBorder(null);
+        portEditTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput6KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput6);
+        portEditTextInput6.setBounds(1528, 768, 238, 37);
+
+        portEditTextInput7.setEditable(false);
+        portEditTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        portEditTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portEditTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        portEditTextInput7.setToolTipText("");
+        portEditTextInput7.setBorder(null);
+        portEditTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portEditTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portEditTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portEditTextInput7KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portEditTextInput7);
+        portEditTextInput7.setBounds(1528, 824, 238, 37);
+
+        portAddTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput.setToolTipText("");
+        portAddTextInput.setBorder(null);
+        portAddTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInputKeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput);
+        portAddTextInput.setBounds(290, 439, 238, 37);
+
+        portAddTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput1.setToolTipText("");
+        portAddTextInput1.setBorder(null);
+        portAddTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput1KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput1);
+        portAddTextInput1.setBounds(290, 495, 238, 37);
+
+        portAddTextInput2.setEditable(false);
+        portAddTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput2.setToolTipText("");
+        portAddTextInput2.setBorder(null);
+        portAddTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput2KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput2);
+        portAddTextInput2.setBounds(290, 550, 238, 37);
+
+        portAddTextInput3.setEditable(false);
+        portAddTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput3.setToolTipText("");
+        portAddTextInput3.setBorder(null);
+        portAddTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput3KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput3);
+        portAddTextInput3.setBounds(290, 604, 238, 37);
+
+        portAddTextInput4.setEditable(false);
+        portAddTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput4.setToolTipText("");
+        portAddTextInput4.setBorder(null);
+        portAddTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput4KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput4);
+        portAddTextInput4.setBounds(290, 659, 238, 37);
+
+        portAddTextInput5.setEditable(false);
+        portAddTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput5.setToolTipText("");
+        portAddTextInput5.setBorder(null);
+        portAddTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput5KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput5);
+        portAddTextInput5.setBounds(290, 715, 238, 37);
+
+        portAddTextInput6.setEditable(false);
+        portAddTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput6.setToolTipText("");
+        portAddTextInput6.setBorder(null);
+        portAddTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput6KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput6);
+        portAddTextInput6.setBounds(290, 769, 238, 37);
+
+        portAddTextInput7.setEditable(false);
+        portAddTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        portAddTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        portAddTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        portAddTextInput7.setToolTipText("");
+        portAddTextInput7.setBorder(null);
+        portAddTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                portAddTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                portAddTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                portAddTextInput7KeyTyped(evt);
+            }
+        });
+        airportsControlLayer.add(portAddTextInput7);
+        portAddTextInput7.setBounds(290, 825, 238, 37);
+
+        portDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        portDataDisplayPane.setBorder(null);
+        portDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        portDataDisplayPane.setOpaque(false);
+
+        portDataTextArea.setEditable(false);
+        portDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        portDataTextArea.setColumns(20);
+        portDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        portDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        portDataTextArea.setLineWrap(true);
+        portDataTextArea.setRows(5);
+        portDataTextArea.setWrapStyleWord(true);
+        portDataTextArea.setBorder(null);
+        portDataTextArea.setOpaque(false);
+        portDataDisplayPane.setViewportView(portDataTextArea);
+
+        airportsControlLayer.add(portDataDisplayPane);
+        portDataDisplayPane.setBounds(589, 751, 673, 229);
+
+        portSearchButton.setBorderPainted(false);
+        portSearchButton.setContentAreaFilled(false);
+        portSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                portSearchButtonActionPerformed(evt);
+            }
+        });
+        airportsControlLayer.add(portSearchButton);
+        portSearchButton.setBounds(824, 556, 200, 100);
+
+        portEditButton.setBorderPainted(false);
+        portEditButton.setContentAreaFilled(false);
+        portEditButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                portEditButtonActionPerformed(evt);
+            }
+        });
+        airportsControlLayer.add(portEditButton);
+        portEditButton.setBounds(1344, 882, 200, 100);
+
+        portDeleteButton.setBorderPainted(false);
+        portDeleteButton.setContentAreaFilled(false);
+        portDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                portDeleteButtonActionPerformed(evt);
+            }
+        });
+        airportsControlLayer.add(portDeleteButton);
+        portDeleteButton.setBounds(1546, 882, 200, 100);
+
+        portAddButton.setBorderPainted(false);
+        portAddButton.setContentAreaFilled(false);
+        portAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                portAddButtonActionPerformed(evt);
+            }
+        });
+        airportsControlLayer.add(portAddButton);
+        portAddButton.setBounds(210, 882, 200, 100);
+
+        portAddFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portAddFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel.setText("Airport ID");
+        portAddFieldLabel.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel);
+        portAddFieldLabel.setBounds(78, 442, 210, 29);
+
+        portAddFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portAddFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel1.setText("Airport Name");
+        portAddFieldLabel1.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel1);
+        portAddFieldLabel1.setBounds(78, 498, 210, 29);
+
+        portAddFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portAddFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel2.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel2);
+        portAddFieldLabel2.setBounds(78, 552, 210, 0);
+
+        portAddFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        portAddFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel3.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel3);
+        portAddFieldLabel3.setBounds(76, 608, 210, 0);
+
+        portAddFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        portAddFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel4.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel4);
+        portAddFieldLabel4.setBounds(76, 662, 210, 0);
+
+        portAddFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portAddFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel5.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel5);
+        portAddFieldLabel5.setBounds(78, 716, 210, 0);
+
+        portAddFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portAddFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel6.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel6);
+        portAddFieldLabel6.setBounds(78, 772, 210, 0);
+
+        portAddFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portAddFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        portAddFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portAddFieldLabel7.setToolTipText("");
+        airportsControlLayer.add(portAddFieldLabel7);
+        portAddFieldLabel7.setBounds(76, 828, 210, 0);
+
+        portSearchFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portSearchFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        portSearchFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portSearchFieldLabel.setText("ID Code");
+        portSearchFieldLabel.setToolTipText("");
+        airportsControlLayer.add(portSearchFieldLabel);
+        portSearchFieldLabel.setBounds(694, 447, 210, 29);
+
+        portSearchFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portSearchFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        portSearchFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portSearchFieldLabel1.setText("Search Query");
+        portSearchFieldLabel1.setToolTipText("");
+        airportsControlLayer.add(portSearchFieldLabel1);
+        portSearchFieldLabel1.setBounds(694, 502, 210, 29);
+
+        portEditFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portEditFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel.setText("Airport ID");
+        portEditFieldLabel.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel);
+        portEditFieldLabel.setBounds(1316, 442, 210, 29);
+
+        portEditFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portEditFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel1.setText("Airport Name");
+        portEditFieldLabel1.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel1);
+        portEditFieldLabel1.setBounds(1316, 498, 210, 29);
+
+        portEditFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portEditFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel2.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel2);
+        portEditFieldLabel2.setBounds(1316, 552, 210, 0);
+
+        portEditFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        portEditFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel3.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel3);
+        portEditFieldLabel3.setBounds(1314, 608, 210, 0);
+
+        portEditFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        portEditFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel4.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel4);
+        portEditFieldLabel4.setBounds(1314, 662, 210, 0);
+
+        portEditFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portEditFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel5.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel5);
+        portEditFieldLabel5.setBounds(1316, 716, 210, 0);
+
+        portEditFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portEditFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel6.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel6);
+        portEditFieldLabel6.setBounds(1316, 772, 210, 0);
+
+        portEditFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        portEditFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        portEditFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        portEditFieldLabel7.setToolTipText("");
+        airportsControlLayer.add(portEditFieldLabel7);
+        portEditFieldLabel7.setBounds(1316, 828, 210, 0);
+
+        mainLayerPane.add(airportsControlLayer);
+
+        planesControlLayer.setOpaque(false);
+        planesControlLayer.setVisible(false);
+        planesControlLayer.setLayout(null);
+
+        planeViewTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        planeViewTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeViewTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        planeViewTextInput.setToolTipText("");
+        planeViewTextInput.setBorder(null);
+        planeViewTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeViewTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeViewTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeViewTextInputKeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeViewTextInput);
+        planeViewTextInput.setBounds(908, 444, 238, 37);
+
+        planeSearchTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        planeSearchTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeSearchTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        planeSearchTextInput.setToolTipText("");
+        planeSearchTextInput.setBorder(null);
+        planeSearchTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeSearchTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeSearchTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeSearchTextInputKeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeSearchTextInput);
+        planeSearchTextInput.setBounds(908, 500, 238, 37);
+
+        planeEditTextInput.setEditable(false);
+        planeEditTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput.setToolTipText("");
+        planeEditTextInput.setBorder(null);
+        planeEditTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInputKeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput);
+        planeEditTextInput.setBounds(1528, 439, 238, 37);
+
+        planeEditTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput1.setToolTipText("");
+        planeEditTextInput1.setBorder(null);
+        planeEditTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput1KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput1);
+        planeEditTextInput1.setBounds(1528, 494, 238, 37);
+
+        planeEditTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput2.setToolTipText("");
+        planeEditTextInput2.setBorder(null);
+        planeEditTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput2KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput2);
+        planeEditTextInput2.setBounds(1528, 549, 238, 37);
+
+        planeEditTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput3.setToolTipText("");
+        planeEditTextInput3.setBorder(null);
+        planeEditTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput3KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput3);
+        planeEditTextInput3.setBounds(1528, 604, 238, 37);
+
+        planeEditTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput4.setToolTipText("");
+        planeEditTextInput4.setBorder(null);
+        planeEditTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput4KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput4);
+        planeEditTextInput4.setBounds(1528, 659, 238, 37);
+
+        planeEditTextInput5.setEditable(false);
+        planeEditTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput5.setToolTipText("");
+        planeEditTextInput5.setBorder(null);
+        planeEditTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput5KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput5);
+        planeEditTextInput5.setBounds(1528, 714, 238, 37);
+
+        planeEditTextInput6.setEditable(false);
+        planeEditTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput6.setToolTipText("");
+        planeEditTextInput6.setBorder(null);
+        planeEditTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput6KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput6);
+        planeEditTextInput6.setBounds(1528, 768, 238, 37);
+
+        planeEditTextInput7.setEditable(false);
+        planeEditTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        planeEditTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeEditTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        planeEditTextInput7.setToolTipText("");
+        planeEditTextInput7.setBorder(null);
+        planeEditTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeEditTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeEditTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeEditTextInput7KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeEditTextInput7);
+        planeEditTextInput7.setBounds(1528, 824, 238, 37);
+
+        planeAddTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput.setToolTipText("");
+        planeAddTextInput.setBorder(null);
+        planeAddTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInputKeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput);
+        planeAddTextInput.setBounds(290, 439, 238, 37);
+
+        planeAddTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput1.setToolTipText("");
+        planeAddTextInput1.setBorder(null);
+        planeAddTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput1KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput1);
+        planeAddTextInput1.setBounds(290, 495, 238, 37);
+
+        planeAddTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput2.setToolTipText("");
+        planeAddTextInput2.setBorder(null);
+        planeAddTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput2KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput2);
+        planeAddTextInput2.setBounds(290, 550, 238, 37);
+
+        planeAddTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput3.setToolTipText("");
+        planeAddTextInput3.setBorder(null);
+        planeAddTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput3KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput3);
+        planeAddTextInput3.setBounds(290, 604, 238, 37);
+
+        planeAddTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput4.setToolTipText("");
+        planeAddTextInput4.setBorder(null);
+        planeAddTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput4KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput4);
+        planeAddTextInput4.setBounds(290, 659, 238, 37);
+
+        planeAddTextInput5.setEditable(false);
+        planeAddTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput5.setToolTipText("");
+        planeAddTextInput5.setBorder(null);
+        planeAddTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput5KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput5);
+        planeAddTextInput5.setBounds(290, 715, 238, 37);
+
+        planeAddTextInput6.setEditable(false);
+        planeAddTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput6.setToolTipText("");
+        planeAddTextInput6.setBorder(null);
+        planeAddTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput6KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput6);
+        planeAddTextInput6.setBounds(290, 769, 238, 37);
+
+        planeAddTextInput7.setEditable(false);
+        planeAddTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        planeAddTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        planeAddTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        planeAddTextInput7.setToolTipText("");
+        planeAddTextInput7.setBorder(null);
+        planeAddTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                planeAddTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                planeAddTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                planeAddTextInput7KeyTyped(evt);
+            }
+        });
+        planesControlLayer.add(planeAddTextInput7);
+        planeAddTextInput7.setBounds(290, 825, 238, 37);
+
+        planeDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        planeDataDisplayPane.setBorder(null);
+        planeDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        planeDataDisplayPane.setOpaque(false);
+
+        planeDataTextArea.setEditable(false);
+        planeDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        planeDataTextArea.setColumns(20);
+        planeDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        planeDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        planeDataTextArea.setLineWrap(true);
+        planeDataTextArea.setRows(5);
+        planeDataTextArea.setWrapStyleWord(true);
+        planeDataTextArea.setBorder(null);
+        planeDataTextArea.setOpaque(false);
+        planeDataDisplayPane.setViewportView(planeDataTextArea);
+
+        planesControlLayer.add(planeDataDisplayPane);
+        planeDataDisplayPane.setBounds(589, 751, 673, 229);
+
+        planeSearchButton.setBorderPainted(false);
+        planeSearchButton.setContentAreaFilled(false);
+        planeSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planeSearchButtonActionPerformed(evt);
+            }
+        });
+        planesControlLayer.add(planeSearchButton);
+        planeSearchButton.setBounds(824, 556, 200, 100);
+
+        planeEditButton.setBorderPainted(false);
+        planeEditButton.setContentAreaFilled(false);
+        planeEditButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planeEditButtonActionPerformed(evt);
+            }
+        });
+        planesControlLayer.add(planeEditButton);
+        planeEditButton.setBounds(1344, 882, 200, 100);
+
+        planeDeleteButton.setBorderPainted(false);
+        planeDeleteButton.setContentAreaFilled(false);
+        planeDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planeDeleteButtonActionPerformed(evt);
+            }
+        });
+        planesControlLayer.add(planeDeleteButton);
+        planeDeleteButton.setBounds(1546, 882, 200, 100);
+
+        planeAddButton.setBorderPainted(false);
+        planeAddButton.setContentAreaFilled(false);
+        planeAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planeAddButtonActionPerformed(evt);
+            }
+        });
+        planesControlLayer.add(planeAddButton);
+        planeAddButton.setBounds(210, 882, 200, 100);
+
+        planeAddFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeAddFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel.setText("Plane ID");
+        planeAddFieldLabel.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel);
+        planeAddFieldLabel.setBounds(78, 442, 210, 29);
+
+        planeAddFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeAddFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel1.setText("Model");
+        planeAddFieldLabel1.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel1);
+        planeAddFieldLabel1.setBounds(78, 498, 210, 29);
+
+        planeAddFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeAddFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel2.setText("Passenger Limit");
+        planeAddFieldLabel2.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel2);
+        planeAddFieldLabel2.setBounds(78, 552, 210, 29);
+
+        planeAddFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        planeAddFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel3.setText("Assignment Code");
+        planeAddFieldLabel3.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel3);
+        planeAddFieldLabel3.setBounds(76, 608, 210, 27);
+
+        planeAddFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        planeAddFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel4.setText("Assignment Type");
+        planeAddFieldLabel4.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel4);
+        planeAddFieldLabel4.setBounds(76, 662, 210, 27);
+
+        planeAddFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeAddFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel5.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel5);
+        planeAddFieldLabel5.setBounds(78, 716, 210, 0);
+
+        planeAddFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeAddFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel6.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel6);
+        planeAddFieldLabel6.setBounds(78, 772, 210, 0);
+
+        planeAddFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeAddFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        planeAddFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeAddFieldLabel7.setToolTipText("");
+        planesControlLayer.add(planeAddFieldLabel7);
+        planeAddFieldLabel7.setBounds(76, 828, 210, 0);
+
+        planeSearchFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeSearchFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        planeSearchFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeSearchFieldLabel.setText("ID Code");
+        planeSearchFieldLabel.setToolTipText("");
+        planesControlLayer.add(planeSearchFieldLabel);
+        planeSearchFieldLabel.setBounds(694, 447, 210, 29);
+
+        planeSearchFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeSearchFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        planeSearchFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeSearchFieldLabel1.setText("Search Query");
+        planeSearchFieldLabel1.setToolTipText("");
+        planesControlLayer.add(planeSearchFieldLabel1);
+        planeSearchFieldLabel1.setBounds(694, 502, 210, 29);
+
+        planeEditFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeEditFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel.setText("Plane ID");
+        planeEditFieldLabel.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel);
+        planeEditFieldLabel.setBounds(1316, 442, 210, 29);
+
+        planeEditFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeEditFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel1.setText("Model");
+        planeEditFieldLabel1.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel1);
+        planeEditFieldLabel1.setBounds(1316, 498, 210, 29);
+
+        planeEditFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeEditFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel2.setText("Passenger Limit");
+        planeEditFieldLabel2.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel2);
+        planeEditFieldLabel2.setBounds(1316, 552, 210, 29);
+
+        planeEditFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        planeEditFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel3.setText("Assignment Code");
+        planeEditFieldLabel3.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel3);
+        planeEditFieldLabel3.setBounds(1314, 608, 210, 27);
+
+        planeEditFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 22)); // NOI18N
+        planeEditFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel4.setText("Assignment Type");
+        planeEditFieldLabel4.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel4);
+        planeEditFieldLabel4.setBounds(1314, 662, 210, 27);
+
+        planeEditFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeEditFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel5.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel5);
+        planeEditFieldLabel5.setBounds(1316, 716, 210, 0);
+
+        planeEditFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeEditFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel6.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel6);
+        planeEditFieldLabel6.setBounds(1316, 772, 210, 0);
+
+        planeEditFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        planeEditFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        planeEditFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        planeEditFieldLabel7.setToolTipText("");
+        planesControlLayer.add(planeEditFieldLabel7);
+        planeEditFieldLabel7.setBounds(1316, 828, 210, 0);
+
+        mainLayerPane.add(planesControlLayer);
+
+        flightsControlLayer.setOpaque(false);
+        flightsControlLayer.setVisible(false);
+        flightsControlLayer.setLayout(null);
+
+        flightViewTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        flightViewTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightViewTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        flightViewTextInput.setToolTipText("");
+        flightViewTextInput.setBorder(null);
+        flightViewTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightViewTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightViewTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightViewTextInputKeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightViewTextInput);
+        flightViewTextInput.setBounds(908, 444, 238, 37);
+
+        flightSearchTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        flightSearchTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightSearchTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        flightSearchTextInput.setToolTipText("");
+        flightSearchTextInput.setBorder(null);
+        flightSearchTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightSearchTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightSearchTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightSearchTextInputKeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightSearchTextInput);
+        flightSearchTextInput.setBounds(908, 500, 238, 37);
+
+        flightEditTextInput.setEditable(false);
+        flightEditTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput.setToolTipText("");
+        flightEditTextInput.setBorder(null);
+        flightEditTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInputKeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput);
+        flightEditTextInput.setBounds(1528, 439, 238, 37);
+
+        flightEditTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput1.setToolTipText("");
+        flightEditTextInput1.setBorder(null);
+        flightEditTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput1KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput1);
+        flightEditTextInput1.setBounds(1528, 494, 238, 37);
+
+        flightEditTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput2.setToolTipText("");
+        flightEditTextInput2.setBorder(null);
+        flightEditTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput2KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput2);
+        flightEditTextInput2.setBounds(1528, 549, 238, 37);
+
+        flightEditTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput3.setToolTipText("");
+        flightEditTextInput3.setBorder(null);
+        flightEditTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput3KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput3);
+        flightEditTextInput3.setBounds(1528, 604, 238, 37);
+
+        flightEditTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput4.setToolTipText("");
+        flightEditTextInput4.setBorder(null);
+        flightEditTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput4KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput4);
+        flightEditTextInput4.setBounds(1528, 659, 238, 37);
+
+        flightEditTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput5.setToolTipText("");
+        flightEditTextInput5.setBorder(null);
+        flightEditTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput5KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput5);
+        flightEditTextInput5.setBounds(1528, 714, 238, 37);
+
+        flightEditTextInput6.setEditable(false);
+        flightEditTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput6.setToolTipText("");
+        flightEditTextInput6.setBorder(null);
+        flightEditTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput6KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput6);
+        flightEditTextInput6.setBounds(1528, 768, 238, 37);
+
+        flightEditTextInput7.setEditable(false);
+        flightEditTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        flightEditTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightEditTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        flightEditTextInput7.setToolTipText("");
+        flightEditTextInput7.setBorder(null);
+        flightEditTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightEditTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightEditTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightEditTextInput7KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditTextInput7);
+        flightEditTextInput7.setBounds(1528, 824, 238, 37);
+
+        flightAddTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput.setToolTipText("");
+        flightAddTextInput.setBorder(null);
+        flightAddTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInputKeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput);
+        flightAddTextInput.setBounds(290, 439, 238, 37);
+
+        flightAddTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput1.setToolTipText("");
+        flightAddTextInput1.setBorder(null);
+        flightAddTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput1KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput1);
+        flightAddTextInput1.setBounds(290, 495, 238, 37);
+
+        flightAddTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput2.setToolTipText("");
+        flightAddTextInput2.setBorder(null);
+        flightAddTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput2KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput2);
+        flightAddTextInput2.setBounds(290, 550, 238, 37);
+
+        flightAddTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput3.setToolTipText("");
+        flightAddTextInput3.setBorder(null);
+        flightAddTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput3KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput3);
+        flightAddTextInput3.setBounds(290, 604, 238, 37);
+
+        flightAddTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput4.setToolTipText("");
+        flightAddTextInput4.setBorder(null);
+        flightAddTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput4KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput4);
+        flightAddTextInput4.setBounds(290, 659, 238, 37);
+
+        flightAddTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput5.setToolTipText("");
+        flightAddTextInput5.setBorder(null);
+        flightAddTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput5KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput5);
+        flightAddTextInput5.setBounds(290, 715, 238, 37);
+
+        flightAddTextInput6.setEditable(false);
+        flightAddTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput6.setToolTipText("");
+        flightAddTextInput6.setBorder(null);
+        flightAddTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput6KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput6);
+        flightAddTextInput6.setBounds(290, 769, 238, 37);
+
+        flightAddTextInput7.setEditable(false);
+        flightAddTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        flightAddTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        flightAddTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        flightAddTextInput7.setToolTipText("");
+        flightAddTextInput7.setBorder(null);
+        flightAddTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                flightAddTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                flightAddTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                flightAddTextInput7KeyTyped(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddTextInput7);
+        flightAddTextInput7.setBounds(290, 825, 238, 37);
+
+        flightDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        flightDataDisplayPane.setBorder(null);
+        flightDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        flightDataDisplayPane.setOpaque(false);
+
+        flightDataTextArea.setEditable(false);
+        flightDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        flightDataTextArea.setColumns(20);
+        flightDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        flightDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        flightDataTextArea.setLineWrap(true);
+        flightDataTextArea.setRows(5);
+        flightDataTextArea.setWrapStyleWord(true);
+        flightDataTextArea.setBorder(null);
+        flightDataTextArea.setOpaque(false);
+        flightDataDisplayPane.setViewportView(flightDataTextArea);
+
+        flightsControlLayer.add(flightDataDisplayPane);
+        flightDataDisplayPane.setBounds(589, 751, 673, 229);
+
+        flightSearchButton.setBorderPainted(false);
+        flightSearchButton.setContentAreaFilled(false);
+        flightSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flightSearchButtonActionPerformed(evt);
+            }
+        });
+        flightsControlLayer.add(flightSearchButton);
+        flightSearchButton.setBounds(824, 556, 200, 100);
+
+        flightEditButton.setBorderPainted(false);
+        flightEditButton.setContentAreaFilled(false);
+        flightEditButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flightEditButtonActionPerformed(evt);
+            }
+        });
+        flightsControlLayer.add(flightEditButton);
+        flightEditButton.setBounds(1344, 882, 200, 100);
+
+        flightDeleteButton.setBorderPainted(false);
+        flightDeleteButton.setContentAreaFilled(false);
+        flightDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flightDeleteButtonActionPerformed(evt);
+            }
+        });
+        flightsControlLayer.add(flightDeleteButton);
+        flightDeleteButton.setBounds(1546, 882, 200, 100);
+
+        flightAddButton.setBorderPainted(false);
+        flightAddButton.setContentAreaFilled(false);
+        flightAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                flightAddButtonActionPerformed(evt);
+            }
+        });
+        flightsControlLayer.add(flightAddButton);
+        flightAddButton.setBounds(210, 882, 200, 100);
+
+        flightAddFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel.setText("Flight ID");
+        flightAddFieldLabel.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel);
+        flightAddFieldLabel.setBounds(78, 442, 210, 29);
+
+        flightAddFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel1.setText("Departure Time");
+        flightAddFieldLabel1.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel1);
+        flightAddFieldLabel1.setBounds(78, 498, 210, 29);
+
+        flightAddFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel2.setText("Arrival Time");
+        flightAddFieldLabel2.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel2);
+        flightAddFieldLabel2.setBounds(78, 552, 210, 29);
+
+        flightAddFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel3.setText("Destination Port");
+        flightAddFieldLabel3.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel3);
+        flightAddFieldLabel3.setBounds(76, 608, 210, 29);
+
+        flightAddFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel4.setText("Starting Port");
+        flightAddFieldLabel4.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel4);
+        flightAddFieldLabel4.setBounds(76, 662, 210, 29);
+
+        flightAddFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel5.setText("Plane Code");
+        flightAddFieldLabel5.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel5);
+        flightAddFieldLabel5.setBounds(78, 716, 210, 29);
+
+        flightAddFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel6.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel6);
+        flightAddFieldLabel6.setBounds(78, 772, 210, 0);
+
+        flightAddFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightAddFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        flightAddFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightAddFieldLabel7.setToolTipText("");
+        flightsControlLayer.add(flightAddFieldLabel7);
+        flightAddFieldLabel7.setBounds(76, 828, 210, 0);
+
+        flightSearchFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightSearchFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        flightSearchFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightSearchFieldLabel.setText("ID Code");
+        flightSearchFieldLabel.setToolTipText("");
+        flightsControlLayer.add(flightSearchFieldLabel);
+        flightSearchFieldLabel.setBounds(694, 447, 210, 29);
+
+        flightSearchFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightSearchFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        flightSearchFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightSearchFieldLabel1.setText("Search Query");
+        flightSearchFieldLabel1.setToolTipText("");
+        flightsControlLayer.add(flightSearchFieldLabel1);
+        flightSearchFieldLabel1.setBounds(694, 502, 210, 29);
+
+        flightEditFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel.setText("Flight ID");
+        flightEditFieldLabel.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel);
+        flightEditFieldLabel.setBounds(1316, 442, 210, 29);
+
+        flightEditFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel1.setText("Departure Time");
+        flightEditFieldLabel1.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel1);
+        flightEditFieldLabel1.setBounds(1316, 498, 210, 29);
+
+        flightEditFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel2.setText("Arrival Time");
+        flightEditFieldLabel2.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel2);
+        flightEditFieldLabel2.setBounds(1316, 552, 210, 29);
+
+        flightEditFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel3.setText("Destination Port");
+        flightEditFieldLabel3.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel3);
+        flightEditFieldLabel3.setBounds(1314, 608, 210, 29);
+
+        flightEditFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel4.setText("Starting Port");
+        flightEditFieldLabel4.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel4);
+        flightEditFieldLabel4.setBounds(1314, 662, 210, 29);
+
+        flightEditFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel5.setText("Plane Code");
+        flightEditFieldLabel5.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel5);
+        flightEditFieldLabel5.setBounds(1316, 716, 210, 29);
+
+        flightEditFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel6.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel6);
+        flightEditFieldLabel6.setBounds(1316, 772, 210, 0);
+
+        flightEditFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        flightEditFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        flightEditFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        flightEditFieldLabel7.setToolTipText("");
+        flightsControlLayer.add(flightEditFieldLabel7);
+        flightEditFieldLabel7.setBounds(1316, 828, 210, 0);
+
+        mainLayerPane.add(flightsControlLayer);
+
+        passengerControlLayer.setOpaque(false);
+        passengerControlLayer.setVisible(false);
+        passengerControlLayer.setLayout(null);
+
+        passengerViewTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        passengerViewTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerViewTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        passengerViewTextInput.setToolTipText("");
+        passengerViewTextInput.setBorder(null);
+        passengerViewTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerViewTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerViewTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerViewTextInputKeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerViewTextInput);
+        passengerViewTextInput.setBounds(908, 444, 238, 37);
+
+        passengerSearchTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        passengerSearchTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerSearchTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        passengerSearchTextInput.setToolTipText("");
+        passengerSearchTextInput.setBorder(null);
+        passengerSearchTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerSearchTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerSearchTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerSearchTextInputKeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerSearchTextInput);
+        passengerSearchTextInput.setBounds(908, 500, 238, 37);
+
+        passengerEditTextInput.setEditable(false);
+        passengerEditTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput.setToolTipText("");
+        passengerEditTextInput.setBorder(null);
+        passengerEditTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInputKeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput);
+        passengerEditTextInput.setBounds(1528, 439, 238, 37);
+
+        passengerEditTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput1.setToolTipText("");
+        passengerEditTextInput1.setBorder(null);
+        passengerEditTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput1KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput1);
+        passengerEditTextInput1.setBounds(1528, 494, 238, 37);
+
+        passengerEditTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput2.setToolTipText("");
+        passengerEditTextInput2.setBorder(null);
+        passengerEditTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput2KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput2);
+        passengerEditTextInput2.setBounds(1528, 549, 238, 37);
+
+        passengerEditTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput3.setToolTipText("");
+        passengerEditTextInput3.setBorder(null);
+        passengerEditTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput3KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput3);
+        passengerEditTextInput3.setBounds(1528, 604, 238, 37);
+
+        passengerEditTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput4.setToolTipText("");
+        passengerEditTextInput4.setBorder(null);
+        passengerEditTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput4KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput4);
+        passengerEditTextInput4.setBounds(1528, 659, 238, 37);
+
+        passengerEditTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput5.setToolTipText("");
+        passengerEditTextInput5.setBorder(null);
+        passengerEditTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput5KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput5);
+        passengerEditTextInput5.setBounds(1528, 714, 238, 37);
+
+        passengerEditTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput6.setToolTipText("");
+        passengerEditTextInput6.setBorder(null);
+        passengerEditTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput6KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput6);
+        passengerEditTextInput6.setBounds(1528, 768, 238, 37);
+
+        passengerEditTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        passengerEditTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerEditTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        passengerEditTextInput7.setToolTipText("");
+        passengerEditTextInput7.setBorder(null);
+        passengerEditTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerEditTextInput7KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditTextInput7);
+        passengerEditTextInput7.setBounds(1528, 824, 238, 37);
+
+        passengerAddTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput.setToolTipText("");
+        passengerAddTextInput.setBorder(null);
+        passengerAddTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInputKeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput);
+        passengerAddTextInput.setBounds(290, 439, 238, 37);
+
+        passengerAddTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput1.setToolTipText("");
+        passengerAddTextInput1.setBorder(null);
+        passengerAddTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput1KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput1);
+        passengerAddTextInput1.setBounds(290, 495, 238, 37);
+
+        passengerAddTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput2.setToolTipText("");
+        passengerAddTextInput2.setBorder(null);
+        passengerAddTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput2KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput2);
+        passengerAddTextInput2.setBounds(290, 550, 238, 37);
+
+        passengerAddTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput3.setToolTipText("");
+        passengerAddTextInput3.setBorder(null);
+        passengerAddTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput3KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput3);
+        passengerAddTextInput3.setBounds(290, 604, 238, 37);
+
+        passengerAddTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput4.setToolTipText("");
+        passengerAddTextInput4.setBorder(null);
+        passengerAddTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput4KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput4);
+        passengerAddTextInput4.setBounds(290, 659, 238, 37);
+
+        passengerAddTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput5.setToolTipText("");
+        passengerAddTextInput5.setBorder(null);
+        passengerAddTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput5KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput5);
+        passengerAddTextInput5.setBounds(290, 715, 238, 37);
+
+        passengerAddTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput6.setToolTipText("");
+        passengerAddTextInput6.setBorder(null);
+        passengerAddTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput6KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput6);
+        passengerAddTextInput6.setBounds(290, 769, 238, 37);
+
+        passengerAddTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        passengerAddTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passengerAddTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        passengerAddTextInput7.setToolTipText("");
+        passengerAddTextInput7.setBorder(null);
+        passengerAddTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passengerAddTextInput7KeyTyped(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddTextInput7);
+        passengerAddTextInput7.setBounds(290, 825, 238, 37);
+
+        passengerDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        passengerDataDisplayPane.setBorder(null);
+        passengerDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        passengerDataDisplayPane.setOpaque(false);
+
+        passengerDataTextArea.setEditable(false);
+        passengerDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        passengerDataTextArea.setColumns(20);
+        passengerDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        passengerDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        passengerDataTextArea.setLineWrap(true);
+        passengerDataTextArea.setRows(5);
+        passengerDataTextArea.setWrapStyleWord(true);
+        passengerDataTextArea.setBorder(null);
+        passengerDataTextArea.setOpaque(false);
+        passengerDataDisplayPane.setViewportView(passengerDataTextArea);
+
+        passengerControlLayer.add(passengerDataDisplayPane);
+        passengerDataDisplayPane.setBounds(589, 751, 673, 229);
+
+        passengerSearchButton.setBorderPainted(false);
+        passengerSearchButton.setContentAreaFilled(false);
+        passengerSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passengerSearchButtonActionPerformed(evt);
+            }
+        });
+        passengerControlLayer.add(passengerSearchButton);
+        passengerSearchButton.setBounds(824, 556, 200, 100);
+
+        passengerEditButton.setBorderPainted(false);
+        passengerEditButton.setContentAreaFilled(false);
+        passengerEditButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passengerEditButtonActionPerformed(evt);
+            }
+        });
+        passengerControlLayer.add(passengerEditButton);
+        passengerEditButton.setBounds(1344, 882, 200, 100);
+
+        passengerDeleteButton.setBorderPainted(false);
+        passengerDeleteButton.setContentAreaFilled(false);
+        passengerDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passengerDeleteButtonActionPerformed(evt);
+            }
+        });
+        passengerControlLayer.add(passengerDeleteButton);
+        passengerDeleteButton.setBounds(1546, 882, 200, 100);
+
+        passengerAddButton.setBorderPainted(false);
+        passengerAddButton.setContentAreaFilled(false);
+        passengerAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passengerAddButtonActionPerformed(evt);
+            }
+        });
+        passengerControlLayer.add(passengerAddButton);
+        passengerAddButton.setBounds(210, 882, 200, 100);
+
+        passengerAddFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel.setText("Passenger ID");
+        passengerAddFieldLabel.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel);
+        passengerAddFieldLabel.setBounds(78, 442, 210, 29);
+
+        passengerAddFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel1.setText("Name");
+        passengerAddFieldLabel1.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel1);
+        passengerAddFieldLabel1.setBounds(78, 498, 210, 29);
+
+        passengerAddFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel2.setText("DOB");
+        passengerAddFieldLabel2.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel2);
+        passengerAddFieldLabel2.setBounds(78, 552, 210, 29);
+
+        passengerAddFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel3.setText("Gender");
+        passengerAddFieldLabel3.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel3);
+        passengerAddFieldLabel3.setBounds(78, 608, 210, 29);
+
+        passengerAddFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel4.setText("Phone Number");
+        passengerAddFieldLabel4.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel4);
+        passengerAddFieldLabel4.setBounds(78, 662, 210, 29);
+
+        passengerAddFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel5.setText("Email Address");
+        passengerAddFieldLabel5.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel5);
+        passengerAddFieldLabel5.setBounds(78, 716, 210, 29);
+
+        passengerAddFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel6.setText("Home Address");
+        passengerAddFieldLabel6.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel6);
+        passengerAddFieldLabel6.setBounds(78, 772, 210, 29);
+
+        passengerAddFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerAddFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        passengerAddFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerAddFieldLabel7.setText("Government ID");
+        passengerAddFieldLabel7.setToolTipText("");
+        passengerControlLayer.add(passengerAddFieldLabel7);
+        passengerAddFieldLabel7.setBounds(76, 828, 210, 29);
+
+        passengerSearchFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerSearchFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        passengerSearchFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerSearchFieldLabel.setText("ID Code");
+        passengerSearchFieldLabel.setToolTipText("");
+        passengerControlLayer.add(passengerSearchFieldLabel);
+        passengerSearchFieldLabel.setBounds(694, 447, 210, 29);
+
+        passengerSearchFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerSearchFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        passengerSearchFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerSearchFieldLabel1.setText("Search Query");
+        passengerSearchFieldLabel1.setToolTipText("");
+        passengerControlLayer.add(passengerSearchFieldLabel1);
+        passengerSearchFieldLabel1.setBounds(694, 502, 210, 29);
+
+        passengerEditFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel.setText("Passenger ID");
+        passengerEditFieldLabel.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel);
+        passengerEditFieldLabel.setBounds(1316, 442, 210, 29);
+
+        passengerEditFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel1.setText("Name");
+        passengerEditFieldLabel1.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel1);
+        passengerEditFieldLabel1.setBounds(1316, 498, 210, 29);
+
+        passengerEditFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel2.setText("DOB");
+        passengerEditFieldLabel2.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel2);
+        passengerEditFieldLabel2.setBounds(1316, 552, 210, 29);
+
+        passengerEditFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel3.setText("Gender");
+        passengerEditFieldLabel3.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel3);
+        passengerEditFieldLabel3.setBounds(1316, 608, 210, 29);
+
+        passengerEditFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel4.setText("Phone Number");
+        passengerEditFieldLabel4.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel4);
+        passengerEditFieldLabel4.setBounds(1316, 662, 210, 29);
+
+        passengerEditFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel5.setText("Email Address");
+        passengerEditFieldLabel5.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel5);
+        passengerEditFieldLabel5.setBounds(1316, 716, 210, 29);
+
+        passengerEditFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel6.setText("Home Address");
+        passengerEditFieldLabel6.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel6);
+        passengerEditFieldLabel6.setBounds(1316, 772, 210, 29);
+
+        passengerEditFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        passengerEditFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        passengerEditFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        passengerEditFieldLabel7.setText("Government ID");
+        passengerEditFieldLabel7.setToolTipText("");
+        passengerControlLayer.add(passengerEditFieldLabel7);
+        passengerEditFieldLabel7.setBounds(1316, 828, 210, 29);
+
+        mainLayerPane.add(passengerControlLayer);
+
+        ticketControlLayer.setOpaque(false);
+        ticketControlLayer.setVisible(false);
+        ticketControlLayer.setLayout(null);
+
+        ticketViewTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        ticketViewTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketViewTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        ticketViewTextInput.setToolTipText("");
+        ticketViewTextInput.setBorder(null);
+        ticketViewTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketViewTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketViewTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketViewTextInputKeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketViewTextInput);
+        ticketViewTextInput.setBounds(908, 444, 238, 37);
+
+        ticketSearchTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        ticketSearchTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketSearchTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        ticketSearchTextInput.setToolTipText("");
+        ticketSearchTextInput.setBorder(null);
+        ticketSearchTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketSearchTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketSearchTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketSearchTextInputKeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketSearchTextInput);
+        ticketSearchTextInput.setBounds(908, 500, 238, 37);
+
+        ticketEditTextInput.setEditable(false);
+        ticketEditTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput.setToolTipText("");
+        ticketEditTextInput.setBorder(null);
+        ticketEditTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInputKeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput);
+        ticketEditTextInput.setBounds(1528, 439, 238, 37);
+
+        ticketEditTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput1.setToolTipText("");
+        ticketEditTextInput1.setBorder(null);
+        ticketEditTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput1KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput1);
+        ticketEditTextInput1.setBounds(1528, 494, 238, 37);
+
+        ticketEditTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput2.setToolTipText("");
+        ticketEditTextInput2.setBorder(null);
+        ticketEditTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput2KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput2);
+        ticketEditTextInput2.setBounds(1528, 549, 238, 37);
+
+        ticketEditTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput3.setToolTipText("");
+        ticketEditTextInput3.setBorder(null);
+        ticketEditTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput3KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput3);
+        ticketEditTextInput3.setBounds(1528, 604, 238, 37);
+
+        ticketEditTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput4.setToolTipText("");
+        ticketEditTextInput4.setBorder(null);
+        ticketEditTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput4KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput4);
+        ticketEditTextInput4.setBounds(1528, 659, 238, 37);
+
+        ticketEditTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput5.setToolTipText("");
+        ticketEditTextInput5.setBorder(null);
+        ticketEditTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput5KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput5);
+        ticketEditTextInput5.setBounds(1528, 714, 238, 37);
+
+        ticketEditTextInput6.setEditable(false);
+        ticketEditTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput6.setToolTipText("");
+        ticketEditTextInput6.setBorder(null);
+        ticketEditTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput6KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput6);
+        ticketEditTextInput6.setBounds(1528, 768, 238, 37);
+
+        ticketEditTextInput7.setEditable(false);
+        ticketEditTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        ticketEditTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketEditTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        ticketEditTextInput7.setToolTipText("");
+        ticketEditTextInput7.setBorder(null);
+        ticketEditTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketEditTextInput7KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditTextInput7);
+        ticketEditTextInput7.setBounds(1528, 824, 238, 37);
+
+        ticketAddTextInput.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput.setToolTipText("");
+        ticketAddTextInput.setBorder(null);
+        ticketAddTextInput.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInputKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInputKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInputKeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput);
+        ticketAddTextInput.setBounds(290, 439, 238, 37);
+
+        ticketAddTextInput1.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput1.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput1.setToolTipText("");
+        ticketAddTextInput1.setBorder(null);
+        ticketAddTextInput1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput1KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput1);
+        ticketAddTextInput1.setBounds(290, 495, 238, 37);
+
+        ticketAddTextInput2.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput2.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput2.setToolTipText("");
+        ticketAddTextInput2.setBorder(null);
+        ticketAddTextInput2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput2KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput2);
+        ticketAddTextInput2.setBounds(290, 550, 238, 37);
+
+        ticketAddTextInput3.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput3.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput3.setToolTipText("");
+        ticketAddTextInput3.setBorder(null);
+        ticketAddTextInput3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput3KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput3);
+        ticketAddTextInput3.setBounds(290, 604, 238, 37);
+
+        ticketAddTextInput4.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput4.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput4.setToolTipText("");
+        ticketAddTextInput4.setBorder(null);
+        ticketAddTextInput4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput4KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput4KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput4KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput4);
+        ticketAddTextInput4.setBounds(290, 659, 238, 37);
+
+        ticketAddTextInput5.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput5.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput5.setToolTipText("");
+        ticketAddTextInput5.setBorder(null);
+        ticketAddTextInput5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput5KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput5KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput5KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput5);
+        ticketAddTextInput5.setBounds(290, 715, 238, 37);
+
+        ticketAddTextInput6.setEditable(false);
+        ticketAddTextInput6.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput6.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput6.setToolTipText("");
+        ticketAddTextInput6.setBorder(null);
+        ticketAddTextInput6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput6KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput6KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput6KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput6);
+        ticketAddTextInput6.setBounds(290, 769, 238, 37);
+
+        ticketAddTextInput7.setEditable(false);
+        ticketAddTextInput7.setBackground(new java.awt.Color(255, 255, 255));
+        ticketAddTextInput7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ticketAddTextInput7.setForeground(new java.awt.Color(0, 0, 0));
+        ticketAddTextInput7.setToolTipText("");
+        ticketAddTextInput7.setBorder(null);
+        ticketAddTextInput7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput7KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput7KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ticketAddTextInput7KeyTyped(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddTextInput7);
+        ticketAddTextInput7.setBounds(290, 825, 238, 37);
+
+        ticketDataDisplayPane.setBackground(new java.awt.Color(0, 0, 0));
+        ticketDataDisplayPane.setBorder(null);
+        ticketDataDisplayPane.setForeground(new java.awt.Color(204, 204, 204));
+        ticketDataDisplayPane.setOpaque(false);
+
+        ticketDataTextArea.setEditable(false);
+        ticketDataTextArea.setBackground(new java.awt.Color(0, 0, 0));
+        ticketDataTextArea.setColumns(20);
+        ticketDataTextArea.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        ticketDataTextArea.setForeground(new java.awt.Color(204, 204, 204));
+        ticketDataTextArea.setLineWrap(true);
+        ticketDataTextArea.setRows(5);
+        ticketDataTextArea.setWrapStyleWord(true);
+        ticketDataTextArea.setBorder(null);
+        ticketDataTextArea.setOpaque(false);
+        ticketDataDisplayPane.setViewportView(ticketDataTextArea);
+
+        ticketControlLayer.add(ticketDataDisplayPane);
+        ticketDataDisplayPane.setBounds(589, 751, 673, 229);
+
+        ticketSearchButton.setBorderPainted(false);
+        ticketSearchButton.setContentAreaFilled(false);
+        ticketSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ticketSearchButtonActionPerformed(evt);
+            }
+        });
+        ticketControlLayer.add(ticketSearchButton);
+        ticketSearchButton.setBounds(824, 556, 200, 100);
+
+        ticketEditButton.setBorderPainted(false);
+        ticketEditButton.setContentAreaFilled(false);
+        ticketEditButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ticketEditButtonActionPerformed(evt);
+            }
+        });
+        ticketControlLayer.add(ticketEditButton);
+        ticketEditButton.setBounds(1344, 882, 200, 100);
+
+        ticketDeleteButton.setBorderPainted(false);
+        ticketDeleteButton.setContentAreaFilled(false);
+        ticketDeleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ticketDeleteButtonActionPerformed(evt);
+            }
+        });
+        ticketControlLayer.add(ticketDeleteButton);
+        ticketDeleteButton.setBounds(1546, 882, 200, 100);
+
+        ticketAddButton.setBorderPainted(false);
+        ticketAddButton.setContentAreaFilled(false);
+        ticketAddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ticketAddButtonActionPerformed(evt);
+            }
+        });
+        ticketControlLayer.add(ticketAddButton);
+        ticketAddButton.setBounds(210, 882, 200, 100);
+
+        ticketAddFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel.setText("Ticket ID");
+        ticketAddFieldLabel.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel);
+        ticketAddFieldLabel.setBounds(78, 442, 210, 29);
+
+        ticketAddFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel1.setText("Paid Status");
+        ticketAddFieldLabel1.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel1);
+        ticketAddFieldLabel1.setBounds(78, 498, 210, 29);
+
+        ticketAddFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel2.setText("Flight Code");
+        ticketAddFieldLabel2.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel2);
+        ticketAddFieldLabel2.setBounds(78, 552, 210, 29);
+
+        ticketAddFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel3.setText("Passenger Code");
+        ticketAddFieldLabel3.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel3);
+        ticketAddFieldLabel3.setBounds(78, 608, 210, 29);
+
+        ticketAddFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel4.setText("Compartment");
+        ticketAddFieldLabel4.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel4);
+        ticketAddFieldLabel4.setBounds(78, 662, 210, 29);
+
+        ticketAddFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel5.setText("Checked Bags");
+        ticketAddFieldLabel5.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel5);
+        ticketAddFieldLabel5.setBounds(78, 716, 210, 29);
+
+        ticketAddFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel6.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel6);
+        ticketAddFieldLabel6.setBounds(78, 772, 210, 0);
+
+        ticketAddFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketAddFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        ticketAddFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketAddFieldLabel7.setToolTipText("");
+        ticketControlLayer.add(ticketAddFieldLabel7);
+        ticketAddFieldLabel7.setBounds(76, 828, 210, 0);
+
+        ticketSearchFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketSearchFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ticketSearchFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketSearchFieldLabel.setText("ID Code");
+        ticketSearchFieldLabel.setToolTipText("");
+        ticketControlLayer.add(ticketSearchFieldLabel);
+        ticketSearchFieldLabel.setBounds(694, 447, 210, 29);
+
+        ticketSearchFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketSearchFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        ticketSearchFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketSearchFieldLabel1.setText("Search Query");
+        ticketSearchFieldLabel1.setToolTipText("");
+        ticketControlLayer.add(ticketSearchFieldLabel1);
+        ticketSearchFieldLabel1.setBounds(694, 502, 210, 29);
+
+        ticketEditFieldLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel.setText("Ticket ID");
+        ticketEditFieldLabel.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel);
+        ticketEditFieldLabel.setBounds(1316, 442, 210, 29);
+
+        ticketEditFieldLabel1.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel1.setText("Paid Status");
+        ticketEditFieldLabel1.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel1);
+        ticketEditFieldLabel1.setBounds(1316, 498, 210, 29);
+
+        ticketEditFieldLabel2.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel2.setText("Flight Code");
+        ticketEditFieldLabel2.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel2);
+        ticketEditFieldLabel2.setBounds(1316, 552, 210, 29);
+
+        ticketEditFieldLabel3.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel3.setText("Passenger Code");
+        ticketEditFieldLabel3.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel3);
+        ticketEditFieldLabel3.setBounds(1316, 608, 210, 29);
+
+        ticketEditFieldLabel4.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel4.setText("Compartment");
+        ticketEditFieldLabel4.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel4);
+        ticketEditFieldLabel4.setBounds(1316, 662, 210, 29);
+
+        ticketEditFieldLabel5.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel5.setText("Checked Bags");
+        ticketEditFieldLabel5.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel5);
+        ticketEditFieldLabel5.setBounds(1316, 716, 210, 29);
+
+        ticketEditFieldLabel6.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel6.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel6);
+        ticketEditFieldLabel6.setBounds(1316, 772, 210, 0);
+
+        ticketEditFieldLabel7.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        ticketEditFieldLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        ticketEditFieldLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ticketEditFieldLabel7.setToolTipText("");
+        ticketControlLayer.add(ticketEditFieldLabel7);
+        ticketEditFieldLabel7.setBounds(1316, 828, 210, 0);
+
+        mainLayerPane.add(ticketControlLayer);
+
+        dataLightLayer.setOpaque(false);
+        dataLightLayer.setVisible(false);
+        dataLightLayer.setLayout(null);
+
+        dataSearchButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataSearchButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataSearchButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataSearchButtonLabel.setText("View/Search");
+        dataSearchButtonLabel.setToolTipText("");
+        dataLightLayer.add(dataSearchButtonLabel);
+        dataSearchButtonLabel.setBounds(818, 590, 210, 29);
+
+        dataEditButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataEditButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataEditButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataEditButtonLabel.setText("Edit Data");
+        dataEditButtonLabel.setToolTipText("");
+        dataLightLayer.add(dataEditButtonLabel);
+        dataEditButtonLabel.setBounds(1340, 918, 210, 29);
+
+        dataDeleteButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataDeleteButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataDeleteButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataDeleteButtonLabel.setText("Delete Data");
+        dataDeleteButtonLabel.setToolTipText("");
+        dataLightLayer.add(dataDeleteButtonLabel);
+        dataDeleteButtonLabel.setBounds(1544, 918, 210, 29);
+
+        dataAddHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataAddHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataAddHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataAddHeaderLabel.setText("Add New Data");
+        dataAddHeaderLabel.setToolTipText("");
+        dataLightLayer.add(dataAddHeaderLabel);
+        dataAddHeaderLabel.setBounds(205, 380, 210, 29);
+
+        dataSearchHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataSearchHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataSearchHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataSearchHeaderLabel.setText("View/Search Data");
+        dataSearchHeaderLabel.setToolTipText("");
+        dataLightLayer.add(dataSearchHeaderLabel);
+        dataSearchHeaderLabel.setBounds(822, 382, 210, 29);
+
+        dataEditHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataEditHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataEditHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataEditHeaderLabel.setText("Edit Current Data");
+        dataEditHeaderLabel.setToolTipText("");
+        dataLightLayer.add(dataEditHeaderLabel);
+        dataEditHeaderLabel.setBounds(1440, 380, 210, 29);
+
+        currentDataHeaderLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        currentDataHeaderLabel.setForeground(new java.awt.Color(255, 255, 255));
+        currentDataHeaderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        currentDataHeaderLabel.setText("Current Data");
+        currentDataHeaderLabel.setToolTipText("");
+        dataLightLayer.add(currentDataHeaderLabel);
+        currentDataHeaderLabel.setBounds(818, 698, 210, 29);
+
+        dataAddButtonLabel.setFont(new java.awt.Font("DejaVu Sans Condensed", 0, 24)); // NOI18N
+        dataAddButtonLabel.setForeground(new java.awt.Color(255, 255, 255));
+        dataAddButtonLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        dataAddButtonLabel.setText("Add Data");
+        dataAddButtonLabel.setToolTipText("");
+        dataLightLayer.add(dataAddButtonLabel);
+        dataAddButtonLabel.setBounds(208, 918, 210, 29);
+
+        dataSearchFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataSearchFieldDimmer.setVisible(false);
+        dataLightLayer.add(dataSearchFieldDimmer);
+        dataSearchFieldDimmer.setBounds(703, 438, 200, 50);
+
+        dataSearchFieldDimmer1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataSearchFieldDimmer1.setVisible(false);
+        dataLightLayer.add(dataSearchFieldDimmer1);
+        dataSearchFieldDimmer1.setBounds(703, 492, 200, 50);
+
+        dataAddFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer);
+        dataAddFieldDimmer.setBounds(85, 432, 200, 50);
+
+        dataAddFieldDimmer1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer1.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer1);
+        dataAddFieldDimmer1.setBounds(85, 488, 200, 50);
+
+        dataAddFieldDimmer2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer2.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer2);
+        dataAddFieldDimmer2.setBounds(85, 543, 200, 50);
+
+        dataAddFieldDimmer3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer3.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer3);
+        dataAddFieldDimmer3.setBounds(85, 598, 200, 50);
+
+        dataAddFieldDimmer4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer4.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer4);
+        dataAddFieldDimmer4.setBounds(85, 652, 200, 50);
+
+        dataAddFieldDimmer5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer5.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer5);
+        dataAddFieldDimmer5.setBounds(85, 706, 200, 50);
+
+        dataAddFieldDimmer6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer6.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer6);
+        dataAddFieldDimmer6.setBounds(85, 762, 200, 50);
+
+        dataAddFieldDimmer7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataAddFieldDimmer7.setVisible(false);
+        dataLightLayer.add(dataAddFieldDimmer7);
+        dataAddFieldDimmer7.setBounds(85, 818, 200, 50);
+
+        dataEditFieldDimmer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer);
+        dataEditFieldDimmer.setBounds(1323, 432, 200, 50);
+
+        dataEditFieldDimmer1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer1.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer1);
+        dataEditFieldDimmer1.setBounds(1323, 488, 200, 50);
+
+        dataEditFieldDimmer2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer2.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer2);
+        dataEditFieldDimmer2.setBounds(1323, 543, 200, 50);
+
+        dataEditFieldDimmer3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer3.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer3);
+        dataEditFieldDimmer3.setBounds(1323, 598, 200, 50);
+
+        dataEditFieldDimmer4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer4.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer4);
+        dataEditFieldDimmer4.setBounds(1323, 652, 200, 50);
+
+        dataEditFieldDimmer5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer5.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer5);
+        dataEditFieldDimmer5.setBounds(1323, 706, 200, 50);
+
+        dataEditFieldDimmer6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer6.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer6);
+        dataEditFieldDimmer6.setBounds(1323, 762, 200, 50);
+
+        dataEditFieldDimmer7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Dark Display Field.png"))); // NOI18N
+        dataEditFieldDimmer7.setVisible(false);
+        dataLightLayer.add(dataEditFieldDimmer7);
+        dataEditFieldDimmer7.setBounds(1323, 818, 200, 50);
+
+        dataAddFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight);
+        dataAddFieldLight.setBounds(85, 432, 200, 50);
+
+        dataAddFieldLight1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight1.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight1);
+        dataAddFieldLight1.setBounds(85, 488, 200, 50);
+
+        dataAddFieldLight2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight2.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight2);
+        dataAddFieldLight2.setBounds(85, 543, 200, 50);
+
+        dataAddFieldLight3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight3.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight3);
+        dataAddFieldLight3.setBounds(85, 598, 200, 50);
+
+        dataAddFieldLight4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight4.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight4);
+        dataAddFieldLight4.setBounds(85, 652, 200, 50);
+
+        dataAddFieldLight5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight5.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight5);
+        dataAddFieldLight5.setBounds(85, 706, 200, 50);
+
+        dataAddFieldLight6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight6.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight6);
+        dataAddFieldLight6.setBounds(85, 762, 200, 50);
+
+        dataAddFieldLight7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataAddFieldLight7.setVisible(false);
+        dataLightLayer.add(dataAddFieldLight7);
+        dataAddFieldLight7.setBounds(85, 818, 200, 50);
+
+        dataEditFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight);
+        dataEditFieldLight.setBounds(1323, 432, 200, 50);
+
+        dataEditFieldLight1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight1.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight1);
+        dataEditFieldLight1.setBounds(1323, 488, 200, 50);
+
+        dataEditFieldLight2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight2.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight2);
+        dataEditFieldLight2.setBounds(1323, 543, 200, 50);
+
+        dataEditFieldLight3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight3.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight3);
+        dataEditFieldLight3.setBounds(1323, 598, 200, 50);
+
+        dataEditFieldLight4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight4.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight4);
+        dataEditFieldLight4.setBounds(1323, 652, 200, 50);
+
+        dataEditFieldLight5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight5.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight5);
+        dataEditFieldLight5.setBounds(1323, 706, 200, 50);
+
+        dataEditFieldLight6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight6.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight6);
+        dataEditFieldLight6.setBounds(1323, 762, 200, 50);
+
+        dataEditFieldLight7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataEditFieldLight7.setVisible(false);
+        dataLightLayer.add(dataEditFieldLight7);
+        dataEditFieldLight7.setBounds(1323, 818, 200, 50);
+
+        dataSearchFieldLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataSearchFieldLight.setVisible(false);
+        dataLightLayer.add(dataSearchFieldLight);
+        dataSearchFieldLight.setBounds(703, 438, 200, 50);
+
+        dataSearchFieldLight1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Display Field.png"))); // NOI18N
+        dataSearchFieldLight1.setVisible(false);
+        dataLightLayer.add(dataSearchFieldLight1);
+        dataSearchFieldLight1.setBounds(703, 492, 200, 50);
+
+        dataAddButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        dataAddButtonLight.setVisible(false);
+        dataLightLayer.add(dataAddButtonLight);
+        dataAddButtonLight.setBounds(209, 879, 210, 110);
+
+        dataSearchButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        dataSearchButtonLight.setVisible(false);
+        dataLightLayer.add(dataSearchButtonLight);
+        dataSearchButtonLight.setBounds(823, 552, 210, 110);
+
+        dataEditButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        dataEditButtonLight.setVisible(false);
+        dataLightLayer.add(dataEditButtonLight);
+        dataEditButtonLight.setBounds(1343, 878, 210, 110);
+
+        dataDeleteButtonLight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Lit Blue Button (Small).png"))); // NOI18N
+        dataDeleteButtonLight.setVisible(false);
+        dataLightLayer.add(dataDeleteButtonLight);
+        dataDeleteButtonLight.setBounds(1546, 878, 210, 110);
+
+        mainLayerPane.add(dataLightLayer);
 
         systimeControlLayer.setOpaque(false);
         systimeControlLayer.setVisible(false);
@@ -3210,58 +6655,58 @@ public class MainFrame extends javax.swing.JFrame {
         backgroundLayer.setOpaque(false);
         backgroundLayer.setLayout(new javax.swing.OverlayLayout(backgroundLayer));
 
-        BackgroundSpace_reports.setOpaque(false);
+        BackgroundSpace_manifest.setOpaque(false);
 
-        BackgroundPanel_reports.setOpaque(false);
+        BackgroundPanel_manifest.setOpaque(false);
 
-        reportMenuBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        reportMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ReportMenuScreen.png"))); // NOI18N
-        reportMenuBackground.setOpaque(true);
-        reportMenuBackground.setVisible(false);
+        manifestBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        manifestBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Manifests Screen.png"))); // NOI18N
+        manifestBackground.setOpaque(true);
+        manifestBackground.setVisible(false);
 
-        javax.swing.GroupLayout BackgroundPanel_reportsLayout = new javax.swing.GroupLayout(BackgroundPanel_reports);
-        BackgroundPanel_reports.setLayout(BackgroundPanel_reportsLayout);
-        BackgroundPanel_reportsLayout.setHorizontalGroup(
-            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout BackgroundPanel_manifestLayout = new javax.swing.GroupLayout(BackgroundPanel_manifest);
+        BackgroundPanel_manifest.setLayout(BackgroundPanel_manifestLayout);
+        BackgroundPanel_manifestLayout.setHorizontalGroup(
+            BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
+            .addGroup(BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_manifestLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(reportMenuBackground)
+                    .addComponent(manifestBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
-        BackgroundPanel_reportsLayout.setVerticalGroup(
-            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        BackgroundPanel_manifestLayout.setVerticalGroup(
+            BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
+            .addGroup(BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_manifestLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(reportMenuBackground)
+                    .addComponent(manifestBackground)
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        javax.swing.GroupLayout BackgroundSpace_reportsLayout = new javax.swing.GroupLayout(BackgroundSpace_reports);
-        BackgroundSpace_reports.setLayout(BackgroundSpace_reportsLayout);
-        BackgroundSpace_reportsLayout.setHorizontalGroup(
-            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout BackgroundSpace_manifestLayout = new javax.swing.GroupLayout(BackgroundSpace_manifest);
+        BackgroundSpace_manifest.setLayout(BackgroundSpace_manifestLayout);
+        BackgroundSpace_manifestLayout.setHorizontalGroup(
+            BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1934, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
+            .addGroup(BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_manifestLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_manifest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        BackgroundSpace_reportsLayout.setVerticalGroup(
-            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        BackgroundSpace_manifestLayout.setVerticalGroup(
+            BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1083, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
+            .addGroup(BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_manifestLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackgroundPanel_manifest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        backgroundLayer.add(BackgroundSpace_reports);
+        backgroundLayer.add(BackgroundSpace_manifest);
 
         BackgroundSpace_data.setOpaque(false);
 
@@ -3315,6 +6760,59 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         backgroundLayer.add(BackgroundSpace_data);
+
+        BackgroundSpace_reports.setOpaque(false);
+
+        BackgroundPanel_reports.setOpaque(false);
+
+        reportMenuBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        reportMenuBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ReportMenuScreen.png"))); // NOI18N
+        reportMenuBackground.setOpaque(true);
+        reportMenuBackground.setVisible(false);
+
+        javax.swing.GroupLayout BackgroundPanel_reportsLayout = new javax.swing.GroupLayout(BackgroundPanel_reports);
+        BackgroundPanel_reports.setLayout(BackgroundPanel_reportsLayout);
+        BackgroundPanel_reportsLayout.setHorizontalGroup(
+            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1920, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(reportMenuBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        BackgroundPanel_reportsLayout.setVerticalGroup(
+            BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1080, Short.MAX_VALUE)
+            .addGroup(BackgroundPanel_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundPanel_reportsLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(reportMenuBackground)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout BackgroundSpace_reportsLayout = new javax.swing.GroupLayout(BackgroundSpace_reports);
+        BackgroundSpace_reports.setLayout(BackgroundSpace_reportsLayout);
+        BackgroundSpace_reportsLayout.setHorizontalGroup(
+            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1934, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        BackgroundSpace_reportsLayout.setVerticalGroup(
+            BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1083, Short.MAX_VALUE)
+            .addGroup(BackgroundSpace_reportsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BackgroundSpace_reportsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BackgroundPanel_reports, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        backgroundLayer.add(BackgroundSpace_reports);
 
         BackgroundSpace_systime.setOpaque(false);
 
@@ -3422,59 +6920,6 @@ public class MainFrame extends javax.swing.JFrame {
 
         backgroundLayer.add(BackgroundSpace_fileData);
 
-        BackgroundSpace_manifest.setOpaque(false);
-
-        BackgroundPanel_manifest.setOpaque(false);
-
-        manifestBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        manifestBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Manifests Screen.png"))); // NOI18N
-        manifestBackground.setOpaque(true);
-        manifestBackground.setVisible(false);
-
-        javax.swing.GroupLayout BackgroundPanel_manifestLayout = new javax.swing.GroupLayout(BackgroundPanel_manifest);
-        BackgroundPanel_manifest.setLayout(BackgroundPanel_manifestLayout);
-        BackgroundPanel_manifestLayout.setHorizontalGroup(
-            BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1920, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel_manifestLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(manifestBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        BackgroundPanel_manifestLayout.setVerticalGroup(
-            BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1080, Short.MAX_VALUE)
-            .addGroup(BackgroundPanel_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundPanel_manifestLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(manifestBackground)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-
-        javax.swing.GroupLayout BackgroundSpace_manifestLayout = new javax.swing.GroupLayout(BackgroundSpace_manifest);
-        BackgroundSpace_manifest.setLayout(BackgroundSpace_manifestLayout);
-        BackgroundSpace_manifestLayout.setHorizontalGroup(
-            BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1934, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace_manifestLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel_manifest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        BackgroundSpace_manifestLayout.setVerticalGroup(
-            BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1083, Short.MAX_VALUE)
-            .addGroup(BackgroundSpace_manifestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BackgroundSpace_manifestLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(BackgroundPanel_manifest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        backgroundLayer.add(BackgroundSpace_manifest);
-
         BackgroundSpace.setOpaque(false);
 
         BackgroundPanel.setOpaque(false);
@@ -3533,17 +6978,14 @@ public class MainFrame extends javax.swing.JFrame {
         mainLayerSpace.setLayout(mainLayerSpaceLayout);
         mainLayerSpaceLayout.setHorizontalGroup(
             mainLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainLayerSpaceLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(mainLayerPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+            .addComponent(mainLayerPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         mainLayerSpaceLayout.setVerticalGroup(
             mainLayerSpaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainLayerSpaceLayout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addComponent(mainLayerPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addGap(1083, 1083, 1083))
         );
 
         getContentPane().add(mainLayerSpace);
@@ -3568,7 +7010,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void ticketsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ticketsButtonActionPerformed
         if (ticketsButton.getMultiClickThreshhold() == 0)
         {
@@ -3579,6 +7021,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = ticketsLabel;
@@ -3586,9 +7031,37 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = ticketsButton;
             currentActiveBackground = dataMenuBackground;
             
+            currentControlPanel = ticketControlLayer;
+            currentLightPanel = dataLightLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                ticketReset();
+            }
+            
+            else
+            {
+                ticketPolish();
+            }
+            
+            dataAddFieldLight6.setVisible(false);
+            dataAddFieldLight7.setVisible(false);
+            
+            dataAddFieldDimmer6.setVisible(false);
+            dataAddFieldDimmer7.setVisible(false);
+            
+            dataEditFieldLight6.setVisible(false);
+            dataEditFieldLight7.setVisible(false);
+            
+            dataEditFieldDimmer6.setVisible(false);
+            dataEditFieldDimmer7.setVisible(false);
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
                         
             currentActiveBackground.setVisible(true);
             mainLayerPane.repaint();
@@ -3596,6 +7069,8 @@ public class MainFrame extends javax.swing.JFrame {
         
         else if (ticketsButton.getMultiClickThreshhold() == 1)
         {
+            ticketReset();
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -3605,6 +7080,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
             
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
+            
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
             mainLayerPane.repaint();
@@ -3612,6 +7093,22 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_ticketsButtonActionPerformed
 
     private void ticketsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ticketsButton1ActionPerformed
+        String ticketManifestString = ("Viewing Ticket List:\n");
+
+        for (int i = 0; i < terminalData.getTicketManifest().size(); i++)
+        {
+            Ticket currentTicket = terminalData.getTicketManifest().get(i);
+
+            String ticketData = currentTicket.getTicketID() + ":\n1. Paid Status- " + currentTicket.isPaidStatus()
+                    + "\n2. Flight Code- " + currentTicket.getFlightCode()
+                    + "\n3. Passenger Code- " + currentTicket.getPassengerCode()
+                    + "\n4. Seating Compartment- " + currentTicket.getSeatCompartment()
+                    + "\n5. Checked Bags- " + currentTicket.getCheckBags()
+                    + "\n";
+
+            ticketManifestString += ("\nManifest Index " + i + ":\nTicket ID- " + ticketData);
+        }
+        
         if (ticketsButton1.getMultiClickThreshhold() == 0)
         {
             if (currentActiveMainLightLabel != null)
@@ -3621,6 +7118,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = ticketsLabel1;
@@ -3628,9 +7128,20 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = ticketsButton1;
             currentActiveBackground = manifestBackground;
             
+            currentControlPanel = ticketManifestDisplayLayer;
+            currentLightPanel = manifestDummyLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                ticketManifestDataTextArea.setText(ticketManifestString);
+            }
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
                         
             currentActiveBackground.setVisible(true);
             mainLayerPane.repaint();
@@ -3638,6 +7149,8 @@ public class MainFrame extends javax.swing.JFrame {
         
         else if (ticketsButton1.getMultiClickThreshhold() == 1)
         {
+            ticketManifestDataTextArea.setText(ticketManifestString);
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -3646,6 +7159,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = null;
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
@@ -3663,26 +7182,47 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = passengersLabel;
             currentActiveMainLight = passengersLight;
             currentActiveMainLightButton = passengersButton;
             currentActiveBackground = dataMenuBackground;
+            currentControlPanel = passengerControlLayer;
+            currentLightPanel = dataLightLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                passengerReset();
+            }
+            
+            else
+            {
+                passengerPolish();
+            }
             
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (passengersButton.getMultiClickThreshhold() == 1)
         {
+            passengerReset();
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
-                currentActiveMainLightLabel.setToolTipText("");
+            currentActiveMainLightLabel.setToolTipText("");
             currentActiveMainLightButton.setMultiClickThreshhold(0);
             
             currentActiveMainLight = null;
@@ -3691,11 +7231,36 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;            
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_passengersButtonActionPerformed
 
     private void passengersButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengersButton1ActionPerformed
+        String passengerManifestString = ("Viewing Passenger List:\n");
+
+        for (int i = 0; i < terminalData.getPassengerManifest().size(); i++)
+        {
+            Passenger currentPass = terminalData.getPassengerManifest().get(i);
+
+            String passData = currentPass.getPassengerID() + "\nName- " + currentPass.getName()
+                    + "\nDOB- " + currentPass.getDOB()
+                    + "\nGender- " + currentPass.getGender()
+                    + "\nPhone Number- " + currentPass.getPhone()
+                    + "\nEmail Address- " + currentPass.getEmail()
+                    + "\nHome Address- " + currentPass.getHome()
+                    + "\nGovernment ID Number- " + currentPass.getGovID()
+                    + "\n";
+
+            passengerManifestString += ("\nManifest Index " + i + ":\nPassenger ID- " + passData);
+        }
+        
         if (passengersButton1.getMultiClickThreshhold() == 0)
         {
             if (currentActiveMainLightLabel != null)
@@ -3705,6 +7270,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = passengersLabel1;
@@ -3712,9 +7280,20 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = passengersButton1;
             currentActiveBackground = manifestBackground;
             
+            currentControlPanel = passengerManifestDisplayLayer;
+            currentLightPanel = manifestDummyLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                passengerManifestDataTextArea.setText(passengerManifestString);
+            }
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
                         
             currentActiveBackground.setVisible(true);
             mainLayerPane.repaint();
@@ -3722,6 +7301,8 @@ public class MainFrame extends javax.swing.JFrame {
         
         else if (passengersButton1.getMultiClickThreshhold() == 1)
         {
+            passengerManifestDataTextArea.setText(passengerManifestString);
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -3730,6 +7311,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = null;
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
@@ -3751,6 +7338,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = flightsLabel;
@@ -3758,16 +7348,49 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = flightsButton;
             currentActiveBackground = dataMenuBackground;
             
+            currentControlPanel = flightsControlLayer;
+            currentLightPanel = dataLightLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                flightsReset();
+            }
+            
+            else
+            {
+                flightsPolish();
+            }
+            
+            systimeSystemUpdates();
+            
+            dataAddFieldLight6.setVisible(false);
+            dataAddFieldLight7.setVisible(false);
+            
+            dataAddFieldDimmer6.setVisible(false);
+            dataAddFieldDimmer7.setVisible(false);
+            
+            dataEditFieldLight6.setVisible(false);
+            dataEditFieldLight7.setVisible(false);
+            
+            dataEditFieldDimmer6.setVisible(false);
+            dataEditFieldDimmer7.setVisible(false);
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (flightsButton.getMultiClickThreshhold() == 1)
         {
+            flightsReset();
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -3779,11 +7402,33 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;        
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_flightsButtonActionPerformed
 
     private void planesButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planesButton1ActionPerformed
+        String planeManifestString = ("Viewing Plane List:\n");
+
+        for (int i = 0; i < terminalData.getPlaneManifest().size(); i++)
+        {
+            Plane currentPlane = terminalData.getPlaneManifest().get(i);
+
+            String planeData = currentPlane.getPlaneID() + ":\n1. Model- " + currentPlane.getModel()
+                    + "\n2. Passenger Limit- " + currentPlane.getPassLimit()
+                    + "\n3. Current Assignment Code- " + currentPlane.getCurrentAssignmentCode()
+                    + "\n4. Current Assignment Type- " + currentPlane.getCurrentAssignmentType()
+                    + "\n";
+
+            planeManifestString += ("Manifest Index " + i + ":\nPlane ID- " + planeData);
+        }
+        
         if (planesButton1.getMultiClickThreshhold() == 0)
         {
             if (currentActiveMainLightLabel != null)
@@ -3793,6 +7438,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = planesLabel1;
@@ -3800,9 +7448,20 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = planesButton1;
             currentActiveBackground = manifestBackground;
             
+            currentControlPanel = planeManifestDisplayLayer;
+            currentLightPanel = manifestDummyLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                planeManifestDataTextArea.setText(planeManifestString);
+            }
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
                         
             currentActiveBackground.setVisible(true);
             mainLayerPane.repaint();
@@ -3810,6 +7469,8 @@ public class MainFrame extends javax.swing.JFrame {
         
         else if (planesButton1.getMultiClickThreshhold() == 1)
         {
+            planeManifestDataTextArea.setText(planeManifestString);
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -3818,6 +7479,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = null;
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
@@ -3835,6 +7502,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = airportsLabel;
@@ -3842,16 +7512,67 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = airportsButton;
             currentActiveBackground = dataMenuBackground;
             
+            currentControlPanel = airportsControlLayer;
+            currentLightPanel = dataLightLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                airportsReset();
+            }
+            
+            else
+            {
+                airportsPolish();
+            }
+            
+            dataAddFieldLight2.setVisible(false);
+            dataAddFieldDimmer2.setVisible(false);
+            dataEditFieldLight2.setVisible(false);
+            dataEditFieldDimmer2.setVisible(false);
+            
+            dataAddFieldLight3.setVisible(false);
+            dataAddFieldDimmer3.setVisible(false);
+            dataEditFieldLight3.setVisible(false);
+            dataEditFieldDimmer3.setVisible(false);
+            
+            dataAddFieldLight4.setVisible(false);
+            dataAddFieldDimmer4.setVisible(false);
+            dataEditFieldLight4.setVisible(false);
+            dataEditFieldDimmer4.setVisible(false);
+            
+            dataAddFieldLight5.setVisible(false);
+            dataAddFieldDimmer5.setVisible(false);
+            dataEditFieldLight5.setVisible(false);
+            dataEditFieldDimmer5.setVisible(false);
+            
+            dataAddFieldLight6.setVisible(false);
+            dataAddFieldLight7.setVisible(false);
+            
+            dataAddFieldDimmer6.setVisible(false);
+            dataAddFieldDimmer7.setVisible(false);
+            
+            dataEditFieldLight6.setVisible(false);
+            dataEditFieldLight7.setVisible(false);
+            
+            dataEditFieldDimmer6.setVisible(false);
+            dataEditFieldDimmer7.setVisible(false);            
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (airportsButton.getMultiClickThreshhold() == 1)
         {
+            airportsReset();
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -3863,6 +7584,13 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_airportsButtonActionPerformed
@@ -4089,6 +7817,23 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_loadButtonActionPerformed
 
     private void flightsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightsButton1ActionPerformed
+        String flightManifestString = ("Viewing Flight List:\n");
+
+        for (int i = 0; i < terminalData.getFlightManifest().size(); i++)
+        {
+            Flight currentFlight = terminalData.getFlightManifest().get(i);
+
+            String flightData = currentFlight.getFlightID()
+                    + ":\n1. Departure Time- " + currentFlight.getDepartTime()
+                    + "\n2. Arrival Time- " + currentFlight.getArriveTime()
+                    + "\n3. Destination Airport Code- " + currentFlight.getDestinationPortCode()
+                    + "\n4. Starting Airport Code- " + currentFlight.getStartingPortCode()
+                    + "\n5. Plane Code- " + currentFlight.getAssociatedPlaneCode()
+                    + "\n";
+
+            flightManifestString += ("\nManifest Index " + i + ":\nFlight ID- " + flightData);
+        }
+        
         if (flightsButton1.getMultiClickThreshhold() == 0)
         {
             if (currentActiveMainLightLabel != null)
@@ -4098,6 +7843,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = flightsLabel1;
@@ -4105,9 +7853,20 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = flightsButton1;
             currentActiveBackground = manifestBackground;
             
+            currentControlPanel = flightManifestDisplayLayer;
+            currentLightPanel = manifestDummyLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                flightManifestDataTextArea.setText(flightManifestString);
+            }
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
                         
             currentActiveBackground.setVisible(true);
             mainLayerPane.repaint();
@@ -4115,6 +7874,8 @@ public class MainFrame extends javax.swing.JFrame {
         
         else if (flightsButton1.getMultiClickThreshhold() == 1)
         {
+            flightManifestDataTextArea.setText(flightManifestString);
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -4123,6 +7884,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = null;
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
@@ -4140,6 +7907,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = planesLabel;
@@ -4147,16 +7917,54 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = planesButton;
             currentActiveBackground = dataMenuBackground;
             
+            currentControlPanel = planesControlLayer;
+            currentLightPanel = dataLightLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                planesReset();
+            }
+            
+            else
+            {
+                planesPolish();
+            }
+            
+            systimeSystemUpdates();
+            
+            dataAddFieldLight5.setVisible(false);
+            dataAddFieldDimmer5.setVisible(false);
+            dataEditFieldLight5.setVisible(false);
+            dataEditFieldDimmer5.setVisible(false);
+            
+            dataAddFieldLight6.setVisible(false);
+            dataAddFieldLight7.setVisible(false);
+            
+            dataAddFieldDimmer6.setVisible(false);
+            dataAddFieldDimmer7.setVisible(false);
+            
+            dataEditFieldLight6.setVisible(false);
+            dataEditFieldLight7.setVisible(false);
+            
+            dataEditFieldDimmer6.setVisible(false);
+            dataEditFieldDimmer7.setVisible(false);
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
                         
             currentActiveBackground.setVisible(true);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
+            
             mainLayerPane.repaint();
         }
         
         else if (planesButton.getMultiClickThreshhold() == 1)
         {
+            planesReset();
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -4168,11 +7976,29 @@ public class MainFrame extends javax.swing.JFrame {
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
+            
             mainLayerPane.repaint();
         }
     }//GEN-LAST:event_planesButtonActionPerformed
 
     private void airportsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_airportsButton1ActionPerformed
+        String portManifestString = ("Viewing Airport List:\n");
+
+        for (int i = 0; i < terminalData.getAirportManifest().size(); i++)
+        {
+            Airport currentPort = terminalData.getAirportManifest().get(i);
+
+            String portData = currentPort.getAirportID() + ":\n1. Name- " + currentPort.getName() + "\n";
+
+            portManifestString += ("\nManifest Index " + i + ":\nAirport ID- " + portData);
+        }
+        
         if (airportsButton1.getMultiClickThreshhold() == 0)
         {
             if (currentActiveMainLightLabel != null)
@@ -4182,6 +8008,9 @@ public class MainFrame extends javax.swing.JFrame {
                 currentActiveMainLight.setVisible(false);
                 currentActiveMainLightButton.setMultiClickThreshhold(0);
                 currentActiveBackground.setVisible(false);
+                
+                currentControlPanel.setVisible(false);
+                currentLightPanel.setVisible(false);
             }
             
             currentActiveMainLightLabel = airportsLabel1;
@@ -4189,9 +8018,20 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLightButton = airportsButton1;
             currentActiveBackground = manifestBackground;
             
+            currentControlPanel = airportManifestDisplayLayer;
+            currentLightPanel = manifestDummyLayer;
+            
+            if (!currentActiveMainLightLabel.getForeground().equals(Color.green))
+            {
+                airportManifestDataTextArea.setText(portManifestString);
+            }
+            
             currentActiveMainLight.setVisible(true);
             currentActiveMainLightLabel.setForeground(Color.black);
             currentActiveMainLightButton.setMultiClickThreshhold(1);
+            
+            currentControlPanel.setVisible(true);
+            currentLightPanel.setVisible(true);
                         
             currentActiveBackground.setVisible(true);
             mainLayerPane.repaint();
@@ -4199,6 +8039,8 @@ public class MainFrame extends javax.swing.JFrame {
         
         else if (airportsButton1.getMultiClickThreshhold() == 1)
         {
+            airportManifestDataTextArea.setText(portManifestString);
+            
             currentActiveMainLight.setVisible(false);
             currentActiveMainLightLabel.setForeground(Color.white);
             currentActiveMainLightLabel.setToolTipText("");
@@ -4207,6 +8049,12 @@ public class MainFrame extends javax.swing.JFrame {
             currentActiveMainLight = null;
             currentActiveMainLightLabel = null;
             currentActiveMainLightButton = null;
+            
+            currentControlPanel.setVisible(false);
+            currentLightPanel.setVisible(false);
+            
+            currentControlPanel = null;
+            currentLightPanel = null;
             
             currentActiveBackground.setVisible(false);
             currentActiveBackground = null;
@@ -4834,6 +8682,1558 @@ public class MainFrame extends javax.swing.JFrame {
         }
     }
     
+    private void dataFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(false);
+            label.setForeground(Color.white);
+        }
+        
+        else
+        {
+            light.setVisible(true);
+            dimmer.setVisible(false);
+            label.setForeground(Color.black);
+        }
+    }
+    
+    private void typeFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (!field.getText().isEmpty() && !field.getText().equals("Flight") && !field.getText().equals("Airport"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(false);
+            label.setForeground(Color.white);
+        }
+        
+        else
+        {
+            light.setVisible(true);
+            dimmer.setVisible(false);
+            label.setForeground(Color.black);
+        }
+    }
+    
+    private void byteFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(false);
+            label.setForeground(Color.white);
+        }
+        
+        else
+        {
+            boolean flag = true;
+            
+            try
+            {
+                if(Byte.parseByte(field.getText()) >= 0)
+                {
+                    flag = false;
+                }
+            }
+            
+            catch(Exception e)
+            {
+                flag = true;
+            }
+            
+            if (!flag)
+            {
+                light.setVisible(true);
+                dimmer.setVisible(false);
+                label.setForeground(Color.black);
+            }
+            
+            else
+            {
+                light.setVisible(false);
+                dimmer.setVisible(true);
+                label.setForeground(Color.red);
+            }
+        }
+    }
+    
+    private void boolFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(false);
+            label.setForeground(Color.white);
+        }
+        
+        else
+        {
+            boolean flag = true;
+            
+            try
+            {
+                if(field.getText().equalsIgnoreCase("true") 
+                        || field.getText().equalsIgnoreCase("false"))
+                {
+                    flag = false;
+                }
+            }
+            
+            catch(Exception e)
+            {
+                flag = true;
+            }
+            
+            if (!flag)
+            {
+                light.setVisible(true);
+                dimmer.setVisible(false);
+                label.setForeground(Color.black);
+            }
+            
+            else
+            {
+                light.setVisible(false);
+                dimmer.setVisible(true);
+                label.setForeground(Color.red);
+            }
+        }
+    }
+
+    private void timeFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(false);
+            label.setForeground(Color.white);
+        }
+        
+        else
+        {
+            boolean flag = true;
+            
+            try
+            {
+                if (Double.parseDouble(field.getText()) >= 0)
+                {
+                    flag = false;
+                }
+            }
+            
+            catch(Exception e)
+            {
+                flag = true;
+            }
+            
+            if (!flag)
+            {
+                light.setVisible(true);
+                dimmer.setVisible(false);
+                label.setForeground(Color.black);
+            }
+            
+            else
+            {
+                light.setVisible(false);
+                dimmer.setVisible(true);
+                label.setForeground(Color.red);
+            }
+        }
+    }
+    
+    private void intFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(false);
+            label.setForeground(Color.white);
+        }
+        
+        else
+        {
+            boolean flag = true;
+            
+            try
+            {
+                if(Integer.parseInt(field.getText()) >= 0)
+                {
+                    flag = false;
+                }
+            }
+            
+            catch(Exception e)
+            {
+                flag = true;
+            }
+            
+            if (!flag)
+            {
+                light.setVisible(true);
+                dimmer.setVisible(false);
+                label.setForeground(Color.black);
+            }
+            
+            else
+            {
+                light.setVisible(false);
+                dimmer.setVisible(true);
+                label.setForeground(Color.red);
+            }
+        }
+    }
+        
+    private void codeFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else
+        {
+            light.setVisible(true);
+            dimmer.setVisible(false);
+            label.setForeground(Color.black);
+        }
+    }
+    
+    private void searchFieldChange(javax.swing.JTextField field, javax.swing.JLabel label, javax.swing.JLabel light,  javax.swing.JLabel dimmer)
+    {
+        if (field.getText().contains("/") || field.getText().contains("|") || field.getText().contains("%"))
+        {
+            light.setVisible(false);
+            dimmer.setVisible(true);
+            label.setForeground(Color.red);
+        }
+        
+        else if (field.getText().isEmpty())
+        {
+            light.setVisible(true);
+            dimmer.setVisible(false);
+            label.setForeground(Color.black);
+        }
+        
+        else
+        {
+            light.setVisible(true);
+            dimmer.setVisible(false);
+            label.setForeground(Color.black);
+        }
+    }
+    
+    private void dataButtonCheck(javax.swing.JLabel buttonLight,
+            javax.swing.JLabel buttonLabel,
+            javax.swing.JLabel light, javax.swing.JLabel light1,
+            javax.swing.JLabel light2, javax.swing.JLabel light3,
+            javax.swing.JLabel light4, javax.swing.JLabel light5, 
+            javax.swing.JLabel light6, javax.swing.JLabel light7,
+            javax.swing.JLabel dimmer, javax.swing.JLabel dimmer1,
+            javax.swing.JLabel dimmer2, javax.swing.JLabel dimmer3,
+            javax.swing.JLabel dimmer4, javax.swing.JLabel dimmer5, 
+            javax.swing.JLabel dimmer6, javax.swing.JLabel dimmer7)
+    { 
+        if(dimmer.isVisible() ||dimmer1.isVisible() ||dimmer2.isVisible()
+                || dimmer3.isVisible() || dimmer4.isVisible() || dimmer5.isVisible()
+                || dimmer6.isVisible() || dimmer7.isVisible())
+        {
+            buttonLight.setVisible(false);
+            buttonLabel.setForeground(Color.white);
+        }
+        else if (light.isVisible() || light1.isVisible() || light2.isVisible()
+                || light3.isVisible() || light4.isVisible() || light5.isVisible()
+                || light6.isVisible() || light7.isVisible())
+        {
+            buttonLight.setVisible(true);
+            buttonLabel.setForeground(Color.black);
+        }
+        
+        else
+        {
+            buttonLight.setVisible(false);
+            buttonLabel.setForeground(Color.white);
+        }
+    }
+    
+    private void addDataButtonCheck()
+    {
+        dataButtonCheck(dataAddButtonLight, dataAddButtonLabel, dataAddFieldLight, 
+                dataAddFieldLight1, dataAddFieldLight2, dataAddFieldLight3,
+                dataAddFieldLight4, dataAddFieldLight5, dataAddFieldLight6,
+                dataAddFieldLight7, dataAddFieldDimmer, dataAddFieldDimmer1, 
+                dataAddFieldDimmer2, dataAddFieldDimmer3, dataAddFieldDimmer4,
+                dataAddFieldDimmer5, dataAddFieldDimmer6, dataAddFieldDimmer7);
+    }
+    
+    private void editDataButtonCheck()
+    {
+        dataButtonCheck(dataEditButtonLight, dataEditButtonLabel, dataEditFieldLight, 
+                dataEditFieldLight1, dataEditFieldLight2, dataEditFieldLight3,
+                dataEditFieldLight4, dataEditFieldLight5, dataEditFieldLight6,
+                dataEditFieldLight7, dataEditFieldDimmer, dataEditFieldDimmer1, 
+                dataEditFieldDimmer2, dataEditFieldDimmer3, dataEditFieldDimmer4,
+                dataEditFieldDimmer5, dataEditFieldDimmer6, dataEditFieldDimmer7);
+    }
+        
+    private void searchDataButtonCheck()
+    {
+        dataButtonCheck(dataSearchButtonLight, dataSearchButtonLabel, dataSearchFieldLight, 
+                dataSearchFieldLight1, dataSearchFieldLight, dataSearchFieldLight,
+                dataSearchFieldLight, dataSearchFieldLight, dataSearchFieldLight,
+                dataSearchFieldLight, dataSearchFieldDimmer, dataSearchFieldDimmer1, 
+                dataSearchFieldDimmer, dataSearchFieldDimmer, dataSearchFieldDimmer,
+                dataSearchFieldDimmer, dataSearchFieldDimmer, dataSearchFieldDimmer);
+    }
+    
+    private void deleteDataButtonCheck()
+    {
+        dataButtonCheck(dataDeleteButtonLight, dataDeleteButtonLabel, dataEditFieldLight, 
+                dataEditFieldLight, dataEditFieldLight, dataEditFieldLight,
+                dataEditFieldLight, dataEditFieldLight, dataEditFieldLight,
+                dataEditFieldLight, dataEditFieldDimmer, dataEditFieldDimmer, 
+                dataEditFieldDimmer, dataEditFieldDimmer, dataEditFieldDimmer,
+                dataEditFieldDimmer, dataEditFieldDimmer, dataEditFieldDimmer);
+    }
+    
+    private void resetPassDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        editTextInput.setText("");
+        editTextInput1.setText("");
+        editTextInput2.setText("");
+        editTextInput3.setText("");
+        editTextInput4.setText("");
+        editTextInput5.setText("");
+        editTextInput6.setText("");
+        editTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        dataFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        dataFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        dataFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        dataFieldChange(addTextInput6, addFieldLabel6, dataAddFieldLight6, dataAddFieldDimmer6);
+        dataFieldChange(addTextInput7, addFieldLabel7, dataAddFieldLight7, dataAddFieldDimmer7);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        dataFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        dataFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        dataFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        dataFieldChange(editTextInput6, editFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+        dataFieldChange(editTextInput7, editFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        display.setText("");
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void cleanPassDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        dataFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        dataFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        dataFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        dataFieldChange(addTextInput6, addFieldLabel6, dataAddFieldLight6, dataAddFieldDimmer6);
+        dataFieldChange(addTextInput7, addFieldLabel7, dataAddFieldLight7, dataAddFieldDimmer7);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        dataFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        dataFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        dataFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        dataFieldChange(editTextInput6, editFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+        dataFieldChange(editTextInput7, editFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void polishPassDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        dataFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        dataFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        dataFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        dataFieldChange(addTextInput6, addFieldLabel6, dataAddFieldLight6, dataAddFieldDimmer6);
+        dataFieldChange(addTextInput7, addFieldLabel7, dataAddFieldLight7, dataAddFieldDimmer7);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        dataFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        dataFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        dataFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        dataFieldChange(editTextInput6, editFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+        dataFieldChange(editTextInput7, editFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void resetTicketDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        editTextInput.setText("");
+        editTextInput1.setText("");
+        editTextInput2.setText("");
+        editTextInput3.setText("");
+        editTextInput4.setText("");
+        editTextInput5.setText("");
+        editTextInput6.setText("");
+        editTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        boolFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        dataFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        byteFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        byteFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        boolFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        dataFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        byteFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        byteFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        display.setText("");
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void cleanTicketDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        boolFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        dataFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        byteFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        byteFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        boolFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        dataFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        byteFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        byteFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }    
+    
+    private void polishTicketDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        boolFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        dataFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        byteFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        byteFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        boolFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        dataFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        byteFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        byteFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }    
+    
+    private void resetFlightDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        editTextInput.setText("");
+        editTextInput1.setText("");
+        editTextInput2.setText("");
+        editTextInput3.setText("");
+        editTextInput4.setText("");
+        editTextInput5.setText("");
+        editTextInput6.setText("");
+        editTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        timeFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        timeFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        dataFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        dataFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        timeFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        timeFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        dataFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        dataFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        display.setText("");
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void cleanFlightDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        timeFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        timeFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        dataFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        dataFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        timeFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        timeFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        dataFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        dataFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void polishFlightDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        timeFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        timeFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        dataFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        dataFieldChange(addTextInput5, addFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        timeFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        timeFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        dataFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        dataFieldChange(editTextInput5, editFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void resetPlaneDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        editTextInput.setText("");
+        editTextInput1.setText("");
+        editTextInput2.setText("");
+        editTextInput3.setText("");
+        editTextInput4.setText("");
+        editTextInput5.setText("");
+        editTextInput6.setText("");
+        editTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        intFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        typeFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        intFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        typeFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        display.setText("");
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void cleanPlaneDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        intFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        typeFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        intFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        typeFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void polishPlaneDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        intFieldChange(addTextInput2, addFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        dataFieldChange(addTextInput3, addFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        typeFieldChange(addTextInput4, addFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        intFieldChange(editTextInput2, editFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        dataFieldChange(editTextInput3, editFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        typeFieldChange(editTextInput4, editFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void resetPortDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        editTextInput.setText("");
+        editTextInput1.setText("");
+        editTextInput2.setText("");
+        editTextInput3.setText("");
+        editTextInput4.setText("");
+        editTextInput5.setText("");
+        editTextInput6.setText("");
+        editTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        display.setText("");
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void cleanPortDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        addTextInput.setText("");
+        addTextInput1.setText("");
+        addTextInput2.setText("");
+        addTextInput3.setText("");
+        addTextInput4.setText("");
+        addTextInput5.setText("");
+        addTextInput6.setText("");
+        addTextInput7.setText("");
+        
+        viewTextInput.setText("");
+        searchTextInput.setText("");
+        
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    private void polishPortDataTab(javax.swing.JTextArea display,
+            javax.swing.JTextField addTextInput, javax.swing.JLabel addFieldLabel,
+            javax.swing.JTextField addTextInput1, javax.swing.JLabel addFieldLabel1,
+            javax.swing.JTextField addTextInput2, javax.swing.JLabel addFieldLabel2,
+            javax.swing.JTextField addTextInput3, javax.swing.JLabel addFieldLabel3,
+            javax.swing.JTextField addTextInput4, javax.swing.JLabel addFieldLabel4,
+            javax.swing.JTextField addTextInput5, javax.swing.JLabel addFieldLabel5,
+            javax.swing.JTextField addTextInput6, javax.swing.JLabel addFieldLabel6,
+            javax.swing.JTextField addTextInput7, javax.swing.JLabel addFieldLabel7,
+            javax.swing.JTextField editTextInput, javax.swing.JLabel editFieldLabel,
+            javax.swing.JTextField editTextInput1, javax.swing.JLabel editFieldLabel1,
+            javax.swing.JTextField editTextInput2, javax.swing.JLabel editFieldLabel2,
+            javax.swing.JTextField editTextInput3, javax.swing.JLabel editFieldLabel3,
+            javax.swing.JTextField editTextInput4, javax.swing.JLabel editFieldLabel4,
+            javax.swing.JTextField editTextInput5, javax.swing.JLabel editFieldLabel5,
+            javax.swing.JTextField editTextInput6, javax.swing.JLabel editFieldLabel6,
+            javax.swing.JTextField editTextInput7, javax.swing.JLabel editFieldLabel7,
+            javax.swing.JTextField viewTextInput, javax.swing.JLabel searchFieldLabel,
+            javax.swing.JTextField searchTextInput, javax.swing.JLabel searchFieldLabel1)
+    {
+        codeFieldChange(addTextInput, addFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        dataFieldChange(addTextInput1, addFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        
+        codeFieldChange(editTextInput, editFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        dataFieldChange(editTextInput1, editFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        
+        dataFieldChange(viewTextInput, searchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchFieldChange(searchTextInput, searchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        
+        addDataButtonCheck();
+        editDataButtonCheck();
+        searchDataButtonCheck();
+        deleteDataButtonCheck();
+        
+        mainLayerPane.repaint();
+    }
+    
+    public void passengerReset()
+    {
+        resetPassDataTab(passengerDataTextArea,
+            passengerAddTextInput, passengerAddFieldLabel,
+            passengerAddTextInput1, passengerAddFieldLabel1,
+            passengerAddTextInput2, passengerAddFieldLabel2,
+            passengerAddTextInput3, passengerAddFieldLabel3,
+            passengerAddTextInput4, passengerAddFieldLabel4,
+            passengerAddTextInput5, passengerAddFieldLabel5,
+            passengerAddTextInput6, passengerAddFieldLabel6,
+            passengerAddTextInput7, passengerAddFieldLabel7,
+            passengerEditTextInput, passengerEditFieldLabel,
+            passengerEditTextInput1, passengerEditFieldLabel1,
+            passengerEditTextInput2, passengerEditFieldLabel2,
+            passengerEditTextInput3, passengerEditFieldLabel3,
+            passengerEditTextInput4, passengerEditFieldLabel4,
+            passengerEditTextInput5, passengerEditFieldLabel5,
+            passengerEditTextInput6, passengerEditFieldLabel6,
+            passengerEditTextInput7, passengerEditFieldLabel7,
+            passengerViewTextInput, passengerSearchFieldLabel,
+            passengerSearchTextInput, passengerSearchFieldLabel1);
+    }
+    
+     public void ticketReset()
+    {
+        resetTicketDataTab(ticketDataTextArea,
+            ticketAddTextInput, ticketAddFieldLabel,
+            ticketAddTextInput1, ticketAddFieldLabel1,
+            ticketAddTextInput2, ticketAddFieldLabel2,
+            ticketAddTextInput3, ticketAddFieldLabel3,
+            ticketAddTextInput4, ticketAddFieldLabel4,
+            ticketAddTextInput5, ticketAddFieldLabel5,
+            ticketAddTextInput4, ticketAddFieldLabel4,
+            ticketAddTextInput5, ticketAddFieldLabel5,
+            ticketEditTextInput, ticketEditFieldLabel,
+            ticketEditTextInput1, ticketEditFieldLabel1,
+            ticketEditTextInput2, ticketEditFieldLabel2,
+            ticketEditTextInput3, ticketEditFieldLabel3,
+            ticketEditTextInput4, ticketEditFieldLabel4,
+            ticketEditTextInput5, ticketEditFieldLabel5,
+            ticketEditTextInput4, ticketEditFieldLabel4,
+            ticketEditTextInput5, ticketEditFieldLabel5,
+            ticketViewTextInput, ticketSearchFieldLabel,
+            ticketSearchTextInput, ticketSearchFieldLabel1);
+    }
+    
+    public void passengerClean()
+    {
+        cleanPassDataTab(passengerDataTextArea,
+            passengerAddTextInput, passengerAddFieldLabel,
+            passengerAddTextInput1, passengerAddFieldLabel1,
+            passengerAddTextInput2, passengerAddFieldLabel2,
+            passengerAddTextInput3, passengerAddFieldLabel3,
+            passengerAddTextInput4, passengerAddFieldLabel4,
+            passengerAddTextInput5, passengerAddFieldLabel5,
+            passengerAddTextInput6, passengerAddFieldLabel6,
+            passengerAddTextInput7, passengerAddFieldLabel7,
+            passengerEditTextInput, passengerEditFieldLabel,
+            passengerEditTextInput1, passengerEditFieldLabel1,
+            passengerEditTextInput2, passengerEditFieldLabel2,
+            passengerEditTextInput3, passengerEditFieldLabel3,
+            passengerEditTextInput4, passengerEditFieldLabel4,
+            passengerEditTextInput5, passengerEditFieldLabel5,
+            passengerEditTextInput6, passengerEditFieldLabel6,
+            passengerEditTextInput7, passengerEditFieldLabel7,
+            passengerViewTextInput, passengerSearchFieldLabel,
+            passengerSearchTextInput, passengerSearchFieldLabel1);
+    }
+
+    
+    public void passengerPolish()
+    {
+        polishPassDataTab(passengerDataTextArea,
+            passengerAddTextInput, passengerAddFieldLabel,
+            passengerAddTextInput1, passengerAddFieldLabel1,
+            passengerAddTextInput2, passengerAddFieldLabel2,
+            passengerAddTextInput3, passengerAddFieldLabel3,
+            passengerAddTextInput4, passengerAddFieldLabel4,
+            passengerAddTextInput5, passengerAddFieldLabel5,
+            passengerAddTextInput6, passengerAddFieldLabel6,
+            passengerAddTextInput7, passengerAddFieldLabel7,
+            passengerEditTextInput, passengerEditFieldLabel,
+            passengerEditTextInput1, passengerEditFieldLabel1,
+            passengerEditTextInput2, passengerEditFieldLabel2,
+            passengerEditTextInput3, passengerEditFieldLabel3,
+            passengerEditTextInput4, passengerEditFieldLabel4,
+            passengerEditTextInput5, passengerEditFieldLabel5,
+            passengerEditTextInput6, passengerEditFieldLabel6,
+            passengerEditTextInput7, passengerEditFieldLabel7,
+            passengerViewTextInput, passengerSearchFieldLabel,
+            passengerSearchTextInput, passengerSearchFieldLabel1);
+    }
+    
+    
+    public void ticketClean()
+    {
+        cleanTicketDataTab(ticketDataTextArea,
+            ticketAddTextInput, ticketAddFieldLabel,
+            ticketAddTextInput1, ticketAddFieldLabel1,
+            ticketAddTextInput2, ticketAddFieldLabel2,
+            ticketAddTextInput3, ticketAddFieldLabel3,
+            ticketAddTextInput4, ticketAddFieldLabel4,
+            ticketAddTextInput5, ticketAddFieldLabel5,
+            ticketAddTextInput4, ticketAddFieldLabel4,
+            ticketAddTextInput5, ticketAddFieldLabel5,
+            ticketEditTextInput, ticketEditFieldLabel,
+            ticketEditTextInput1, ticketEditFieldLabel1,
+            ticketEditTextInput2, ticketEditFieldLabel2,
+            ticketEditTextInput3, ticketEditFieldLabel3,
+            ticketEditTextInput4, ticketEditFieldLabel4,
+            ticketEditTextInput5, ticketEditFieldLabel5,
+            ticketEditTextInput4, ticketEditFieldLabel4,
+            ticketEditTextInput5, ticketEditFieldLabel5,
+            ticketViewTextInput, ticketSearchFieldLabel,
+            ticketSearchTextInput, ticketSearchFieldLabel1);
+    }
+    
+    public void ticketPolish()
+    {
+        polishTicketDataTab(ticketDataTextArea,
+            ticketAddTextInput, ticketAddFieldLabel,
+            ticketAddTextInput1, ticketAddFieldLabel1,
+            ticketAddTextInput2, ticketAddFieldLabel2,
+            ticketAddTextInput3, ticketAddFieldLabel3,
+            ticketAddTextInput4, ticketAddFieldLabel4,
+            ticketAddTextInput5, ticketAddFieldLabel5,
+            ticketAddTextInput4, ticketAddFieldLabel4,
+            ticketAddTextInput5, ticketAddFieldLabel5,
+            ticketEditTextInput, ticketEditFieldLabel,
+            ticketEditTextInput1, ticketEditFieldLabel1,
+            ticketEditTextInput2, ticketEditFieldLabel2,
+            ticketEditTextInput3, ticketEditFieldLabel3,
+            ticketEditTextInput4, ticketEditFieldLabel4,
+            ticketEditTextInput5, ticketEditFieldLabel5,
+            ticketEditTextInput4, ticketEditFieldLabel4,
+            ticketEditTextInput5, ticketEditFieldLabel5,
+            ticketViewTextInput, ticketSearchFieldLabel,
+            ticketSearchTextInput, ticketSearchFieldLabel1);
+    }
+    
+    public void flightsReset()
+    {
+        resetFlightDataTab(flightDataTextArea,
+            flightAddTextInput, flightAddFieldLabel,
+            flightAddTextInput1, flightAddFieldLabel1,
+            flightAddTextInput2, flightAddFieldLabel2,
+            flightAddTextInput3, flightAddFieldLabel3,
+            flightAddTextInput4, flightAddFieldLabel4,
+            flightAddTextInput5, flightAddFieldLabel5,
+            flightAddTextInput6, flightAddFieldLabel6,
+            flightAddTextInput7, flightAddFieldLabel7,
+            flightEditTextInput, flightEditFieldLabel,
+            flightEditTextInput1, flightEditFieldLabel1,
+            flightEditTextInput2, flightEditFieldLabel2,
+            flightEditTextInput3, flightEditFieldLabel3,
+            flightEditTextInput4, flightEditFieldLabel4,
+            flightEditTextInput5, flightEditFieldLabel5,
+            flightEditTextInput6, flightEditFieldLabel6,
+            flightEditTextInput7, flightEditFieldLabel7,
+            flightViewTextInput, flightSearchFieldLabel,
+            flightSearchTextInput, flightSearchFieldLabel1);
+        systimeSystemUpdates();
+    }
+    
+    public void flightsClean()
+    {
+        cleanFlightDataTab(flightDataTextArea,
+            flightAddTextInput, flightAddFieldLabel,
+            flightAddTextInput1, flightAddFieldLabel1,
+            flightAddTextInput2, flightAddFieldLabel2,
+            flightAddTextInput3, flightAddFieldLabel3,
+            flightAddTextInput4, flightAddFieldLabel4,
+            flightAddTextInput5, flightAddFieldLabel5,
+            flightAddTextInput6, flightAddFieldLabel6,
+            flightAddTextInput7, flightAddFieldLabel7,
+            flightEditTextInput, flightEditFieldLabel,
+            flightEditTextInput1, flightEditFieldLabel1,
+            flightEditTextInput2, flightEditFieldLabel2,
+            flightEditTextInput3, flightEditFieldLabel3,
+            flightEditTextInput4, flightEditFieldLabel4,
+            flightEditTextInput5, flightEditFieldLabel5,
+            flightEditTextInput6, flightEditFieldLabel6,
+            flightEditTextInput7, flightEditFieldLabel7,
+            flightViewTextInput, flightSearchFieldLabel,
+            flightSearchTextInput, flightSearchFieldLabel1);
+        systimeSystemUpdates();
+    }
+    
+    public void flightsPolish()
+    {
+        polishFlightDataTab(flightDataTextArea,
+            flightAddTextInput, flightAddFieldLabel,
+            flightAddTextInput1, flightAddFieldLabel1,
+            flightAddTextInput2, flightAddFieldLabel2,
+            flightAddTextInput3, flightAddFieldLabel3,
+            flightAddTextInput4, flightAddFieldLabel4,
+            flightAddTextInput5, flightAddFieldLabel5,
+            flightAddTextInput6, flightAddFieldLabel6,
+            flightAddTextInput7, flightAddFieldLabel7,
+            flightEditTextInput, flightEditFieldLabel,
+            flightEditTextInput1, flightEditFieldLabel1,
+            flightEditTextInput2, flightEditFieldLabel2,
+            flightEditTextInput3, flightEditFieldLabel3,
+            flightEditTextInput4, flightEditFieldLabel4,
+            flightEditTextInput5, flightEditFieldLabel5,
+            flightEditTextInput6, flightEditFieldLabel6,
+            flightEditTextInput7, flightEditFieldLabel7,
+            flightViewTextInput, flightSearchFieldLabel,
+            flightSearchTextInput, flightSearchFieldLabel1);
+        systimeSystemUpdates();
+    }
+    
+    public void planesReset()
+    {
+        resetPlaneDataTab(planeDataTextArea,
+            planeAddTextInput, planeAddFieldLabel,
+            planeAddTextInput1, planeAddFieldLabel1,
+            planeAddTextInput2, planeAddFieldLabel2,
+            planeAddTextInput3, planeAddFieldLabel3,
+            planeAddTextInput4, planeAddFieldLabel4,
+            planeAddTextInput5, planeAddFieldLabel5,
+            planeAddTextInput6, planeAddFieldLabel6,
+            planeAddTextInput7, planeAddFieldLabel7,
+            planeEditTextInput, planeEditFieldLabel,
+            planeEditTextInput1, planeEditFieldLabel1,
+            planeEditTextInput2, planeEditFieldLabel2,
+            planeEditTextInput3, planeEditFieldLabel3,
+            planeEditTextInput4, planeEditFieldLabel4,
+            planeEditTextInput5, planeEditFieldLabel5,
+            planeEditTextInput6, planeEditFieldLabel6,
+            planeEditTextInput7, planeEditFieldLabel7,
+            planeViewTextInput, planeSearchFieldLabel,
+            planeSearchTextInput, planeSearchFieldLabel1);
+        systimeSystemUpdates();
+    }
+    
+    public void planesClean()
+    {
+        cleanPlaneDataTab(planeDataTextArea,
+            planeAddTextInput, planeAddFieldLabel,
+            planeAddTextInput1, planeAddFieldLabel1,
+            planeAddTextInput2, planeAddFieldLabel2,
+            planeAddTextInput3, planeAddFieldLabel3,
+            planeAddTextInput4, planeAddFieldLabel4,
+            planeAddTextInput5, planeAddFieldLabel5,
+            planeAddTextInput6, planeAddFieldLabel6,
+            planeAddTextInput7, planeAddFieldLabel7,
+            planeEditTextInput, planeEditFieldLabel,
+            planeEditTextInput1, planeEditFieldLabel1,
+            planeEditTextInput2, planeEditFieldLabel2,
+            planeEditTextInput3, planeEditFieldLabel3,
+            planeEditTextInput4, planeEditFieldLabel4,
+            planeEditTextInput5, planeEditFieldLabel5,
+            planeEditTextInput6, planeEditFieldLabel6,
+            planeEditTextInput7, planeEditFieldLabel7,
+            planeViewTextInput, planeSearchFieldLabel,
+            planeSearchTextInput, planeSearchFieldLabel1);
+        systimeSystemUpdates();
+    }
+    
+    public void planesPolish()
+    {
+        polishPlaneDataTab(planeDataTextArea,
+            planeAddTextInput, planeAddFieldLabel,
+            planeAddTextInput1, planeAddFieldLabel1,
+            planeAddTextInput2, planeAddFieldLabel2,
+            planeAddTextInput3, planeAddFieldLabel3,
+            planeAddTextInput4, planeAddFieldLabel4,
+            planeAddTextInput5, planeAddFieldLabel5,
+            planeAddTextInput6, planeAddFieldLabel6,
+            planeAddTextInput7, planeAddFieldLabel7,
+            planeEditTextInput, planeEditFieldLabel,
+            planeEditTextInput1, planeEditFieldLabel1,
+            planeEditTextInput2, planeEditFieldLabel2,
+            planeEditTextInput3, planeEditFieldLabel3,
+            planeEditTextInput4, planeEditFieldLabel4,
+            planeEditTextInput5, planeEditFieldLabel5,
+            planeEditTextInput6, planeEditFieldLabel6,
+            planeEditTextInput7, planeEditFieldLabel7,
+            planeViewTextInput, planeSearchFieldLabel,
+            planeSearchTextInput, planeSearchFieldLabel1);
+        systimeSystemUpdates();
+    }
+    
+    public void airportsReset()
+    {
+        resetPortDataTab(portDataTextArea,
+            portAddTextInput, portAddFieldLabel,
+            portAddTextInput1, portAddFieldLabel1,
+            portAddTextInput2, portAddFieldLabel2,
+            portAddTextInput3, portAddFieldLabel3,
+            portAddTextInput4, portAddFieldLabel4,
+            portAddTextInput5, portAddFieldLabel5,
+            portAddTextInput6, portAddFieldLabel6,
+            portAddTextInput7, portAddFieldLabel7,
+            portEditTextInput, portEditFieldLabel,
+            portEditTextInput1, portEditFieldLabel1,
+            portEditTextInput2, portEditFieldLabel2,
+            portEditTextInput3, portEditFieldLabel3,
+            portEditTextInput4, portEditFieldLabel4,
+            portEditTextInput5, portEditFieldLabel5,
+            portEditTextInput6, portEditFieldLabel6,
+            portEditTextInput7, portEditFieldLabel7,
+            portViewTextInput, portSearchFieldLabel,
+            portSearchTextInput, portSearchFieldLabel1);
+    }
+    
+    public void airportsClean()
+    {
+        cleanPortDataTab(portDataTextArea,
+            portAddTextInput, portAddFieldLabel,
+            portAddTextInput1, portAddFieldLabel1,
+            portAddTextInput2, portAddFieldLabel2,
+            portAddTextInput3, portAddFieldLabel3,
+            portAddTextInput4, portAddFieldLabel4,
+            portAddTextInput5, portAddFieldLabel5,
+            portAddTextInput6, portAddFieldLabel6,
+            portAddTextInput7, portAddFieldLabel7,
+            portEditTextInput, portEditFieldLabel,
+            portEditTextInput1, portEditFieldLabel1,
+            portEditTextInput2, portEditFieldLabel2,
+            portEditTextInput3, portEditFieldLabel3,
+            portEditTextInput4, portEditFieldLabel4,
+            portEditTextInput5, portEditFieldLabel5,
+            portEditTextInput6, portEditFieldLabel6,
+            portEditTextInput7, portEditFieldLabel7,
+            portViewTextInput, portSearchFieldLabel,
+            portSearchTextInput, portSearchFieldLabel1);
+    }
+    
+    public void airportsPolish()
+    {
+        polishPortDataTab(portDataTextArea,
+            portAddTextInput, portAddFieldLabel,
+            portAddTextInput1, portAddFieldLabel1,
+            portAddTextInput2, portAddFieldLabel2,
+            portAddTextInput3, portAddFieldLabel3,
+            portAddTextInput4, portAddFieldLabel4,
+            portAddTextInput5, portAddFieldLabel5,
+            portAddTextInput6, portAddFieldLabel6,
+            portAddTextInput7, portAddFieldLabel7,
+            portEditTextInput, portEditFieldLabel,
+            portEditTextInput1, portEditFieldLabel1,
+            portEditTextInput2, portEditFieldLabel2,
+            portEditTextInput3, portEditFieldLabel3,
+            portEditTextInput4, portEditFieldLabel4,
+            portEditTextInput5, portEditFieldLabel5,
+            portEditTextInput6, portEditFieldLabel6,
+            portEditTextInput7, portEditFieldLabel7,
+            portViewTextInput, portSearchFieldLabel,
+            portSearchTextInput, portSearchFieldLabel1);
+    }
+    
+    
     private void loadDataTextEntryFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldKeyPressed
         loadDataTextFieldChange();
     }//GEN-LAST:event_loadDataTextEntryFieldKeyPressed
@@ -4845,6 +10245,1805 @@ public class MainFrame extends javax.swing.JFrame {
     private void loadDataTextEntryFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loadDataTextEntryFieldKeyTyped
         loadDataTextFieldChange();
     }//GEN-LAST:event_loadDataTextEntryFieldKeyTyped
+
+    private void passengerAddTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInputKeyPressed
+        codeFieldChange(passengerAddTextInput, passengerAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInputKeyPressed
+
+    private void passengerAddTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInputKeyReleased
+        codeFieldChange(passengerAddTextInput, passengerAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInputKeyReleased
+
+    private void passengerAddTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInputKeyTyped
+        codeFieldChange(passengerAddTextInput, passengerAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInputKeyTyped
+
+    private void passengerAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengerAddButtonActionPerformed
+        if(dataAddButtonLight.isVisible())
+        {
+            GUIPassengerFunctions function = new MainPackage.GUIPassengerFunctions();
+
+            String returnString = function.addOption(terminalData,
+                passengerAddTextInput, passengerAddTextInput1,
+                passengerAddTextInput2, passengerAddTextInput3,
+                passengerAddTextInput4,
+                passengerAddTextInput5,
+                passengerAddTextInput6,
+                passengerAddTextInput7,
+                passengerEditTextInput, 
+                passengerEditTextInput1,
+                passengerEditTextInput2,
+                passengerEditTextInput3,
+                passengerEditTextInput4,
+                passengerEditTextInput5,
+                passengerEditTextInput6,
+                passengerEditTextInput7);
+
+            passengerDataTextArea.setText(returnString);
+
+            if (!returnString.equals("Input Error: Non-Unique Code. Please try again."))
+            {
+                passengerClean();
+            }
+
+            else
+            {
+                mainLayerPane.repaint();
+            }
+        }
+    }//GEN-LAST:event_passengerAddButtonActionPerformed
+
+    private void passengerAddTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput1KeyPressed
+        dataFieldChange(passengerAddTextInput1, passengerAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput1KeyPressed
+
+    private void passengerAddTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput1KeyReleased
+        dataFieldChange(passengerAddTextInput1, passengerAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput1KeyReleased
+
+    private void passengerAddTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput1KeyTyped
+        dataFieldChange(passengerAddTextInput1, passengerAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput1KeyTyped
+
+    private void passengerAddTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput2KeyPressed
+        dataFieldChange(passengerAddTextInput2, passengerAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput2KeyPressed
+
+    private void passengerAddTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput2KeyReleased
+        dataFieldChange(passengerAddTextInput2, passengerAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput2KeyReleased
+
+    private void passengerAddTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput2KeyTyped
+        dataFieldChange(passengerAddTextInput2, passengerAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput2KeyTyped
+
+    private void passengerAddTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput3KeyPressed
+        dataFieldChange(passengerAddTextInput3, passengerAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput3KeyPressed
+
+    private void passengerAddTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput3KeyReleased
+        dataFieldChange(passengerAddTextInput3, passengerAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput3KeyReleased
+
+    private void passengerAddTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput3KeyTyped
+        dataFieldChange(passengerAddTextInput3, passengerAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput3KeyTyped
+
+    private void passengerAddTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput4KeyPressed
+        dataFieldChange(passengerAddTextInput4, passengerAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput4KeyPressed
+
+    private void passengerAddTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput4KeyReleased
+        dataFieldChange(passengerAddTextInput4, passengerAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput4KeyReleased
+
+    private void passengerAddTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput4KeyTyped
+        dataFieldChange(passengerAddTextInput4, passengerAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput4KeyTyped
+
+    private void passengerAddTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput5KeyPressed
+        dataFieldChange(passengerAddTextInput5, passengerAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput5KeyPressed
+
+    private void passengerAddTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput5KeyReleased
+        dataFieldChange(passengerAddTextInput5, passengerAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput5KeyReleased
+
+    private void passengerAddTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput5KeyTyped
+        dataFieldChange(passengerAddTextInput5, passengerAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput5KeyTyped
+
+    private void passengerAddTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput6KeyPressed
+        dataFieldChange(passengerAddTextInput6, passengerAddFieldLabel6, dataAddFieldLight6, dataAddFieldDimmer6);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput6KeyPressed
+
+    private void passengerAddTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput6KeyReleased
+        dataFieldChange(passengerAddTextInput6, passengerAddFieldLabel6, dataAddFieldLight6, dataAddFieldDimmer6);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput6KeyReleased
+
+    private void passengerAddTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput6KeyTyped
+        dataFieldChange(passengerAddTextInput6, passengerAddFieldLabel6, dataAddFieldLight6, dataAddFieldDimmer6);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput6KeyTyped
+
+    private void passengerAddTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput7KeyPressed
+        dataFieldChange(passengerAddTextInput7, passengerAddFieldLabel7, dataAddFieldLight7, dataAddFieldDimmer7);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput7KeyPressed
+
+    private void passengerAddTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput7KeyReleased
+        dataFieldChange(passengerAddTextInput7, passengerAddFieldLabel7, dataAddFieldLight7, dataAddFieldDimmer7);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput7KeyReleased
+
+    private void passengerAddTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerAddTextInput7KeyTyped
+        dataFieldChange(passengerAddTextInput7, passengerAddFieldLabel7, dataAddFieldLight7, dataAddFieldDimmer7);
+        addDataButtonCheck();
+    }//GEN-LAST:event_passengerAddTextInput7KeyTyped
+
+    private void passengerEditTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput1KeyPressed
+        dataFieldChange(passengerEditTextInput1, passengerEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput1KeyPressed
+
+    private void passengerEditTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput1KeyReleased
+        dataFieldChange(passengerEditTextInput1, passengerEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput1KeyReleased
+
+    private void passengerEditTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput1KeyTyped
+        dataFieldChange(passengerEditTextInput1, passengerEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput1KeyTyped
+
+    private void passengerEditTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput2KeyPressed
+        dataFieldChange(passengerEditTextInput2, passengerEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput2KeyPressed
+
+    private void passengerEditTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput2KeyReleased
+        dataFieldChange(passengerEditTextInput2, passengerEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput2KeyReleased
+
+    private void passengerEditTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput2KeyTyped
+        dataFieldChange(passengerEditTextInput2, passengerEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput2KeyTyped
+
+    private void passengerEditTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput3KeyPressed
+        dataFieldChange(passengerEditTextInput3, passengerEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput3KeyPressed
+
+    private void passengerEditTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput3KeyReleased
+        dataFieldChange(passengerEditTextInput3, passengerEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput3KeyReleased
+
+    private void passengerEditTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput3KeyTyped
+        dataFieldChange(passengerEditTextInput3, passengerEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput3KeyTyped
+
+    private void passengerEditTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput4KeyPressed
+        dataFieldChange(passengerEditTextInput4, passengerEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput4KeyPressed
+
+    private void passengerEditTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput4KeyReleased
+        dataFieldChange(passengerEditTextInput4, passengerEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput4KeyReleased
+
+    private void passengerEditTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput4KeyTyped
+        dataFieldChange(passengerEditTextInput4, passengerEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput4KeyTyped
+
+    private void passengerEditTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput5KeyPressed
+        dataFieldChange(passengerEditTextInput5, passengerEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput5KeyPressed
+
+    private void passengerEditTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput5KeyReleased
+        dataFieldChange(passengerEditTextInput5, passengerEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput5KeyReleased
+
+    private void passengerEditTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput5KeyTyped
+        dataFieldChange(passengerEditTextInput5, passengerEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput5KeyTyped
+
+    private void passengerEditTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput6KeyPressed
+        dataFieldChange(passengerEditTextInput6, passengerEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput6KeyPressed
+
+    private void passengerEditTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput6KeyReleased
+        dataFieldChange(passengerEditTextInput6, passengerEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput6KeyReleased
+
+    private void passengerEditTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput6KeyTyped
+        dataFieldChange(passengerEditTextInput6, passengerEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput6KeyTyped
+
+    private void passengerEditTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput7KeyPressed
+        dataFieldChange(passengerEditTextInput7, passengerEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput7KeyPressed
+
+    private void passengerEditTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput7KeyReleased
+        dataFieldChange(passengerEditTextInput7, passengerEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput7KeyReleased
+
+    private void passengerEditTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInput7KeyTyped
+        dataFieldChange(passengerEditTextInput7, passengerEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+        editDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInput7KeyTyped
+
+    private void passengerEditTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInputKeyPressed
+        codeFieldChange(passengerEditTextInput, passengerEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInputKeyPressed
+
+    private void passengerEditTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInputKeyReleased
+        codeFieldChange(passengerEditTextInput, passengerEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInputKeyReleased
+
+    private void passengerEditTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerEditTextInputKeyTyped
+        codeFieldChange(passengerEditTextInput, passengerEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_passengerEditTextInputKeyTyped
+
+    private void passengerViewTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerViewTextInputKeyPressed
+        dataFieldChange(passengerViewTextInput, passengerSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_passengerViewTextInputKeyPressed
+
+    private void passengerViewTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerViewTextInputKeyReleased
+        dataFieldChange(passengerViewTextInput, passengerSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_passengerViewTextInputKeyReleased
+
+    private void passengerViewTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerViewTextInputKeyTyped
+        dataFieldChange(passengerViewTextInput, passengerSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_passengerViewTextInputKeyTyped
+
+    private void passengerSearchTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerSearchTextInputKeyPressed
+        searchFieldChange(passengerSearchTextInput, passengerSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_passengerSearchTextInputKeyPressed
+
+    private void passengerSearchTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerSearchTextInputKeyReleased
+        searchFieldChange(passengerSearchTextInput, passengerSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_passengerSearchTextInputKeyReleased
+
+    private void passengerSearchTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passengerSearchTextInputKeyTyped
+        searchFieldChange(passengerSearchTextInput, passengerSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_passengerSearchTextInputKeyTyped
+
+    private void passengerSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengerSearchButtonActionPerformed
+        if(dataSearchButtonLight.isVisible())
+        {
+            GUIPassengerFunctions function = new MainPackage.GUIPassengerFunctions();
+        
+            String returnString = function.searchOption(terminalData,
+                passengerEditTextInput, 
+                passengerEditTextInput1,
+                passengerEditTextInput2,
+                passengerEditTextInput3,
+                passengerEditTextInput4,
+                passengerEditTextInput5,
+                passengerEditTextInput6,
+                passengerEditTextInput7,
+                passengerViewTextInput, 
+                passengerSearchTextInput);
+
+            passengerDataTextArea.setText(returnString);
+
+            codeFieldChange(passengerEditTextInput, passengerEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+            dataFieldChange(passengerEditTextInput1, passengerEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+            dataFieldChange(passengerEditTextInput2, passengerEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+            dataFieldChange(passengerEditTextInput3, passengerEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+            dataFieldChange(passengerEditTextInput4, passengerEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+            dataFieldChange(passengerEditTextInput5, passengerEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+            dataFieldChange(passengerEditTextInput6, passengerEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+            dataFieldChange(passengerEditTextInput7, passengerEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_passengerSearchButtonActionPerformed
+
+    private void passengerEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengerEditButtonActionPerformed
+        if(dataEditButtonLight.isVisible())
+        {
+            GUIPassengerFunctions function = new MainPackage.GUIPassengerFunctions();
+        
+            String returnString = function.editOption(terminalData,
+                passengerEditTextInput, 
+                passengerEditTextInput1,
+                passengerEditTextInput2,
+                passengerEditTextInput3,
+                passengerEditTextInput4,
+                passengerEditTextInput5,
+                passengerEditTextInput6,
+                passengerEditTextInput7);
+
+            passengerDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_passengerEditButtonActionPerformed
+
+    private void passengerDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passengerDeleteButtonActionPerformed
+        if(dataDeleteButtonLight.isVisible())
+        {
+            GUIPassengerFunctions function = new MainPackage.GUIPassengerFunctions();
+        
+            String returnString = function.deleteOption(terminalData,
+                passengerEditTextInput);
+
+            passengerDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_passengerDeleteButtonActionPerformed
+
+    private void ticketViewTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketViewTextInputKeyPressed
+        dataFieldChange(ticketViewTextInput, ticketSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_ticketViewTextInputKeyPressed
+
+    private void ticketViewTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketViewTextInputKeyReleased
+        dataFieldChange(ticketViewTextInput, ticketSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_ticketViewTextInputKeyReleased
+
+    private void ticketViewTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketViewTextInputKeyTyped
+        dataFieldChange(ticketViewTextInput, ticketSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_ticketViewTextInputKeyTyped
+
+    private void ticketSearchTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketSearchTextInputKeyPressed
+        searchFieldChange(ticketSearchTextInput, ticketSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_ticketSearchTextInputKeyPressed
+
+    private void ticketSearchTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketSearchTextInputKeyReleased
+        searchFieldChange(ticketSearchTextInput, ticketSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_ticketSearchTextInputKeyReleased
+
+    private void ticketSearchTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketSearchTextInputKeyTyped
+        searchFieldChange(ticketSearchTextInput, ticketSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_ticketSearchTextInputKeyTyped
+
+    private void ticketEditTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInputKeyPressed
+        codeFieldChange(ticketEditTextInput, ticketEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInputKeyPressed
+
+    private void ticketEditTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInputKeyReleased
+        codeFieldChange(ticketEditTextInput, ticketEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInputKeyReleased
+
+    private void ticketEditTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInputKeyTyped
+        codeFieldChange(ticketEditTextInput, ticketEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInputKeyTyped
+
+    private void ticketEditTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput1KeyPressed
+        boolFieldChange(ticketEditTextInput1, ticketEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput1KeyPressed
+
+    private void ticketEditTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput1KeyReleased
+        boolFieldChange(ticketEditTextInput1, ticketEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput1KeyReleased
+
+    private void ticketEditTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput1KeyTyped
+        boolFieldChange(ticketEditTextInput1, ticketEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput1KeyTyped
+
+    private void ticketEditTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput2KeyPressed
+        dataFieldChange(ticketEditTextInput2, ticketEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput2KeyPressed
+
+    private void ticketEditTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput2KeyReleased
+        dataFieldChange(ticketEditTextInput2, ticketEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput2KeyReleased
+
+    private void ticketEditTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput2KeyTyped
+        dataFieldChange(ticketEditTextInput2, ticketEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput2KeyTyped
+
+    private void ticketEditTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput3KeyPressed
+        dataFieldChange(ticketEditTextInput3, ticketEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput3KeyPressed
+
+    private void ticketEditTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput3KeyReleased
+        dataFieldChange(ticketEditTextInput3, ticketEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput3KeyReleased
+
+    private void ticketEditTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput3KeyTyped
+        dataFieldChange(ticketEditTextInput3, ticketEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput3KeyTyped
+
+    private void ticketEditTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput4KeyPressed
+        byteFieldChange(ticketEditTextInput4, ticketEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput4KeyPressed
+
+    private void ticketEditTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput4KeyReleased
+        byteFieldChange(ticketEditTextInput4, ticketEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput4KeyReleased
+
+    private void ticketEditTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput4KeyTyped
+        byteFieldChange(ticketEditTextInput4, ticketEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput4KeyTyped
+
+    private void ticketEditTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput5KeyPressed
+        byteFieldChange(ticketEditTextInput5, ticketEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput5KeyPressed
+
+    private void ticketEditTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput5KeyReleased
+        byteFieldChange(ticketEditTextInput5, ticketEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput5KeyReleased
+
+    private void ticketEditTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput5KeyTyped
+        byteFieldChange(ticketEditTextInput5, ticketEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_ticketEditTextInput5KeyTyped
+
+    private void ticketEditTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketEditTextInput6KeyPressed
+
+    private void ticketEditTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketEditTextInput6KeyReleased
+
+    private void ticketEditTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketEditTextInput6KeyTyped
+
+    private void ticketEditTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketEditTextInput7KeyPressed
+
+    private void ticketEditTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketEditTextInput7KeyReleased
+
+    private void ticketEditTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketEditTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketEditTextInput7KeyTyped
+
+    private void ticketAddTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInputKeyPressed
+        codeFieldChange(ticketAddTextInput, ticketAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInputKeyPressed
+
+    private void ticketAddTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInputKeyReleased
+        codeFieldChange(ticketAddTextInput, ticketAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInputKeyReleased
+
+    private void ticketAddTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInputKeyTyped
+        codeFieldChange(ticketAddTextInput, ticketAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInputKeyTyped
+
+    private void ticketAddTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput1KeyPressed
+        boolFieldChange(ticketAddTextInput1, ticketAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput1KeyPressed
+
+    private void ticketAddTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput1KeyReleased
+        boolFieldChange(ticketAddTextInput1, ticketAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput1KeyReleased
+
+    private void ticketAddTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput1KeyTyped
+        boolFieldChange(ticketAddTextInput1, ticketAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput1KeyTyped
+
+    private void ticketAddTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput2KeyPressed
+        dataFieldChange(ticketAddTextInput2, ticketAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput2KeyPressed
+
+    private void ticketAddTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput2KeyReleased
+        dataFieldChange(ticketAddTextInput2, ticketAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput2KeyReleased
+
+    private void ticketAddTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput2KeyTyped
+        dataFieldChange(ticketAddTextInput2, ticketAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput2KeyTyped
+
+    private void ticketAddTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput3KeyPressed
+        dataFieldChange(ticketAddTextInput3, ticketAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput3KeyPressed
+
+    private void ticketAddTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput3KeyReleased
+        dataFieldChange(ticketAddTextInput3, ticketAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput3KeyReleased
+
+    private void ticketAddTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput3KeyTyped
+        dataFieldChange(ticketAddTextInput3, ticketAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput3KeyTyped
+
+    private void ticketAddTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput4KeyPressed
+        byteFieldChange(ticketAddTextInput4, ticketAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput4KeyPressed
+
+    private void ticketAddTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput4KeyReleased
+        byteFieldChange(ticketAddTextInput4, ticketAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput4KeyReleased
+
+    private void ticketAddTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput4KeyTyped
+        byteFieldChange(ticketAddTextInput4, ticketAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput4KeyTyped
+
+    private void ticketAddTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput5KeyPressed
+        byteFieldChange(ticketAddTextInput5, ticketAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput5KeyPressed
+
+    private void ticketAddTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput5KeyReleased
+        byteFieldChange(ticketAddTextInput5, ticketAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput5KeyReleased
+
+    private void ticketAddTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput5KeyTyped
+        byteFieldChange(ticketAddTextInput5, ticketAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_ticketAddTextInput5KeyTyped
+
+    private void ticketAddTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketAddTextInput6KeyPressed
+
+    private void ticketAddTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketAddTextInput6KeyReleased
+
+    private void ticketAddTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketAddTextInput6KeyTyped
+
+    private void ticketSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ticketSearchButtonActionPerformed
+        if(dataSearchButtonLight.isVisible())
+        {
+            GUITicketFunctions function = new MainPackage.GUITicketFunctions();
+        
+            String returnString = function.searchOption(terminalData,
+                ticketEditTextInput, 
+                ticketEditTextInput1,
+                ticketEditTextInput2,
+                ticketEditTextInput3,
+                ticketEditTextInput4,
+                ticketEditTextInput5,
+                ticketEditTextInput6,
+                ticketEditTextInput7,
+                ticketViewTextInput, 
+                ticketSearchTextInput);
+
+            ticketDataTextArea.setText(returnString);
+
+            codeFieldChange(ticketEditTextInput, ticketEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+            boolFieldChange(ticketEditTextInput1, ticketEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+            dataFieldChange(ticketEditTextInput2, ticketEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+            dataFieldChange(ticketEditTextInput3, ticketEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+            byteFieldChange(ticketEditTextInput4, ticketEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+            byteFieldChange(ticketEditTextInput5, ticketEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+            dataFieldChange(ticketEditTextInput6, ticketEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+            dataFieldChange(ticketEditTextInput7, ticketEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_ticketSearchButtonActionPerformed
+
+    private void ticketEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ticketEditButtonActionPerformed
+        if(dataEditButtonLight.isVisible())
+        {
+            GUITicketFunctions function = new MainPackage.GUITicketFunctions();
+        
+            String returnString = function.editOption(terminalData,
+                ticketEditTextInput, 
+                ticketEditTextInput1,
+                ticketEditTextInput2,
+                ticketEditTextInput3,
+                ticketEditTextInput4,
+                ticketEditTextInput5,
+                ticketEditTextInput6,
+                ticketEditTextInput7);
+
+            ticketDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_ticketEditButtonActionPerformed
+
+    private void ticketDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ticketDeleteButtonActionPerformed
+        if(dataDeleteButtonLight.isVisible())
+        {
+            GUITicketFunctions function = new MainPackage.GUITicketFunctions();
+        
+            String returnString = function.deleteOption(terminalData,
+                ticketEditTextInput);
+
+            ticketDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+
+    }//GEN-LAST:event_ticketDeleteButtonActionPerformed
+
+    private void ticketAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ticketAddButtonActionPerformed
+        if(dataAddButtonLight.isVisible())
+        {
+            GUITicketFunctions function = new MainPackage.GUITicketFunctions();
+
+            String returnString = function.addOption(terminalData,
+                ticketAddTextInput, ticketAddTextInput1,
+                ticketAddTextInput2, ticketAddTextInput3,
+                ticketAddTextInput4,
+                ticketAddTextInput5,
+                ticketAddTextInput6,
+                ticketAddTextInput7,
+                ticketEditTextInput, 
+                ticketEditTextInput1,
+                ticketEditTextInput2,
+                ticketEditTextInput3,
+                ticketEditTextInput4,
+                ticketEditTextInput5,
+                ticketEditTextInput6,
+                ticketEditTextInput7);
+
+            ticketDataTextArea.setText(returnString);
+
+            if (!returnString.equals("Input Error: Non-Unique Code. Please try again."))
+            {
+                ticketClean();
+            }
+
+            else
+            {
+                mainLayerPane.repaint();
+            }
+        }
+    }//GEN-LAST:event_ticketAddButtonActionPerformed
+
+    private void ticketAddTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketAddTextInput7KeyTyped
+
+    private void ticketAddTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketAddTextInput7KeyReleased
+
+    private void ticketAddTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ticketAddTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ticketAddTextInput7KeyPressed
+
+    private void flightViewTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightViewTextInputKeyPressed
+        dataFieldChange(flightViewTextInput, flightSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_flightViewTextInputKeyPressed
+
+    private void flightViewTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightViewTextInputKeyReleased
+        dataFieldChange(flightViewTextInput, flightSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_flightViewTextInputKeyReleased
+
+    private void flightViewTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightViewTextInputKeyTyped
+        dataFieldChange(flightViewTextInput, flightSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_flightViewTextInputKeyTyped
+
+    private void flightSearchTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightSearchTextInputKeyPressed
+        searchFieldChange(flightSearchTextInput, flightSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_flightSearchTextInputKeyPressed
+
+    private void flightSearchTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightSearchTextInputKeyReleased
+        searchFieldChange(flightSearchTextInput, flightSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_flightSearchTextInputKeyReleased
+
+    private void flightSearchTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightSearchTextInputKeyTyped
+        searchFieldChange(flightSearchTextInput, flightSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_flightSearchTextInputKeyTyped
+
+    private void flightEditTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInputKeyPressed
+        codeFieldChange(flightEditTextInput, flightEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInputKeyPressed
+
+    private void flightEditTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInputKeyReleased
+        codeFieldChange(flightEditTextInput, flightEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInputKeyReleased
+
+    private void flightEditTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInputKeyTyped
+        codeFieldChange(flightEditTextInput, flightEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInputKeyTyped
+
+    private void flightEditTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput1KeyPressed
+        timeFieldChange(flightEditTextInput1, flightEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput1KeyPressed
+
+    private void flightEditTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput1KeyReleased
+        timeFieldChange(flightEditTextInput1, flightEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput1KeyReleased
+
+    private void flightEditTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput1KeyTyped
+        timeFieldChange(flightEditTextInput1, flightEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput1KeyTyped
+
+    private void flightEditTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput2KeyPressed
+        timeFieldChange(flightEditTextInput2, flightEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput2KeyPressed
+
+    private void flightEditTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput2KeyReleased
+        timeFieldChange(flightEditTextInput2, flightEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput2KeyReleased
+
+    private void flightEditTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput2KeyTyped
+        timeFieldChange(flightEditTextInput2, flightEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput2KeyTyped
+
+    private void flightEditTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput3KeyPressed
+        dataFieldChange(flightEditTextInput3, flightEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput3KeyPressed
+
+    private void flightEditTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput3KeyReleased
+        dataFieldChange(flightEditTextInput3, flightEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput3KeyReleased
+
+    private void flightEditTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput3KeyTyped
+        dataFieldChange(flightEditTextInput3, flightEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput3KeyTyped
+
+    private void flightEditTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput4KeyPressed
+        dataFieldChange(flightEditTextInput4, flightEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput4KeyPressed
+
+    private void flightEditTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput4KeyReleased
+        dataFieldChange(flightEditTextInput4, flightEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput4KeyReleased
+
+    private void flightEditTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput4KeyTyped
+        dataFieldChange(flightEditTextInput4, flightEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput4KeyTyped
+
+    private void flightEditTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput5KeyPressed
+        dataFieldChange(flightEditTextInput5, flightEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput5KeyPressed
+
+    private void flightEditTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput5KeyReleased
+        dataFieldChange(flightEditTextInput5, flightEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput5KeyReleased
+
+    private void flightEditTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput5KeyTyped
+        dataFieldChange(flightEditTextInput5, flightEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+        editDataButtonCheck();
+    }//GEN-LAST:event_flightEditTextInput5KeyTyped
+
+    private void flightEditTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEditTextInput6KeyPressed
+
+    private void flightEditTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEditTextInput6KeyReleased
+
+    private void flightEditTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEditTextInput6KeyTyped
+
+    private void flightEditTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEditTextInput7KeyPressed
+
+    private void flightEditTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEditTextInput7KeyReleased
+
+    private void flightEditTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightEditTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightEditTextInput7KeyTyped
+
+    private void flightAddTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInputKeyPressed
+        codeFieldChange(flightAddTextInput, flightAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInputKeyPressed
+
+    private void flightAddTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInputKeyReleased
+        codeFieldChange(flightAddTextInput, flightAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInputKeyReleased
+
+    private void flightAddTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInputKeyTyped
+        codeFieldChange(flightAddTextInput, flightAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInputKeyTyped
+
+    private void flightAddTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput1KeyPressed
+        timeFieldChange(flightAddTextInput1, flightAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput1KeyPressed
+
+    private void flightAddTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput1KeyReleased
+        timeFieldChange(flightAddTextInput1, flightAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput1KeyReleased
+
+    private void flightAddTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput1KeyTyped
+        timeFieldChange(flightAddTextInput1, flightAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput1KeyTyped
+
+    private void flightAddTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput2KeyPressed
+        timeFieldChange(flightAddTextInput2, flightAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput2KeyPressed
+
+    private void flightAddTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput2KeyReleased
+        timeFieldChange(flightAddTextInput2, flightAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput2KeyReleased
+
+    private void flightAddTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput2KeyTyped
+        timeFieldChange(flightAddTextInput2, flightAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput2KeyTyped
+
+    private void flightAddTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput3KeyPressed
+        dataFieldChange(flightAddTextInput3, flightAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput3KeyPressed
+
+    private void flightAddTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput3KeyReleased
+        dataFieldChange(flightAddTextInput3, flightAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput3KeyReleased
+
+    private void flightAddTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput3KeyTyped
+        dataFieldChange(flightAddTextInput3, flightAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput3KeyTyped
+
+    private void flightAddTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput4KeyPressed
+        dataFieldChange(flightAddTextInput4, flightAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput4KeyPressed
+
+    private void flightAddTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput4KeyReleased
+        dataFieldChange(flightAddTextInput4, flightAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput4KeyReleased
+
+    private void flightAddTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput4KeyTyped
+        dataFieldChange(flightAddTextInput4, flightAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput4KeyTyped
+
+    private void flightAddTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput5KeyPressed
+        dataFieldChange(flightAddTextInput5, flightAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput5KeyPressed
+
+    private void flightAddTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput5KeyReleased
+        dataFieldChange(flightAddTextInput5, flightAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput5KeyReleased
+
+    private void flightAddTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput5KeyTyped
+        dataFieldChange(flightAddTextInput5, flightAddFieldLabel5, dataAddFieldLight5, dataAddFieldDimmer5);
+        addDataButtonCheck();
+    }//GEN-LAST:event_flightAddTextInput5KeyTyped
+
+    private void flightAddTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightAddTextInput6KeyPressed
+
+    private void flightAddTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightAddTextInput6KeyReleased
+
+    private void flightAddTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightAddTextInput6KeyTyped
+
+    private void flightAddTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightAddTextInput7KeyPressed
+
+    private void flightAddTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightAddTextInput7KeyReleased
+
+    private void flightAddTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_flightAddTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_flightAddTextInput7KeyTyped
+
+    private void flightSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightSearchButtonActionPerformed
+        if(dataSearchButtonLight.isVisible())
+        {
+            GUIFlightFunctions function = new MainPackage.GUIFlightFunctions();
+        
+            String returnString = function.searchOption(terminalData,
+                flightEditTextInput, 
+                flightEditTextInput1,
+                flightEditTextInput2,
+                flightEditTextInput3,
+                flightEditTextInput4,
+                flightEditTextInput5,
+                flightEditTextInput6,
+                flightEditTextInput7,
+                flightViewTextInput, 
+                flightSearchTextInput);
+
+            flightDataTextArea.setText(returnString);
+
+            codeFieldChange(flightEditTextInput, flightEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+            timeFieldChange(flightEditTextInput1, flightEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+            timeFieldChange(flightEditTextInput2, flightEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+            dataFieldChange(flightEditTextInput3, flightEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+            dataFieldChange(flightEditTextInput4, flightEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+            dataFieldChange(flightEditTextInput5, flightEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+            dataFieldChange(flightEditTextInput6, flightEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+            dataFieldChange(flightEditTextInput7, flightEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_flightSearchButtonActionPerformed
+
+    private void flightEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightEditButtonActionPerformed
+         if(dataEditButtonLight.isVisible())
+        {
+            GUIFlightFunctions function = new MainPackage.GUIFlightFunctions();
+        
+            String returnString = function.editOption(terminalData,
+                flightEditTextInput, 
+                flightEditTextInput1,
+                flightEditTextInput2,
+                flightEditTextInput3,
+                flightEditTextInput4,
+                flightEditTextInput5,
+                flightEditTextInput6,
+                flightEditTextInput7);
+
+            flightDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_flightEditButtonActionPerformed
+
+    private void flightDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightDeleteButtonActionPerformed
+          if(dataDeleteButtonLight.isVisible())
+        {
+            GUIFlightFunctions function = new MainPackage.GUIFlightFunctions();
+        
+            String returnString = function.deleteOption(terminalData,
+                flightEditTextInput);
+
+            flightDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_flightDeleteButtonActionPerformed
+
+    private void flightAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_flightAddButtonActionPerformed
+          if(dataAddButtonLight.isVisible())
+        {
+            GUIFlightFunctions function = new MainPackage.GUIFlightFunctions();
+
+            String returnString = function.addOption(terminalData,
+                flightAddTextInput, flightAddTextInput1,
+                flightAddTextInput2, flightAddTextInput3,
+                flightAddTextInput4,
+                flightAddTextInput5,
+                flightAddTextInput6,
+                flightAddTextInput7,
+                flightEditTextInput, 
+                flightEditTextInput1,
+                flightEditTextInput2,
+                flightEditTextInput3,
+                flightEditTextInput4,
+                flightEditTextInput5,
+                flightEditTextInput6,
+                flightEditTextInput7);
+
+            flightDataTextArea.setText(returnString);
+
+            if (!returnString.equals("Input Error: Non-Unique Code. Please try again."))
+            {
+                flightsClean();
+            }
+
+            else
+            {
+                mainLayerPane.repaint();
+            }
+        }
+    }//GEN-LAST:event_flightAddButtonActionPerformed
+
+    private void planeViewTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeViewTextInputKeyPressed
+        dataFieldChange(planeViewTextInput, planeSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_planeViewTextInputKeyPressed
+
+    private void planeViewTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeViewTextInputKeyReleased
+        dataFieldChange(planeViewTextInput, planeSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_planeViewTextInputKeyReleased
+
+    private void planeViewTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeViewTextInputKeyTyped
+        dataFieldChange(planeViewTextInput, planeSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_planeViewTextInputKeyTyped
+
+    private void planeSearchTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeSearchTextInputKeyPressed
+        searchFieldChange(planeSearchTextInput, planeSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_planeSearchTextInputKeyPressed
+
+    private void planeSearchTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeSearchTextInputKeyReleased
+        searchFieldChange(planeSearchTextInput, planeSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_planeSearchTextInputKeyReleased
+
+    private void planeSearchTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeSearchTextInputKeyTyped
+        searchFieldChange(planeSearchTextInput, planeSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_planeSearchTextInputKeyTyped
+
+    private void planeEditTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInputKeyPressed
+        codeFieldChange(planeEditTextInput, planeEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInputKeyPressed
+
+    private void planeEditTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInputKeyReleased
+        codeFieldChange(planeEditTextInput, planeEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInputKeyReleased
+
+    private void planeEditTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInputKeyTyped
+        codeFieldChange(planeEditTextInput, planeEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInputKeyTyped
+
+    private void planeEditTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput1KeyPressed
+        dataFieldChange(planeEditTextInput1, planeEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput1KeyPressed
+
+    private void planeEditTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput1KeyReleased
+        dataFieldChange(planeEditTextInput1, planeEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput1KeyReleased
+
+    private void planeEditTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput1KeyTyped
+        dataFieldChange(planeEditTextInput1, planeEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput1KeyTyped
+
+    private void planeEditTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput2KeyPressed
+        intFieldChange(planeEditTextInput2, planeEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput2KeyPressed
+
+    private void planeEditTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput2KeyReleased
+        intFieldChange(planeEditTextInput2, planeEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput2KeyReleased
+
+    private void planeEditTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput2KeyTyped
+        intFieldChange(planeEditTextInput2, planeEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput2KeyTyped
+
+    private void planeEditTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput3KeyPressed
+        dataFieldChange(planeEditTextInput3, planeEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput3KeyPressed
+
+    private void planeEditTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput3KeyReleased
+        dataFieldChange(planeEditTextInput3, planeEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput3KeyReleased
+
+    private void planeEditTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput3KeyTyped
+        dataFieldChange(planeEditTextInput3, planeEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput3KeyTyped
+
+    private void planeEditTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput4KeyPressed
+        typeFieldChange(planeEditTextInput4, planeEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput4KeyPressed
+
+    private void planeEditTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput4KeyReleased
+        typeFieldChange(planeEditTextInput4, planeEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput4KeyReleased
+
+    private void planeEditTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput4KeyTyped
+        typeFieldChange(planeEditTextInput4, planeEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+        editDataButtonCheck();
+    }//GEN-LAST:event_planeEditTextInput4KeyTyped
+
+    private void planeEditTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput5KeyPressed
+
+    private void planeEditTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput5KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput5KeyReleased
+
+    private void planeEditTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput5KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput5KeyTyped
+
+    private void planeEditTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput6KeyPressed
+
+    private void planeEditTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput6KeyReleased
+
+    private void planeEditTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput6KeyTyped
+
+    private void planeEditTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput7KeyPressed
+
+    private void planeEditTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput7KeyReleased
+
+    private void planeEditTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeEditTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeEditTextInput7KeyTyped
+
+    private void planeAddTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInputKeyPressed
+        codeFieldChange(planeAddTextInput, planeAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInputKeyPressed
+
+    private void planeAddTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInputKeyReleased
+        codeFieldChange(planeAddTextInput, planeAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInputKeyReleased
+
+    private void planeAddTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInputKeyTyped
+        codeFieldChange(planeAddTextInput, planeAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInputKeyTyped
+
+    private void planeAddTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput1KeyPressed
+        dataFieldChange(planeAddTextInput1, planeAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput1KeyPressed
+
+    private void planeAddTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput1KeyReleased
+        dataFieldChange(planeAddTextInput1, planeAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput1KeyReleased
+
+    private void planeAddTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput1KeyTyped
+        dataFieldChange(planeAddTextInput1, planeAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput1KeyTyped
+
+    private void planeAddTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput2KeyPressed
+        intFieldChange(planeAddTextInput2, planeAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput2KeyPressed
+
+    private void planeAddTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput2KeyReleased
+        intFieldChange(planeAddTextInput2, planeAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput2KeyReleased
+
+    private void planeAddTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput2KeyTyped
+        intFieldChange(planeAddTextInput2, planeAddFieldLabel2, dataAddFieldLight2, dataAddFieldDimmer2);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput2KeyTyped
+
+    private void planeAddTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput3KeyPressed
+        dataFieldChange(planeAddTextInput3, planeAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput3KeyPressed
+
+    private void planeAddTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput3KeyReleased
+        dataFieldChange(planeAddTextInput3, planeAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput3KeyReleased
+
+    private void planeAddTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput3KeyTyped
+        dataFieldChange(planeAddTextInput3, planeAddFieldLabel3, dataAddFieldLight3, dataAddFieldDimmer3);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput3KeyTyped
+
+    private void planeAddTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput4KeyPressed
+        typeFieldChange(planeAddTextInput4, planeAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput4KeyPressed
+
+    private void planeAddTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput4KeyReleased
+        typeFieldChange(planeAddTextInput4, planeAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput4KeyReleased
+
+    private void planeAddTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput4KeyTyped
+        typeFieldChange(planeAddTextInput4, planeAddFieldLabel4, dataAddFieldLight4, dataAddFieldDimmer4);
+        addDataButtonCheck();
+    }//GEN-LAST:event_planeAddTextInput4KeyTyped
+
+    private void planeAddTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput5KeyPressed
+
+    private void planeAddTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput5KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput5KeyReleased
+
+    private void planeAddTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput5KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput5KeyTyped
+
+    private void planeAddTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput6KeyPressed
+
+    private void planeAddTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput6KeyReleased
+
+    private void planeAddTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput6KeyTyped
+
+    private void planeAddTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput7KeyPressed
+
+    private void planeAddTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput7KeyReleased
+
+    private void planeAddTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_planeAddTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_planeAddTextInput7KeyTyped
+
+    private void planeSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planeSearchButtonActionPerformed
+        if(dataSearchButtonLight.isVisible())
+               {
+                   GUIPlaneFunctions function = new MainPackage.GUIPlaneFunctions();
+
+                   String returnString = function.searchOption(terminalData,
+                       planeEditTextInput, 
+                       planeEditTextInput1,
+                       planeEditTextInput2,
+                       planeEditTextInput3,
+                       planeEditTextInput4,
+                       planeEditTextInput5,
+                       planeEditTextInput6,
+                       planeEditTextInput7,
+                       planeViewTextInput, 
+                       planeSearchTextInput);
+
+                   planeDataTextArea.setText(returnString);
+
+                   codeFieldChange(planeEditTextInput, planeEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+                   dataFieldChange(planeEditTextInput1, planeEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+                   intFieldChange(planeEditTextInput2, planeEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+                   dataFieldChange(planeEditTextInput3, planeEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+                   typeFieldChange(planeEditTextInput4, planeEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+                   dataFieldChange(planeEditTextInput5, planeEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+                   dataFieldChange(planeEditTextInput6, planeEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+                   dataFieldChange(planeEditTextInput7, planeEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+
+                   mainLayerPane.repaint();
+               }
+    }//GEN-LAST:event_planeSearchButtonActionPerformed
+
+    private void planeEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planeEditButtonActionPerformed
+        if(dataEditButtonLight.isVisible())
+        {
+            GUIPlaneFunctions function = new MainPackage.GUIPlaneFunctions();
+        
+            String returnString = function.editOption(terminalData,
+                planeEditTextInput, 
+                planeEditTextInput1,
+                planeEditTextInput2,
+                planeEditTextInput3,
+                planeEditTextInput4,
+                planeEditTextInput5,
+                planeEditTextInput6,
+                planeEditTextInput7);
+
+            planeDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_planeEditButtonActionPerformed
+
+    private void planeDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planeDeleteButtonActionPerformed
+        if(dataDeleteButtonLight.isVisible())
+        {
+            GUIPlaneFunctions function = new MainPackage.GUIPlaneFunctions();
+        
+            String returnString = function.deleteOption(terminalData,
+                planeEditTextInput);
+
+            planeDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_planeDeleteButtonActionPerformed
+
+    private void planeAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planeAddButtonActionPerformed
+        if(dataAddButtonLight.isVisible())
+        {
+            GUIPlaneFunctions function = new MainPackage.GUIPlaneFunctions();
+
+            String returnString = function.addOption(terminalData,
+                planeAddTextInput, planeAddTextInput1,
+                planeAddTextInput2, planeAddTextInput3,
+                planeAddTextInput4,
+                planeAddTextInput5,
+                planeAddTextInput6,
+                planeAddTextInput7,
+                planeEditTextInput, 
+                planeEditTextInput1,
+                planeEditTextInput2,
+                planeEditTextInput3,
+                planeEditTextInput4,
+                planeEditTextInput5,
+                planeEditTextInput6,
+                planeEditTextInput7);
+
+            planeDataTextArea.setText(returnString);
+
+            if (!returnString.equals("Input Error: Non-Unique Code. Please try again."))
+            {
+                planesClean();
+            }
+
+            else
+            {
+                mainLayerPane.repaint();
+            }
+        }
+    }//GEN-LAST:event_planeAddButtonActionPerformed
+
+    private void portViewTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portViewTextInputKeyPressed
+        dataFieldChange(portViewTextInput, portSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_portViewTextInputKeyPressed
+
+    private void portViewTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portViewTextInputKeyReleased
+        dataFieldChange(portViewTextInput, portSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_portViewTextInputKeyReleased
+
+    private void portViewTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portViewTextInputKeyTyped
+        dataFieldChange(portViewTextInput, portSearchFieldLabel, dataSearchFieldLight, dataSearchFieldDimmer);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_portViewTextInputKeyTyped
+
+    private void portSearchTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portSearchTextInputKeyPressed
+        searchFieldChange(portSearchTextInput, portSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_portSearchTextInputKeyPressed
+
+    private void portSearchTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portSearchTextInputKeyReleased
+        searchFieldChange(portSearchTextInput, portSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_portSearchTextInputKeyReleased
+
+    private void portSearchTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portSearchTextInputKeyTyped
+        searchFieldChange(portSearchTextInput, portSearchFieldLabel1, dataSearchFieldLight1, dataSearchFieldDimmer1);
+        searchDataButtonCheck();
+    }//GEN-LAST:event_portSearchTextInputKeyTyped
+
+    private void portEditTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInputKeyPressed
+        codeFieldChange(portEditTextInput, portEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_portEditTextInputKeyPressed
+
+    private void portEditTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInputKeyReleased
+        codeFieldChange(portEditTextInput, portEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_portEditTextInputKeyReleased
+
+    private void portEditTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInputKeyTyped
+        codeFieldChange(portEditTextInput, portEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+        editDataButtonCheck();
+        deleteDataButtonCheck();
+    }//GEN-LAST:event_portEditTextInputKeyTyped
+
+    private void portEditTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput1KeyPressed
+        dataFieldChange(portEditTextInput1, portEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_portEditTextInput1KeyPressed
+
+    private void portEditTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput1KeyReleased
+        dataFieldChange(portEditTextInput1, portEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_portEditTextInput1KeyReleased
+
+    private void portEditTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput1KeyTyped
+        dataFieldChange(portEditTextInput1, portEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+        editDataButtonCheck();
+    }//GEN-LAST:event_portEditTextInput1KeyTyped
+
+    private void portEditTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput2KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput2KeyPressed
+
+    private void portEditTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput2KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput2KeyReleased
+
+    private void portEditTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput2KeyTyped
+
+    private void portEditTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput3KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput3KeyPressed
+
+    private void portEditTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput3KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput3KeyReleased
+
+    private void portEditTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput3KeyTyped
+
+    private void portEditTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput4KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput4KeyPressed
+
+    private void portEditTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput4KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput4KeyReleased
+
+    private void portEditTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput4KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput4KeyTyped
+
+    private void portEditTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput5KeyPressed
+
+    private void portEditTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput5KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput5KeyReleased
+
+    private void portEditTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput5KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput5KeyTyped
+
+    private void portEditTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput6KeyPressed
+
+    private void portEditTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput6KeyReleased
+
+    private void portEditTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput6KeyTyped
+
+    private void portEditTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput7KeyPressed
+
+    private void portEditTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput7KeyReleased
+
+    private void portEditTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portEditTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portEditTextInput7KeyTyped
+
+    private void portAddTextInputKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInputKeyPressed
+        codeFieldChange(portAddTextInput, portAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_portAddTextInputKeyPressed
+
+    private void portAddTextInputKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInputKeyReleased
+        codeFieldChange(portAddTextInput, portAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_portAddTextInputKeyReleased
+
+    private void portAddTextInputKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInputKeyTyped
+        codeFieldChange(portAddTextInput, portAddFieldLabel, dataAddFieldLight, dataAddFieldDimmer);
+        addDataButtonCheck();
+    }//GEN-LAST:event_portAddTextInputKeyTyped
+
+    private void portAddTextInput1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput1KeyPressed
+        dataFieldChange(portAddTextInput1, portAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_portAddTextInput1KeyPressed
+
+    private void portAddTextInput1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput1KeyReleased
+        dataFieldChange(portAddTextInput1, portAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_portAddTextInput1KeyReleased
+
+    private void portAddTextInput1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput1KeyTyped
+        dataFieldChange(portAddTextInput1, portAddFieldLabel1, dataAddFieldLight1, dataAddFieldDimmer1);
+        addDataButtonCheck();
+    }//GEN-LAST:event_portAddTextInput1KeyTyped
+
+    private void portAddTextInput2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput2KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput2KeyPressed
+
+    private void portAddTextInput2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput2KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput2KeyReleased
+
+    private void portAddTextInput2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput2KeyTyped
+
+    private void portAddTextInput3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput3KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput3KeyPressed
+
+    private void portAddTextInput3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput3KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput3KeyReleased
+
+    private void portAddTextInput3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput3KeyTyped
+
+    private void portAddTextInput4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput4KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput4KeyPressed
+
+    private void portAddTextInput4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput4KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput4KeyReleased
+
+    private void portAddTextInput4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput4KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput4KeyTyped
+
+    private void portAddTextInput5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput5KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput5KeyPressed
+
+    private void portAddTextInput5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput5KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput5KeyReleased
+
+    private void portAddTextInput5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput5KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput5KeyTyped
+
+    private void portAddTextInput6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput6KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput6KeyPressed
+
+    private void portAddTextInput6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput6KeyReleased
+
+    private void portAddTextInput6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput6KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput6KeyTyped
+
+    private void portAddTextInput7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput7KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput7KeyPressed
+
+    private void portAddTextInput7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput7KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput7KeyReleased
+
+    private void portAddTextInput7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_portAddTextInput7KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_portAddTextInput7KeyTyped
+
+    private void portSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_portSearchButtonActionPerformed
+        if(dataSearchButtonLight.isVisible())
+        {
+            GUIAirportFunctions function = new MainPackage.GUIAirportFunctions();
+        
+            String returnString = function.searchOption(terminalData,
+                portEditTextInput, 
+                portEditTextInput1,
+                portEditTextInput2,
+                portEditTextInput3,
+                portEditTextInput4,
+                portEditTextInput5,
+                portEditTextInput6,
+                portEditTextInput7,
+                portViewTextInput, 
+                portSearchTextInput);
+
+            portDataTextArea.setText(returnString);
+
+            codeFieldChange(portEditTextInput, portEditFieldLabel, dataEditFieldLight, dataEditFieldDimmer);
+            dataFieldChange(portEditTextInput1, portEditFieldLabel1, dataEditFieldLight1, dataEditFieldDimmer1);
+            dataFieldChange(portEditTextInput2, portEditFieldLabel2, dataEditFieldLight2, dataEditFieldDimmer2);
+            dataFieldChange(portEditTextInput3, portEditFieldLabel3, dataEditFieldLight3, dataEditFieldDimmer3);
+            dataFieldChange(portEditTextInput4, portEditFieldLabel4, dataEditFieldLight4, dataEditFieldDimmer4);
+            dataFieldChange(portEditTextInput5, portEditFieldLabel5, dataEditFieldLight5, dataEditFieldDimmer5);
+            dataFieldChange(portEditTextInput6, portEditFieldLabel6, dataEditFieldLight6, dataEditFieldDimmer6);
+            dataFieldChange(portEditTextInput7, portEditFieldLabel7, dataEditFieldLight7, dataEditFieldDimmer7);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_portSearchButtonActionPerformed
+
+    private void portEditButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_portEditButtonActionPerformed
+        if(dataEditButtonLight.isVisible())
+        {
+            GUIAirportFunctions function = new MainPackage.GUIAirportFunctions();
+        
+            String returnString = function.editOption(terminalData,
+                portEditTextInput, 
+                portEditTextInput1,
+                portEditTextInput2,
+                portEditTextInput3,
+                portEditTextInput4,
+                portEditTextInput5,
+                portEditTextInput6,
+                portEditTextInput7);
+
+            portDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+    }//GEN-LAST:event_portEditButtonActionPerformed
+
+    private void portDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_portDeleteButtonActionPerformed
+        if(dataDeleteButtonLight.isVisible())
+        {
+            GUIAirportFunctions function = new MainPackage.GUIAirportFunctions();
+        
+            String returnString = function.deleteOption(terminalData,
+                portEditTextInput);
+
+            portDataTextArea.setText(returnString);
+
+            mainLayerPane.repaint();
+        }
+
+    }//GEN-LAST:event_portDeleteButtonActionPerformed
+
+    private void portAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_portAddButtonActionPerformed
+         if(dataAddButtonLight.isVisible())
+        {
+            GUIAirportFunctions function = new MainPackage.GUIAirportFunctions();
+
+            String returnString = function.addOption(terminalData,
+                portAddTextInput, portAddTextInput1,
+                portAddTextInput2, portAddTextInput3,
+                portAddTextInput4,
+                portAddTextInput5,
+                portAddTextInput6,
+                portAddTextInput7,
+                portEditTextInput, 
+                portEditTextInput1,
+                portEditTextInput2,
+                portEditTextInput3,
+                portEditTextInput4,
+                portEditTextInput5,
+                portEditTextInput6,
+                portEditTextInput7);
+
+            portDataTextArea.setText(returnString);
+
+            if (!returnString.equals("Input Error: Non-Unique Code. Please try again."))
+            {
+                airportsClean();
+            }
+
+            else
+            {
+                mainLayerPane.repaint();
+            }
+        }
+    }//GEN-LAST:event_portAddButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4896,8 +12095,12 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel BackgroundSpace_reports;
     private javax.swing.JPanel BackgroundSpace_systime;
     private javax.swing.JPanel BlackBackgroundSpace;
+    private javax.swing.JScrollPane airportManifestDataDisplayPane;
+    private javax.swing.JTextArea airportManifestDataTextArea;
+    private javax.swing.JPanel airportManifestDisplayLayer;
     private javax.swing.JButton airportsButton;
     private javax.swing.JButton airportsButton1;
+    private javax.swing.JPanel airportsControlLayer;
     private javax.swing.JLabel airportsLabel;
     private javax.swing.JLabel airportsLabel1;
     private javax.swing.JLabel airportsLabel2;
@@ -4990,10 +12193,105 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel compSearchQueryFieldLight;
     private javax.swing.JLabel compSearchQueryLabel;
     private javax.swing.JTextField compSearchQueryTextInput;
+    private javax.swing.JLabel currentDataHeaderLabel;
+    private javax.swing.JLabel dataAddButtonLabel;
+    private javax.swing.JLabel dataAddButtonLight;
+    private javax.swing.JLabel dataAddFieldDimmer;
+    private javax.swing.JLabel dataAddFieldDimmer1;
+    private javax.swing.JLabel dataAddFieldDimmer2;
+    private javax.swing.JLabel dataAddFieldDimmer3;
+    private javax.swing.JLabel dataAddFieldDimmer4;
+    private javax.swing.JLabel dataAddFieldDimmer5;
+    private javax.swing.JLabel dataAddFieldDimmer6;
+    private javax.swing.JLabel dataAddFieldDimmer7;
+    private javax.swing.JLabel dataAddFieldLight;
+    private javax.swing.JLabel dataAddFieldLight1;
+    private javax.swing.JLabel dataAddFieldLight2;
+    private javax.swing.JLabel dataAddFieldLight3;
+    private javax.swing.JLabel dataAddFieldLight4;
+    private javax.swing.JLabel dataAddFieldLight5;
+    private javax.swing.JLabel dataAddFieldLight6;
+    private javax.swing.JLabel dataAddFieldLight7;
+    private javax.swing.JLabel dataAddHeaderLabel;
+    private javax.swing.JLabel dataDeleteButtonLabel;
+    private javax.swing.JLabel dataDeleteButtonLight;
+    private javax.swing.JLabel dataEditButtonLabel;
+    private javax.swing.JLabel dataEditButtonLight;
+    private javax.swing.JLabel dataEditFieldDimmer;
+    private javax.swing.JLabel dataEditFieldDimmer1;
+    private javax.swing.JLabel dataEditFieldDimmer2;
+    private javax.swing.JLabel dataEditFieldDimmer3;
+    private javax.swing.JLabel dataEditFieldDimmer4;
+    private javax.swing.JLabel dataEditFieldDimmer5;
+    private javax.swing.JLabel dataEditFieldDimmer6;
+    private javax.swing.JLabel dataEditFieldDimmer7;
+    private javax.swing.JLabel dataEditFieldLight;
+    private javax.swing.JLabel dataEditFieldLight1;
+    private javax.swing.JLabel dataEditFieldLight2;
+    private javax.swing.JLabel dataEditFieldLight3;
+    private javax.swing.JLabel dataEditFieldLight4;
+    private javax.swing.JLabel dataEditFieldLight5;
+    private javax.swing.JLabel dataEditFieldLight6;
+    private javax.swing.JLabel dataEditFieldLight7;
+    private javax.swing.JLabel dataEditHeaderLabel;
+    private javax.swing.JPanel dataLightLayer;
     private javax.swing.JLabel dataMenuBackground;
+    private javax.swing.JLabel dataSearchButtonLabel;
+    private javax.swing.JLabel dataSearchButtonLight;
+    private javax.swing.JLabel dataSearchFieldDimmer;
+    private javax.swing.JLabel dataSearchFieldDimmer1;
+    private javax.swing.JLabel dataSearchFieldLight;
+    private javax.swing.JLabel dataSearchFieldLight1;
+    private javax.swing.JLabel dataSearchHeaderLabel;
     private javax.swing.JLabel fileDataBackground;
+    private javax.swing.JButton flightAddButton;
+    private javax.swing.JLabel flightAddFieldLabel;
+    private javax.swing.JLabel flightAddFieldLabel1;
+    private javax.swing.JLabel flightAddFieldLabel2;
+    private javax.swing.JLabel flightAddFieldLabel3;
+    private javax.swing.JLabel flightAddFieldLabel4;
+    private javax.swing.JLabel flightAddFieldLabel5;
+    private javax.swing.JLabel flightAddFieldLabel6;
+    private javax.swing.JLabel flightAddFieldLabel7;
+    private javax.swing.JTextField flightAddTextInput;
+    private javax.swing.JTextField flightAddTextInput1;
+    private javax.swing.JTextField flightAddTextInput2;
+    private javax.swing.JTextField flightAddTextInput3;
+    private javax.swing.JTextField flightAddTextInput4;
+    private javax.swing.JTextField flightAddTextInput5;
+    private javax.swing.JTextField flightAddTextInput6;
+    private javax.swing.JTextField flightAddTextInput7;
+    private javax.swing.JScrollPane flightDataDisplayPane;
+    private javax.swing.JTextArea flightDataTextArea;
+    private javax.swing.JButton flightDeleteButton;
+    private javax.swing.JButton flightEditButton;
+    private javax.swing.JLabel flightEditFieldLabel;
+    private javax.swing.JLabel flightEditFieldLabel1;
+    private javax.swing.JLabel flightEditFieldLabel2;
+    private javax.swing.JLabel flightEditFieldLabel3;
+    private javax.swing.JLabel flightEditFieldLabel4;
+    private javax.swing.JLabel flightEditFieldLabel5;
+    private javax.swing.JLabel flightEditFieldLabel6;
+    private javax.swing.JLabel flightEditFieldLabel7;
+    private javax.swing.JTextField flightEditTextInput;
+    private javax.swing.JTextField flightEditTextInput1;
+    private javax.swing.JTextField flightEditTextInput2;
+    private javax.swing.JTextField flightEditTextInput3;
+    private javax.swing.JTextField flightEditTextInput4;
+    private javax.swing.JTextField flightEditTextInput5;
+    private javax.swing.JTextField flightEditTextInput6;
+    private javax.swing.JTextField flightEditTextInput7;
+    private javax.swing.JScrollPane flightManifestDataDisplayPane;
+    private javax.swing.JTextArea flightManifestDataTextArea;
+    private javax.swing.JPanel flightManifestDisplayLayer;
+    private javax.swing.JButton flightSearchButton;
+    private javax.swing.JLabel flightSearchFieldLabel;
+    private javax.swing.JLabel flightSearchFieldLabel1;
+    private javax.swing.JTextField flightSearchTextInput;
+    private javax.swing.JTextField flightViewTextInput;
     private javax.swing.JButton flightsButton;
     private javax.swing.JButton flightsButton1;
+    private javax.swing.JPanel flightsControlLayer;
     private javax.swing.JLabel flightsLabel;
     private javax.swing.JLabel flightsLabel1;
     private javax.swing.JLabel flightsLight;
@@ -5027,6 +12325,53 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLayeredPane mainLayerPane;
     private javax.swing.JPanel mainLayerSpace;
     private javax.swing.JLabel manifestBackground;
+    private javax.swing.JPanel manifestDummyLayer;
+    private javax.swing.JButton passengerAddButton;
+    private javax.swing.JLabel passengerAddFieldLabel;
+    private javax.swing.JLabel passengerAddFieldLabel1;
+    private javax.swing.JLabel passengerAddFieldLabel2;
+    private javax.swing.JLabel passengerAddFieldLabel3;
+    private javax.swing.JLabel passengerAddFieldLabel4;
+    private javax.swing.JLabel passengerAddFieldLabel5;
+    private javax.swing.JLabel passengerAddFieldLabel6;
+    private javax.swing.JLabel passengerAddFieldLabel7;
+    private javax.swing.JTextField passengerAddTextInput;
+    private javax.swing.JTextField passengerAddTextInput1;
+    private javax.swing.JTextField passengerAddTextInput2;
+    private javax.swing.JTextField passengerAddTextInput3;
+    private javax.swing.JTextField passengerAddTextInput4;
+    private javax.swing.JTextField passengerAddTextInput5;
+    private javax.swing.JTextField passengerAddTextInput6;
+    private javax.swing.JTextField passengerAddTextInput7;
+    private javax.swing.JPanel passengerControlLayer;
+    private javax.swing.JScrollPane passengerDataDisplayPane;
+    private javax.swing.JTextArea passengerDataTextArea;
+    private javax.swing.JButton passengerDeleteButton;
+    private javax.swing.JButton passengerEditButton;
+    private javax.swing.JLabel passengerEditFieldLabel;
+    private javax.swing.JLabel passengerEditFieldLabel1;
+    private javax.swing.JLabel passengerEditFieldLabel2;
+    private javax.swing.JLabel passengerEditFieldLabel3;
+    private javax.swing.JLabel passengerEditFieldLabel4;
+    private javax.swing.JLabel passengerEditFieldLabel5;
+    private javax.swing.JLabel passengerEditFieldLabel6;
+    private javax.swing.JLabel passengerEditFieldLabel7;
+    private javax.swing.JTextField passengerEditTextInput;
+    private javax.swing.JTextField passengerEditTextInput1;
+    private javax.swing.JTextField passengerEditTextInput2;
+    private javax.swing.JTextField passengerEditTextInput3;
+    private javax.swing.JTextField passengerEditTextInput4;
+    private javax.swing.JTextField passengerEditTextInput5;
+    private javax.swing.JTextField passengerEditTextInput6;
+    private javax.swing.JTextField passengerEditTextInput7;
+    private javax.swing.JScrollPane passengerManifestDataDisplayPane;
+    private javax.swing.JTextArea passengerManifestDataTextArea;
+    private javax.swing.JPanel passengerManifestDisplayLayer;
+    private javax.swing.JButton passengerSearchButton;
+    private javax.swing.JLabel passengerSearchFieldLabel;
+    private javax.swing.JLabel passengerSearchFieldLabel1;
+    private javax.swing.JTextField passengerSearchTextInput;
+    private javax.swing.JTextField passengerViewTextInput;
     private javax.swing.JButton passengersButton;
     private javax.swing.JButton passengersButton1;
     private javax.swing.JLabel passengersLabel;
@@ -5034,12 +12379,100 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel passengersLabel2;
     private javax.swing.JLabel passengersLight;
     private javax.swing.JLabel passengersLight1;
+    private javax.swing.JButton planeAddButton;
+    private javax.swing.JLabel planeAddFieldLabel;
+    private javax.swing.JLabel planeAddFieldLabel1;
+    private javax.swing.JLabel planeAddFieldLabel2;
+    private javax.swing.JLabel planeAddFieldLabel3;
+    private javax.swing.JLabel planeAddFieldLabel4;
+    private javax.swing.JLabel planeAddFieldLabel5;
+    private javax.swing.JLabel planeAddFieldLabel6;
+    private javax.swing.JLabel planeAddFieldLabel7;
+    private javax.swing.JTextField planeAddTextInput;
+    private javax.swing.JTextField planeAddTextInput1;
+    private javax.swing.JTextField planeAddTextInput2;
+    private javax.swing.JTextField planeAddTextInput3;
+    private javax.swing.JTextField planeAddTextInput4;
+    private javax.swing.JTextField planeAddTextInput5;
+    private javax.swing.JTextField planeAddTextInput6;
+    private javax.swing.JTextField planeAddTextInput7;
+    private javax.swing.JScrollPane planeDataDisplayPane;
+    private javax.swing.JTextArea planeDataTextArea;
+    private javax.swing.JButton planeDeleteButton;
+    private javax.swing.JButton planeEditButton;
+    private javax.swing.JLabel planeEditFieldLabel;
+    private javax.swing.JLabel planeEditFieldLabel1;
+    private javax.swing.JLabel planeEditFieldLabel2;
+    private javax.swing.JLabel planeEditFieldLabel3;
+    private javax.swing.JLabel planeEditFieldLabel4;
+    private javax.swing.JLabel planeEditFieldLabel5;
+    private javax.swing.JLabel planeEditFieldLabel6;
+    private javax.swing.JLabel planeEditFieldLabel7;
+    private javax.swing.JTextField planeEditTextInput;
+    private javax.swing.JTextField planeEditTextInput1;
+    private javax.swing.JTextField planeEditTextInput2;
+    private javax.swing.JTextField planeEditTextInput3;
+    private javax.swing.JTextField planeEditTextInput4;
+    private javax.swing.JTextField planeEditTextInput5;
+    private javax.swing.JTextField planeEditTextInput6;
+    private javax.swing.JTextField planeEditTextInput7;
+    private javax.swing.JScrollPane planeManifestDataDisplayPane;
+    private javax.swing.JTextArea planeManifestDataTextArea;
+    private javax.swing.JPanel planeManifestDisplayLayer;
+    private javax.swing.JButton planeSearchButton;
+    private javax.swing.JLabel planeSearchFieldLabel;
+    private javax.swing.JLabel planeSearchFieldLabel1;
+    private javax.swing.JTextField planeSearchTextInput;
+    private javax.swing.JTextField planeViewTextInput;
     private javax.swing.JButton planesButton;
     private javax.swing.JButton planesButton1;
+    private javax.swing.JPanel planesControlLayer;
     private javax.swing.JLabel planesLabel;
     private javax.swing.JLabel planesLabel1;
     private javax.swing.JLabel planesLight;
     private javax.swing.JLabel planesLight1;
+    private javax.swing.JButton portAddButton;
+    private javax.swing.JLabel portAddFieldLabel;
+    private javax.swing.JLabel portAddFieldLabel1;
+    private javax.swing.JLabel portAddFieldLabel2;
+    private javax.swing.JLabel portAddFieldLabel3;
+    private javax.swing.JLabel portAddFieldLabel4;
+    private javax.swing.JLabel portAddFieldLabel5;
+    private javax.swing.JLabel portAddFieldLabel6;
+    private javax.swing.JLabel portAddFieldLabel7;
+    private javax.swing.JTextField portAddTextInput;
+    private javax.swing.JTextField portAddTextInput1;
+    private javax.swing.JTextField portAddTextInput2;
+    private javax.swing.JTextField portAddTextInput3;
+    private javax.swing.JTextField portAddTextInput4;
+    private javax.swing.JTextField portAddTextInput5;
+    private javax.swing.JTextField portAddTextInput6;
+    private javax.swing.JTextField portAddTextInput7;
+    private javax.swing.JScrollPane portDataDisplayPane;
+    private javax.swing.JTextArea portDataTextArea;
+    private javax.swing.JButton portDeleteButton;
+    private javax.swing.JButton portEditButton;
+    private javax.swing.JLabel portEditFieldLabel;
+    private javax.swing.JLabel portEditFieldLabel1;
+    private javax.swing.JLabel portEditFieldLabel2;
+    private javax.swing.JLabel portEditFieldLabel3;
+    private javax.swing.JLabel portEditFieldLabel4;
+    private javax.swing.JLabel portEditFieldLabel5;
+    private javax.swing.JLabel portEditFieldLabel6;
+    private javax.swing.JLabel portEditFieldLabel7;
+    private javax.swing.JTextField portEditTextInput;
+    private javax.swing.JTextField portEditTextInput1;
+    private javax.swing.JTextField portEditTextInput2;
+    private javax.swing.JTextField portEditTextInput3;
+    private javax.swing.JTextField portEditTextInput4;
+    private javax.swing.JTextField portEditTextInput5;
+    private javax.swing.JTextField portEditTextInput6;
+    private javax.swing.JTextField portEditTextInput7;
+    private javax.swing.JButton portSearchButton;
+    private javax.swing.JLabel portSearchFieldLabel;
+    private javax.swing.JLabel portSearchFieldLabel1;
+    private javax.swing.JTextField portSearchTextInput;
+    private javax.swing.JTextField portViewTextInput;
     private javax.swing.JPanel reportControlLayer;
     private javax.swing.JScrollPane reportDisplayPane;
     private javax.swing.JTextArea reportDisplayTextArea;
@@ -5120,6 +12553,52 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel systimeLightSpace;
     private javax.swing.JTextField systimeTextEntryField;
     private javax.swing.JPanel systimeTextEntryPanel;
+    private javax.swing.JButton ticketAddButton;
+    private javax.swing.JLabel ticketAddFieldLabel;
+    private javax.swing.JLabel ticketAddFieldLabel1;
+    private javax.swing.JLabel ticketAddFieldLabel2;
+    private javax.swing.JLabel ticketAddFieldLabel3;
+    private javax.swing.JLabel ticketAddFieldLabel4;
+    private javax.swing.JLabel ticketAddFieldLabel5;
+    private javax.swing.JLabel ticketAddFieldLabel6;
+    private javax.swing.JLabel ticketAddFieldLabel7;
+    private javax.swing.JTextField ticketAddTextInput;
+    private javax.swing.JTextField ticketAddTextInput1;
+    private javax.swing.JTextField ticketAddTextInput2;
+    private javax.swing.JTextField ticketAddTextInput3;
+    private javax.swing.JTextField ticketAddTextInput4;
+    private javax.swing.JTextField ticketAddTextInput5;
+    private javax.swing.JTextField ticketAddTextInput6;
+    private javax.swing.JTextField ticketAddTextInput7;
+    private javax.swing.JPanel ticketControlLayer;
+    private javax.swing.JScrollPane ticketDataDisplayPane;
+    private javax.swing.JTextArea ticketDataTextArea;
+    private javax.swing.JButton ticketDeleteButton;
+    private javax.swing.JButton ticketEditButton;
+    private javax.swing.JLabel ticketEditFieldLabel;
+    private javax.swing.JLabel ticketEditFieldLabel1;
+    private javax.swing.JLabel ticketEditFieldLabel2;
+    private javax.swing.JLabel ticketEditFieldLabel3;
+    private javax.swing.JLabel ticketEditFieldLabel4;
+    private javax.swing.JLabel ticketEditFieldLabel5;
+    private javax.swing.JLabel ticketEditFieldLabel6;
+    private javax.swing.JLabel ticketEditFieldLabel7;
+    private javax.swing.JTextField ticketEditTextInput;
+    private javax.swing.JTextField ticketEditTextInput1;
+    private javax.swing.JTextField ticketEditTextInput2;
+    private javax.swing.JTextField ticketEditTextInput3;
+    private javax.swing.JTextField ticketEditTextInput4;
+    private javax.swing.JTextField ticketEditTextInput5;
+    private javax.swing.JTextField ticketEditTextInput6;
+    private javax.swing.JTextField ticketEditTextInput7;
+    private javax.swing.JScrollPane ticketManifestDataDisplayPane;
+    private javax.swing.JTextArea ticketManifestDataTextArea;
+    private javax.swing.JPanel ticketManifestDisplayLayer;
+    private javax.swing.JButton ticketSearchButton;
+    private javax.swing.JLabel ticketSearchFieldLabel;
+    private javax.swing.JLabel ticketSearchFieldLabel1;
+    private javax.swing.JTextField ticketSearchTextInput;
+    private javax.swing.JTextField ticketViewTextInput;
     private javax.swing.JButton ticketsButton;
     private javax.swing.JButton ticketsButton1;
     private javax.swing.JLabel ticketsLabel;
