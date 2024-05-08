@@ -1,0 +1,1 @@
+I created the graphic design for the layout and was in charge of merging and uploading files. I also created the User Guide, report menu functionality, save/load functionality, and system time functionality for the GUI system.
