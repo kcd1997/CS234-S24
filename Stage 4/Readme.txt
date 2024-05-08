@@ -6,5 +6,5 @@ To compile and run the program, either:
 
 To utilize the test data for the program:
   -Open the Load Data menu tab
-  -Type the appropriate path name for the path to the testData.txt file in the TerminalTicketingGUI/src folder
+  -Type the appropriate path name for the path to the testData.txt file in the TerminalTicketingGUI/src/MainPackage folder
   -Click "Load Data" and use the data within the program (see the user guide for more information)
